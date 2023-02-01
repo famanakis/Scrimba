@@ -1,12 +1,20 @@
 # Password Generator - Solo Project
 
- ## A Scrimba FrontEnd Developer Path Solo Project completed using HTML, CSS, Flexbox and JavaScript.
+## A Scrimba FrontEnd Developer Path Solo Project
+Programming Languages Used
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>CSS-Flexbox</li>
+<li>JavaScript</li>
+</ul>
+
+## Screenshot
+ <img src="password-screenshot-dark.png" width=50% height=50%><br>
+ <img src="password-screenshot-light.png" width=50% height=50%><br>
+ [Live Demo](https://9tfdev-m3-solo-password-generator.netlify.app/)
  
-# Project Purpose
- This is a password generator which generates random passwords.  Users can choose the length of the password.
- Users can also choose to have 'symbols' or 'numbers' in their passwords - or not.
- 
-# Project Scope 
+## Project Requirements
  The Password Generator solo project meets the following requirements:
  <ul>
  <li>Build it from 'scratch'</li>
@@ -22,10 +30,7 @@
 <li>Added a toggle for light/dark mode</li>
  </ul>
  
-#
- Resources:
- 
+## Resources:
  [Figma Design Screenshot](https://github.com/famanakis/m3-solo-password-generator/blob/main/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
 
-https://9tfdev-m3-solo-password-generator.netlify.app/

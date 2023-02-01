@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background: #ffffff;
+    color: #2b283a;
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    font-size: 10.24px;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0 0 5px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 6px 0 18px 0;
+}
+
+a {
+    color: #918e9b;
+    text-decoration: none;
+    border-bottom: 1px solid #918e9b;
+}
+
+
+.navbar {
+    background: #F55A5A;
+    color: #ffffff;
+    height: 55px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 25px;
+}
+
+.nav-logo {
+    height: 24px;
+}
+
+.nav-title {
+    font-weight: 500;   
+    font-size: 14.46px;
+    line-height: 100%;
+    letter-spacing: -7.5%;
+}
+
+.card-container {
+    padding: 0px 40px;
+}
+    
+.card {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.card-img {
+    height: 168px;
+    width: 125px;
+    border-radius: 5px;
+    margin: 17px auto;
+}
+
+.map-pin {
+    width: 7px;
+    margin-bottom: -1px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    letter-spacing: 0.17em;
+    margin: 0 8px 0 2px;
+}
+
+.card-dates {
+    font-weight: 700;
+}
+
+.footer {
+    color: #918e9b;
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+}
+

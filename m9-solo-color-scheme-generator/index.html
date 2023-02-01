@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color Scheme Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">  
+  </head>
+  <body>
+    <div class="main-container">
+    <header> 
+        <div class="flex-container">    
+           <input type="color" id="color-picker" name="color-picker" aria-label="color picker"         value="">
+           <select id="color-schemes" name="color-schemes" aria-label="different color schemes">
+               <option value="monochrome">Monochrome</option>
+               <option value="monochrome-dark">Monochrome-dark</option>
+               <option value="monochrome-light">Monochrome-light</option>
+               <option value="Analogic">Analogic</option>
+               <option value="complement">Complement</option>
+               <option value="analogic-complement">Analogic-complement</option>
+               <option value="triad">Triad</option>
+           </select>
+       <button id="btn-get">Get color scheme</button>
+       </div>  
+    </header>
+    <main>
+      <section class="color-section" id="color-section">
+      </section>  
+      <section class="hex-values" id="hex-values">
+      </section>  
+    </main>
+    </div>
+	<script src="index.js"></script>
+  </body>
+</html>

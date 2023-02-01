@@ -1,5 +1,27 @@
+:root {
+    --white: #fefefe;
+    --black: #000000;
+    --text-back: #eeeeee;
+    --add-btn: #ffcc68;
+    --delete-btn: #ff9548;
+    --chore: #f8df7c;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Concert One', cursive;
+    color: var(--black);
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+}

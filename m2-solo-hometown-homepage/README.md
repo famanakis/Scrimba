@@ -29,3 +29,5 @@
  [Figma Design Screenshot](https://github.com/famanakis/m2-solo-hometown-homepage/blob/main/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
  
+ https://9tfdev-m2-solo-hometown-homepage.netlify.app/
+ 

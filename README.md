@@ -1,6 +1,6 @@
 # Scrimba Projects
 
-## Scrimba FrontEnd Developer Path Solo Projects
+## Scrimba Solo Projects
 
 Programming Languages Used
 <ul>

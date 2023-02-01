@@ -11,12 +11,21 @@
         <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles.css">
     </head>
-    <body>
-        <div class="container">
+    <body class="center">
+        <div class="container center">
             <h1>Choreslist</h1>
-            <input type="text">
-            <button>-></button>
-            <button>✕</button>
+            <div class="input-btns-div center">
+                <label for="inputEl"></label>
+                <input type="text" id="inputEl" class="inputEl center" 
+                    name="add chore to list" value="" placeholder="Do dishes">
+                <button type="submit" id="add-btn" class="add-btn center">-></button>
+                <button type="reset"id="remove-btn" class="remove-btn center">✕</button>
+            </div>
+            <div id="chores-list">
+                <div class="chore center"><p>Chore 1</p></div>
+                <div class="chore center"><p>Chore 1</p></div>
+                <div class="chore center"><p>Chore 1</p></div>
+            </div>
         </div>
          
         <script src="./index.js" async defer></script>

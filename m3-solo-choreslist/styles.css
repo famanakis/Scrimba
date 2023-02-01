@@ -3,25 +3,150 @@
     --black: #000000;
     --text-back: #eeeeee;
     --add-btn: #ffcc68;
-    --delete-btn: #ff9548;
+    --remove-btn: #ff9548;
     --chore: #f8df7c;
 }
 
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
+body {
+    background-color: #7c95f8;
+    padding: 25px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    padding: 76px 130px 107px;
+}
+
+.input-btns-div {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    min-width: 350px;
 }
 
 h1 {
     font-family: 'Concert One', cursive;
     color: var(--black);
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 54px;
+    margin-bottom: 51px;
+}
+
+.inputEl {
+    background-color: var(--text-back);
+    color: #a4a4a4;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    height: 94px;
+    padding: 15px;
+    text-align: center;
+}
+
+.focus:focus,
+.focus:hover
+ {
+    box-shadow: 0 0 0 2px var(--black);
 }
 
 button {
     font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    border: none;
+    border-radius: 10px;
+    height: 94px;
+    width: 82px;
+    padding: 15px;
+}
+
+.add-btn {
+    background-color: var(--add-btn);
+    margin: 0 15px;
+}
+
+.remove-btn {
+    background-color: var(--remove-btn);
+}
+
+#chores-list {
+    width: 100%;
+}
+
+.chore {
+    background-color: var(--chore);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    height: 92px;
+    margin-bottom: 14px;
+    transition: ease-in-out 400ms;
+}
+
+.chore:hover,
+.chore:active {
+    transform: scale(1.05);
+}
+
+.modal {
+    position: fixed;
+    border-radius: 10px;
+    width: 600px;
+    height: 400px;
+    background-image: url('./gifs/finally-done.gif');
+    background-size: cover;
+    /* visibility: hidden; */
+}
+
+.close-btn {
+    height: 35px;
+    width: 25px;
+    margin: 7px 560px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.modal > p {
+    font-family: 'Concert One', cursive;
+    font-size: 70px;
+    color: var(--white);
+    text-shadow: -1px 1px 2px var(--black),
+                  1px 1px 2px var(--black),
+                  1px -1px 0 var(--black),
+                 -1px -1px 0 var(--black);
+    text-align: center;
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation  {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
 }

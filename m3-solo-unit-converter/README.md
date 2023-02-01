@@ -1,8 +1,20 @@
 # Unit Converter - Solo Project
 
  ## A Scrimba FrontEnd Developer Path Solo Project completed using HTML, CSS, Flexbox and Responsive Design.
-
- # Project Purpose
+## A Scrimba FrontEnd Developer Path Solo Project
+Programming Languages and Approach Used
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+ <li>CSS-Flexbox</li>
+<li>Responsive Web Design</li>
+</ul>
+ 
+## Screenshot
+ <img src="project-screenshot.png" width=50% height=50%><br>
+ [Live Demo](https://9tfdev-m3-solo-unit-converter.netlify.app/)
+ 
+## Project Requirements
  A basic unit convertor that converts a number to various units of measurement to include length, volume, and mass.
  
  # Project Scope
@@ -21,11 +33,8 @@
 <li>Set a max-length for the input</li>
  </ul>
  
- #
- Resources:
- 
+ ## Resources:
  [Figma Design Screenshot](https://github.com/famanakis/m3-solo-unit-convertor/blob/main/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
  
- https://9tfdev-m3-solo-unit-converter.netlify.app/
  

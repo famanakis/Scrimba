@@ -10,7 +10,7 @@ Programming Languages Used
  
 ## Screenshot
  <img src="Scoreboard Screenshot.png" width=50% height=50%>
- Live Demo
+ [Live Demo](https://9tfdev-m3-solo-basketball-scoreboard.netlify.app/)
  
 ## Project Requirements
  The 'Basketball Scoreboard' solo project meets the following requirements:

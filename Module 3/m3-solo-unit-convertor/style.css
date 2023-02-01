@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background: #2d333b;
+}
+
+/*Typography*/
+h1, h2, h3, h4, p, label, span {
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    text-shadow: 0px 0px 3px black;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    text-shadow: 0px 0px 3px black;
+    margin-bottom: 20px;
+}
+
+h3  {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+
+p {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/*Sections/Containers*/
+header {
+    background: #0099F7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-shadow: 0 0 2px #000000;
+    padding: 25px 15px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 18px;
+    background: #1F2937;
+    border-radius: 5px;
+}
+
+.inputEl {
+    font-size: 97px;
+    font-weight: 600;
+    min-width: 150px;
+    max-width: 100%;
+    overflow: hidden;
+    padding-top: 16px;
+    height: 150px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background: transparent;
+    color: #ffffff;
+    text-shadow: 0 0 3px black;
+}
+
+.inputEl:hover,
+.inputEl:focus {
+    outline: 2px solid #ffffff;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    padding: 25px 0px; 
+}
+
+.container > div {
+    background-color: rgb(85, 102, 153);
+    text-shadow: 0 0 2px #000000;
+    margin: 7px;
+    padding: 0 50px;
+    width: 500px;
+}
+
+.container-unit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-center;
+    align-items: center;
+    gap: 20px;
+}
+
+.submit-btn {
+    background: #1f2937;
+    color: #ebeef3;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 24px;
+}
+
+.submit-btn:hover {
+    background: rgb(85, 102, 153);
+    text-shadow: 0 0 1px black;
+}

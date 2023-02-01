@@ -1,0 +1,128 @@
+* {
+    box-sizing: 0;
+}
+
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+    background: #ffffff;
+    max-width: 375px;
+}
+
+/*- Typography -*/
+body, p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.smaller-text {
+    font-size: 12px;
+    margin-top: -15px;
+}
+
+.btn {
+    color: #000000;
+}
+
+
+/*- Section Header -*/
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    border-bottom: 1px solid #C6C6C6;
+}
+
+.site-logo {
+    height: 33px;
+    width: 127px;
+    padding: 16px 0 0 15px;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    
+}
+
+.user-avatar {
+    padding: 16px 16px 17px;
+}
+
+/*- Section Title -*/
+.title-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.post-avatar {
+    padding: 10px 7px 10px 10px;
+}
+
+/*- Section Post -*/
+.post-image {
+    margin-bottom: 10px;
+}
+
+.main-post {
+    width: 375px;
+    height: 375px; 
+}
+
+/*- Section Information -*/
+.post-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 13px;
+    max-width: 375px;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+.icon-div {
+    display: flex;
+    width: 100px;
+    justify-content: flex-start; 
+    margin-left: -8px;  
+}
+
+.btn {
+    border: none;
+    background: #ffffff;
+    outline: none;
+}
+
+.btn:hover, btn:focus, button:active {
+    opacity: 50%;
+    border: none; 
+    outline: none;
+}
+
+.heart {
+    width: 23px;
+    height: 25px;   
+}
+
+.comment {
+    width: 25px;
+    height: 25px;   
+}
+
+.dm {
+    width: 23px;
+    height: 25px;   
+}
+
+.likes {
+    margin: 10px 0 12px 0;
+    }
+

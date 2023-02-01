@@ -1,0 +1,2 @@
+# Learning Journal Solo Project
+ 

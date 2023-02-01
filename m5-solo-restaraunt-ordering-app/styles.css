@@ -1,0 +1,260 @@
+* {
+    box-sizing: 0;
+    margin: 0;
+    max-width: 600px;
+}
+
+/*=== Typography ===*/
+body,
+header, 
+div,
+p {
+    font-family: 'Smythe', cursive;;
+    font-weight: 400;
+}
+
+header {
+    color: #ffffff;
+    height: 167px;
+}
+
+input,
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 31.12px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+input {
+    color: #757575;
+    font-weight: 400;
+}
+
+button {
+    color: #ffffff;
+    background-color: #16db99;
+    font-weight: 700;
+    border:none;
+}
+
+.location-name {
+    font-size: 39px;
+}
+
+.location-description {
+    font-size: 22.42px;
+}
+
+
+/*=== Header ===*/
+.header {
+    margin: 0 0 61px 0;
+    background-image: url("./images/background-img.png");
+    background-size: cover;
+    background-repeat: none;
+}
+
+.location-name {
+    margin: 0 auto;
+    padding: 46px 0 5px 46px;
+}
+
+.location-description {
+    margin: 0 auto;
+    padding: 0 0 0 46px;
+}
+
+
+/*=== Menu OrderingDiv ===*/
+.menu-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 46px 45px 46px;
+    padding: 8px 0 42px 0;
+    border-bottom: 1px solid #dedede;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-img {
+    width: 70px;
+    height: 89px;
+    padding: 0 31px 0 0;
+}
+
+.item-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name {
+    font-size: 28px;
+    margin: 0 0 4px 0;
+}
+
+.item-description {
+    color: #8b8b8b;
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+
+.item-cost {
+    font-size: 20px;
+    margin: 0;
+}
+
+.add-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    margin-right: 8px;
+}
+
+.add-btn:hover {
+    transform: scale(1.1);
+}
+
+.order-total {
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+}
+
+/*=== Order Totals ===*/
+
+.checkout {
+    margin: 0 46px 53px 46px;
+}
+
+.your-order {
+    text-align: center;
+    font-size: 28px;
+    margin: -8px 0 48px 0;
+}
+
+.order-subtotal {
+    justify-content: space-between;
+}
+
+.list-item, .list-total {
+    margin: 4px 0;
+}
+
+.list-item, .total-text {
+    font-size: 28px;
+}
+
+.list-total, .total-price {
+    font-size: 20px;
+}
+
+.remove-btn {
+    background: #ffffff;
+    color: #bbbbbb;
+    border: none;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 7px;
+}
+
+.total {
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px 0 38px 0; 
+    border-top: 2px solid #393333;
+}
+
+.total-text, .total-price {
+    margin: 10px 0;
+}
+
+.btn-purchase {
+    font-size: 16px;
+    padding: 16px;
+    width: 100%
+}
+
+/*=== Payment Modal ===*/
+.payment-modal {
+    position: absolute;
+    top: 292px;
+    transform: translateX(5%);
+    z-index: 1000;
+    width: 500px;
+    max-width: 100%;
+    /* overflow: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 3.89px;
+    filter: drop-shadow(5.19px 5.19px 255.44px #000000);
+    padding: 47px 24px 24px 24px;
+    background-color: white;
+}
+
+.hidden-el {
+    display: none;
+}
+
+.modal-overlay {
+    z-index: 1010;
+}
+
+.modal-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 0 34px 0;
+}
+
+.card-name, .card-number, .card-cvv {
+    border: 1.3px solid #757575;
+    border-radius: 3.89px;
+    margin: 12px 0;
+    padding: 16px 26px 13px 26px;
+    font-size: 20px;
+    width: 90%;
+}
+
+.pay-btn {
+    width: 100%;
+    height: 71.3px;
+    border-radius: 3.89px;
+    margin: 46px 0 0 0;
+}
+
+.thanks {
+    background-color: #ecfdf5;
+    border-radius: 3px;
+    margin: 0 46px 250px 46px;
+}
+
+
+.thanks-text {
+    color: #065f46;
+    text-align: center;
+    padding: 51px 0;
+    font-size: 28px;
+}
+
+.non-clickable {
+    pointer-events: none;
+}
+
+
+
+
+
+

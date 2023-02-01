@@ -12,7 +12,13 @@ Programming Languages Used
  
 ## Projects
 <ul>
+<li>Hometown Homepage</li>
+<li>Inspirational Quote Page</li>
 <li>Basketball Scoreboard</li>
+<li>Password Generator</li>
+<li>Unit Converter</li>
+<li>Send to Pager</li>
+<li>Salesboard</li>
 </ul>
 
  

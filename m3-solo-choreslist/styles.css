@@ -113,9 +113,9 @@ button {
     border-radius: 10px;
     width: 600px;
     height: 400px;
-    background-image: url('./gifs/finally-done.gif');
+    background-image: url('./gifs/garfield.webp');
     background-size: cover;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 .close-btn {
@@ -135,8 +135,8 @@ button {
                   1px -1px 0 var(--black),
                  -1px -1px 0 var(--black);
     text-align: center;
-    animation: blink-animation 1s steps(5, start) infinite;
     -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    animation: blink-animation 1s steps(5, start) infinite;
 }
 
 @keyframes blink-animation  {

@@ -113,7 +113,7 @@ button {
     border-radius: 10px;
     width: 600px;
     height: 400px;
-    background-image: url('./gifs/garfield.webp');
+    /* background-image: url('./gifs/garfield.webp'); */
     background-size: cover;
     visibility: hidden;
 }

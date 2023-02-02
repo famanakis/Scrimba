@@ -1,3 +1,5 @@
+import {gifsArr} from "./data.js"
+
 //Access the DOM
 const inputEl = document.getElementById('inputEl')
 const btnAdd = document.getElementById('add-btn')
@@ -7,10 +9,11 @@ const modal = document.getElementById('modal')
 const btnClose = document.getElementById('close-btn')
 
 //Global Variables
-// choresArr = []
+let choresArr = []
 window.localStorage.length > 0 ?
     choresArr = JSON.parse(window.localStorage.getItem('chore')) :
     choresArr = []
+
 
 //Event Listeners
 btnAdd.addEventListener('click', ()=>{
@@ -32,9 +35,24 @@ renderChores()
 function renderChores() {
     list.innerHTML = '' 
     choresArr.forEach(i => {
-        list.innerHTML += `<div class="chore center">${i}</div>`
+        list.innerHTML += `<div data-id="${i}" class="chore center">${i}</div>`  
     })
 }
+
+list.addEventListener('click', (e) => {
+    //target ID
+    const removeItem = e.target.dataset.id
+    console.log(removeItem)
+    console.log(JSON.stringify(removeItem))
+    //remove item from choresArr
+    console.log(choresArr.filter((i) => i !== JSON.stringify(removeItem)))
+    console.log(choresArr.filter((i) => i !== "cat"))
+    console.log(choresArr)
+    //remove item from localStorage
+
+    //renderChores()   
+    // if(choresArr.length === 0) {showModal()}
+})
 
 function addChore() {
     if(!choresArr.includes(inputEl.value)){
@@ -53,6 +71,9 @@ function clearChorelist() {
 }
 
 function showModal() {
+    function random() {
+        return Math.floor(Math.random()*gifsArr.length)
+    }
+    modal.style.backgroundImage = gifsArr[random()]
     modal.style.visibility = 'visible'
 }
-

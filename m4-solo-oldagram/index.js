@@ -1,4 +1,4 @@
-//Access the DOM
+//Dom Variables
 const postContainerEl = document.getElementById("post-container")
 
 //Object Data Set
@@ -33,14 +33,13 @@ const posts = [
 ]
 
 //Functions
-//For Loop of Data to DOM
 renderPage()
 
 function renderPage() {
     let html = ''
     for (let i = 0; i < posts.length; i++) { 
         html += `
-        <section class="title-section">
+            <section class="title-section">
                 <div>
                     <img class="avatar post-avatar" src="${posts[i].avatar}">
                 </div>
@@ -63,11 +62,11 @@ function renderPage() {
                 <p class="bold likes"><span id="currentLikes">${posts[i].likes}</span> likes</p>
                 <p><span class="bold likesBtn">${posts[i].username}</span> ${posts[i].comment}</p>
                 </div>
-            </section>
-    `
+            </section>`
     }
     postContainerEl.innerHTML = html   
 }
+
 
 //function to add likes to user - Increase like count by one when function is called
 function addLikesToPage(i) {

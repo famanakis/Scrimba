@@ -48,14 +48,17 @@ body, p {
 }
 
 .avatar {
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
-    
 }
 
 .user-avatar {
-    padding: 16px 16px 17px;
+    width: 28px;
+    height: 28px;
+    padding: 3px;
+    border: 1px solid rgb(112, 112, 112); 
+    margin-top: 6px;
 }
 
 /*- Section Title -*/

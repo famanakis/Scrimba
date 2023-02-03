@@ -28,7 +28,7 @@ Programming Languages Used
 </ul>
  
 ## Resources:
- [Figma Design Screenshot - Single Post]("https://github.com/famanakis/Scrimba/blob/main/m4-solo-oldagram/figma-design-1.png")<br>
- [Figma Design Screenshot - Multiple Posts]("https://github.com/famanakis/Scrimba/blob/main/m4-solo-oldagram/figma-design-2.png")<br>
+ [Figma Design Screenshot - Single Post("https://github.com/famanakis/Scrimba/blob/main/m4-solo-oldagram/figma-design-1.png")]<br>
+ [Figma Design Screenshot - Multiple Posts("https://github.com/famanakis/Scrimba/blob/main/m4-solo-oldagram/figma-design-2.png")]<br>
  [Scrimba](https://scrimba.com/)
 

@@ -1,4 +1,4 @@
-# Password Generator - Solo Project
+# BestBank - Solo Project
 
 ## A Scrimba Bootcamp Solo Project
 Programming Languages Used
@@ -14,25 +14,26 @@ Programming Languages Used
  [Live Demo]()
  
 ## Project Requirements
- The Choreslist solo project meets the following requirements:
+ The BestBank solo project meets the following requirements:
  <ul>
  <li>Build it from 'scratch'</li>
  <li>Follow the design spec</li>
- <li>Can't add empty chore</li>
  <li>Make sure you use:</li>
  <ul>
- <li>addEventListener()</li>
- <li>innerHTML</li>
- <li>Template Strings</li>
- <li>localStorage</li>
+ <li>Semantic HTML</li>
+ <li>Hover</li>
+ <li>Container</li>
+ <li>Group selectors</li>
+  <li>Compound selectors</li>
  </ul>
  </ul>
  
  My project includes the following 'stretch goals':
  <ul>
-<li>Can't add existing chore</li>
-<li>Click on individual chores to remove from list</li>
-<li>Show a random GIF when all chores are completed</li>
+<li>Column with spending bars</li>
+<li>Animated hover effect to buttons</li>
+<li>Fetch dad from JS</li>
+<li>Click on accounts to change view</li>
  </ul>
  
 ## Resources:

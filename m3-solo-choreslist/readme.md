@@ -10,8 +10,8 @@ Programming Languages Used
 </ul>
 
 ## Screenshot
- <img src="" width=50% height=50%><br>
- [Live Demo](https://github.com/famanakis/Scrimba/blob/main/m3-solo-choreslist/Choreslist-Screenshot.png)
+ <img src="https://github.com/famanakis/Scrimba/blob/main/m3-solo-choreslist/Choreslist-Screenshot.png" width=50% height=50%><br>
+ [Live Demo]()
  
 ## Project Requirements
  The Choreslist solo project meets the following requirements:

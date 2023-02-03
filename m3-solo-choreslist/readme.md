@@ -11,7 +11,7 @@ Programming Languages Used
 
 ## Screenshot
  <img src="" width=50% height=50%><br>
- [Live Demo]()
+ [Live Demo](https://github.com/famanakis/Scrimba/blob/main/m3-solo-choreslist/Choreslist-Screenshot.png)
  
 ## Project Requirements
  The Choreslist solo project meets the following requirements:

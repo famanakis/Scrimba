@@ -6,58 +6,59 @@ const btnAdd = document.getElementById('add-btn')
 const btnRemove = document.getElementById('remove-btn')
 const list = document.getElementById('chores-list')
 const modal = document.getElementById('modal')
-const btnClose = document.getElementById('close-btn')
+const modalBtnClose = document.getElementById('close-btn')
+
+const storedArray = JSON.parse(localStorage.getItem('chore'))
 
 //Global Variables
 let choresArr = []
-window.localStorage.length > 0 ?
-    choresArr = JSON.parse(window.localStorage.getItem('chore')) :
-    choresArr = []
-
 
 //Event Listeners
-btnAdd.addEventListener('click', ()=>{
-    inputEl.value.length === 0 ? inputEl.placeholder = 'Do dishes' : addChore()
+btnAdd.addEventListener('click', ()=> {
+    inputEl.value.length === 0 ? inputEl.placeholder = 'Next chore' : addChore()
 })
 
 btnRemove.addEventListener('click', ()=> {
     clearChorelist()
 })
 
-btnClose.addEventListener('click', () => {
+modalBtnClose.addEventListener('click', () => {
     modal.style.visibility = 'hidden'
 })
 
+list.addEventListener('dblclick', (e) => {
+    e.preventDefault
+    const item = e.target.dataset.value
+    const storedChores = JSON.parse(localStorage.getItem('chore'))
+    localStorage.removeItem('chore', choresArr)
+    let filteredArr = storedChores.filter(value => value != item)
+    choresArr = filteredArr
+    localStorage.setItem('chore', JSON.stringify(choresArr))
+    renderChores()   
+    if(choresArr.length === 0) {
+        inputEl.placeholder = 'Do dishes'
+        inputEl.value = ''
+        showModal()
+    }
+})
 
 //Functions
 renderChores()
 
 function renderChores() {
     list.innerHTML = '' 
+    localStorage.length > 0 ?
+        choresArr = JSON.parse(localStorage.getItem('chore')) :
+        choresArr = []
     choresArr.forEach(i => {
-        list.innerHTML += `<div data-id="${i}" class="chore center">${i}</div>`  
+        list.innerHTML += `<div data-value="${i}" class="chore center">${i}</div>`  
     })
 }
-
-list.addEventListener('click', (e) => {
-    //target ID
-    const removeItem = e.target.dataset.id
-    console.log(removeItem)
-    console.log(JSON.stringify(removeItem))
-    //remove item from choresArr
-    console.log(choresArr.filter((i) => i !== JSON.stringify(removeItem)))
-    console.log(choresArr.filter((i) => i !== "cat"))
-    console.log(choresArr)
-    //remove item from localStorage
-
-    //renderChores()   
-    // if(choresArr.length === 0) {showModal()}
-})
 
 function addChore() {
     if(!choresArr.includes(inputEl.value)){
         choresArr.push(inputEl.value)
-        window.localStorage.setItem('chore', JSON.stringify(choresArr))
+        localStorage.setItem('chore', JSON.stringify(choresArr))
     }
     renderChores()
 }
@@ -67,7 +68,7 @@ function clearChorelist() {
     inputEl.placeholder = 'Do dishes'
     inputEl.value = ''
     choresArr = []
-    window.localStorage.clear()
+    localStorage.clear()
 }
 
 function showModal() {

@@ -1,4 +1,4 @@
-# Choreslist - Solo Project
+# Password Generator - Solo Project
 
 ## A Scrimba Bootcamp Solo Project
 Programming Languages Used

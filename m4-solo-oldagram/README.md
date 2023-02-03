@@ -10,7 +10,9 @@ Programming Languages Used
 </ul>
 
 ## Screenshot
+### Single Post
  <img src="https://github.com/famanakis/Scrimba/blob/main/m4-solo-oldagram/figma-design-1.png" width=50% height=50%><br>
+ ### Multiple Posts
   <img src="https://github.com/famanakis/Scrimba/blob/main/m4-solo-oldagram/figma-design-2.png" width=50% height=50%><br>
  [Live Demo]()
  

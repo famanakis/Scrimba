@@ -1,4 +1,4 @@
-//Dom Variables
+//Access the DOM
 const postContainerEl = document.getElementById("post-container")
 
 //Object Data Set
@@ -32,7 +32,10 @@ const posts = [
     }
 ]
 
+//Functions
 //For Loop of Data to DOM
+renderPage()
+
 function renderPage() {
     let html = ''
     for (let i = 0; i < posts.length; i++) { 
@@ -63,11 +66,8 @@ function renderPage() {
             </section>
     `
     }
-    postContainerEl.innerHTML = html
-    
+    postContainerEl.innerHTML = html   
 }
-
-renderPage()
 
 //function to add likes to user - Increase like count by one when function is called
 function addLikesToPage(i) {

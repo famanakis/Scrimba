@@ -1,0 +1,18 @@
+/*
+COLOR PALETTE
+
+BLACK: #000000
+
+WHITE: #FFFFFF
+LIGHT: #FDF7F4
+
+ORANGE: #FFD18C
+DARK ORANGE: #FFA724
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+

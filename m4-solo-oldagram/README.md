@@ -1,13 +1,33 @@
-# co7014536b3013c212a34407a
+# Oldagram - Solo Project
 
-## About Scrimba
+## A Scrimba FrontEnd Developer Path Solo Project
+Programming Languages Used
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>CSS-Flexbox</li>
+<li>JavaScript</li>
+</ul>
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+## Screenshot
+ <img src="" width=50% height=50%><br>
+ [Live Demo]()
+ 
+## Project Requirements
+ The Oldagram solo project meets the following requirements:
+ <ul>
+ <li>Create the first post</li>
+ <li>Use semantic HTML</li>
+ <li>Add hover effects to the icons</li>
+ </ul>
+ 
+ My project includes the following 'stretch goals':
+ <ul>
+<li>Use JavaScript to render out all three posts</li>
+<li>Increase the likes when double clicking the post</li>
+</ul>
+ 
+## Resources:
+ [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m4-solo-oldagram/figma-design.png)<br>
+ [Scrimba](https://scrimba.com/)
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
-
-Happy Coding!

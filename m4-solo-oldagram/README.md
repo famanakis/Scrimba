@@ -10,8 +10,11 @@ Programming Languages Used
 </ul>
 
 ## Screenshot
-<img src="" width=50% height=50%><br>
- [Live Demo]()
+### Single Post
+<img src="https://github.com/famanakis/Scrimba/blob/main/m4-solo-oldagram/project-screenshot-1.png" width=50% height=50%><br>
+### Multiple Posts
+<img src="https://github.com/famanakis/Scrimba/blob/main/m4-solo-oldagram/project-screenshot-2.png" width=50% height=50%><br>
+ [Live Demo - Coming Soon]()
  
 ## Project Requirements
  The Oldagram solo project meets the following requirements:

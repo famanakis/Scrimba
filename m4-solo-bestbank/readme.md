@@ -11,7 +11,7 @@ Programming Languages Used
 
 ## Screenshot
  <img src="" width=50% height=50%><br>
- [Live Demo]()
+ [Live Demo - Coming Soon]()
  
 ## Project Requirements
  The BestBank solo project meets the following requirements:
@@ -24,7 +24,7 @@ Programming Languages Used
  <li>Hover</li>
  <li>Container</li>
  <li>Group selectors</li>
-  <li>Compound selectors</li>
+<li>Compound selectors</li>
  </ul>
  </ul>
  
@@ -32,7 +32,7 @@ Programming Languages Used
  <ul>
 <li>Column with spending bars</li>
 <li>Animated hover effect to buttons</li>
-<li>Fetch dad from JS</li>
+<li>Fetch data from JS</li>
 <li>Click on accounts to change view</li>
  </ul>
  

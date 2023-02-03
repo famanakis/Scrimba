@@ -1,13 +1,18 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --ash: #fdf7f4;
+    --orange: #ffd18c;
+    --dk-orange: #ffa724;
+}
+
 /*
-COLOR PALETTE
-
-BLACK: #000000
-
-WHITE: #FFFFFF
-LIGHT: #FDF7F4
-
-ORANGE: #FFD18C
-DARK ORANGE: #FFA724
+buttons when focused background -orange
+nav-menu hover makes el underlined
+pay-transfer btns hover background dk-orange
+pay-transfer btns grow on hover
+fetch data from JS file
+when account clicks spending updates and background oragne
 */
 
 * {
@@ -15,4 +20,22 @@ DARK ORANGE: #FFA724
     margin: 0;
     padding: 0;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Typography */
+
+
+/* Hero Section */
+
+
+/* Accounts Section */
+
+
+/* Spendings Section */
 

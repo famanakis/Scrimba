@@ -7,12 +7,8 @@
 }
 
 /*
-buttons when focused background -orange
-nav-menu hover makes el underlined
-pay-transfer btns hover background dk-orange
-pay-transfer btns grow on hover
 fetch data from JS file
-when account clicks spending updates and background oragne
+when account clicks spending updates and background orange
 */
 
 * {
@@ -21,21 +17,246 @@ when account clicks spending updates and background oragne
     padding: 0;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--ash);
 }
 
 /* Typography */
+li,
+ .btn-acct {
+    font-size: 25px;
+    font-weight: 400;
+    list-style: none;
+}
 
+.btn-acct {
+    font-weight: 700;
+}
+
+.btn {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.container-accounts > p,
+.container-spendings > p {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.spendings {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/*Header*/
+header {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}   
+
+
+.bank-logo {
+    height: 73px;
+    width: 373px;
+    margin: 39px auto;
+}
 
 /* Hero Section */
+.nav-bar {
+    background-color: var(--orange);
+    width: 100%;
+    height: 66px;
+
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 57px;
+    padding-top: 18px;
+}
+
+.nav-item:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*main-section */
+.main-content {
+    background-color: var(--ash);
+    width: 1096px;
+}
+
+.btns-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+button {
+    background-color: var(--white);
+    border: 5px solid var(--dk-orange);
+
+}
+
+button:hover,
+button:focus {
+    background-color: var(--orange);
+}
+
+.btn {
+    height: 77px;
+    width: 270px;
+    border-radius: 50px;
+    margin-top: 33px;
+    margin-bottom: 41px;
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/*Account Stats Section*/
+.container-account-stats {
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+    padding-bottom: 89px;
+}
+
+/* Accounts Sub-section */
+.container-accounts {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.btn-acct {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 115px;
+    width: 529px;
+    padding: 0 32px;
+    border-radius: 15px;
+}
 
 
-/* Accounts Section */
+/* Spendings Sub-section */
+.spendings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.container-spendings > p {
+    margin-bottom: 19px;
+}
+
+.spendings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 49px;
+    border-radius: 15px;
+    padding: 0 20px;
+    background-color: var(--orange);
+}
+
+.spendings-list {
+    width: 453px;
+}
+
+.spendings-list li:nth-child(2) {
+    width: 419px;
+}
+
+.spendings-list li:nth-child(3) {
+    width: 329px;
+}
+
+.spendings-list li:nth-child(4) {
+    width: 255px;
+}
+
+.spendings-list li:nth-child(5) {
+    width: 217px;
+}
+
+/*tablet*/
+@media (max-width: 1100px) {
+    li {
+        font-size: 1.15rem;
+    }
+
+    .btn-acct,
+    .spendings,
+    .spendings {
+        font-size: .95rem;
+    }
+
+    .container-accounts > p,
+    .container-spendings > p,
+    .btn {
+        font-size: 1.5rem;
+    }
+
+    .nav-bar {
+       height: 58px; 
+    }
+
+    .btn-acct {
+        height: 85px;
+        width: 375px;
+    }
+
+    .container-account-stats {
+        gap: 38px;
+    }
+
+    .spendings {
+        height: 42px;
+    }
+
+    .spendings-list {
+        gap: 12px;
+    }
 
 
-/* Spendings Section */
+}
+
+/*mobile*/
+@media (max-width: 880px) {
+    .container-account-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-accounts > p,
+    .container-spendings > p {
+        text-align: center;
+    }
+}
 

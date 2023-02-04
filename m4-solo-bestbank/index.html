@@ -10,58 +10,69 @@
 </head>
     <body>
         <div class="container">
-            <section class="hero">
+            <header>
                 <img class="bank-logo" src="./assets/bestbank_logo.png" alt="best bank logo">
+            
+            <section class="hero">
                 <nav class="nav-bar">
                     <ul class="nav-list">
-                        <li clas="nav-item">Home</li>
-                        <li clas="nav-item">Payments</li>
-                        <li clas="nav-item">Savings</li>
-                        <li clas="nav-item">Financing</li>
-                        <li clas="nav-item">Stocks</li>
+                        <li class="nav-item">Home</li>
+                        <li class="nav-item">Payments</li>
+                        <li class="nav-item">Savings</li>
+                        <li class="nav-item">Financing</li>
+                        <li class="nav-item">Stocks</li>
                     </ul>
                 </nav>
-                <div class="btns-container">
-                    <button type="button" class="btn">Pay</button>
-                    <button type="button" class="btn">Transfer</button>
-                </div>
             </section>
-            <div class="container-accounts">
+        </header>
+            <section class="main-content">            
                 <section class="accounts">
-                    <button type="button" class="btn-acct" id="btn-main-account">
-                        <p>Main Account</p>
-                        <p>$6,700.56</p>
-                    </button>
-                    <button type="button" class="btn-acct" id="btn-expenses">
-                        <p>Expenses</p>
-                        <p>$5,134.63</p>
-                    </button>
-                    <button type="button" class="btn-acct" id="btn-savings">
-                        <p>Savings</p>
-                        <p>$36,500.12</p>
-                    </button>
-                </section>
-                <section class="spendings" id="spendings">
-                    <div class="spend-div" id="rent">
-                        <p>Rent</p>
-                        <p>$1,450</p>
+                    <div class="btns-container">
+                        <button type="button" class="btn">Pay</button>
+                        <button type="button" class="btn">Transfer</button>
                     </div>
-                    <div class="spend-div" id="rent">
-                        <p>Groceries</p>
-                        <p>$564</p>
-                    </div>
-                    <div class="spend-div" id="rent">
-                        <p>Restaurants</p>
-                        <p>$123</p>
-                    </div>
-                    <div class="spend-div" id="rent">
-                        <p>Transport</p>
-                        <p>$81</p>
-                    </div>
-                    <div class="spend-div" id="rent">
-                        <p>Internet</p>
-                        <p>$50</p>
-                    </div>
+                    <section class="container-account-stats">
+                        <div class="container-accounts">
+                            <p>Accounts</p>
+                            <button type="button" class="btn-acct" id="btn-main-account">
+                                <p>Main Account</p>
+                                <p>$6,700.56</p>
+                            </button>
+                            <button type="button" class="btn-acct" id="btn-expenses">
+                                <p>Expenses</p>
+                                <p>$5,134.63</p>
+                            </button>
+                            <button type="button" class="btn-acct" id="btn-savings">
+                                <p>Savings</p>
+                                <p>$36,500.12</p>
+                            </button>
+                        </div>
+                        <div class="container-spendings" id="spendings">
+                            <p>Spendings</p>
+                            <ul class="spendings-list">
+                                <li class="spendings" id="rent">
+                                    <p>Rent</p>
+                                    <p>$1,450</p>
+                                </li>
+                                <li class="spendings" id="rent">
+                                    <p>Groceries</p>
+                                    <p>$564</p>
+                                </li>
+                                <li class="spendings" id="rent">
+                                    <p>Restaurants</p>
+                                    <p>$123</p>
+                                </li>
+                                <li class="spendings" id="rent">
+                                    <p>Transport</p>
+                                    <p>$81</p>
+                                </li>
+                                <li class="spendings" id="rent">
+                                    <p>Internet</p>
+                                    <p>$50</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
                 </section>
             </div>
         </div>

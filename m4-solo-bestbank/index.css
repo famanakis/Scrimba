@@ -6,11 +6,7 @@
     --dk-orange: #ffa724;
 }
 
-/*
-fetch data from JS file
-when account clicks spending updates and background orange
-*/
-
+/* Mobile-first CSS */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -22,41 +18,46 @@ body {
     justify-content: center;
     align-items: center;
     background-color: gray;
+    overflow-x: hidden;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: var(--ash);
 }
 
 /* Typography */
 li,
  .btn-acct {
-    font-size: 25px;
+    font-size: 1.15rem;
     font-weight: 400;
     list-style: none;
 }
 
 .btn-acct {
     font-weight: 700;
+    font-size: 1.15rem;
 }
 
 .btn {
-    font-size: 30px;
     font-weight: 700;
+    font-size: 1.5rem
 }
 
 .container-accounts > p,
 .container-spendings > p {
-    font-size: 40px;
     font-weight: 700;
+    font-size: 2rem;
 }
 
 .spendings {
-    font-size: 20px;
+    font-size: .95rem;
     font-weight: 700;
 }
 
@@ -65,10 +66,8 @@ header {
     background-color: var(--white);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
+    min-width: 100vw;
 }   
-
 
 .bank-logo {
     height: 73px;
@@ -79,17 +78,15 @@ header {
 /* Hero Section */
 .nav-bar {
     background-color: var(--orange);
-    width: 100%;
-    height: 66px;
-
+    height: 58px; 
+    min-width: 100vw;
 }
 
 .nav-list {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     gap: 57px;
-    padding-top: 18px;
+    padding: 18px 18px 0;
 }
 
 .nav-item:hover {
@@ -106,15 +103,15 @@ header {
 
 .btns-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
+    flex-direction: column;
+    gap: 12px;
+    margin: 18px auto;
 }
 
 button {
     background-color: var(--white);
     border: 5px solid var(--dk-orange);
+    cursor: pointer;
 
 }
 
@@ -126,9 +123,8 @@ button:focus {
 .btn {
     height: 77px;
     width: 270px;
+    margin-top: 16px;
     border-radius: 50px;
-    margin-top: 33px;
-    margin-bottom: 41px;
     transition: all .3s ease-in-out;
 }
 
@@ -139,7 +135,7 @@ button:focus {
 /*Account Stats Section*/
 .container-account-stats {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 38px;
     padding-bottom: 89px;
 }
@@ -147,39 +143,48 @@ button:focus {
 /* Accounts Sub-section */
 .container-accounts {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     gap: 18px;
+    margin-top: 16px;
+}
+
+.container-accounts > p {
+    text-align: center;
 }
 
 .btn-acct {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 115px;
-    width: 529px;
+    height: 85px;
+    width: 396px;
     padding: 0 32px;
-    border-radius: 15px;
+    border-radius: 15px;   
 }
 
-
 /* Spendings Sub-section */
+.container-spendings {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
 .spendings-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
 }
 
 .container-spendings > p {
     margin-bottom: 19px;
+    text-align: center;
 }
 
 .spendings {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 49px;
+    height: 42px;
     border-radius: 15px;
     padding: 0 20px;
     background-color: var(--orange);
@@ -187,6 +192,7 @@ button:focus {
 
 .spendings-list {
     width: 453px;
+    gap: 12px;
 }
 
 .spendings-list li:nth-child(2) {
@@ -205,58 +211,78 @@ button:focus {
     width: 217px;
 }
 
-/*tablet*/
-@media (max-width: 1100px) {
-    li {
-        font-size: 1.15rem;
-    }
-
-    .btn-acct,
-    .spendings,
-    .spendings {
-        font-size: .95rem;
-    }
-
-    .container-accounts > p,
-    .container-spendings > p,
-    .btn {
-        font-size: 1.5rem;
-    }
-
-    .nav-bar {
-       height: 58px; 
-    }
-
-    .btn-acct {
-        height: 85px;
-        width: 375px;
+@media (min-width: 860px) {
+    .btns-container {
+        flex-direction: row;
     }
 
     .container-account-stats {
-        gap: 38px;
-    }
-
-    .spendings {
-        height: 42px;
-    }
-
-    .spendings-list {
-        gap: 12px;
-    }
-
-
-}
-
-/*mobile*/
-@media (max-width: 880px) {
-    .container-account-stats {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        align-items: flex-start;
     }
 
     .container-accounts > p,
     .container-spendings > p {
-        text-align: center;
+        font-size: 40px;
+        text-align: left;   
     }
+
+    .container-spendings > p {
+        margin-top: 18px;
+    }
+
+    .spendings-list {
+        width: 407px;
+    }
+    
+    .spendings-list li:nth-child(2) {
+        width: 377px;
+    }
+    
+    .spendings-list li:nth-child(3) {
+        width: 296px;
+    }
+    
+    .spendings-list li:nth-child(4) {
+        width: 230px;
+    }
+    
+    .spendings-list li:nth-child(5) {
+        width: 195px;
+    }
+}
+
+/*desktop*/
+@media (min-width: 1080px) {
+    .nav-bar {
+        height: 66px;
+    }
+
+    li {
+        font-size: 25px;
+    }
+
+    .btn {
+        height: 77px;
+        width: 275px;
+        font-size: 30px;
+        margin-top: 33px;
+        margin-bottom: 41px;
+    }
+        
+    .btn-acct,
+    .spendings {
+        font-size: 25px;
+    }  
+
+    .btn-acct {
+        height: 115px;
+        width: 529px;
+    }
+
+    .spendings {
+        height: 49px;
+    }
+
 }
 

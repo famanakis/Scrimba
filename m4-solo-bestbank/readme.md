@@ -1,11 +1,12 @@
 # BestBank - Solo Project
 
 ## A Scrimba Bootcamp Solo Project
-Programming Languages Used
+Programming Languages and Approach Used
 <ul>
 <li>HTML</li>
 <li>CSS</li>
 <li>CSS-Flexbox</li>
+<li>Mobile First Design</li>
 <li>JavaScript</li>
 </ul>
 

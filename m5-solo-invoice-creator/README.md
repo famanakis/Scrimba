@@ -36,6 +36,6 @@ Programming Languages Used
 </ul>
  
 ## Resources:
- [Figma Design Screenshot - Single Post]()<br>
+ [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m5-solo-invoice-creator/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
 

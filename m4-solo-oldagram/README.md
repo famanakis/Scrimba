@@ -14,7 +14,7 @@ Programming Languages Used
 <img src="https://github.com/famanakis/Scrimba/blob/main/m4-solo-oldagram/project-screenshot-1.png" width=50% height=50%><br>
 ### Multiple Posts
 <img src="https://github.com/famanakis/Scrimba/blob/main/m4-solo-oldagram/project-screenshot-2.png" width=50% height=50%><br>
- [Live Demo - Coming Soon]()
+ [Live Demo](https://9tfdev-m4-solo-oldagram.netlify.app/)
  
 ## Project Requirements
  The Oldagram solo project meets the following requirements:
@@ -27,7 +27,7 @@ Programming Languages Used
  My project includes the following 'stretch goals':
  <ul>
 <li>Use JavaScript to render out all three posts</li>
-<li>Increase the likes when double clicking the post</li>
+<li>Increase/Decrease the likes when clicking the post</li>
 </ul>
  
 ## Resources:

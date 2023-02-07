@@ -116,7 +116,7 @@ button {
     height: 400px;
     background: #720cbf;
     background-size: cover;
-    visibility: hidden;
+    display: none;
 }
 
 .close-btn {

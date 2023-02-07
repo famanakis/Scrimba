@@ -23,7 +23,7 @@ btnRemove.addEventListener('click', ()=> {
 })
 
 modalBtnClose.addEventListener('click', () => {
-    modal.style.visibility = 'hidden'
+    modal.style.display = 'none'
 })
 
 list.addEventListener('dblclick', (e) => {
@@ -47,16 +47,19 @@ renderChores()
 
 function renderChores() {
     list.innerHTML = '' 
-    localStorage.length > 0 ?
-        choresArr = JSON.parse(localStorage.getItem('chore')) :
-        choresArr = []
-    choresArr.forEach(i => {
-        list.innerHTML += `<div data-value="${i}" class="chore center">${i}</div>`  
+    choresArr = localStorage.length > 0 ?
+        JSON.parse(localStorage.getItem('chore')) :
+        []
+    let html = ''
+    choresArr.forEach(chore => {
+        html += `<div data-value="${chore}" class="chore center">${chore}</div>`  
     })
+    list.innerHTML = html
 }
 
 function addChore() {
-    if(!choresArr.includes(inputEl.value)){
+    //if the chores array does not already have the inputEl.value && when trimmed the inputEl.value has at least once character (is truthy)
+    if(!choresArr.includes(inputEl.value) && inputEl.value.trim()){
         choresArr.push(inputEl.value)
         localStorage.setItem('chore', JSON.stringify(choresArr))
     }
@@ -76,5 +79,5 @@ function showModal() {
         return Math.floor(Math.random()*gifsArr.length)
     }
     modal.style.backgroundImage = gifsArr[random()]
-    modal.style.visibility = 'visible'
+    modal.style.display = 'inline'
 }

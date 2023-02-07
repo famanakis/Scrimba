@@ -15,10 +15,12 @@ Programming Languages Used
 <li>Hometown Homepage</li>
 <li>Inspirational Quote Page</li>
 <li>Basketball Scoreboard</li>
+<li>Choreslist</li>
 <li>Password Generator</li>
 <li>Salesboard</li>
 <li>Send to Pager</li>
 <li>Unit Converter</li>
+<li>Oldagram</li>
 </ul>
 
 ## Resources:

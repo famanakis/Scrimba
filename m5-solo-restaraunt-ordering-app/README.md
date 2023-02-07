@@ -30,6 +30,6 @@ Programming Languages Used
 </ul>
  
 ## Resources:
-  [Figma Design Screenshot]()<br>
+  [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m5-solo-restaraunt-ordering-app/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
 

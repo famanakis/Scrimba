@@ -27,7 +27,7 @@ Programming Languages Used
  My project includes the following 'stretch goals':
  <ul>
 <li>Use JavaScript to render out all three posts</li>
-<li>Increase the likes when double clicking the post</li>
+<li>Increase/Decrease the likes when clicking the post</li>
 </ul>
  
 ## Resources:

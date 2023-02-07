@@ -18,7 +18,7 @@ Programming Languages Used
  <ul>
  <li>Build it from 'scratch'</li>
  <li>Follow the design spec</li>
- <li>Can't add empty chore</li>
+ <li>Cannot add empty chore</li>
  <li>Make sure you use:</li>
  <ul>
  <li>addEventListener()</li>
@@ -30,7 +30,7 @@ Programming Languages Used
  
  My project includes the following 'stretch goals':
  <ul>
-<li>Can't add existing chore</li>
+<li>Cannot add existing chore</li>
 <li>Click on individual chores to remove from list</li>
 <li>Show a random GIF when all chores are completed</li>
  </ul>

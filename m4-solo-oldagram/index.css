@@ -1,5 +1,7 @@
 * {
     box-sizing: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
@@ -8,6 +10,10 @@ html, body {
     overflow-x: hidden;
     background: #ffffff;
     max-width: 375px;
+}
+
+body {
+    padding-top: 50px;
 }
 
 /*- Typography -*/
@@ -25,7 +31,6 @@ body, p {
 
 .smaller-text {
     font-size: 12px;
-    margin-top: -15px;
 }
 
 .btn {
@@ -35,6 +40,11 @@ body, p {
 
 /*- Section Header -*/
 .header {
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1000;
+    width: 375px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;  
@@ -66,6 +76,7 @@ body, p {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .post-avatar {
@@ -86,7 +97,8 @@ body, p {
 .post-info {
     display: flex;
     flex-direction: column;
-    padding-left: 13px;
+    padding-left: 5px;
+    padding-bottom: 12px;
     max-width: 375px;
     border-bottom: 1px solid #C6C6C6;
 }
@@ -94,8 +106,8 @@ body, p {
 .icon-div {
     display: flex;
     width: 100px;
-    justify-content: flex-start; 
-    margin-left: -8px;  
+    justify-content: flex-start;   
+    gap: 5px;
 }
 
 .btn {
@@ -110,22 +122,18 @@ body, p {
     outline: none;
 }
 
-.heart {
-    width: 23px;
-    height: 25px;   
-}
-
+.dm,
 .comment {
-    width: 25px;
+    width: 23px;
     height: 25px;   
 }
 
-.dm {
-    width: 23px;
-    height: 25px;   
+.fa-regular,
+.fa-heart {
+    transform: scale(1.8);
+    padding: 5px;
 }
 
 .likes {
-    margin: 10px 0 12px 0;
-    }
-
+    margin: 6px auto;
+}

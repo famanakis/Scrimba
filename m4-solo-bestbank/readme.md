@@ -11,8 +11,11 @@ Programming Languages and Approach Used
 </ul>
 
 ## Screenshot
- <img src="" width=50% height=50%><br>
- [Live Demo - Coming Soon]()
+### Mobile Design
+ <img src="https://github.com/famanakis/Scrimba/blob/main/m4-solo-bestbank/assets/project-screenshot-mobile.png" width=30% height=30%><br>
+### Larger Screens
+ <img src="https://github.com/famanakis/Scrimba/blob/main/m4-solo-bestbank/assets/project-screenshot-desktop.png" width=50% height=50%><br>
+ [Live Demo](https://9tfdev-m4-solo-bestbank.netlify.app/)
  
 ## Project Requirements
  The BestBank solo project meets the following requirements:
@@ -38,6 +41,6 @@ Programming Languages and Approach Used
  </ul>
  
 ## Resources:
- [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m4-solo-bestbank/figma-design.png)<br>
+ [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m4-solo-bestbank/assets/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
 

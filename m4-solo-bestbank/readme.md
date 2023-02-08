@@ -41,6 +41,6 @@ Programming Languages and Approach Used
  </ul>
  
 ## Resources:
- [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m4-solo-bestbank/figma-design.png)<br>
+ [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m4-solo-bestbank/assets/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
 

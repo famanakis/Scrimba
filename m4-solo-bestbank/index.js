@@ -2,10 +2,9 @@ import {accounts} from "./data.js"
 
 const accountsEl = document.getElementById('container-accounts')
 const spendingsEl = document.getElementById('container-spendings')
-let initialData = 2
 
 accountsEl.addEventListener('click', (e) => {
-    let buttonID = (e.target.getAttribute('data-id') - 1)
+    const buttonID = (e.target.getAttribute('data-id') - 1)
     renderSpendings(buttonID)   
 })
 
@@ -14,12 +13,12 @@ renderPage()
 
 function renderPage() {
     renderAccounts()
-    renderSpendings(initialData) 
+    renderSpendings(spendingsArr.spendings.length) 
 }
 
 function renderAccounts() {
     let html = '<p>Accounts</p>' 
-    let currency = new Intl.NumberFormat('en-US', {
+    const currency = new Intl.NumberFormat('en-US', {
         style: 'currency',
         currency: 'USD'
     })
@@ -33,23 +32,23 @@ function renderAccounts() {
     accountsEl.innerHTML = html
 }
 
-function renderSpendings(data) {
+function renderSpendings(index) {
     let html = ''
-        let spendingsArr = accounts[data]
-        if(data >= 1 || data <= 2) {
-            spendingsArr.spendings.forEach(i => {
-                    html += `
-                    <li class="spendings">
-                        <p>${i.category}</p>
-                        <p>$${i.spent}</p>
-                    </li>`
-            })  
-            spendingsEl.innerHTML = `
-                <p>Spendings</p>
-                <ul class="spendings-list">${html}</ul>`
-        } else {
-            spendingsEl.innerHTML = `
-            <p>Spendings</p>`
-        } 
+    let spendingsArr = accounts[index]
+    if(spendingsArr.spendings.length != 0) {
+        spendingsArr.spendings.forEach(i => {
+                html += `
+                <li class="spendings">
+                    <p>${i.category}</p>
+                    <p>$${i.spent}</p>
+                </li>`
+        })  
+        spendingsEl.innerHTML = `
+            <p>Spendings</p>
+            <ul class="spendings-list">${html}</ul>`
+    } else {
+        spendingsEl.innerHTML = `
+        <p>Spendings</p>`
+    } 
 }
 

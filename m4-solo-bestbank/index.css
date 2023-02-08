@@ -61,7 +61,8 @@ li,
     font-weight: 700;
 }
 
-/*Header*/
+/* Hero Section */
+    /*Header*/
 header {
     background-color: var(--white);
     display: flex;
@@ -75,7 +76,7 @@ header {
     margin: 39px auto;
 }
 
-/* Hero Section */
+    /*Nav*/
 .nav-bar {
     background-color: var(--orange);
     height: 58px; 

@@ -1,0 +1,15 @@
+:root {
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*test*/
+p {
+    color: red;
+    font-size: 100px;
+}

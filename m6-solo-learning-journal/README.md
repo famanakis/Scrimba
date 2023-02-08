@@ -38,6 +38,6 @@ Programming Languages and Approach Used
 </ul>
  
 ## Resources:
-  [Figma Design Desktop Screenshot]()<br>
-  [Figma Design Mobile Screenshot]()<br>
+  [Figma Design Desktop Screenshot](https://github.com/famanakis/Scrimba/blob/main/m6-solo-learning-journal/assets/figma-design-desktop.png)<br>
+  [Figma Design Mobile Screenshot](https://github.com/famanakis/Scrimba/blob/main/m6-solo-learning-journal/assets/figma-design-mobile.png)<br>
  [Scrimba](https://scrimba.com/)

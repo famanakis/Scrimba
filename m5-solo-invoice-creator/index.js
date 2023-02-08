@@ -1,25 +1,30 @@
-//Button Elements//
-const btnCar = document.getElementById("btn-car")
-const btnLawn = document.getElementById("btn-lawn")
-const btnWeeds = document.getElementById("btn-weeds")
-const btnSendInvoice = document.getElementById("btn-send")
 //Accessing the DOM//
 const invoiceContainer = document.getElementById("services-container")
 const taskEl = document.getElementById("taskEl")
 const totalEl = document.getElementById("totalEl")
 const termsEl = document.getElementById("terms")
 const invoiceTotal = document.getElementById("invoiceTotal")
-//Variables and Arrays//
+const btnCar = document.getElementById("btn-car")
+const btnLawn = document.getElementById("btn-lawn")
+const btnWeeds = document.getElementById("btn-weeds")
+const btnSendInvoice = document.getElementById("btn-send")
+
+const btnEls = document.querySelectorAll('button')
+
+document.body.addEventListener('click', (e) => {
+    let task = e.target.dataset
+    console.log(task.value)
+})
+
+
+//Global
 const serviceArray = []
 const totalArray = []
-let invoice = 0
-
 
 //Onclick Wash Car Button does this...   
-btnCar.addEventListener("click", function() {
+btnCar.addEventListener("click", ()=> {
     serviceArray.push("Wash Car")
     totalArray.push(10)  
-    invoice +=10
     invoiceContainer.innerHTML += `
         <div class="flex-container" id="car">
         <h2 id="taskEl">Wash Car<span class="remove less-margin" onclick="removeCar()">Remove</span></h2>
@@ -32,10 +37,9 @@ btnCar.addEventListener("click", function() {
 })
 
 //Onclick Mow Lawn Button does this...
-btnLawn.addEventListener("click", function() {
+btnLawn.addEventListener("click", ()=> {
     serviceArray.push("Mow Lawn")
     totalArray.push(20)  
-    invoice +=20
     invoiceContainer.innerHTML += `
         <div class="flex-container" id="mow">
         <h2 id="taskEl">Mow Lawn<span class="remove" onclick="removeLawn()">Remove</span></h2>
@@ -48,10 +52,9 @@ btnLawn.addEventListener("click", function() {
 })
 
 //Onclick Pull Weeds Button does this... 
-btnWeeds.addEventListener("click", function() {
+btnWeeds.addEventListener("click", ()=> {
     totalArray.push(30) 
     serviceArray.push("Pull Weeds")
-    invoice +=30
     invoiceContainer.innerHTML += `
         <div class="flex-container" id="pull">
         <h2 id="taskEl">Pull Weeds<span class="remove" onclick="removeWeeds()">Remove</span></h2>
@@ -65,16 +68,18 @@ btnWeeds.addEventListener("click", function() {
 
 //Render and/or update Invoice Total to DOM
 function renderTotalAmount() {
+    invoice = totalArray.reduce((a, b)=> a + b)
     invoiceTotal.innerText = "$ " + invoice
     }
 
 
 //Send Button - currently reloads the page
-btnSendInvoice.addEventListener("click", 
-    function sendInvoice() {
-        location.reload()
-        }
-    )
+btnSendInvoice.addEventListener("click", ()=> {
+        invoiceContainer.innerHTML = ''
+        invoiceTotal.innerText = "$ 0"    
+        termsEl.innerHTML = ''
+        document.querySelectorAll('button').forEach(button => button.disabled = false)
+    })
 
 
 //Functions to Remove items from DOM:
@@ -84,7 +89,7 @@ btnSendInvoice.addEventListener("click",
 function removeCar() {
     const removeCarEl = document.getElementById("car")
     removeCarEl.remove()
-    invoice -= 10
+    // invoice -= 10
     renderTotalAmount()
     btnCar.disabled = false
     for (let i=0; i<totalArray.length; i++) {
@@ -97,8 +102,7 @@ function removeCar() {
             serviceArray.splice(k,1)
         }
         if (serviceArray.length === 0) {
-            termsEl.innerHTML = `
-            <p></p>`
+            termsEl.innerHTML = ''
         }
     }   
 }
@@ -107,7 +111,7 @@ function removeCar() {
 function removeLawn() {
     const removeMowEl = document.getElementById("mow")
     removeMowEl.remove()
-    invoice -= 20;
+    // invoice -= 20;
     renderTotalAmount()
     btnLawn.disabled = false;
     for (let i=0; i<totalArray.length; i++) {
@@ -120,8 +124,7 @@ function removeLawn() {
             serviceArray.splice(k,1)
         }
         if (serviceArray.length === 0) {
-            termsEl.innerHTML = `
-            <p></p>`
+            termsEl.innerHTML = ''
         }
     }   
 }
@@ -130,7 +133,7 @@ function removeLawn() {
 function removeWeeds() {
     const removePullEl = document.getElementById("pull")
     removePullEl.remove()
-    invoice -= 30;
+    // invoice -= 30;
     renderTotalAmount()
     btnWeeds.disabled = false
     for (let i=0; i<totalArray.length; i++) {
@@ -143,10 +146,34 @@ function removeWeeds() {
             serviceArray.splice(k,1)
         }
         if (serviceArray.length === 0) {
-            termsEl.innerHTML = `
-            <p></p>`
+            termsEl.innerHTML = ''
         }
     }    
 }
  
  
+
+tasks = [
+    {   
+        id: 1,
+        name: 'Wash Car',
+        cost: 10,
+        isListed: false
+    },
+    {   
+        id: 2,
+        name: 'Mow Lawn',
+        cost: 20,
+        isListed: false
+    },
+    {
+        id: 3,
+        name: 'Pull Weeds',
+        cost: 30,
+        isListed: false
+    }
+]
+
+// inputEl.value is name, number.value is cost, isListed defaults to true 
+tasks.push({id: tasks.length + 1, name: 'me', cost: 40, isListed: true})
+console.log(tasks)

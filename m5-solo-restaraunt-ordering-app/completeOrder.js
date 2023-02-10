@@ -1,35 +1,40 @@
+import { cardNumberInput, appCheckout, appMenu } from "./index.js"
+const payBtn = document.getElementById('pay-btn')
+const cardNameInput = document.getElementById('card-name')
+const cardCVVInput = document.getElementById('card-cvv')
+const paymentModal = document.getElementById('payment-modal')
+
 
 function handleCompleteOrder() {
     const completeOrderBtn = document.getElementById('btn-purchase')
-    completeOrderBtn.addEventListener('click', function(){
-    document.getElementById('payment-modal').classList.remove("hidden-el")
+    completeOrderBtn.addEventListener('click', ()=> {
+        paymentModal.classList.remove("hidden-el")
     })
     handlePayAndThankyou()
 }
 
 function handlePayAndThankyou() {
-    const payBtn = document.getElementById('pay-btn')
-    payBtn.addEventListener('click', ()=>{
-        if(document.getElementById('card-name').value.length >= 1 && 
-            document.getElementById('card-number').value.length >= 19 &&
-            document.getElementById('card-cvv').value.length >= 3) {
-                document.getElementById('payment-modal').classList.add("hidden-el")
+    payBtn.addEventListener('click', ()=> {
+        if(cardNameInput.value.length >= 1 && 
+            cardNumberInput.value.length >= 19 &&
+            cardCVVInput.value.length >= 3) {
+                paymentModal.classList.add("hidden-el")
                 renderThankyou()
         } else {
-            if(document.getElementById('card-number').value.length >= 19 &&
-                document.getElementById('card-cvv').value.length >= 3) {
+            if(cardNumberInput.value.length >= 19 &&
+                cardCVVInput.value.length >= 3) {
                 alert('Oops - We are missing some information!\nPlease fill in your Name.')
-            } else if(document.getElementById('card-name').value.length >= 1 && 
-                    document.getElementById('card-cvv').value.length >= 3) {
+            } else if(cardNameInput.value.length >= 1 && 
+                    cardCVVInput.value.length >= 3) {
                 alert('Oops - We are missing some information!\nPlease fill in your Card Number.')
-            } else if(document.getElementById('card-name').value.length >= 1 && 
-                    document.getElementById('card-number').value.length >= 19) {
+            } else if(cardNameInput.value.length >= 1 && 
+                    cardNumberInput.value.length >= 19) {
                 alert('Oops - We are missing some information!\nPlease fill in the card CVV.')
-            } else if(document.getElementById('card-cvv').value.length >= 3) {
+            } else if(cardCVVInput.value.length >= 3) {
                 alert('Oops - We are missing some information!\nPlease fill in your Name and Card Number.')
-            } else if(document.getElementById('card-number').value.length >= 19 ) {
+            } else if(cardNumberInput.value.length >= 19 ) {
                 alert('Oops - We are missing some information!\nPlease fill in your Name and the CVV.')
-            } else if(document.getElementById('card-name').value.length >= 1 ) {
+            } else if(cardNameInput.value.length >= 1 ) {
                 alert('Oops - We are missing some information!\nPlease fill in your Card Number and the CVV.')
             } else {
                 alert('Oops - We are missing some information!\nPlease fill in all requested fields.')
@@ -39,20 +44,28 @@ function handlePayAndThankyou() {
 }
 
 function renderThankyou() {
-    let cardName = document.getElementById("card-name").value
-    document.getElementById('checkout-section').innerHTML = `
+    let cardName = cardNameInput.value
+    appCheckout.innerHTML = `
         <div class="thanks">
             <p class="thanks-text">Thanks, ${cardName}! Your order is on its way!</p>
         </div>
         `
-    document.getElementById('menu-div').classList.add('non-clickable')
-    setTimeout(()=>{document.location.reload()}, 3500)
+    appMenu.classList.add('non-clickable')
+    setTimeout(() => {
+        pageRefresh()
+    }, 3500)
 }
 
-function requiredInput() {
-    let a = document.getElementById('card-name').required
-    let b = document.getElementById('card-number').required
-    let c = document.getElementById('card-cvv').required
+function pageRefresh() {
+    appCheckout.innerHTML = ''
+    appMenu.classList.remove('non-clickable')
 }
+
+
+// function requiredInput() {
+//     let a = cardNameInput.required
+//     let b = cardNumberInput.required
+//     let c = cardCVVInput.required
+// }
 
 export {handleCompleteOrder}

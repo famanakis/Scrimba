@@ -2,7 +2,6 @@ import {menuData} from "./data.js"
 
 export function getMenuHtml() {
     let itemHtml = ''
-    
     menuData.forEach(function(item){
         itemHtml += `
         <div class="item-card">
@@ -15,11 +14,9 @@ export function getMenuHtml() {
                 </div>
             </div>
             <button class="add-btn">
-                <img src="./images/add-btn.png" alt="a plus button" data-uuid="${item.uuid}"></button>
+                <img src="./assets/add-btn.png" alt="a plus button" data-uuid="${item.uuid}"></button>
         </div>
        `  
     })
-
-    return itemHtml 
-    
+    return itemHtml   
 }

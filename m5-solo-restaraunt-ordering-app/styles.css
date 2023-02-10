@@ -1,14 +1,25 @@
 * {
     box-sizing: 0;
     margin: 0;
-    max-width: 600px;
+    /* max-width: 600px; */
+}
+
+body {
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-container {
+    width: 600px;
 }
 
 /*=== Typography ===*/
 body,
 header, 
 div,
-p {
+h1, h2, p {
     font-family: 'Smythe', cursive;;
     font-weight: 400;
 }
@@ -48,28 +59,31 @@ button {
 
 
 /*=== Header ===*/
-.header {
-    margin: 0 0 61px 0;
-    background-image: url("./images/background-img.png");
+header {
+    background-image: url("./assets/alt-background-img.jpg");
     background-size: cover;
     background-repeat: none;
+    filter: blur(1.5px);
 }
 
-.location-name {
-    margin: 0 auto;
-    padding: 46px 0 5px 46px;
+.header-text {
+    position: absolute;
+    top: 14%;
+    left: 45%;
+    transform: translate(20%, -50%);
+    color: black;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 5px white;
 }
-
-.location-description {
-    margin: 0 auto;
-    padding: 0 0 0 46px;
-}
-
 
 /*=== Menu OrderingDiv ===*/
 .menu-div {
     display: flex;
     flex-direction: column;
+    box-shadow: inset 0px 7px 3px -3px rgba(50, 50, 50, 0.75);
+    padding-top: 40px;
 }
 
 .item-card {
@@ -131,7 +145,6 @@ button {
 }
 
 /*=== Order Totals ===*/
-
 .checkout {
     margin: 0 46px 53px 46px;
 }
@@ -186,13 +199,12 @@ button {
 
 /*=== Payment Modal ===*/
 .payment-modal {
-    position: absolute;
-    top: 292px;
+    position: fixed;
+    top: 80px;
     transform: translateX(5%);
     z-index: 1000;
     width: 500px;
     max-width: 100%;
-    /* overflow: auto; */
     display: flex;
     flex-direction: column;
     justify-content: center;

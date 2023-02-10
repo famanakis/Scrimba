@@ -38,7 +38,6 @@ function renderOrderArr() {
     return orderHtml
 }
 
-
 let sumOrderArr =[]
 function orderArrTotal() {
     let orderTotalArr = []
@@ -51,7 +50,6 @@ function orderArrTotal() {
     })
     return sumOrderArr = orderTotalArr.reduce((partialSum, a) => partialSum + a, 0)
 }
-
 
 export {getCheckoutHtml, renderOrderArr}
 

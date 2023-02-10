@@ -1,11 +1,13 @@
 import {getMenuHtml} from "./getMenu.js"
-import { getCheckoutHtml, renderOrderArr} from "./getCheckout.js"
-import { menuData} from "./data.js"
+import { getCheckoutHtml} from "./getCheckout.js"
 import { handleCompleteOrder} from "./completeOrder.js"
-import { make_credit_card_input } from "./creditCard.js"
+import { creditCardInput } from "./creditCard.js"
 
 //Variables
 export const orderArr = []
+export const appMenu = document.getElementById('menu-div')
+export const appCheckout = document.getElementById('checkout-section')
+export const cardNumberInput = document.getElementById('card-number')
 
 //Event Listeners
 document.addEventListener('click', function(e){ 
@@ -24,19 +26,19 @@ document.addEventListener('click', function(e){
     }
 })
 
-make_credit_card_input(document.getElementById("card-number"));
-
-
-//Functions that Render to the Page
-function renderMenu(){
-    document.getElementById('menu-div').innerHTML =  getMenuHtml()
-}
+//Functions
 renderMenu()
 
-
-export function renderCheckout() {
-    document.getElementById('checkout-section').innerHTML = getCheckoutHtml()
+function renderMenu(){
+    appMenu.innerHTML =  getMenuHtml()
 }
+
 renderCheckout()
 
+function renderCheckout() {
+    appCheckout.innerHTML = getCheckoutHtml()
+}
 
+creditCardInput(cardNumberInput)
+
+export {renderCheckout}

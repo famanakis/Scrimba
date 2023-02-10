@@ -12,24 +12,26 @@
         <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
     </head>
     <body>
-    <header class="header">
-        <p class="location-name">Jimmy's Diner</p>
-        <p class="location-description">The best burgers and pizzas in town.</p>
-    </header>
-        <div id="menu-div" class="menu-div"> </div>
-
-        <div id="checkout-section" class="checkout"></div>
-        
-        <div id="payment-modal" class="payment-modal hidden-el">
+    <div class="page-container">
+        <header class="header"></header>
+        <div class="header-text">
+            <h1>Kara's Kitchen</h1>
+            <h2>Comfort Food for You</h2>
+        </div>
+        <section class="main-content">
+            <div id="menu-div" class="menu-div"> </div>
+            <div id="checkout-section" class="checkout"></div>            
+        </section>
+        <section id="payment-modal" class="payment-modal hidden-el">
             <p class="modal-title">Enter card details</p>
             <form>
                 <input id="card-name" class="card-name" type="text" placeholder="Enter your name" required />
                 <input id="card-number" class="card-number" type="text" size="19" placeholder="Enter card number" required />
-                <input id="card-cvv" class="card-cvv" type="text" size="3" placeholder="Enter CVV" required />
+                <input id="card-cvv" class="card-cvv" type="text" maxlength="4" placeholder="Enter CVV" required />
                 <button id="pay-btn" class="pay-btn" type="submit">Pay</button>
             </form>
-        </div> 
-  
+        </section> 
+    </div>
         <script type="module" src="./index.js" ></script>
     </body>
 </html>

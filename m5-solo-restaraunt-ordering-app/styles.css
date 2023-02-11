@@ -272,6 +272,14 @@ header {
     z-index: 1010;
 }
 
+.btn-modal-close {
+    background-color: var(--white);
+    color: var(--gray);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
 .modal-title {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;

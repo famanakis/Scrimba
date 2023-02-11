@@ -26,7 +26,13 @@ document.addEventListener('click', function(e){
         renderCheckout()
         orderArr.length > 0 ? orderCheckout() : ''
     }
+    //Exit modal 
+    if(e.target.dataset.exit){
+        document.getElementById('payment-modal').classList.add('hidden-el')
+    }
 })
+
+
 
 //Main Functions 
 renderMenu()

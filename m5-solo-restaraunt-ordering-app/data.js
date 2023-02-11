@@ -2,9 +2,9 @@ export const menuData = [
     {
         name: 'Pizza',
         category: 'main',
-        img: './assets/pizza.png',
+        img: './assets/pizza.jpg',
         altImg: 'picture of pepperoni pizza',
-        ingredients: 'pepperoni, mushroom, mozzarella',
+        ingredients: 'spinach, feta, , basil, mozzarella',
         price: 14,
         uuid: 'a4437e4e-5f7a-4a5c-9c61-17750f5f9e2e',
     }, 
@@ -12,9 +12,9 @@ export const menuData = [
     {
         name: 'Hamburger',
         category: 'main',
-        img: './assets/burger.png',
+        img: './assets/cheeseburger.jpg',
         altImg: 'picture of a cheeseburger',
-        ingredients: 'beef, cheese, lettuce',
+        ingredients: 'beef, cheese, lettuce, tomato, pickle, onion',
         price: 12,
         uuid: 'a906d96b-5df8-4a1f-8f6c-03665a6c9ead',
     },
@@ -80,11 +80,11 @@ export const menuData = [
     },
 
     {
-        name: 'Beer',
+        name: 'wine',
         category: 'drink',
-        ingredients: 'grain, hops, yeast, water',
-        img: './assets/beer.png',
-        altImg: 'picture of a mug of beer',
+        ingredients: 'red, white, champagne',
+        img: './assets/wine.jpg',
+        altImg: 'picture of a wine in a glass',
         price: 12,
         uuid: '75a773a1-cce3-4c1c-a1ae-51105e72a909',
     }

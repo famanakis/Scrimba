@@ -64,6 +64,7 @@ header {
     background-size: cover;
     background-repeat: none;
     filter: blur(1.5px);
+    box-shadow: inset 0px -8px 3px -3px rgba(50, 50, 50, 0.75);
 }
 
 .header-text {
@@ -78,11 +79,30 @@ header {
     text-shadow: 0 0 5px white;
 }
 
+.meal-deal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    padding-top: 5px;
+}
+
+.meal-deal > p {
+    font-size: 28px;
+    color: red;
+}
+
+.meal-deal > .limit {
+    font-size: 18px;
+    color: #000000;
+}
+
 /*=== Menu OrderingDiv ===*/
 .menu-div {
     display: flex;
     flex-direction: column;
-    box-shadow: inset 0px 7px 3px -3px rgba(50, 50, 50, 0.75);
+    /* box-shadow: inset 0px 7px 3px -3px rgba(50, 50, 50, 0.75); */
     padding-top: 40px;
 }
 
@@ -101,8 +121,8 @@ header {
 }
 
 .item-img {
-    width: 70px;
-    height: 89px;
+    width: 75px;
+    height: 85px;
     padding: 0 31px 0 0;
 }
 
@@ -247,24 +267,60 @@ header {
     margin: 46px 0 0 0;
 }
 
-.thanks {
-    background-color: #ecfdf5;
-    border-radius: 3px;
-    margin: 0 46px 250px 46px;
-}
-
-
-.thanks-text {
-    color: #065f46;
-    text-align: center;
-    padding: 51px 0;
-    font-size: 28px;
-}
-
 .non-clickable {
     pointer-events: none;
 }
 
+/* Thank you and Rating */
+.thanks {
+    background-color: #ecfdf5;
+    border-radius: 3px;
+    margin: 0 46px 0 46px;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks-text {
+    color: #065f46;
+    font-size: 28px;
+}
+
+.ratings-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 150px;
+}
+
+.ratings-text {
+    color: #065f46;
+    font-size: 24px;
+    padding-bottom: 6px;
+}
+
+.rating {
+    width: 180px;
+}
+
+.rating-star {
+    color: #888888;
+    cursor: pointer;
+    
+}
+
+.rating-star:hover {
+    color: #fb8116fd;
+}
+
+.orange {
+    color: #fb8116fd;
+}
 
 
 

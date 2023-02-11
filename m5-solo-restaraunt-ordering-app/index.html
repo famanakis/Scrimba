@@ -40,9 +40,9 @@
         <section id="payment-modal" class="payment-modal hidden-el">
             <p class="modal-title">Enter card details</p>
             <form>
-                <input id="card-name" class="card-name" type="text" placeholder="Enter your name" required />
-                <input id="card-number" class="card-number" type="text" maxlength="19" placeholder="Enter card number" required />
-                <input id="card-cvv" class="card-cvv" type="text" maxlength="4" placeholder="Enter CVV" required />
+                <input id="card-name" class="card-name" type="text" name="cardholder" placeholder="Enter your name" required />
+                <input id="card-number" class="card-number" type="text" name="card-number" maxlength="19" placeholder="Enter card number" required />
+                <input id="card-cvv" class="card-cvv" type="text" name="card-cvv" pattern="\d*" maxlength="4" placeholder="Enter CVV" required />
                 <button id="pay-btn" class="pay-btn" type="submit">Pay</button>
             </form>
         </section> 

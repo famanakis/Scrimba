@@ -45,6 +45,10 @@ function formatCardNumber(cc, maxlength) {
   return format_4444(cc)
 }
 
+function formatCVV(cc, maxlength) {
+  cc = cc.replace(/[^0-9]+/g,'')
+}
+
 let CARD_TYPES = [
   {'type':'visa','pattern':/^4/, 'format': format_4444, 'maxlength': 19},
   {'type':'master','pattern':/^(5[12345])|(2[2-7])/, 'format': format_4444, 'maxlength': 16},

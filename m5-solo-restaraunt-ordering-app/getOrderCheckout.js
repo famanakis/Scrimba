@@ -17,25 +17,25 @@ function handlePayAndThankyou() {
         if(cardNameInput.value.length >= 1 && cardNumberInput.value.length >= 19 && cardCVVInput.value.length >= 3) {
             paymentModal.classList.add("hidden-el")
             renderThankyou() 
-            // } else {
-            //     if(cardNumberInput.value.length >= 19 &&
-            //         cardCVVInput.value.length >= 3) {
-            //         alert('Oops - We are missing some information!\nPlease fill in your Name.')
-            //     } else if(cardNameInput.value.length >= 1 && 
-            //             cardCVVInput.value.length >= 3) {
-            //         alert('Oops - We are missing some information!\nPlease fill in your Card Number.')
-            //     } else if(cardNameInput.value.length >= 1 && 
-            //             cardNumberInput.value.length >= 19) {
-            //         alert('Oops - We are missing some information!\nPlease fill in the card CVV.')
-            //     } else if(cardCVVInput.value.length >= 3) {
-            //         alert('Oops - We are missing some information!\nPlease fill in your Name and Card Number.')
-            //     } else if(cardNumberInput.value.length >= 19 ) {
-            //         alert('Oops - We are missing some information!\nPlease fill in your Name and the CVV.')
-            //     } else if(cardNameInput.value.length >= 1 ) {
-            //         alert('Oops - We are missing some information!\nPlease fill in your Card Number and the CVV.')
-            //     } else {
-            //         alert('Oops - We are missing some information!\nPlease fill in all requested fields.')
-            //     }
+            } else {
+                if(cardNumberInput.value.length >= 19 &&
+                    cardCVVInput.value.length >= 3) {
+                    alert('Oops - We are missing some information!\nPlease fill in your Name.')
+                } else if(cardNameInput.value.length >= 1 && 
+                        cardCVVInput.value.length >= 3) {
+                    alert('Oops - We are missing some information!\nPlease fill in your Card Number.')
+                } else if(cardNameInput.value.length >= 1 && 
+                        cardNumberInput.value.length >= 19) {
+                    alert('Oops - We are missing some information!\nPlease fill in the card CVV.')
+                } else if(cardCVVInput.value.length >= 3) {
+                    alert('Oops - We are missing some information!\nPlease fill in your Name and Card Number.')
+                } else if(cardNumberInput.value.length >= 19 ) {
+                    alert('Oops - We are missing some information!\nPlease fill in your Name and the CVV.')
+                } else if(cardNameInput.value.length >= 1 ) {
+                    alert('Oops - We are missing some information!\nPlease fill in your Card Number and the CVV.')
+                } else {
+                    alert('Oops - We are missing some information!\nPlease fill in all requested fields.')
+                }
             }
     })
 }

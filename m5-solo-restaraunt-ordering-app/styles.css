@@ -1,3 +1,17 @@
+:root {
+    --white: #ffffff;
+    --lt-mint: #edfdf5;
+    --mint: #16db99;
+    --green: #065f46;
+    --orange: #fb8116fd;
+    --red: #ff0000;
+    --lt-gray: #dedede;
+    --gray: #8b8b8b;
+    --stone: #757575;
+    --dk-gray: #393333;
+    --black: #000000;
+}
+
 * {
     box-sizing: 0;
     margin: 0;
@@ -25,7 +39,7 @@ h1, h2, p {
 }
 
 header {
-    color: #ffffff;
+    color: var(--white);
     height: 167px;
 }
 
@@ -38,15 +52,21 @@ button {
 }
 
 input {
-    color: #757575;
+    color: var(--stone);
     font-weight: 400;
 }
 
 button {
-    color: #ffffff;
-    background-color: #16db99;
+    color: var(--white);
+    background-color: var(--mint);
     font-weight: 700;
     border:none;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
 
 .location-name {
@@ -57,26 +77,25 @@ button {
     font-size: 22.42px;
 }
 
-
 /*=== Header ===*/
 header {
     background-image: url("./assets/alt-background-img.jpg");
     background-size: cover;
     background-repeat: none;
-    filter: blur(1.5px);
-    box-shadow: inset 0px -8px 3px -3px rgba(50, 50, 50, 0.75);
+    filter: blur(1.6px);
+    box-shadow: inset 0px -8px 3px -3px var(--dk-gray);
 }
 
 .header-text {
     position: absolute;
     top: 14%;
-    left: 45%;
-    transform: translate(20%, -50%);
+    left: 43%;
+    transform: translate(20%, -45%);
     color: black;
     font-size: 26px;
     font-weight: 800;
     letter-spacing: 1.5px;
-    text-shadow: 0 0 5px white;
+    text-shadow: 0 0 5px var(--white);
 }
 
 .meal-deal {
@@ -85,24 +104,27 @@ header {
     justify-content: center;
     align-items: center;
     gap: 3px;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
 .meal-deal > p {
     font-size: 28px;
-    color: red;
+    color: var(--red);
 }
 
 .meal-deal > .limit {
     font-size: 18px;
-    color: #000000;
+    color: var(--black);
+}
+
+.free {
+    color: var(--red);
 }
 
 /*=== Menu OrderingDiv ===*/
 .menu-div {
     display: flex;
     flex-direction: column;
-    /* box-shadow: inset 0px 7px 3px -3px rgba(50, 50, 50, 0.75); */
     padding-top: 40px;
 }
 
@@ -112,7 +134,7 @@ header {
     justify-content: space-between;
     margin: 0 46px 45px 46px;
     padding: 8px 0 42px 0;
-    border-bottom: 1px solid #dedede;
+    border-bottom: 1px solid var(--lt-gray);
 }
 
 .flex-row {
@@ -137,7 +159,7 @@ header {
 }
 
 .item-description {
-    color: #8b8b8b;
+    color: var(--gray);
     font-size: 16px;
     margin: 0 0 10px 0;
 }
@@ -150,7 +172,7 @@ header {
 .add-btn {
     width: 50px;
     height: 50px;
-    background-color: #ffffff;
+    background-color: var(--white);
     margin-right: 8px;
 }
 
@@ -192,8 +214,8 @@ header {
 }
 
 .remove-btn {
-    background: #ffffff;
-    color: #bbbbbb;
+    background: var(--white);
+    color: var(--stone);
     border: none;
     font-size: 12px;
     font-weight: 400;
@@ -204,7 +226,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 14px 0 38px 0; 
-    border-top: 2px solid #393333;
+    border-top: 2px solid var(--dk-gray);
 }
 
 .total-text, .total-price {
@@ -214,7 +236,7 @@ header {
 .btn-purchase {
     font-size: 16px;
     padding: 16px;
-    width: 100%
+    width: 100%;
 }
 
 /*=== Payment Modal ===*/
@@ -231,9 +253,9 @@ header {
     align-items: center;
     border: none;
     border-radius: 3.89px;
-    filter: drop-shadow(5.19px 5.19px 255.44px #000000);
+    filter: drop-shadow(5.19px 5.19px 255.44px var(--black));
     padding: 47px 24px 24px 24px;
-    background-color: white;
+    background-color: var(--white);
 }
 
 .hidden-el {
@@ -252,7 +274,7 @@ header {
 }
 
 .card-name, .card-number, .card-cvv {
-    border: 1.3px solid #757575;
+    border: 1.3px solid var(--stone);
     border-radius: 3.89px;
     margin: 12px 0;
     padding: 16px 26px 13px 26px;
@@ -267,13 +289,17 @@ header {
     margin: 46px 0 0 0;
 }
 
+.pay-btn:hover {
+    transform: scale(1.05);
+}
+
 .non-clickable {
     pointer-events: none;
 }
 
 /* Thank you and Rating */
 .thanks {
-    background-color: #ecfdf5;
+    background-color: var(--lt-mint);
     border-radius: 3px;
     margin: 0 46px 0 46px;
     padding: 50px 20px;
@@ -284,7 +310,7 @@ header {
 }
 
 .thanks-text {
-    color: #065f46;
+    color: var(--green);
     font-size: 28px;
 }
 
@@ -299,7 +325,7 @@ header {
 }
 
 .ratings-text {
-    color: #065f46;
+    color: var(--green);
     font-size: 24px;
     padding-bottom: 6px;
 }
@@ -309,17 +335,18 @@ header {
 }
 
 .rating-star {
-    color: #888888;
+    color: var(--gray);
     cursor: pointer;
-    
+    transition: all ease-in-out .3s;
 }
 
 .rating-star:hover {
-    color: #fb8116fd;
+    color: var(--orange);
+    transform: scale(1.5);
 }
 
 .orange {
-    color: #fb8116fd;
+    color: var(--orange);
 }
 
 

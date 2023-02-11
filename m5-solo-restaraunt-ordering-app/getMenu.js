@@ -14,7 +14,7 @@ export function getMenuHtml() {
                 </div>
             </div>
             <button class="add-btn">
-                <img src="./assets/add-btn.png" alt="a plus button" data-uuid="${item.uuid}"></button>
+                <img src="./assets/add-btn.png" alt="a plus button" data-category=${item.category} data-uuid="${item.uuid}"></button>
         </div>
        `  
     })

@@ -5,7 +5,7 @@ import {creditCardInput } from "./creditCard.js"
 import {handleRating} from "./ratingsStars.js"
 
 //Variables
-export const orderArr = []
+export let orderArr = []
 export const appMenu = document.getElementById('menu-div')
 export const appCheckout = document.getElementById('checkout-section')
 export const cardNumberInput = document.getElementById('card-number')
@@ -14,40 +14,42 @@ export const ratingStars = [...document.getElementsByClassName("rating-star")]
 //Event Listeners
 document.addEventListener('click', function(e){ 
     e.preventDefault()  
+    //Add menu item to the order
     if(e.target.dataset.uuid){
-        orderArr.push(e.target.dataset.uuid)
+        orderArr.push({id: uid(), uuid: e.target.dataset.uuid})
         renderCheckout()
         orderCheckout()
     }
+    //Delete menu item from the order
     if(e.target.dataset.remove){
-        orderArr.splice(orderArr.indexOf(e.target.dataset.remove),1)
+        orderArr = orderArr.filter(obj => obj.id != e.target.dataset.remove)
         renderCheckout()
-        if(orderArr.length >=1) {
-            orderCheckout()
-        }
+        orderArr.length > 0 ? orderCheckout() : ''
     }
 })
 
-//Functions
+//Main Functions 
 renderMenu()
-
 function renderMenu(){
     appMenu.innerHTML =  getMenuHtml()
 }
 
 renderCheckout()
-
-export function renderCheckout() {
+function renderCheckout() {
     appCheckout.innerHTML = getOrderTotalHtml()
 }
 
-creditCardInput(cardNumberInput)
-
-handleRating(ratingStars)
-
-function orderDiscount() {
-    //if orderArr has 1 entree and 1 side then add free soda
-    //if orderArr has 1 entrees and 2 sides than add 1 free sodas
+//Give each line item a unique ID when item is pushed to the orderArr
+function uid(){
+    return String(
+        Date.now().toString(32) +
+          Math.random().toString(16)
+      ).replace(/\./g, '')
 }
 
- 
+//Format CC Number input in modal
+creditCardInput(cardNumberInput)
+
+//UI with Stars for Rating the App
+handleRating(ratingStars)
+  

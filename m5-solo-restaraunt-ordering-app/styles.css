@@ -102,6 +102,7 @@ header {
     font-weight: 800;
     letter-spacing: 1.5px;
     text-shadow: 0 0 5px var(--white);
+    min-width: 300px;
 }
 
 .meal-deal {

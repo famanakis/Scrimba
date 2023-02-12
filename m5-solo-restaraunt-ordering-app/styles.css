@@ -71,7 +71,8 @@ button {
     transition: all ease-in-out .3s;
 }
 
-button:hover {
+button:hover,
+button:focus {
     transform: scale(1.1);
 }
 
@@ -183,8 +184,21 @@ header {
     margin-right: 8px;
 }
 
-.add-btn:hover {
+.add-btn:hover,
+.add-btn:focus {
+    transform: scale(1);
+}
+
+.add-btn img:hover,
+.add-btn img:focus {
+    box-shadow: 0 0 0 3px var(--mint);
+    border-radius: 50%;
+    transform: scale(1);
+}
+
+.add-btn img:active {
     transform: scale(1.1);
+    background-color: var(--lt-mint);
 }
 
 .order-total {
@@ -227,6 +241,11 @@ header {
     font-size: 12px;
     font-weight: 400;
     margin-left: 7px;
+}
+
+.remove-btn:hover,
+.remove-btn:focus {
+    color: var(--red);
 }
 
 .total {
@@ -279,6 +298,11 @@ header {
     position: absolute;
     top: 15px;
     right: 15px;
+}
+
+.btn-modal-close:hover,
+.btn-modal-close:focus {
+    transform: scale(1.5);
 }
 
 .modal-title {

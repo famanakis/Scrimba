@@ -9,8 +9,13 @@ Programming Languages Used
 <li>JavaScript</li>
 </ul>
 
-## Screenshot
-<img src="" width=50% height=50%><br>
+## Screenshots
+### Main Menu
+<img src="https://github.com/famanakis/Scrimba/blob/main/m5-solo-restaraunt-ordering-app/assets/screenshot-main.png" width=50% height=50%><br>
+### Order Totals
+<img src="https://github.com/famanakis/Scrimba/blob/main/m5-solo-restaraunt-ordering-app/assets/Screenshot-totals.png" width=50% height=50%><br>
+### Checkout
+<img src="https://github.com/famanakis/Scrimba/blob/main/m5-solo-restaraunt-ordering-app/assets/screenshot-checkout.png" width=50% height=50%><br>
 [Live Demo](https://9tfdev-m5-solo-restaurant-order-app.netlify.app/)
  
 ## Project Requirements

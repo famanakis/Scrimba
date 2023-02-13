@@ -10,7 +10,7 @@ Programming Languages Used
 </ul>
 
 ## Screenshot
-<img src="" width=50% height=50%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m5-solo-invoice-creator/project-screenshot.png" width=50% height=50%><br>
  [Live Demo - Coming Soon]()
  
 ## Project Requirements

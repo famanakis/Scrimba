@@ -11,7 +11,7 @@ Programming Languages Used
 
 ## Screenshot
 <img src="https://github.com/famanakis/Scrimba/blob/main/m5-solo-invoice-creator/project-screenshot.png" width=50% height=50%><br>
- [Live Demo - Coming Soon]()
+ [Live Demo](https://9tfdev-m5-solo-invoice-creator.netlify.app/)
  
 ## Project Requirements
  The Invoice Creator solo project meets the following requirements:

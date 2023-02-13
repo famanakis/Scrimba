@@ -11,7 +11,7 @@ Programming Languages Used
 
 ## Screenshot
 <img src="" width=50% height=50%><br>
-[Live Demo - Coming Soon]()
+[Live Demo](https://9tfdev-m5-solo-restaurant-order-app.netlify.app/)
  
 ## Project Requirements
  The Restaurant Ordering App solo project meets the following requirements:

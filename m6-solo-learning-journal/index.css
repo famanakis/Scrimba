@@ -20,8 +20,8 @@
 body {
     font-size: 16px; /*default, root font-size*/
     background: var(--white);
-    width: 90%;
     min-width: 414px;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, p {
@@ -73,8 +73,8 @@ h2,
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin:  1em 1.25em .75em 1.25em;
-    width: 100%;
+    margin: 1em auto .75em;
+    width: 90%;
 }
 
 .nav-bar ul {
@@ -104,8 +104,12 @@ header a {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 293px;
+    height: 50vh;
     padding: 5.437em 1.875em 1.562em;
+    margin-bottom: 2.185em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .hero p,
@@ -116,6 +120,11 @@ header a {
 .hero h2 {
     line-height: 1.08;
     padding-bottom: 0.25em;
+    max-width: 65%;
+}
+
+.hero-summary {
+    max-width: 85%;
 }
 
 .hero p {
@@ -126,17 +135,9 @@ header a {
 .main-content,
 .about-me,
 .blog {
-    padding: 2.125em 1.875em 0 1.875em;
+    margin: 0 auto;
+    width: 90%;
     display: grid;
-}
-
-.main-content {
-    padding-bottom: 2.125em;
-}
-
-.about-me,
-.blog {
-    padding-bottom: .75em;
 }
 
 .about-me,
@@ -145,7 +146,8 @@ header a {
 }
 
 .main-content img {
-    width: 90vw;
+    width: 100%;
+    height: 60%;
     margin-bottom: .875em;
 }
 
@@ -203,6 +205,10 @@ footer {
     margin: 0;
 }
 
+.blog > img {
+    width: 100%;
+}
+
 .avatar {
     height: 182px;
     width: 182px;
@@ -210,9 +216,66 @@ footer {
 
 .recent {
     text-align: center;
+    margin-top: 3.1875em;
     margin-bottom: 1.687em;
 }
 
 .hero-summary {
     margin-bottom: 1.687em;
+}
+
+@media only screen and (min-width: 600px) {
+    .hero h2 {
+        max-width: 55%;
+    }
+    .hero-summary {
+        max-width: 75%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main-content {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 1.625em;
+    }
+
+    .main-content,
+    .about-me,
+    .blog, 
+    .nav-bar {
+        width: 95%;
+    }
+
+    .hero {
+        height: 65vh;
+    }
+
+    .hero-summary {
+        max-width: 75%;
+    }
+
+    .hero h2 {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .main-content {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        gap: 1.625em;
+    }
+
+    .hero {
+        height: 75vh;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-summary {
+        max-width: 50%;
+    }
 }

@@ -5,7 +5,7 @@ import {creditCardInput } from "./creditCard.js"
 import {handleRating} from "./ratingsStars.js"
 
 //Variables
-export let orderArr = []
+export const orderArr = []
 export const appMenu = document.getElementById('menu-div')
 export const appCheckout = document.getElementById('checkout-section')
 export const cardNumberInput = document.getElementById('card-number')
@@ -22,7 +22,8 @@ document.addEventListener('click', function(e){
     }
     //Delete menu item from the order
     if(e.target.dataset.remove){
-        orderArr = orderArr.filter(obj => obj.id != e.target.dataset.remove)
+        const removeIndex = orderArr.findIndex(lineItem => lineItem.id === e.target.dataset.remove)
+        orderArr.splice(removeIndex, 1)
         renderCheckout()
         orderArr.length > 0 ? orderCheckout() : ''
     }
@@ -31,8 +32,6 @@ document.addEventListener('click', function(e){
         document.getElementById('payment-modal').classList.add('hidden-el')
     }
 })
-
-
 
 //Main Functions 
 renderMenu()

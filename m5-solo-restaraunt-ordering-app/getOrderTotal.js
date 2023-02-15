@@ -1,4 +1,4 @@
-import {menuData} from "./data.js"
+import {menuData} from "./menuData.js"
 import {orderArr} from "./index.js"
 
 

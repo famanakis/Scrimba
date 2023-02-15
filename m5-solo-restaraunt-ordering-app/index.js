@@ -1,6 +1,6 @@
-import {getMenuHtml} from "./getMenu.js"
-import {getOrderTotalHtml} from "./getOrderTotal.js"
-import {orderCheckout} from "./getOrderCheckout.js"
+import {setMenuHtml} from "./setMenuHtml.js"
+import {setOrderTotalHtml} from "./setOrderTotalHtml.js"
+import {orderCheckout} from "./orderCheckout.js"
 import {creditCardInput } from "./creditCard.js"
 import {handleRating} from "./ratingsStars.js"
 
@@ -10,6 +10,31 @@ export const appMenu = document.getElementById('menu-div')
 export const appCheckout = document.getElementById('checkout-section')
 export const cardNumberInput = document.getElementById('card-number')
 export const ratingStars = [...document.getElementsByClassName("rating-star")]
+
+//Main Functions 
+renderMenu()
+function renderMenu(){
+    appMenu.innerHTML =  setMenuHtml()
+}
+
+renderCheckout()
+function renderCheckout() {
+    appCheckout.innerHTML = setOrderTotalHtml()
+}
+
+//Give each line item a unique ID when item is pushed to the orderArr
+function uid(){
+    return String(
+        Date.now().toString(32) +
+          Math.random().toString(16)
+      ).replace(/\./g, '')
+}
+
+//Format CC Number input in modal
+creditCardInput(cardNumberInput)
+
+//UI with Stars for Rating the App
+handleRating(ratingStars)
 
 //Event Listeners
 document.addEventListener('click', function(e){ 
@@ -31,31 +56,4 @@ document.addEventListener('click', function(e){
         document.getElementById('payment-modal').classList.add('hidden-el')
     }
 })
-
-
-
-//Main Functions 
-renderMenu()
-function renderMenu(){
-    appMenu.innerHTML =  getMenuHtml()
-}
-
-renderCheckout()
-function renderCheckout() {
-    appCheckout.innerHTML = getOrderTotalHtml()
-}
-
-//Give each line item a unique ID when item is pushed to the orderArr
-function uid(){
-    return String(
-        Date.now().toString(32) +
-          Math.random().toString(16)
-      ).replace(/\./g, '')
-}
-
-//Format CC Number input in modal
-creditCardInput(cardNumberInput)
-
-//UI with Stars for Rating the App
-handleRating(ratingStars)
   

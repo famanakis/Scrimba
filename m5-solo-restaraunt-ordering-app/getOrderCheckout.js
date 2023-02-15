@@ -41,7 +41,7 @@ function handlePayAndThankyou() {
 }
 
 function renderThankyou() {
-    let cardName = cardNameInput.value
+    const cardName = cardNameInput.value
     appCheckout.innerHTML = `
         <div class="thanks">
             <p class="thanks-text">Thanks, ${cardName}! Your order is on its way!</p>

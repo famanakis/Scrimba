@@ -1,4 +1,4 @@
-import {getMenuHtml} from "./getMenu.js"
+import {setMenuHtml} from "./setMenuHtml.js"
 import {getOrderTotalHtml} from "./getOrderTotal.js"
 import {orderCheckout} from "./getOrderCheckout.js"
 import {creditCardInput } from "./creditCard.js"
@@ -37,7 +37,7 @@ document.addEventListener('click', function(e){
 //Main Functions 
 renderMenu()
 function renderMenu(){
-    appMenu.innerHTML =  getMenuHtml()
+    appMenu.innerHTML =  setMenuHtml()
 }
 
 renderCheckout()

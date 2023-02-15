@@ -144,38 +144,22 @@ header a {
 
 /*main-content*/
 .main-content,
-.about-me,
-.blog {
+.blog,
+.about-main-content {
     margin: 0 auto;
     width: 90%;
     display: grid;
     justify-content: center;
+    gap: 2em;
 }
 
-/* .about-me,
-.blog {
-    gap: 1.8em;
-} */
-.post {
-    margin-bottom: 10%;
-}
-
-.main-content img {
+.main-content img,
+.about-main-content img {
     width: 100%;
     height: 75%;
     margin-bottom: .875em;
     border: 10px rgb(55, 55, 55) solid;
     border-radius: 7px;
-}
-
-.post-title {
-    font-size: 1.5rem;
-}
-
-.post-title:hover, 
-.post-title:focus {
-    transform: scaleY(1.2);
-    color: blueviolet;
 }
 
 .post-date {
@@ -184,9 +168,20 @@ header a {
     margin-bottom: .5em;
 }
 
+.post-title {
+    font-size: 1.5rem;
+    margin-bottom: .375em;
+}
+
+.post-title:hover, 
+.post-title:focus {
+    transform: scaleY(1.2);
+    color: blueviolet;
+}
+
 .post-text {
     color: var(--summary);
-    margin-bottom: 2.562em;
+    margin-bottom: 2em;
 }
 
 .post-text-last {
@@ -198,10 +193,9 @@ header a {
     color: var(--black);
     border: none;
     text-decoration: underline;
-    margin: 1.6875em auto;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 6.25em;
+    display: block;
+    padding-top: 2.5em;
+    margin: 6.25em auto;
     cursor: pointer;
     transition: all ease-in-out .25s;
 }
@@ -218,6 +212,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 3.1875em;
 }
 
 .footer-title {
@@ -232,6 +227,33 @@ footer {
 }
 
 /*Blog and About Me specifics*/
+.blog-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.blog-hero-post-date {
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: .75rem;
+    margin-top: 1.5em;
+}
+
+.blog-hero > h2 {
+    width: 85%;
+}
+
+.blog-hero-summary {
+    width: 100%;
+}
+
+.blog-hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
 .blog > .post-date {
     margin: 0;
 }
@@ -240,9 +262,35 @@ footer {
     width: 100%;
 }
 
+.about-me {
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    justify-content: center;
+    gap: 1.125em;
+}
+
+.about-me-hero {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 1.5em;
+}
+
 .avatar {
     height: 182px;
     width: 182px;
+    margin-bottom: 1em;
+}
+
+.about-hero-summary {
+    margin: .75em 0 1.325em;
+}
+
+.about-hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
 }
 
 .recent {
@@ -346,16 +394,23 @@ footer {
     .main-content {
         grid-template-columns: 48% 48%;
         grid-template-rows: auto auto;
-        gap: 1.625em;
+        gap: 2.875em;
+        padding: 1.5em 2.5em;
     }
-
+    .about-main-content {
+        margin: 0 auto;
+        width: 95%;
+        display: grid;
+        justify-content: center;
+        /* gap: 1em; */
+        padding: 0 1.5em 3.5em;
+        gap: 2.5em;
+}
     .main-content,
-    .about-me,
     .blog, 
     .nav-bar {
         width: 95%;
     }
-
     .hero {
         height: 65vh;
     }
@@ -367,15 +422,47 @@ footer {
     .hero h2 {
         max-width: 80%;
     }
+    .about-me-hero {
+        flex-direction: row;
+        gap: 1.5em;
+        width: 80%;
+    }
+    .about-hero-summary {
+        margin-top: .5em;
+        width: 80%;
+    }
+    .about-hero-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        width: 80%;
+        margin: 0 auto 0 10%;
+    }
+    .recent {
+        font-size: 1.5rem;
+    }
+    .blog-hero,
+    .blog-hero-content {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
+    .nav-bar ul {
+        gap: 5%;
+    }
+    
     .main-content {
         grid-template-columns: 32% 32% 32%;
         grid-template-rows: auto auto;
-        gap: 1.625em;
     }
-
+    .about-main-content {
+        grid-template-columns: 32% 32% 32%;
+        grid-template-rows: auto auto;
+        padding: 0 3.3125em 2em;
+        gap: 2.5em;
+    }
     .hero {
         height: 75vh;
     }
@@ -387,4 +474,5 @@ footer {
     .hero-summary {
         max-width: 50%;
     }
+
 }

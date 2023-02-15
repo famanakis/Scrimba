@@ -63,7 +63,7 @@ export function renderOrderArr() {
 }
 
 //Render Order Grand Total to Page
-export function getOrderTotalHtml() {
+export function setOrderTotalHtml() {
     const orderTotalArr = []
     orderArr.forEach(obj => {  
         menuData.forEach(item => {

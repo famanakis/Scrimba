@@ -1,5 +1,5 @@
 import {setMenuHtml} from "./setMenuHtml.js"
-import {getOrderTotalHtml} from "./getOrderTotal.js"
+import {setOrderTotalHtml} from "./setOrderTotalHtml.js"
 import {orderCheckout} from "./orderCheckout.js"
 import {creditCardInput } from "./creditCard.js"
 import {handleRating} from "./ratingsStars.js"
@@ -42,7 +42,7 @@ function renderMenu(){
 
 renderCheckout()
 function renderCheckout() {
-    appCheckout.innerHTML = getOrderTotalHtml()
+    appCheckout.innerHTML = setOrderTotalHtml()
 }
 
 //Give each line item a unique ID when item is pushed to the orderArr

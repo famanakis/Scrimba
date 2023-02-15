@@ -13,28 +13,26 @@ export function orderCheckout() {
 }
 
 function handlePayAndThankyou() {
+    const requiredInfoDiv = document.getElementById('required-cc-info')
     payBtn.addEventListener('click', ()=> {
         if(cardNameInput.value.length >= 1 && cardNumberInput.value.length >= 19 && cardCVVInput.value.length >= 3) {
             paymentModal.classList.add("hidden-el")
             renderThankyou() 
             } else {
-                if(cardNumberInput.value.length >= 19 &&
-                    cardCVVInput.value.length >= 3) {
-                    alert('Oops - We are missing some information!\nPlease fill in your Name.')
-                } else if(cardNameInput.value.length >= 1 && 
-                        cardCVVInput.value.length >= 3) {
-                    alert('Oops - We are missing some information!\nPlease fill in your Card Number.')
-                } else if(cardNameInput.value.length >= 1 && 
-                        cardNumberInput.value.length >= 19) {
-                    alert('Oops - We are missing some information!\nPlease fill in the card CVV.')
+                if(cardNumberInput.value.length >= 19 && cardCVVInput.value.length >= 3) {
+                    requiredInfoDiv.innerHTML = `Cardholder Name Required`
+                } else if(cardNameInput.value.length >= 1 && cardCVVInput.value.length >= 3) {
+                    requiredInfoDiv.innerHTML = `Card Number Required`
+                } else if(cardNameInput.value.length >= 1 && cardNumberInput.value.length >= 19) {
+                    requiredInfoDiv.innerHTML = `CVV Required`
                 } else if(cardCVVInput.value.length >= 3) {
-                    alert('Oops - We are missing some information!\nPlease fill in your Name and Card Number.')
+                    requiredInfoDiv.innerHTML = `Cardholder Name and Card Number Required`
                 } else if(cardNumberInput.value.length >= 19 ) {
-                    alert('Oops - We are missing some information!\nPlease fill in your Name and the CVV.')
+                    requiredInfoDiv.innerHTML = `Cardholder Name and CVV Required`
                 } else if(cardNameInput.value.length >= 1 ) {
-                    alert('Oops - We are missing some information!\nPlease fill in your Card Number and the CVV.')
+                    requiredInfoDiv.innerHTML = `Card Number and CVV Required`
                 } else {
-                    alert('Oops - We are missing some information!\nPlease fill in all requested fields.')
+                    requiredInfoDiv.innerHTML = `Please Fill in All Requested Fields`
                 }
             }
     })

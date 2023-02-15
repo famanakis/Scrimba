@@ -321,13 +321,25 @@ header {
     width: 90%;
 }
 
+.required-cc-info {
+    height: 34px;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-top: 6px;
+}
+
 .pay-btn {
     width: 100%;
     height: 71.3px;
     border-radius: 3.89px;
-    margin: 46px 0 0 0;
+    margin: 6px 0 0 0;
 }
 
+.pay-btn:focus,
 .pay-btn:hover {
     transform: scale(1.05);
 }

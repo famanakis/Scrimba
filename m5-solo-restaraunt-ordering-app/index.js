@@ -1,6 +1,6 @@
 import {setMenuHtml} from "./setMenuHtml.js"
 import {getOrderTotalHtml} from "./getOrderTotal.js"
-import {orderCheckout} from "./getOrderCheckout.js"
+import {orderCheckout} from "./orderCheckout.js"
 import {creditCardInput } from "./creditCard.js"
 import {handleRating} from "./ratingsStars.js"
 

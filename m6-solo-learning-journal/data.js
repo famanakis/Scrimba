@@ -1,6 +1,7 @@
 export const blogData = [
     {
         title: 'forEach vs. map',
+        keyword: 'forEach',
         date: 'February 12, 2023',
         image: './assetsMine/map.jpg',
         summary: 'Telling when to use .map() in place of .forEach() can be hard for new learners like myself. Here are some tips I have learned along the way.',
@@ -10,6 +11,7 @@ export const blogData = [
 
     {
         title: 'GitHub Readme',
+        keyword: 'gitHub',
         date: 'February 9, 2023',
         image: 'assetsMine/readme.png',
         summary: 'Having a good readme document make a project easy to navigate for visitors to your repository. Readme docs need a few things to help them really stand out.',
@@ -19,15 +21,17 @@ export const blogData = [
 
     {
         title: 'Find Index - Invoice/Remove',
+        keyword: 'findIndex',
         date: 'February 6, 2023',
         image: './assetsMine/invoice.png',
-        summary: 'Learning how to click on and remove specific elements has been a crucial skill to learn. Think of all the times a user deletes or remove items from shopping carts!',
+        summary: 'Learning how to click on and remove specific elements has been a crucial skill to learn. Think of all the times a user deletes or remove items from invoices or shopping carts!',
         postHref: 'https://9tfdev-m5-solo-invoice-creator.netlify.app/',
         uuid: 'f5491806-b832-43ef-a49c-49f0f5d144e1',
     },
 
     {
         title: 'BestBank CSS to the nth',
+        keyword: 'bestBank',
         date: 'February 1, 2023',
         image: './assetsMine/bestbank.png',
         summary: 'What the "nth" is that?! This project was one that grew my CSS skills for working with elements to the nth degree.',
@@ -37,6 +41,7 @@ export const blogData = [
 
     {
         title: 'Secure Password Generator',
+        keyword: 'passwordGen',
         date: 'January 29, 2023',
         image: './assetsMine/password-generator.png',
         summary: 'This project taught me how to generate sequences of numbers, letters, and characters by targeting user input to create unique passwords.',
@@ -46,15 +51,17 @@ export const blogData = [
 
     {
         title: 'You need a license?',
+        keyword: 'license',
         date: 'January 25, 2023',
         image: './assetsMine/license.png',
-        summary: 'You need a license for that? Not necessarily, but it is a courtesy for gitHub and other open source platforms to include a license on your projects.',
+        summary: 'You need a license for that? Not necessarily, but it is a good idea to have one for legal reasons. Having a license defines what users are allowed to "use" from your open-source ideas.',
         postHref: 'https://developerexperience.io/articles/license-in-repository',
         uuid: '1f7f2fa0-98d3-45f1-b110-c42dc0cdccdd',
     },
 
     {
         title: 'Choreslist',
+        keyword: 'choreslist',
         date: 'January 22, 2023',
         image: './assetsMine/choreslist.png',
         summary: 'This was a project that strengthened my JavaScript skills and really reinforced how to render items to the DOM from JavaScript files.',
@@ -64,6 +71,7 @@ export const blogData = [
     
     {
         title: 'Hometown Homepage',
+        keyword: 'hometown',
         date: 'January 15, 2023',
         image: './assetsMine/hometown-webpage.png',
         summary: 'One of my first projects made with HTML and CSS. I learned a lot about responsive design and what a lifesaver flexbox can be.',

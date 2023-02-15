@@ -14,10 +14,15 @@
         <header>
             <nav class="nav-bar">
                 <h1><a href="./blog.html"><img src="./assets/logo.png" alt="my learning journal logo"></a></h1>
-                <ul>
+                <ul class="nav-main">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./about.html">About Me</a></li>
                 </ul>
+                <button type="button" id="nav-hamburger" class="nav-hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
             </nav>
         </header>
         <section class="blog">
@@ -57,6 +62,12 @@
             <p class="footer-title">My Learning Journal</p>
             <p class="copyright">Copyright @2022</p>
         </footer>
+        <div id="nav-modal" class="nav-modal">
+            <button type="button" id="btn-nav-modal" class="btn-nav-modal">x</button>
+            <a href="./index.html">Home</a>
+            <a href="./blog.html">My Journal</a>
+            <a href="./about.html">About Me</a>
+        </div>
         <script src="./blog.js" type="module"></script>    
     </body>
 </html>

@@ -21,7 +21,25 @@
         <section id="home-main-content" class="page-main-content">
             <p class="hero-date">January 22, 2023</p>
             <h2>Choreslist</h2>
-            <p>This was a project that strengthened my JavaScript skills and really reinforced how to render items to the DOM from JavaScript files.</p>
+            <p>This was a project which strengthened my JavaScript skills and really reinforced how to render items to the DOM from JavaScript files.</p>
+            <p>In the Choreslist project, the user inputs their chore to the chore input, and then clicks the arrow to add the chore to the list.</p>
+            <p>The Choreslist is generated in the Javascript files by taking the value from the chore input, and then adding that value to a Chores Array.</p>
+            <p>The Chores Array is then stored in Local Storage as to 'keep' chores from disappearing between page refreshes.</p>
+            <p>When rendering to the DOM, the Chores Array is pulled from Local Storage and then run through a forEach loop. The forEach loop takes each chore in the Chores Array and places it in a template literal string which then is rendered to the DOM through the list.innerHTML method.</p>
+            <p>Here is how I rendered the chores from my Local Storage to the DOM:</p>   
+            <pre>        function renderChores() { 
+            list.innerHTML = ''
+            choresArr = localStorage.length > 0 ?
+               JSON.parse(localStorage.getItem('chore')) :
+               []          
+            let html = ''          
+            choresArr.forEach(chore => {           
+               html += `&ltdiv data-value="${chore}" 
+                            class="chore center"&gt${chore}&lt/div&gt`       
+            })            
+            list.innerHTML = html                
+        }</pre>          
+            <p>A live demo of this project can be found <a class="page-link" href="https://9tfdev-m3-solo-choreslist.netlify.app/">here</a></p> 
         </section>
         <a class="back-home" href="../index.html">Back to Home</a>
     <script src="index.js" type="module"></script>   

@@ -12,7 +12,7 @@ Programming Languages and Approach Used
 
 ## Screenshot
 <img src="" width=50% height=50%><br>
-[Live Demo - Coming Soon]()
+[Live Demo](https://9tfdev-m6-solo-learning-journal.netlify.app/)
  
 ## Project Requirements
  The Learning Journal solo project meets the following requirements:

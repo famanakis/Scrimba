@@ -19,7 +19,6 @@
 /*Typography*/
 body {
     font-size: 16px; /*default, root font-size*/
-    background: var(--white);
     min-width: 414px;
     overflow-x: hidden;
 }
@@ -71,11 +70,19 @@ a {
 }
 
 /*header and nav*/
+header {
+    background-color: var(--white);
+    width: 100%;
+    height: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav-bar {   
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 1em auto .75em;
     width: 90%;
 }
 
@@ -105,14 +112,19 @@ header a {
 }
 
 /*hero section-home page*/
+header {
+    height: 59px;
+}
+
 .hero {
     background: var(--footer-back) url("./assets/article-image-hero.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
     min-width: 414px;
-    height: 50vh;
-    padding: 5.437em 1.875em 1.562em;
+    height: 293px;
+    /* padding: 5.437em 1.875em 1.562em; */
+    padding: 5.437em 1.25em 0;
     margin-bottom: 2.185em;
     display: flex;
     flex-direction: column;
@@ -126,20 +138,12 @@ header a {
 
 .hero-date {
     text-transform: uppercase;
+    margin-bottom: .5em;
 }
 
 .hero h2 {
     line-height: 1.08;
     padding-bottom: 0.25em;
-    max-width: 65%;
-}
-
-.hero-summary {
-    max-width: 85%;
-}
-
-.hero p {
-    padding-bottom: 1em;
 }
 
 /*main-content*/
@@ -153,10 +157,21 @@ header a {
     gap: 2em;
 }
 
+.page-main-content {
+    display: grid;
+    margin: 0 auto;
+    gap: .5em;
+    width: 90%;
+}
+
+.page-main-content > .hero-date {
+    margin-bottom: 0;
+}
+
 .main-content img,
 .about-main-content img {
-    width: 100%;
-    height: 75%;
+    width: 374px;
+    height: 232px;
     margin-bottom: .875em;
     border: 10px rgb(55, 55, 55) solid;
     border-radius: 7px;
@@ -194,16 +209,25 @@ header a {
     border: none;
     text-decoration: underline;
     display: block;
-    padding-top: 2.5em;
-    margin: 6.25em auto;
+    margin: 0 auto 9.25em;
+    cursor: pointer;
+    transition: all ease-in-out .25s;
+}
+
+.back-home {
+    text-align: center;
+    margin: 2em auto;
     cursor: pointer;
     transition: all ease-in-out .25s;
 }
 
 .view-more:hover,
-.view-more:focus {
+.view-more:focus,
+.back-home:hover,
+.back-home:focus {
     transform: scale(1.2);
 }
+
 
 /*footer*/
 footer {
@@ -213,6 +237,10 @@ footer {
     flex-direction: column;
     align-items: center;
     margin-top: 3.1875em;
+}
+
+.footer-home {
+    display: none;
 }
 
 .footer-title {
@@ -273,7 +301,7 @@ footer {
 .about-me-hero {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     margin-top: 1.5em;
 }
 
@@ -295,7 +323,7 @@ footer {
 
 .recent {
     text-align: center;
-    margin-top: 3.1875em;
+    margin-top: 1em;
     margin-bottom: 1.687em;
 }
 
@@ -386,7 +414,7 @@ footer {
         display: block;
     }
     .view-more {
-        margin-top: 2em;
+        margin-top: 1em;
     }
 }
 
@@ -395,28 +423,26 @@ footer {
         grid-template-columns: 48% 48%;
         grid-template-rows: auto auto;
         gap: 2.875em;
-        padding: 1.5em 2.5em;
+        padding: 1.5em 2.5em 0;
     }
     .about-main-content {
         margin: 0 auto;
         width: 95%;
         display: grid;
         justify-content: center;
-        /* gap: 1em; */
         padding: 0 1.5em 3.5em;
         gap: 2.5em;
-}
+    }
     .main-content,
     .blog, 
     .nav-bar {
-        width: 95%;
+        width: 90%;
     }
     .hero {
-        height: 65vh;
+        height: 30.5em;
     }
-
     .hero-summary {
-        max-width: 75%;
+        max-width: 85%;
     }
 
     .hero h2 {
@@ -441,14 +467,20 @@ footer {
     .recent {
         font-size: 1.5rem;
     }
+    .blog {
+        padding-top: 4.4375em;
+    }
     .blog-hero,
     .blog-hero-content {
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
     }
 }
 
 @media only screen and (min-width: 1024px) {
+    body {
+    background-color: #fafafa;
+    }
     .nav-bar ul {
         gap: 5%;
     }
@@ -457,16 +489,17 @@ footer {
         grid-template-columns: 32% 32% 32%;
         grid-template-rows: auto auto;
     }
+    .main-content img,
+    .about-main-content img {
+        width: 309px;
+        height: 232px;
+    }
     .about-main-content {
-        grid-template-columns: 32% 32% 32%;
+        grid-template-columns: 31% 31% 31%;
         grid-template-rows: auto auto;
         padding: 0 3.3125em 2em;
         gap: 2.5em;
     }
-    .hero {
-        height: 75vh;
-    }
-
     h2 {
         font-size: 2.5rem;
     }
@@ -474,5 +507,7 @@ footer {
     .hero-summary {
         max-width: 50%;
     }
-
+    .footer-home {
+        display: flex;
+    }
 }

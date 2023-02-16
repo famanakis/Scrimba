@@ -11,8 +11,13 @@ Programming Languages and Approach Used
 </ul>
 
 ## Screenshot
-<img src="" width=50% height=50%><br>
-[Live Demo - Coming Soon]()
+### Home Screen Desktop View
+<img src="https://github.com/famanakis/Scrimba/blob/main/m6-solo-learning-journal/assetsMine/project-1.png" width=50% height=50%><br>
+### About Me Mobile View
+<img src="https://github.com/famanakis/Scrimba/blob/main/m6-solo-learning-journal/assetsMine/project-2.png" width=25% height=25%><br>
+### Blog Mobile View
+<img src="https://github.com/famanakis/Scrimba/blob/main/m6-solo-learning-journal/assetsMine/project-3.png" width=25% height=25%><br>
+[Live Demo](https://9tfdev-m6-solo-learning-journal.netlify.app/)
  
 ## Project Requirements
  The Learning Journal solo project meets the following requirements:

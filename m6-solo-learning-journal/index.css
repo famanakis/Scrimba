@@ -64,13 +64,17 @@ a {
     display: block;
 }
 
-ol {
+ol, ul {
     margin-left: 2em;
     line-height: 1.3;
 }
 
 ol > li {
     margin-bottom: .75em;
+}
+
+.ul-li {
+    margin-bottom: .5em;
 }
 
 /*header and nav*/

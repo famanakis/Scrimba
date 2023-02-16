@@ -1,4 +1,4 @@
-class Dog {
+export default class Dog {
     constructor(data) {
         Object.assign(this, data)
         }
@@ -11,8 +11,8 @@ class Dog {
     dogHtml() {
         const {avatar, name, age, bio} = this
         return`
-            <img id="likeBadge" class="badge like" src="images/badge-like.png">
-            <img id="rejectBadge" class="badge nope" src="images/badge-nope.png">
+            <img id="likeBadge" class="badge like" src="./assets/badge-like.png">
+            <img id="rejectBadge" class="badge nope" src="./assets/badge-nope.png">
             <div class="bio-div">
                 <img class="avatar" src="${avatar}">
                 <div class="dog-info">
@@ -24,4 +24,3 @@ class Dog {
         }
 }
 
-export default Dog

@@ -1,12 +1,12 @@
 import Dog from './dogClass.js'
-import dogs from './data.js'
+import  dogsData  from './dogsData.js'
 
 //Variables
 const dogCard = document.getElementById("main-content")
 const likeBtn = document.getElementById("likeBtn")
 const rejectBtn = document.getElementById("rejectBtn")
 let dogsIndex = 0
-let currentDog = new Dog(dogs[dogsIndex])
+let currentDog = new Dog(dogsData[dogsIndex])
 
 //Event listeners
 likeBtn.addEventListener('click', ()=> {
@@ -34,9 +34,9 @@ renderDogs()
 
 //Functions
 function renderDogs() {
-    currentDog = new Dog(dogs[dogsIndex]) 
+    currentDog = new Dog(dogsData[dogsIndex]) 
     dogCard.innerHTML = currentDog.dogHtml()  
-        if (dogsIndex === dogs.length) {
+        if (dogsIndex === dogsData.length) {
         //dogsIndex = 0
         end()
     } else {

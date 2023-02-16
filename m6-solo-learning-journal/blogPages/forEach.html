@@ -21,9 +21,32 @@
         <section id="home-main-content" class="page-main-content">
             <p class="hero-date">February 12, 2023</p>
             <h2>forEach vs. map</h2>
-            <p>Telling when to use .map() in place of .forEach() can be hard for new learners like myself. Here are some tips I have learned along the way.</p>
-            <p>Second paragraph</p>
-            <p>Third paragraph</p>
+            <p>Telling when to use map() in place of forEach() can be hard for new learners like myself. Here are some tips I have learned along the way.</p>
+            <p>forEach() and map() are both array methods in JavaScript that allow you to iterate over an array, but they have some differences in terms of their functionality and the use cases where they are most appropriate.</p>
+            <p>forEach() is used to iterate over an array and execute a function for each element in the array. The function can modify the elements in the array, but the return value is not used. It is commonly used when you want to execute some code for each item in an array and don't need to create a new array based on the results.</p>
+            <p>Example usage of forEach():</p>
+            <pre>
+                const numbers = [1, 2, 3, 4, 5]
+
+                numbers.forEach((number) => {
+                    console.log(number * 2)
+                })
+            </pre>
+            <p>map() is used to iterate over an array and create a new array based on the results of executing a function on each element in the array. The function should return a new value, and the new array will be the same length as the original array. It is commonly used when you want to create a new array based on the existing array.</p>
+            <p>Example usage of map():</p>
+            <pre>
+                const numbers = [1, 2, 3, 4, 5]
+
+                const doubledNumbers = numbers.map((number) => {
+                    return number * 2
+                })
+
+                console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
+            </pre>
+            <p>In summary, you should use forEach() when you want to execute some code for each item in an array without creating a new array based on the results, and use map() when you want to create a new array based on the existing array.</p>
+            <p>In the most simple of terms... If you’re planning to alter the array elements by applying a function, you should use the <u>map()</u> method.  This method does not modify the original array and <u>returns a new array</u>. In this way, the original array is kept intact.</p>
+            <p>On the other hand, if you want to loop through all the elements of an array and <u>don’t need a returned array</u>,  use the <u>forEach()</u> method.</p>
+            <p>More helpful and detailed information can be found<a class="page-link" href="https://codeburst.io/javascript-map-vs-foreach-f38111822c0f">here</a></p>   
         </section>
         <a class="back-home" href="../index.html">Back to Home</a>
     <script src="index.js" type="module"></script>   

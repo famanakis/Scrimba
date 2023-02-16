@@ -20,11 +20,35 @@
         </section>    
         <section id="home-main-content" class="page-main-content">
             <p class="hero-date">February 6, 2023</p>
-            <h2>Find Index - Invoice/Remove</h2>
-            <p>Learning how to click on and remove specific elements has been a crucial skill to learn. Think of all the times a user deletes or remove items from invoices or shopping carts!</p>
-       
-            <p>A live demo of this project can be found <a class="page-link" href="https://9tfdev-m5-solo-invoice-creator.netlify.app/">here</a></p>
-            
+            <h2>findIndex - Invoice/Remove</h2>
+            <p>Learning how to click on and remove specific elements has been a critical skill to learn. Think of all the times a user deletes or remove items from invoices or shopping carts!</p>
+            <p>To select specific elements for removal from the DOM, the keyword to think of is 'target'. You are targeting the element with your user interaction via click, double-click, etc. One way to target an element is to assign attributes to the HTML data, and then to target that data with the e.target.dataset property.</p>
+            <p>In JavaScript, the e.target.dataset property is a way to access the custom data attributes of an HTML element that triggered a particular event. Custom data attributes are attributes that start with the word "data" followed by a hyphen and a descriptive name. For example, you might have an HTML element like this: </p>
+            <pre>
+        &lth2&gt${task.name}
+            &ltspan class="remove" id="remove" data-uuid="${task.uuid}"&gtRemove&lt/span&gt
+        &lt/h2&gt
+            </pre>
+            <p>In this case, the data-uuid is a custom data attribute. When an event is triggered on this element, you can access its custom data attributes using the e.target.dataset property. For example, you could use the following code to log the uuid data attribute to the console when the element is clicked:</p>
+             <pre>
+        document.getElementById('myElement').addEventListener('click', function(e) {
+            console.log(e.target.dataset.uuid)
+            })
+        This returns '6e08006b-1d83-4d51-bacb-619d54bd00be' to the console.</pre>
+            <p>In this code, the e.target property refers to the element that triggered the click event. The dataset property allows you to access its custom data attributes by their name. Once an element has been targeted, identified, and retrieved from the DOM, we are able to do what we want with that element. In the case of the invoice generator project, I wanted to target line items for removal so they could be removed from the invoice by a single click from the user.</p>
+            <p>To accomplish the removal of the element, I used the findIndex method find the index of the matching uuid. Once the index was found, I then spliced the target index from the tasks array and rendered the tasks array to the page (minus the spliced element). Here is an example the code in my project:</p>
+            <pre>
+        const taskIndex = tasksArr.findIndex(task => task.uuid === e.target.dataset.uuid)
+        tasksArr.splice(taskIndex, 1)</pre>
+            <p>Here is the entire function used to remove an element from the DOM:</p>
+            <pre>
+        function removeEl(e) {
+            const taskIndex = tasksArr.findIndex(task => task.uuid === e.target.dataset.uuid)
+            tasksArr.splice(taskIndex, 1)
+            renderTasksArr()
+            renderInvoiceTotal()
+                }</pre>
+            <p>A live demo of this project can be found <a class="page-link" href="https://9tfdev-m5-solo-invoice-creator.netlify.app/">here</a></p>   
         </section>
         <a class="back-home" href="../index.html">Back to Home</a>
     <script src="index.js" type="module"></script>   

@@ -7,7 +7,6 @@ const btnCloseModal = document.getElementById('btn-nav-modal')
 const navModal = document.getElementById('nav-modal')
 const btnViewMore = document.getElementById('view-more')
 
-
 //Functions 
 function renderBlogLess() {
     mainContent.innerHTML = blogData.slice(0, 6).map(blog => 

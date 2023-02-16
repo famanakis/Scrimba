@@ -6,7 +6,6 @@ const btnHamburger = document.getElementById('nav-hamburger')
 const btnCloseModal = document.getElementById('btn-nav-modal')
 const navModal = document.getElementById('nav-modal')
 
-
 //Functions
 function renderBlogMobile() {
     blogMain.innerHTML = blogData.slice(0, 3).map(blog => 
@@ -18,7 +17,6 @@ function renderBlogMobile() {
         </div>`).join('')
 }
 renderBlogMobile()
-
 
 //Event Listeners
 btnHamburger.addEventListener('click', () => {

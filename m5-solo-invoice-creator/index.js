@@ -57,10 +57,10 @@ function removeEl(e) {
     //     return task.uuid != e.target.dataset.uuid
     // })
     // tasksArr = filteredArr
+
+    //New Way with findIndex
     //create const that finds the index of the element ou click to remove
-    const taskIndex = tasksArr.indexOf(
-        tasksArr.find(task => task.uuid === e.target.dataset.uuid)
-    )
+    const taskIndex = tasksArr.findIndex(task => task.uuid === e.target.dataset.uuid)
     //splice the taskIndex element out of the tasksArr
     tasksArr.splice(taskIndex, 1)
     renderTasksArr()

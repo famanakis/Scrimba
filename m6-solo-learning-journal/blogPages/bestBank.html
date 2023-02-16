@@ -22,6 +22,55 @@
             <p class="hero-date">February 1, 2023</p>
             <h2>BestBank CSS to the nth</h2>
             <p>What the "nth" is that?! This project was one that grew my CSS skills for working with elements to the nth degree.</p>
+            <p>In CSS, the :nth-child() and :nth-of-type() selectors can be used to select specific elements based on their position within their parent container. These selectors use an index number to select the element based on its position, starting from 1.</p>
+            <p>Here are some examples of how to use these selectors:</p>
+            <pre>
+                /* Selects the second element of div siblings */
+                div:nth-child(2) {
+                  background: red;
+                }
+            </pre>
+            <pre>
+                /* Selects the second li element in a list */
+                li:nth-child(2) {
+                  background: lightgreen;
+                }
+            </pre>
+            <p>Note that these selectors can be used with other selectors and combinators to create more complex selection rules.</p>
+            <p>In the <b>BestBank</b> project, the Spendings column is rendered using :nth Child() selectors to vary the width of each 'li' in the Spendings list.</p>
+            <pre>
+                .spendings {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 42px;
+                    border-radius: 15px;
+                    padding: 0 20px;
+                    background-color: var(--orange);
+                }
+
+                .spendings-list {
+                    width: 453px;
+                    gap: 12px;
+                }
+
+                .spendings-list li:nth-child(2) {
+                    width: 419px;
+                }
+
+                .spendings-list li:nth-child(3) {
+                    width: 329px;
+                }
+
+                .spendings-list li:nth-child(4) {
+                    width: 255px;
+                }
+
+                .spendings-list li:nth-child(5) {
+                    width: 217px;
+                }
+            </pre>
+            <p>A live demo of this project can be found <a class="page-link" href="https://9tfdev-m4-solo-bestbank.netlify.app/">here</a></p>   
         </section>
         <a class="back-home" href="../index.html">Back to Home</a>
     <script src="index.js" type="module"></script>   

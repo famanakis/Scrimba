@@ -35,7 +35,7 @@ export const dogsData = [
         name: "Charlie",
         avatar: "./assets/dog-charlie.jpg",
         age: 23,
-        bio: "Netflix or Hulu - what's your quick flick fix?",
+        bio: "Netflix or the Theatre - what's your movie night preference?",
         hasBeenSwiped: false,
         hasBeenLiked: false
     },
@@ -43,7 +43,7 @@ export const dogsData = [
         name: "Lucy",
         avatar: "./assets/dog-lucy.jpg",
         age: 37,
-        bio: "I am a Potterhead too. What's your Howarts house?",
+        bio: "I am a Potterhead too. What's your Hogwarts house?",
         hasBeenSwiped: false,
         hasBeenLiked: false
     },

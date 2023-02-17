@@ -49,9 +49,10 @@ function hideBadges() {
     rejectBadge.style.visibility='hidden'  
 }
 
-function alertStatus() {
-    alert("Dog has been liked: " + currentDog.hasBeenLiked + "\r\n" +  "Dog has been swiped: " + currentDog.hasBeenSwiped)
-}
+//This function is for texting purposes
+// function alertStatus() {
+//     alert("Dog has been liked: " + currentDog.hasBeenLiked + "\r\n" +  "Dog has been swiped: " + currentDog.hasBeenSwiped)
+// }
 
 function end() {
     dogCard.innerHTML = `

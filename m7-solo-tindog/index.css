@@ -19,6 +19,7 @@ body {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    margin-top: .75em;
 }
 
 /*- Tyopography -*/
@@ -143,12 +144,14 @@ p {
 .btn-cross:focus {
     background: #FFE7EF;
     filter: drop-shadow(0px 10px 20px #edd9df);
+    outline: none;
 }
 
 .btn-heart:hover,
 .btn-heart:focus {
     background: #DBFFF4;
     filter: drop-shadow(0px 10px 20px #ccf1e6); 
+    outline: none;
 }
 
 .cross-icon {

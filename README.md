@@ -22,6 +22,9 @@ Programming Languages Used
 <li>Unit Converter</li>
 <li>BestBank</li>
 <li>Oldagram</li>
+<li>Invoice Creator</li>
+<li>Restaurant Ordering App</li>
+<li>Learning Journal</li>
 </ul>
 
 ## Resources:

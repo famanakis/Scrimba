@@ -27,16 +27,29 @@ p {
 }
 
 .name {
-    color: #f8f8f8;
     font-size: 24px;
     font-weight: 600;
     margin-bottom: -12px;
 }
 
 .bio {
-    color: #b7b7b7;
     font-size: 18px;
     font-weight: 400;
+}
+
+.name,
+.bio {
+    letter-spacing: 1.2px;
+    color: #f8f8f8;
+    text-shadow:
+    0.05em 0 black,
+    0 0.05em black,
+    -0.05em 0 black,
+    0 -0.05em black,
+    -0.05em -0.05em black,
+    -0.05em 0.05em black,
+    0.05em -0.05em black,
+    0.05em 0.05em black;
 }
 
 /*- Header -*/

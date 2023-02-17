@@ -11,7 +11,12 @@ Programming Languages and Approach Used
 </ul>
 
 ## Screenshot
-<img src="" width=50% height=50%><br>
+### Dog Profile
+<img src="https://github.com/famanakis/Scrimba/blob/main/m7-solo-tindog/assets/screenshot.png" width=50% height=50%><br>
+### Dog Liked
+<img src="https://github.com/famanakis/Scrimba/blob/main/m7-solo-tindog/assets/screenshot-like.png" width=50% height=50%><br>
+### Dog Rejected
+<img src="https://github.com/famanakis/Scrimba/blob/main/m7-solo-tindog/assets/screenshot-reject.png" width=50% height=50%><br>
 [Live Demo - Coming Soon]()
  
 ## Project Requirements
@@ -28,6 +33,6 @@ Programming Languages and Approach Used
 </ul>
  
 ## Resources:
-  [Figma Design Screenshot]()<br>
+[Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m7-solo-tindog/assets/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
 

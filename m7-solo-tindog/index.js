@@ -1,5 +1,5 @@
-import Dog from './dogClass.js'
-import  dogsData  from './dogsData.js'
+import {Dog} from "./dogClass.js"
+import {dogsData}  from "./dogsData.js"
 
 //Variables
 const dogCard = document.getElementById("main-content")
@@ -16,15 +16,15 @@ likeBtn.addEventListener('click', ()=> {
     setTimeout(hideBadges, 3000)
     setTimeout(renderDogs, 3500) 
     currentDog.setMatchStatus(true)
-    //alertStatus() for testing puroses
+    //alertStatus() for testing purposes
     })
     
 rejectBtn.addEventListener('click', ()=> {
     const rejectBadge = document.querySelector('#rejectBadge')
     likeBadge.style.visibility='hidden'
     rejectBadge.style.visibility='visible'
-    setTimeout(hideBadges, 3000)
-    setTimeout(renderDogs, 3500)
+    setTimeout(hideBadges, 2000)
+    setTimeout(renderDogs, 2000)
     currentDog.setMatchStatus(false,true)
     //alertStatus() for testing purposes
     })

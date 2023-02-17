@@ -357,6 +357,8 @@ footer {
     background-color: var(--white);
     border: none;
     cursor: pointer;
+    margin-top: .25em;
+    height: 3.5em;
 }
 
 .nav-hamburger > div {

@@ -1,3 +1,14 @@
+:root {
+    --body: #eaeaea;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;

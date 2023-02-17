@@ -1,4 +1,4 @@
-const employees = [
+export const employees = [
   {
     name: "Jeremy Durant",
     title: "CEO",

@@ -31,5 +31,5 @@ Programming Languages and Approach Used
 </ul>
  
 ## Resources:
-[Figma Design](https://github.com/famanakis/Scrimba/blob/main/m6-solo-learning-journal/assets/figma-design-desktop.png)<br>
+[Figma Design](https://github.com/famanakis/Scrimba/blob/main/m7-solo-employee-directory/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)

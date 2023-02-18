@@ -124,6 +124,7 @@ select {
 }
 
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,7 +140,16 @@ select {
     width: 120px;
     height: 128px;
     border-radius: 50%;
-    margin: 2.5em auto 1em;
+    margin: .75em auto 1em;
+}
+
+.socials-div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    bottom: 1.687em;
 }
 
 

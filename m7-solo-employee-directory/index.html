@@ -4,6 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <title>Employee Directory</title>
         <link rel="stylesheet" href="css/style.css">
@@ -11,8 +15,17 @@
     <body>
         <header>
             <h1>Meet the Team</h1>
+            <form>
+                <select name="category" id="input-select-category" class="input-select">
+                    <option value="everyone">Everyone</option>
+                    <option value="leadership">Leadership</option>
+                    <option value="sales">Sales</option>
+                    <option value="customer service">Customer Service</option>
+                    <option value="product">Product</option>
+                <input id="input-search" class="input-search" type="text" placeholder="search name">
+            </form>
         </header>
-        <section>
+        <section class="employee-cards">
             <div id="card-container" class="card-container">
                 <!-- Employee cards are rendered from index.js -->
             </div>

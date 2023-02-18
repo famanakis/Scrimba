@@ -135,14 +135,11 @@ select {
     height: 30em; /*480px*/
 }
 
-.card > img {
+.employee-picture {
     width: 120px;
     height: 128px;
     border-radius: 50%;
-    margin: 1.1875em auto 1em;
+    margin: 2.5em auto 1em;
 }
 
-i {
-
-}
 

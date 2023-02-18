@@ -24,7 +24,7 @@ class Employee {
     }
 
     renderCardHtml() {
-        const { name, title, team, bio, image, social} = this
+        const { name, title, bio, image} = this
         return   `<div class="card">
                     <img src="images/photos/${image}" class="employee-picture" alt="picture of jeremy">
                     <h2>${name}</h2>

@@ -30,9 +30,7 @@ class Employee {
                     <h2>${name}</h2>
                     <h3>${title}</h3>
                     <span class="bio">${bio}</span>
-                    <span class="socials-div">
-                    ${this.renderSocialIcons()}
-                    </span>   
+                    <span class="socials-div">${this.renderSocialIcons()}</span>   
                 </div>`
     }
 }

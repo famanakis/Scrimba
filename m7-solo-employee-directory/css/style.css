@@ -36,6 +36,11 @@ h1 {
 
 h2 {
     font-size: 1.25rem;
+    margin-bottom: .34em;
+}
+
+h3 {
+    margin-bottom: .625em;
 }
 
 h2, h3 {
@@ -46,12 +51,13 @@ p {
     font-size: .9375em;
     font-weight: 400;
     line-height: 150%;
+    margin-bottom: 1em;
 }
 
 /*Styles*/
 html, body {
     min-width: 800px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 header {
@@ -121,9 +127,10 @@ select {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: var(--white);
     border: 1px solid var(--gray);
-    padding: 1.25em 1.5em 4.4375em; 
+    padding: 1.25em 1.49em 4.4375em; 
     width: 20em; /*320px*/
     height: 30em; /*480px*/
 }
@@ -132,5 +139,10 @@ select {
     width: 120px;
     height: 128px;
     border-radius: 50%;
+    margin: 1.1875em auto 1em;
+}
+
+i {
+
 }
 

@@ -2,6 +2,7 @@
     --body: #eaeaea;
     --white: #ffffff;
     --black: #000000;
+    --gray: #eaeaea;
 }
 
 
@@ -11,9 +12,44 @@
     padding: 0;
 }
 
-html, body {
+/*Typography*/
+body {
     font-family: 'Inter', sans-serif;
     color: var(--black);
+}
+
+input,
+select {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+}
+
+input {
+    color: #757474;
+}
+
+h1 {
+    font-family: 'Calistoga', cursive;
+    font-size: 4.75rem;
+    color: var(--white);
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+h2, h3 {
+    font-weight: 700;
+}
+
+p {
+    font-size: .9375em;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+/*Styles*/
+html, body {
     min-width: 800px;
     overflow: hidden;
 }
@@ -28,10 +64,8 @@ header {
     justify-content: center;
     align-items: center;
     height: 300px;
-    color: var(--white);
-    font-family: 'Calistoga', cursive;
-    font-size: 2.5rem;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.9);
+    border: 1px solid var(--gray);
 }
 
 header > h1 {
@@ -41,9 +75,8 @@ header > h1 {
 input,
 select {
     display: inline-block;
+    background-color: var(--white);
     height: 45px;
-    font-family: 'Inter', sans-serif;
-    font-size: 1.25rem;
     padding-left: .5em;
     border: 1px solid #CBCBCB;
     /* box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.7); */
@@ -67,18 +100,37 @@ select {
 
 .input-search {
     width: 334px;
-    color: #757474;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 }
 
 .employee-cards {
-    background-color: var(--body);
-    margin: 3.375em 4.625em;
+    background-color: var(--gray);
+    padding: 3.375em 4.625em;
+    min-height: 100vh;
 }
 
 .card-container {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
+    gap: 1.25em; /*20px*/  
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--white);
+    border: 1px solid var(--gray);
+    padding: 1.25em 1.5em 4.4375em; 
+    width: 20em; /*320px*/
+    height: 30em; /*480px*/
+}
+
+.card > img {
+    width: 120px;
+    height: 128px;
+    border-radius: 50%;
+}
+

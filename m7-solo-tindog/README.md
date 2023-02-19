@@ -17,7 +17,7 @@ Programming Languages and Approach Used
 <img src="https://github.com/famanakis/Scrimba/blob/main/m7-solo-tindog/assets/screenshot-like.png" width=50% height=50%><br>
 ### Dog Rejected
 <img src="https://github.com/famanakis/Scrimba/blob/main/m7-solo-tindog/assets/screenshot-reject.png" width=50% height=50%><br>
-[Live Demo - Coming Soon]()
+[Live Demo](https://9tfdev-m7-solo-tindog.netlify.app/)
  
 ## Project Requirements
  The Tindog solo project meets the following requirements:

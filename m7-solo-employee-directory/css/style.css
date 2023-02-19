@@ -16,6 +16,8 @@
 body {
     font-family: 'Inter', sans-serif;
     color: var(--black);
+    max-width: 1150px;
+    margin: 0 auto;
 }
 
 input,

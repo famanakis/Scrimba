@@ -25,6 +25,7 @@ Programming Languages Used
 <li>Invoice Creator</li>
 <li>Restaurant Ordering App</li>
 <li>Learning Journal</li>
+<li>Tindog</li>
 </ul>
 
 ## Resources:

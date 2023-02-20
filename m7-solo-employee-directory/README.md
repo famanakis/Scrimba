@@ -12,7 +12,7 @@ Programming Languages Used
 
 ## Screenshot
 <img src="" width=50% height=50%><br>
-[Live Demo - Coming Soon]()
+[Live Demo](https://9tfdev-m7-solo-employee-directory.netlify.app/)
  
 ## Project Requirements
  The Employee Directory solo project meets the following requirements:

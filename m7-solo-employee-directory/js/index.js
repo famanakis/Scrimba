@@ -33,7 +33,7 @@ class Employee {
 }
 
 //Functions
-function renderEmpCards(target) {
+function searchByTeam(target) {
     searchInput.value = ''
     const filteredEmployees = employees.filter(emp => target === emp.team)
     !target || target === 'everyone' ?
@@ -41,7 +41,7 @@ function renderEmpCards(target) {
     employeeCardDiv.innerHTML = filteredEmployees.map(emp => new Employee(emp).renderCardHtml()).join('')    
 }
 
-renderEmpCards()
+searchByTeam()
 
 function searchByName(target) {
     team.value = 'everyone'
@@ -51,7 +51,7 @@ function searchByName(target) {
 }
 
 //Event Listeners
-team.addEventListener('change', (e) => renderEmpCards(e.target.value))
+team.addEventListener('change', (e) => searchByTeam(e.target.value))
 
 searchInput.addEventListener('keyup', (e) => searchByName(e.target.value))
 

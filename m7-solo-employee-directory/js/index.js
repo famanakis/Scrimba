@@ -32,27 +32,59 @@ class Employee {
     }
 }
 
-const employeeCards = employees.map((employees) => {
-    const employeeCard = new Employee(employees)
-    return employeeCard.renderCardHtml()
-})
+//Functions
+function renderEmpCards(target) {
+    const filteredEmployees = employees.filter(emp => target === emp.team)
+    !target || target === 'everyone' ?
+    employeeCardDiv.innerHTML = employees.map(emp => new Employee(emp).renderCardHtml()).join('') :
+    employeeCardDiv.innerHTML = filteredEmployees.map(emp => new Employee(emp).renderCardHtml()).join('')    
+}
 
-employeeCardDiv.innerHTML = employeeCards.join('')
+renderEmpCards()
 
+function renderEmpCardsByName(target) {
+        const searchInput = target.toUpperCase()
+        
+        // const empNames = document.getElementsByTagName('h2')
+        // const empNames = employees.map(i => {
+            // if(i.name.toUpperCase().includes(searchInput))
+            // return i.name.toUpperCase()
+            // return i.name
+        // })
 
+        // console.log(empNames)
+
+        
+
+        // for( let i = 0; i < empNames.length; i ++) {
+
+            // let names = empNames[i].innerHTML.toUpperCase()
+            // console.log(names)
+            // console.log(names.includes(searchInput))
+            // names.includes(searchInput) ? console.log(names) : ''
+            // if(names.includes(searchInput)) {
+                // console.log(names)
+                // const searchedEmp = employees.filter(emp => names === emp.name.toUpperCase())
+                // console.log(searchedEmp)
+                // console.log(searchedEmp.map(emp => new Employee(emp).renderCardHtml()).join(''))
+                // employeeCardDiv.innerHTML = searchedEmp.map(emp => new Employee(emp).renderCardHtml()).join('')
+                
+                // employeeCardDiv.innerHTML = employees.map(emp => new Employee(emp).renderCardHtml()).join('')
+            //     // employeeCardDiv.innerHTML =  searchedEmp.map(emp => new Employee(emp).renderCardHtml()).join('')
+            // } else {
+                // employeeCardDiv.innerHTML = ''
+            // }
+        // }
+
+}
 
 //Event Listeners
+team.addEventListener('change', (e) => renderEmpCards(e.target.value))
 
-team.addEventListener('change', (e) => {
-    let filteredArr = employees.filter(function (team) {
-        return team.team === e.target.value
-    }).map((employees) => {
-        const employeeCard = new Employee(employees)
-        return employeeCard.renderCardHtml()
-    })
+searchInput.addEventListener('keyup', (e) => {
+    team.value = 'everyone'
+    renderEmpCardsByName(e.target.value)
+    }
+)
 
-    e.target.value === 'everyone' ? 
-    employeeCardDiv.innerHTML = employeeCards.join('') : 
-    employeeCardDiv.innerHTML = filteredArr.join('')
 
-})

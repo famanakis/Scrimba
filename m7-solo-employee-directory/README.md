@@ -5,8 +5,9 @@ Programming Languages and Approach Used
 <ul>
 <li>HTML</li>
 <li>CSS</li>
-<li>CSS-Flexbox</li>
+<li>CSS-Flexbox and Grid</li>
 <li>JavaScript</li>
+<li>JavaScript Classes</li>
 </ul>
 
 ## Screenshot

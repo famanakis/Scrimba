@@ -1,7 +1,7 @@
 # Employee Directory  - Solo Project
 
 ## A Scrimba Bootcamp Solo Project
-Programming Languages and Approach Used
+Programming Languages Used
 <ul>
 <li>HTML</li>
 <li>CSS</li>

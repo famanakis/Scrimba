@@ -3,6 +3,8 @@
     --white: #ffffff;
     --black: #000000;
     --gray: #eaeaea;
+    --dk-gray: #cbcbcb;
+    --input-text: #757474;
 }
 
 
@@ -27,7 +29,7 @@ select {
 }
 
 input {
-    color: #757474;
+    color: var(--input-text);
 }
 
 h1 {
@@ -86,7 +88,7 @@ select {
     background-color: var(--white);
     height: 45px;
     padding-left: .5em;
-    border: 1px solid #CBCBCB;
+    border: 1px solid var(--dk-gray);
     /* box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.7); */
     margin-bottom: 4.3125em;
 }

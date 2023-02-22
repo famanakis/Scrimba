@@ -5,7 +5,7 @@ const watchArr = JSON.parse(localStorage.getItem("movieID"))
 
 //Remove Target from Local Storage and Render Page
 document.addEventListener('click', (e)=> { 
-    const targetEl = document.getElementById(e.target.dataset.imdbid)   
+    // const targetEl = document.getElementById(e.target.dataset.imdbid)   
     if (e.target.dataset.imdbid) {
         if (!watchArr.includes(e.target.dataset.imdbid)) {
             watchArr.push(e.target.dataset.imdbid)   
@@ -25,8 +25,8 @@ document.addEventListener('click', (e)=> {
 function renderWatchlist() {
     if(watchArr.length === 0) {
         mainPage.innerHTML = `<div class="flex-list-empty">
-                <p class="pBold">Your watchlist is looking a little empty...</p>
-                <a href="index.html"><img src="images/plus-icon.png" class="plus" alt="plus icon" style="margin: -8px">Watchlist</a>  
+                <p class="p-bold">Your watchlist is looking a little empty...</p>
+                <a href="../index.html"><img src="images/plus-icon.png" class="plus" alt="plus icon" style="margin: -8px">Watchlist</a>  
             </div>`       
         } else {
         mainPage.innerHTML = ''

@@ -1,3 +1,14 @@
+:root {
+    --background: #121212;
+    --white: #ffffff;
+    --smoke: #E5E7EB;
+    --slate: #4b4b4b;
+    --gray: #787878;
+    --lt-gray: #a5a5a5;
+    --dk-gray: #2e2e2f;
+    --magnifier: #9CA3AF;
+}
+
 *{
     box-sizing: 0;
 }
@@ -5,8 +16,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    background: #121212;
-    color: #ffffff;
+    background: var(--background);
+    color: var(--white);
 }
 
 /*==============
@@ -27,7 +38,7 @@ h1  {
 
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--white);
     font-weight: 700;
 }
 
@@ -36,12 +47,12 @@ a {
      Header
      All Pages
 ================*/
-.pBold {
+.p-bold {
     font-weight: 700;
     font-size: 18px;    
     margin-top: 8px;
     line-height: 29px;
-    color: #787878;
+    color: var(--gray);
 }
 
 input:hover, input:focus {
@@ -50,7 +61,7 @@ input:hover, input:focus {
 
 .icon-div:hover, .icon-div:focus {
     cursor: pointer;
-    background: #787878;
+    background: var(--gray);
     outline: none;
 }
 
@@ -77,8 +88,8 @@ input:hover, input:focus {
 }
 
 .input-search {
-    background: #2e2e2f;
-    color: #a5a5a5;
+    background: var(--dk-gray);
+    color: var(--lt-gray);
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
     border-radius: 6px 0px 0px 6px;
     border: none;
@@ -89,15 +100,15 @@ input:hover, input:focus {
 }
 
 #inputEl {
-    background-image: url("Images/MagnifierIcon.png");
+    background-image: url("../images/magnifier-icon.png");
     background-repeat: no-repeat;
     background-position: 10px;
-    color: #9CA3AF;
+    color: var(--magnifier);
 }
 
 .btn-search {
-    background: #4b4b4b;
-    color: #ffffff;
+    background: var(--slate);
+    color: var(--white);
     border: none;
     padding: 9px 11px 9px 17px;
     width: 120px;
@@ -121,7 +132,7 @@ input:hover, input:focus {
 }
 
 .main-content-hidden > p {
-    color: #2E2E2F;
+    color: var(--dk-gray);
 }
 
 /*=================
@@ -141,22 +152,22 @@ input:hover, input:focus {
     flex-direction: row;
     justify-content: flex-start;
     margin: 0px 45px;
-    border-bottom: 1.5px solid #E5E7EB;
+    border-bottom: 1.5px solid var(--smoke);
 }
 
-.filmPoster {
+.film-poster {
     height: 150px;
     width: 100px;
     border-radius: 2.5px;
     margin: 35px 21px 33.5px 0;
 }
 
-.filmData {
+.film-data {
     font-size: 12px;
     font-weight: 400;
 }
 
-.filmTitle {
+.film-title {
     font-size: 18px;
     font-weight: 500;
 }
@@ -172,7 +183,7 @@ input:hover, input:focus {
 .plus {
     padding-right: 7px;
     margin-bottom: -3px; 
-    background-image: url(./Images/PlusIcon.png);
+    background-image: url(../images/plus-icon.png);
     background-repeat: no-repeat;
     padding-right: 1.5rem;
     padding-bottom: 5px;
@@ -182,16 +193,16 @@ input:hover, input:focus {
 .minus {
     padding-right: 7px;
     margin-bottom: -3px; 
-    background-image: url(./Images/MinusIcon.png);
+    background-image: url(../images/minus-icon.png);
     background-repeat: no-repeat;
     padding-right: 1.5rem;
     padding-bottom: 5px;
     margin-left: .75rem; 
 }
 
-.watchlistBtn {
-    color: white;
-    background: #121212; 
+.btn-watchlist {
+    color: var(--white);
+    background: var(--background); 
     padding-left: .35rem;
 }
 
@@ -202,7 +213,7 @@ input:hover, input:focus {
 }
 
 .plot {
-    color: #A5A5A5;
+    color: var(--lt-gray);
     font-size: 14px;
 }
 
@@ -221,26 +232,26 @@ div.flex-row > p {
     flex-direction: column;
     align-items: center;
     padding-top: 150px;
-    color: #787878;
+    color: var(--gray);
     
 }
 
 .plus-icon {
-    color: #ffffff;
+    color: var(--white);
     width: 15px;
     height: 15px;
     padding-top: 17px;
     padding-right: 8px;
 }
 
-.plus-Idiv {
+.plus-idiv {
     display: flex;
     flex-direction: row;
     margin: -17px;
     
 }
 
-div.plus-Idiv > p {
-    color: #ffffff;
+div.plus-idiv > p {
+    color: var(--white);
     font-size: 14px;
 }

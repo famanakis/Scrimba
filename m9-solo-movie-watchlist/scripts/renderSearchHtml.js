@@ -5,7 +5,7 @@ export function renderSearch(data) {
     const { imdbID, Title, imdbRating, Runtime, Genre, Plot } = data
 
     if (data.Poster.length < 4) {
-        data.Poster = './Images/DefaultPoster.jpg'
+        data.Poster = './images/default-poster.jpg'
         }
      
     let addRemoveClass = 'plus'   
@@ -16,12 +16,12 @@ export function renderSearch(data) {
     mainContentEl.innerHTML += `
         <div class="flex-list">
             <div class="flex-row">
-                <img src="${data.Poster}" id="filmPoster" class="filmPoster"
+                <img src="${data.Poster}" id="filmPoster" class="filmPoster" alt="movie poster image"
             </div>
             <div>
                 <p class="filmData">
                     <span class="filmTitle">${Title}</span>
-                    <img src="Images/StarIcon.png" class="star">${imdbRating}
+                    <img src="images/star-icon.png" class="star" alt="star icon for ratings">${imdbRating}
                 </p>       
                 <p>
                     <span class="runtime">${Runtime}</span>

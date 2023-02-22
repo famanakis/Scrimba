@@ -2,19 +2,19 @@ export function renderWatchlistHtml(data) {
     const {Title, imdbRating, Runtime, Genre, imdbID, Plot} = data    
 
     if (data.Poster.length < 4) {
-        data.Poster = './Images/DefaultPoster.jpg'
+        data.Poster = './images/default-poster.jpg'
         }
           
     const mainContentWatchlist = document.getElementById('main-content-watchlist')  
     mainContentWatchlist.innerHTML += `
         <div class="flex-list">
             <div class="flex-row">
-                <img src="${data.Poster}" id="filmPoster" class="filmPoster"
+                <img src="${data.Poster}" id="filmPoster" class="filmPoster" alt="image of movie poster"
             </div>
             <div>
                 <p class="filmData">
                     <span class="filmTitle">${Title}</span>
-                    <img src="Images/StarIcon.png" class="star">${imdbRating}
+                    <img src="images/star-icon.png" class="star" alt="star icon for ratings">${imdbRating}
                 </p>       
                 <p>
                     <span class="runtime">${Runtime}</span>

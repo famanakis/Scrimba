@@ -1,17 +1,19 @@
-<html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Movie Watchlist Solo Project</title>
-        <link rel="stylesheet" href="index.css">
+        <title>My Watchlist</title>
+        <link rel="stylesheet" href="./css/index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
     </head>
     <body>
         <section id="header" class="header">
-            <button id="searchBtn" class="btn-search" style="display:none;">Search</button>
+            <button type="button" id="searchBtn" class="btn-search" style="display:none;">Search</button>
             <div class="flex-find">
                 <h1>My Watchlist</h1>
                 <a href="index.html" id="myWatchlist" class="a-watchlist grow">Search for movies</a>
@@ -20,10 +22,9 @@
         <section id="main-content-watchlist" class="list-main-content">
             <div class="flex-list-empty">
                 <p class="pBold">Your watchlist is looking a little empty...</p>
-                <a href="index.html"><img src="Images/PlusIcon.png" class="plus" style="margin: -8px">Watchlist</a>  
+                <a href="index.html"><img src="images/plus-icon.png" class="plus" alt="plus icon" style="margin: -8px">Watchlist</a>  
             </div>
         </section>
-        <script type="module" src="watchlist.js"></script>
+        <script type="module" src="./scripts/watchlist.js"></script>
     </body>
 </html>
-

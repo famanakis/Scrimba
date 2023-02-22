@@ -64,7 +64,7 @@ input:hover, input:focus {
     justify-content: space-between;
     align-items: center;
     height: 200px;
-    background-image: url("Images/BackgroundImg.png");
+    background-image: url("../images/background-img.png");
     background-size: cover;
     padding: 0 50px;
 }

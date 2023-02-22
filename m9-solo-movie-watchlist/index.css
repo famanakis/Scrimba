@@ -1,0 +1,246 @@
+*{
+    box-sizing: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: #ffffff;
+}
+
+/*==============
+   Typograhpy
+   Inter Fonts 400,500, 700, 800
+===============*/
+h1, p, a, input, button {
+    font-family: 'Inter', sans-serif;
+    font-stretch: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+h1  {
+    font-weight: 800; 
+    font-size: 43px;   
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+
+/*===============
+     Header
+     All Pages
+================*/
+.pBold {
+    font-weight: 700;
+    font-size: 18px;    
+    margin-top: 8px;
+    line-height: 29px;
+    color: #787878;
+}
+
+input:hover, input:focus {
+    outline: none;
+}
+
+.icon-div:hover, .icon-div:focus {
+    cursor: pointer;
+    background: #787878;
+    outline: none;
+}
+
+/*================
+   index.html 
+   Main-Content
+==================*/
+.flex-find {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    background-image: url("Images/BackgroundImg.png");
+    background-size: cover;
+    padding: 0 50px;
+}
+
+.flex-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -12px;
+}
+
+.input-search {
+    background: #2e2e2f;
+    color: #a5a5a5;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px 0px 0px 6px;
+    border: none;
+    width: 500px;
+    height: 38px;
+    margin-left: 50px;
+    padding-left: 40px;
+}
+
+#inputEl {
+    background-image: url("Images/MagnifierIcon.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    color: #9CA3AF;
+}
+
+.btn-search {
+    background: #4b4b4b;
+    color: #ffffff;
+    border: none;
+    padding: 9px 11px 9px 17px;
+    width: 120px;
+    height: 40px;
+    border-radius: 0px 6px 6px 0px;
+    margin-right: 50px;
+}
+
+.btn-search:active,
+.btn-search:focus,
+.btn-search:hover {
+    outline: none;
+}
+
+.main-content-hidden {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.main-content-hidden > p {
+    color: #2E2E2F;
+}
+
+/*=================
+    index.html
+    JavaScript 
+    Main-Content
+==================*/
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0px 45px;
+    border-bottom: 1.5px solid #E5E7EB;
+}
+
+.filmPoster {
+    height: 150px;
+    width: 100px;
+    border-radius: 2.5px;
+    margin: 35px 21px 33.5px 0;
+}
+
+.filmData {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.filmTitle {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.star {
+    margin: auto 7px;
+}
+
+.runtime {
+    padding-right: 5px;
+}
+
+.plus {
+    padding-right: 7px;
+    margin-bottom: -3px; 
+    background-image: url(./Images/PlusIcon.png);
+    background-repeat: no-repeat;
+    padding-right: 1.5rem;
+    padding-bottom: 5px;
+    margin-left: .75rem; 
+}
+
+.minus {
+    padding-right: 7px;
+    margin-bottom: -3px; 
+    background-image: url(./Images/MinusIcon.png);
+    background-repeat: no-repeat;
+    padding-right: 1.5rem;
+    padding-bottom: 5px;
+    margin-left: .75rem; 
+}
+
+.watchlistBtn {
+    color: white;
+    background: #121212; 
+    padding-left: .35rem;
+}
+
+.grow:hover, .grow:active {
+    background-size: 1.25rem;
+    background-position: 0rem .7rem;
+    padding: .75rem;
+}
+
+.plot {
+    color: #A5A5A5;
+    font-size: 14px;
+}
+
+div.flex-row > p {
+    margin: 5.5px 0;
+}
+
+
+/*===================
+    Watchlist.html 
+    Main Content
+=====================*/
+
+.flex-list-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    color: #787878;
+    
+}
+
+.plus-icon {
+    color: #ffffff;
+    width: 15px;
+    height: 15px;
+    padding-top: 17px;
+    padding-right: 8px;
+}
+
+.plus-Idiv {
+    display: flex;
+    flex-direction: row;
+    margin: -17px;
+    
+}
+
+div.plus-Idiv > p {
+    color: #ffffff;
+    font-size: 14px;
+}

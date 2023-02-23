@@ -11,38 +11,35 @@ let watchArr = JSON.parse(localStorage.getItem("movieID"))
 if (!watchArr) {watchArr = []}
 
 // Fetch Search Data by Input.value and put data into the movieArray function
-function getMovies() {
+async function getMovies() {
     let value = inputEl.value
-    fetch(`https://www.omdbapi.com/?apikey=aec85da8&s=${value}`)
-        .then(res => res.json())
-        .then(data => {
-            movieArray(data)   
-        })
-        .catch(() => mainContentEl.innerHTML = `
+    try {
+        const res = await fetch(`https://www.omdbapi.com/?apikey=aec85da8&s=${value}`)
+        const data = await res.json()
+        movieArray(data)
+    } catch (error) { 
+    mainContentEl.innerHTML = `
         <div class="flex-list-empty">
             <p class="p-bold">Unable to find what you’re looking<br>
             &nbsp&nbsp&nbsp&nbsp for. &nbsp Please try another search.</p>
         </div>
         `
-    )
+    }
 }
 
-//Get movie Search data and map to an Array - then render data to Page
-function movieArray(data) {
+async function movieArray(data) {
     const movieArr = data.Search
     for (let movie of movieArr) {
-        fetch(`https://www.omdbapi.com/?apikey=aec85da8&i=${movie.imdbID}`)
-            .then(res => res.json())
-            .then(data => {
-                renderSearch(data)
-            })
+        const res = await fetch(`https://www.omdbapi.com/?apikey=aec85da8&i=${movie.imdbID}`)
+        const data = await res.json()
+        renderSearch(data)
     }
 }
 
 //Event Listeners
 //Input Press Enter Button to submit Search
 inputEl.addEventListener("keyup", (e) => {
-    if (e.keyCode === 13) {
+    if (e.key === 'Enter') {
         e.preventDefault();
         searchBtn.click();
     }

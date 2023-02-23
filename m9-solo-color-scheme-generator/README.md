@@ -11,14 +11,14 @@ Programming Languages Used
 </ul>
 
 ## Screenshot
- <img src="password-screenshot-dark.png" width=50% height=50%><br>
+ <img src="https://github.com/famanakis/Scrimba/blob/main/m9-solo-color-scheme-generator/assets/Color%20Scheme%20Generator%20Screenshot.png" width=50% height=50%><br>
  [Live Demo - Coming Soon]()
  
 ## Project Requirements
  The Color Scheme Generator solo project meets the following requirements:
  <ul>
- <li>Choose 'seed color' with an <input type="color"/></li>
- <li>Choose color scheme mode in a <select> box</li>
+ <li>Choose 'seed color' with an 'input type="color"' HTML element</li>
+ <li>Choose color scheme mode in a HTML element 'select' box</li>
  <li>Clicking button makes request to The Color API to get a color scheme</li>
  <li>Display the scheme colors and hex values on the page</li>
  </ul>
@@ -29,6 +29,6 @@ Programming Languages Used
  </ul>
  
 ## Resources:
- [Figma Design Screenshot]()<br>
+ [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m9-solo-color-scheme-generator/assets/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
 

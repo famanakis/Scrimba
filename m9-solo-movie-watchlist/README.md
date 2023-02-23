@@ -1,21 +1,32 @@
-# co2d845d7b2fbe02c43d3da0c
+# Movie Watchlist - Solo Project
 
-Quick start:
+## A Scrimba FrontEnd Developer Path Solo Project
+Programming Languages and Approach Used
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>CSS-Flexbox</li>
+<li>JavaScript</li>
+<li>Web API Integration</li>
+</ul>
 
-```
-$ npm install
-$ npm start
-````
+## Screenshot
+### Movie Search
+<img src="" width=50% height=50%><br>
+### My Watchlist
+<img src="" width=50% height=50%><br>
+[Live Demo - coming soon]()
+ 
+## Project Requirements
+ The Movie Watchlist solo project meets the following requirements:
+ <ul>
+ <li>Two pages - index.html and watchlist.html</li>
+ <li>Index = search page. Calls OMDB API with the title searched for and displays search results</li>
+ <li>Button to "add to watchlist" which saves that data to the local storage</li>
+ <li>Watchlist.html loads and displays data from local storage</li>
+ </ul>
+ 
+## Resources:
+[Figma Design Screenshot]()<br>
+ [Scrimba](https://scrimba.com/)
 
-Head over to https://vitejs.dev/ to learn more about using vite
-## About Scrimba
-
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
-
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
-
-Happy Coding!

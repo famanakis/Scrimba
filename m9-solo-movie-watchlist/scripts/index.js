@@ -3,10 +3,12 @@ import {renderSearch} from "./renderSearchHtml.js"
 //Access the DOM
 const inputEl = document.getElementById("inputEl")
 const searchBtn = document.getElementById("searchBtn")
-// const watchlistEl = document.getElementById("hiddenEl")
 const mainContentEl = document.getElementById("main-content")
-const watchArr = JSON.parse(localStorage.getItem("movieID"))
 export {mainContentEl, watchArr}
+
+//Variables
+let watchArr = JSON.parse(localStorage.getItem("movieID"))
+if (!watchArr) {watchArr = []}
 
 // Fetch Search Data by Input.value and put data into the movieArray function
 function getMovies() {

@@ -7,6 +7,7 @@ Programming Languages and Approach Used
 <li>CSS</li>
 <li>CSS-Flexbox</li>
 <li>JavaScript</li>
+<li>Moblie First Design</li>
 <li>Web API Integration</li>
 </ul>
 
@@ -31,6 +32,6 @@ Programming Languages and Approach Used
 </ul>
  
 ## Resources:
-  [Figma Design Screenshot]()<br>
+  [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m9-solo-youTube-channel-search/assets/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
 

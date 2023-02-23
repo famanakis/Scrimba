@@ -1,4 +1,4 @@
-# HikeFinder Website - Solo Project
+# youTube Channel Search - Solo Project
 
 ## A Scrimba Bootcamp Solo Project
 Programming Languages and Approach Used
@@ -7,7 +7,7 @@ Programming Languages and Approach Used
 <li>CSS</li>
 <li>CSS-Flexbox</li>
 <li>JavaScript</li>
-<li>Mobile First Design</li>
+<li>Web API Integration</li>
 </ul>
 
 ## Screenshot
@@ -15,27 +15,22 @@ Programming Languages and Approach Used
 [Live Demo - Coming Soon]()
  
 ## Project Requirements
- The HikeFinder solo project meets the following requirements:
+ The youTube Channel Search solo project meets the following requirements:
  <ul>
- <li>Build the 'Home' and 'Explore' pages from 'scratch'</li>
- <li>Make each page responsive</li>
- <ul>
- <li>Mobile-first design</li>
- <li>Media queries</li>
- <li>Flexbox and/or Grid</li>
- <li>Responsive nav</li>
- </ul>
+ <li>Search videos on a given YouTube channel</li>
+ <li>Use 'search' endpoint to return videos matching the search query</li>
+ <li>Display video thumbnails and titles</li>
+ <li>Inform users when no results match search term</li>
+ <li>Clicking on a video opens it on YouTube</li>
  </ul>
  
  My project includes the following 'stretch goals':
  <ul>
-<li>Design and build the 'Sign up' and 'Log In' form pages</li>
-<li>Embed a Google map on the 'Explore' page</li>
-<li>Add new pages</li>
+<li>Add a drop down menu to let users switch between different channels</li>
+<li>Display other video data: publish date, description, etc.</li>
 </ul>
  
 ## Resources:
-  [Figma Design Home Screenshot](https://github.com/famanakis/Scrimba/blob/main/m6-solo-hike-finder-website/assets/figma-design%20home.png)<br>
-  [Figma Design Explore Screenshot](https://github.com/famanakis/Scrimba/blob/main/m6-solo-hike-finder-website/assets/figma-design%20explore.png)<br>
+  [Figma Design Screenshot]()<br>
  [Scrimba](https://scrimba.com/)
 

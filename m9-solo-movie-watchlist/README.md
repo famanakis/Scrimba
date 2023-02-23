@@ -27,6 +27,7 @@ Programming Languages and Approach Used
  </ul>
  
 ## Resources:
-[Figma Design Screenshot]()<br>
+[Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m9-solo-movie-watchlist/assets/figma-design-1.png)<br>
+[Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m9-solo-movie-watchlist/assets/figma-design-2.png)<br>
  [Scrimba](https://scrimba.com/)
 

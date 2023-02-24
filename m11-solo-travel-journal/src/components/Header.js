@@ -2,11 +2,11 @@ import React from "react"
 
 export default function Header() {
     return (
-        <div>
+        <header>
         <nav className="navbar">
-            <img src="../World-Icon.png" className="nav-logo"/>
+            <img src="../images/world-icon.png" alt="world icon" className="nav-logo"/>
             <h6 className="nav-title">Farrah's Travel Journal</h6>
         </nav>
-        </div>
+        </header>
     )
 }

@@ -16,10 +16,10 @@ export default function App() {
         )
     })
     return (
-        <>
+        <div>
         <Header />
         {cardInfo}
         <Footer />
-        </>
+        </div>
     )
 }

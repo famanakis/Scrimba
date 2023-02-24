@@ -11,7 +11,7 @@ Languages, Frameworks and Approach Used
 </ul>
 
 ## Screenshot
-<img src="src=./src/images/project-screenshot.png" width=30% height=30%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m11-solo-travel-journal/src/images/project-screenshot.png" width=50% height=50%><br>
 [Live Demo - Coming Soon]()
  
 ## Project Requirements

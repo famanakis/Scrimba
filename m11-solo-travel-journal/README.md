@@ -11,7 +11,7 @@ Languages, Frameworks and Approach Used
 </ul>
 
 ## Screenshot
-<img src="" width=30% height=30%><br>
+<img src="src=./src/images/project-screenshot.png" width=30% height=30%><br>
 [Live Demo - Coming Soon]()
  
 ## Project Requirements

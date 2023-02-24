@@ -26,6 +26,7 @@ Programming Languages Used
 <li>Restaurant Ordering App</li>
 <li>Learning Journal</li>
 <li>Tindog</li>
+<li>Digital Business Card - React</li>
 </ul>
 
 ## Resources:

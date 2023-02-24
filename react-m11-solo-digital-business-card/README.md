@@ -1,28 +1,47 @@
-# co6df4f6ab569464be3200c1c
+# Digital Business Card - React Solo Project
 
-Quick start:
+## A Scrimba Solo Project
+Languages, Frameworks and Approach Used
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>CSS-Flexbox</li>
+<li>JavaScript</li>
+<li>React Framework</li>
+</ul>
 
+## Screenshot
+<img src="" width=50% height=50%><br>
+[Live Demo - Coming Soon]()
+ 
+## Project Requirements
+ The Digital Business Card solo project meets the following requirements:
+ <ul>
+ <li>Build from scratch!</li>
+ <li>Fill in your own information</li>
+ <li>Separate components for:</li>
+ <ul>
+ <li>Info (photo, name, buttons, etc.)</li>
+ <li>About</li>
+ <li>Interests</li>
+ <li>Footer (social icons)</li>
+ </ul>
+ </ul>
+ 
+## Resources:
+  [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m9-solo-youTube-channel-search/assets/figma-design.png)<br>
+ [Scrimba](https://scrimba.com/)
+
+
+
+## Quick start:
 ```
 $ yarn # npm install
 $ yarn build # npm run build
 ````
 
 ## Development
-
 Run Webpack in watch-mode to continually compile the JavaScript as you work:
-
 ```
 $ yarn watch # npm run watch
 ```
-
-## About Scrimba
-
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
-
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
-
-Happy Coding!

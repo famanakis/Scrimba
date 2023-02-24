@@ -26,7 +26,7 @@ Languages, Frameworks and Approach Used
  </ul>
  
 ## Resources:
-  [Figma Design Screenshot]()<br>
+[Figma Design Screenshot](src="./src/images/figma-design.png")<br>
  [Scrimba](https://scrimba.com/)
 
 

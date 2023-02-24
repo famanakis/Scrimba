@@ -2,16 +2,16 @@ import React from "react"
 import Header from "./components/Header.js"
 import Main from "./components/Main.js"
 import Footer from "./components/Footer.js"
-import data from "./data.js"
+import {data} from "./data.js"
 
 //console.log(data)
 
 export default function App() {
-    const cardInfo = data.map((i)=>{
+    const cardInfo = data.map((card)=>{
         return (
             <Main 
-                key={i.id}
-                {...i}
+                key={card.id}
+                {...card}
             />
         )
     })

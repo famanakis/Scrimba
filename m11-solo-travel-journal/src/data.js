@@ -1,4 +1,4 @@
-export default [
+export const data = [
     {
         id: 1,
         title: "Havasupai",
@@ -16,7 +16,7 @@ export default [
         googleMapsUrl: "https://www.google.com/maps/place/Leeds+Castle/@51.2486957,0.6210619,15z/data=!3m1!4b1!4m5!3m4!1s0x47df2ea2e835edff:0x9354efcaf02b1af9!8m2!3d51.248696!4d0.6298167",
         startDate: "25 May 1998",
         endDate: "26 May 1998",
-        description: "Leeds Castle has been called the 'loveliest castle in the world'. This castle has been a Norman stronghodl, a royl residence and a royal palace. It's location is stunning, set on two islands in a magnificent lake.",
+        description: "Leeds Castle has been called the 'loveliest castle in the world'. This castle has been a Norman stronghold, a royal residence and a royal palace. It's location is stunning, set on two islands in a magnificent lake.",
         imageUrl: "https://source.unsplash.com/oaiESTTyAu0"
     },
     {

@@ -1,4 +1,4 @@
-Travel Journal - React Solo Project
+Quizzical - React Solo Project
 
 ## A Scrimba Solo Project
 Languages, Frameworks and Approach Used
@@ -15,14 +15,12 @@ Languages, Frameworks and Approach Used
 [Live Demo - Coming Soon]()
  
 ## Project Requirements
- The Travel Journal solo project meets the following requirements:
+ The Quizzical solo project meets the following requirements:
  <ul>
- <li>Data array in a separate .js file</li>
- <ul>
- <li>Title, location, Google Maps link, start date, end date, description, image URL</li>
- </ul>
- <li>Use .map() and props</li>
- <li>Styles & polished</li>
+ <li>Two screens (start & questions)</li>
+ <li>Pull 5 questions from the OTDB API</li>
+ <li>Tally correct answers after "Check answers" is clicked</li>
+<li>Styled & polished</li>
  </ul>
  
 ## Resources:

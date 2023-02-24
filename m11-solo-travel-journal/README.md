@@ -26,7 +26,7 @@ Languages, Frameworks and Approach Used
  </ul>
  
 ## Resources:
-[Figma Design Screenshot](src="./src/images/figma-design.png")<br>
+[Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m11-solo-travel-journal/src/images/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
 
 

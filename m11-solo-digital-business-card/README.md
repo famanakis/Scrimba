@@ -12,7 +12,7 @@ Languages, Frameworks and Approach Used
 
 ## Screenshot
 <img src="https://github.com/famanakis/Scrimba/blob/main/m11-solo-digital-business-card/src/images/project-screenshot.png" width=30% height=30%><br>
-[Live Demo - Coming Soon]()
+[Live Demo](https://9tfdev-m11-digital-business-card.netlify.app/)
  
 ## Project Requirements
  The Digital Business Card solo project meets the following requirements:

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Invoice Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="invoice-container">
+        <header>
+        <h1>Invoice Creator</h1>
+        <p>Thanks for choosing GoodCorp, LLC!</p>
+        </header>
+        <main id="main-content" class="container">
+            <div id="tasks" name="tasks" class="tasks">
+                <form id="task-form" class="tasks-form">
+                    <input type="text" id="input-task" class="input-task" value="" placeholder="Enter task">
+                    <select name="price" id="input-price" class="input-price" form="task-form">
+                        <option value="10">$10</option>
+                        <option value="20">$20</option>
+                        <option value="30">$30</option>
+                        <option value="40">$40</option>
+                        <option value="50">$50</option>
+                    </select>
+                    <button type="button" id="btn-add-task" class="btn-add-task">+</button>
+                </form>
+            </div>
+            <div class="flex-container">
+                <h3>task</h3>
+                <h3>total</h3>
+            </div>
+            <div id="tasks-container" class="tasks-container"></div>
+            <hr class="line">
+            <div class="flex-container">
+                <h3 id="notes">notes</h3>
+                <h3 id="total-amount">total amount</h3>
+            </div>
+            <div class="flex-container">
+                <p class="terms" id="terms"></p>
+                <h4 id="invoiceTotal">$ 0</h4>
+            </div>
+            <button type="submit" id="btn-send" class="btn-send">
+                <i class="fa fa-envelope"></i>Send invoice</button>
+        </main>
+    </div>
+	<script src="index.js"></script>
+  </body>
+</html>

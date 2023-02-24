@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basketball Scoreboard Solo Project</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="score-count">
+                <div>
+                    <h3>HOME</h3>
+                    <h2 id="homeScore" class="scoreBoard">0</h2>
+                    <div id="addPointsHome">
+                        <button type="button" class="btn addBtns" 
+                        onclick="onClickHome(this.value)" value="1">+1</button>
+                        <button type="button" class="btn addBtns"
+                        onclick="onClickHome(this.value)" value="2">+2</button>
+                        <button type="button" class="btn addBtns"
+                        onclick="onClickHome(this.value)" value="3">+3</button>
+                    </div>
+                </div>
+                <div>
+                    <h3>AWAY</h3>
+                    <h2 id="awayScore" class="scoreBoard">0</h2>
+                    <div id="addPointsAway">
+                        <button type="button" class="btn addBtns"
+                        onclick="onClickAway(this.value)" value="1">+1</button>
+                        <button type="button" class="btn addBtns"
+                        onclick="onClickAway(this.value)" value="2">+2</button>
+                        <button type="button" class="btn addBtns"
+                        onclick="onClickAway(this.value)" value="3">+3</button>
+                    </div>
+                </div>
+            </div>
+            <div class="newGame">
+                <button type="button" id="btn-new-game" class="btn newGameBtn">New Game</button>
+            </div>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
+

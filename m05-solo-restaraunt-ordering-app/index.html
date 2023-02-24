@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mobile Restaurant Menu</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://kit.fontawesome.com/184e8d27a0.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <div class="page-container">
+        <header class="header"></header>
+        <div class="header-text">
+            <h1>Kara's Kitchen</h1>
+            <h2>Comfort Food for You</h2>
+        </div>
+        <section class="main-content">
+            <div class="meal-deal">
+                <p>Meal Deal- 1 Entree plus 1 Side = 1 FREE Soda</p>
+                <p class="limit">Limit 2 Deals per order</p>
+            </div>
+            <div id="menu-div" class="menu-div"> </div>
+            <div id="checkout-section" class="checkout"></div>
+            <div id="ratings-el" class="ratings-container">
+                <p class="ratings-text hidden-el">How did you like our app?</p>
+                <div class="rating hidden-el">
+                    <i class="rating-star fa-solid fa-star"></i>
+                    <i class="rating-star fa-solid fa-star"></i>
+                    <i class="rating-star fa-solid fa-star"></i>
+                    <i class="rating-star fa-solid fa-star"></i>
+                    <i class="rating-star fa-solid fa-star"></i>
+                </div>
+            </div>        
+        </section>
+        <section id="payment-modal" class="payment-modal hidden-el">
+            <p class="modal-title">Enter card details</p>
+            <button type="button" id="btn-modal-close" class="btn-modal-close" data-exit="exit">x</button>
+            <form>
+                <input id="card-name" class="card-name" type="text" name="cardholder" placeholder="Enter your name" required />
+                <input id="card-number" class="card-number" type="text" name="card-number" maxlength="19" placeholder="Enter card number" required />
+                <input id="card-cvv" class="card-cvv" type="text" name="card-cvv" pattern="\d*" maxlength="4" placeholder="Enter CVV" required />
+                <div id="required-cc-info" class="required-cc-info"></div>
+                <button id="pay-btn" class="pay-btn" type="submit">Pay</button>
+            </form>
+        </section> 
+    </div>
+        <script type="module" src="./index.js" ></script>
+    </body>
+</html>

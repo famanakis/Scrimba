@@ -1,41 +1,55 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --dk-blue: #2b283a;
+    --blue: #374151;
+    --navy: #111827;
+    --gray: #d1d5db;
+    --dk-gray: #313131;
+}
+
+
 * {
     box-sizing: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background: #111827;
+    background: var(--navy);
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 650px;
 }
 
 
 /*===============
     Typography
 ================*/
-select {
+select, button, section {
     font-family: 'Roboto', sans-serif;
+}
+
+button, section {
+    font-weight: 500;
+    font-size: .75rem;
+}
+
+select {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #111827;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--navy);
 }
 
 button {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
+    line-height: 1;
 }
 
 section {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 24px;
-    color: #2b283a;
+    line-height: 1.5;
+    color: var(--dk-blue);
     text-align: center;
 }
 
@@ -45,8 +59,8 @@ section {
     Layout
 ==============*/
 .main-container {
-    background: #ffffff;
-    margin: 40px;
+    background: var(--white);
+    margin: 2.5em;
     border-radius: 6px;
     width: 550px;
        
@@ -54,7 +68,7 @@ section {
 
 header {
     box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
-    padding: 25px;
+    padding: 1.5625em;
 }
 
 .flex-container {
@@ -64,31 +78,31 @@ header {
 }
 
 #color-picker {
-    border: 0.5px solid #313131;
+    border: 0.5px solid var(--dk-gray);
     width: 51px;
     height: 38px;
-    margin-top: 3px;
+    margin-top: .1875em;
     padding: 0px; 
-    margin-right: 10px;   
+    margin-right: .625em;   
 }
 
 #color-schemes {
-    background: #ffffff;
+    background: var(--white);
     color: #111827;
-    border: 1px solid #d1d5db;
+    border: 1px solid var(--gray);
     border-radius: 6px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);    
     width: 292px;
 }
 
 button {
-    background: #ffffff;
-    color: #374151;
-    border: 1px solid #d1d5db;
+    background: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--gray);
     border-radius: 4px;
-    padding: 13px 11px;
+    padding: .8125em .6875em;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-    margin-left: 10px;
+    margin-left: .625em;
 }
 
 .color-section {
@@ -97,7 +111,7 @@ button {
     align-items: flex-end;
     height: 70vh;
     width: 100%;
-    color: #ffffff;
+    color: var(--white);
     text-transform: uppercase;
     font-weight: lighter;
     letter-spacing: 1.5px;
@@ -106,7 +120,7 @@ button {
 }
 
 .space {
-    margin-bottom: 35px;
+    margin-bottom: 2.1875em;
 }
 
 .hex-values {

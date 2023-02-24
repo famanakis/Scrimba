@@ -12,7 +12,7 @@ Languages, Frameworks and Approach Used
 
 ## Screenshot
 <img src="https://github.com/famanakis/Scrimba/blob/main/m11-solo-travel-journal/src/images/project-screenshot.png" width=50% height=50%><br>
-[Live Demo - Coming Soon]()
+[Live Demo](https://9tfdev-m11-solo-travel-joural.netlify.app/)
  
 ## Project Requirements
  The Travel Journal solo project meets the following requirements:

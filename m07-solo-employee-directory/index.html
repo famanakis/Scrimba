@@ -22,7 +22,8 @@
                     <option value="sales">Sales</option>
                     <option value="customer service">Customer Service</option>
                     <option value="product">Product</option>
-                <input id="input-search" class="input-search" type="text" placeholder="search name">
+                <input id="input-search" class="input-search" type="text" 
+                    placeholder="search name" onkeydown="return event.key != 'Enter'">
             </form>
         </header>
         <section class="employee-cards">

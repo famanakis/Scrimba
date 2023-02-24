@@ -29,7 +29,7 @@ Languages, Frameworks and Approach Used
  </ul>
  
 ## Resources:
-  [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/react-m11-solo-digital-business-card/src/images/figma-design.png)<br>
+  [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m11-solo-digital-business-card/src/images/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
 
 

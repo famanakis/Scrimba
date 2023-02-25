@@ -1,7 +1,7 @@
 #  Texterly AI
 
 ## A Scrimba Bootcamp Solo Project
-Frameworkds, Languages and Approach Used
+Frameworks, Languages and Approach Used
 <ul>
 <li>Web API Integration</li>
 <li>JavaScript</li>

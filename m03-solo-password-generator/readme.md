@@ -31,6 +31,6 @@ Programming Languages Used
  </ul>
  
 ## Resources:
- [Figma Design Screenshot](https://github.com/famanakis/m3-solo-password-generator/blob/main/figma-design.png)<br>
+ [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m03-solo-password-generator/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
 

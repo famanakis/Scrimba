@@ -1,13 +1,13 @@
-# Digital Business Card - React Solo Project
+# Digital Business Card
 
 ## A Scrimba Solo Project
 Languages, Frameworks and Approach Used
 <ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>CSS-Flexbox</li>
-<li>JavaScript</li>
 <li>React Framework</li>
+<li>JavaScript</li>
+<li>CSS-Flexbox</li>
+<li>CSS</li>
+<li>HTML</li<
 </ul>
 
 ## Screenshot

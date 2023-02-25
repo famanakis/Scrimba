@@ -36,6 +36,6 @@ Programming Languages Used
  </ul>
  
 ## Resources:
- [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m3-solo-choreslist/figma-design.png)<br>
+ [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m03-solo-choreslist/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
 

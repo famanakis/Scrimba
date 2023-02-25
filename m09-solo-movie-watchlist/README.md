@@ -1,13 +1,14 @@
 # Movie Watchlist
 
 ## A Scrimba FrontEnd Developer Path Solo Project
-Programming Languages and Approach Used
+Frameworks, Languages and Approach Used
 <ul>
+<li>Web API Integration</li>
+<li>JavaScript</li>
+<li>CSS-Flexbox</li>
+<li>CSS</li>
 <li>HTML</li>
 <li>CSS</li>
-<li>CSS-Flexbox</li>
-<li>JavaScript</li>
-<li>Web API Integration</li>
 </ul>
 
 ## Screenshot

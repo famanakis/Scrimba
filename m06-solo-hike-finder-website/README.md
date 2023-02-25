@@ -35,7 +35,7 @@ Programming Languages and Approach Used
 </ul>
  
 ## Resources:
-  [Figma Design Home Screenshot](https://github.com/famanakis/Scrimba/blob/main/m6-solo-hike-finder-website/assets/figma-design%20home.png)<br>
-  [Figma Design Explore Screenshot](https://github.com/famanakis/Scrimba/blob/main/m6-solo-hike-finder-website/assets/figma-design%20explore.png)<br>
+  [Figma Design Home Screenshot](https://github.com/famanakis/Scrimba/blob/main/m06-solo-hike-finder-website/assets/figma-design%20home.png)<br>
+  [Figma Design Explore Screenshot](https://github.com/famanakis/Scrimba/blob/main/m06-solo-hike-finder-website/assets/figma-design%20explore.png)<br>
  [Scrimba](https://scrimba.com/)
 

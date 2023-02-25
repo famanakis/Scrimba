@@ -1,4 +1,4 @@
-# Movie Watchlist - Solo Project
+# Movie Watchlist
 
 ## A Scrimba FrontEnd Developer Path Solo Project
 Programming Languages and Approach Used

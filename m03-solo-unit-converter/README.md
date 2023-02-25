@@ -1,4 +1,4 @@
-# Unit Converter - Solo Project
+# Unit Converter
 ## A Scrimba FrontEnd Developer Path Solo Project
 Programming Languages and Approach Used
 <ul>

@@ -1,4 +1,4 @@
-# Learning Journal  - Solo Project
+# Learning Journal
 
 ## A Scrimba FrontEnd Developer Path Solo Project
 Programming Languages and Approach Used

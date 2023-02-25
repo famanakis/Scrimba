@@ -1,4 +1,4 @@
-# Color Scheme Generator - Solo Project
+# Color Scheme Generator
 
 ## A Scrimba FrontEnd Developer Path Solo Project
 Programming Languages Used

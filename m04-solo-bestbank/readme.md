@@ -1,4 +1,4 @@
-# BestBank - Solo Project
+# BestBank
 
 ## A Scrimba Bootcamp Solo Project
 Programming Languages and Approach Used
@@ -12,9 +12,9 @@ Programming Languages and Approach Used
 
 ## Screenshot
 ### Mobile Design
- <img src="https://github.com/famanakis/Scrimba/blob/main/m4-solo-bestbank/assets/project-screenshot-mobile.png" width=30% height=30%><br>
+ <img src="https://github.com/famanakis/Scrimba/blob/main/m04-solo-bestbank/assets/project-screenshot-mobile.png" width=30% height=30%><br>
 ### Larger Screens
- <img src="https://github.com/famanakis/Scrimba/blob/main/m4-solo-bestbank/assets/project-screenshot-desktop.png" width=50% height=50%><br>
+ <img src="https://github.com/famanakis/Scrimba/blob/main/m04-solo-bestbank/assets/project-screenshot-desktop.png" width=50% height=50%><br>
  [Live Demo](https://9tfdev-m4-solo-bestbank.netlify.app/)
  
 ## Project Requirements
@@ -41,6 +41,6 @@ Programming Languages and Approach Used
  </ul>
  
 ## Resources:
- [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m4-solo-bestbank/assets/figma-design.png)<br>
+ [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m04-solo-bestbank/assets/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
 

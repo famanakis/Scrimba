@@ -1,4 +1,4 @@
-# Send to Pager - Solo Project 
+# Send to Pager
 
 ## A Scrimba Bootcamp Solo Project
 Programming Languages Used

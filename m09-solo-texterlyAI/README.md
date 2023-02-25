@@ -1,13 +1,13 @@
 #  Texterly AI
 
 ## A Scrimba Bootcamp Solo Project
-Programming Languages and Approach Used
+Frameworkds, Languages and Approach Used
 <ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>CSS-Flexbox</li>
-<li>JavaScript</li>
 <li>Web API Integration</li>
+<li>JavaScript</li>
+<li>CSS-Flexbox</li>
+<li>CSS</li>
+<li>HTML</li>
 </ul>
 
 ## Screenshot

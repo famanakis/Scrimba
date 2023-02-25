@@ -11,7 +11,7 @@ Programming Languages Used
 </ul>
 
 ## Screenshot
- <img src="https://github.com/famanakis/Scrimba/blob/main/m9-solo-color-scheme-generator/assets/Color%20Scheme%20Generator%20Screenshot.png" width=50% height=50%><br>
+ <img src="https://github.com/famanakis/Scrimba/blob/main/m09-solo-color-scheme-generator/assets/project-screenshot.png" width=50% height=50%><br>
  [Live Demo - Coming Soon]()
  
 ## Project Requirements

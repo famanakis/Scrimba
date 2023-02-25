@@ -1,4 +1,4 @@
-# Inspirational Quote Page - Solo Project 
+# Inspirational Quote Page
 
 ## A Scrimba Bootcamp Solo Project
 Programming Languages Used

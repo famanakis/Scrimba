@@ -8,7 +8,6 @@ Frameworks, Languages and Approach Used
 <li>CSS-Flexbox</li>
 <li>CSS</li>
 <li>HTML</li>
-<li>CSS</li>
 </ul>
 
 ## Screenshot

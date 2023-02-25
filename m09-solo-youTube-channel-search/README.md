@@ -1,14 +1,14 @@
 # youTube Channel Search
 
 ## A Scrimba Bootcamp Solo Project
-Programming Languages and Approach Used
+Frameworks, Languages and Approach Used
 <ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>CSS-Flexbox</li>
-<li>JavaScript</li>
-<li>Moblie First Design</li>
 <li>Web API Integration</li>
+<li>JavaScript</li>
+<li>CSS-Flexbox</li>
+<li>CSS</li>
+<li>HTML</li>
+<li>Moblie First Design</li>
 </ul>
 
 ## Screenshot

@@ -1,4 +1,4 @@
-# youTube Channel Search - Solo Project
+# youTube Channel Search
 
 ## A Scrimba Bootcamp Solo Project
 Programming Languages and Approach Used
@@ -32,6 +32,6 @@ Programming Languages and Approach Used
 </ul>
  
 ## Resources:
-  [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m9-solo-youTube-channel-search/assets/figma-design.png)<br>
+  [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m09-solo-youTube-channel-search/assets/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
 

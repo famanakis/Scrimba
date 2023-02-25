@@ -10,7 +10,7 @@ Programming Languages Used
 </ul>
 
 ## Screenshot
- <img src="https://github.com/famanakis/Scrimba/blob/main/m3-solo-choreslist/Choreslist-Screenshot.png" width=50% height=50%><br>
+ <img src="https://github.com/famanakis/Scrimba/blob/main/m03-solo-choreslist/Choreslist-Screenshot.png" width=50% height=50%><br>
  [Live Demo](https://9tfdev-m3-solo-choreslist.netlify.app/)
  
 ## Project Requirements

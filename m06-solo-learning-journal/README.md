@@ -12,11 +12,11 @@ Programming Languages and Approach Used
 
 ## Screenshot
 ### Home Screen Desktop View
-<img src="https://github.com/famanakis/Scrimba/blob/main/m6-solo-learning-journal/assetsMine/project-1.png" width=50% height=50%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m06-solo-learning-journal/assetsMine/project-1.png" width=50% height=50%><br>
 ### About Me Mobile View
-<img src="https://github.com/famanakis/Scrimba/blob/main/m6-solo-learning-journal/assetsMine/project-2.png" width=25% height=25%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m06-solo-learning-journal/assetsMine/project-2.png" width=25% height=25%><br>
 ### Blog Mobile View
-<img src="https://github.com/famanakis/Scrimba/blob/main/m6-solo-learning-journal/assetsMine/project-3.png" width=25% height=25%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m06-solo-learning-journal/assetsMine/project-3.png" width=25% height=25%><br>
 [Live Demo](https://9tfdev-m6-solo-learning-journal.netlify.app/)
  
 ## Project Requirements
@@ -43,6 +43,6 @@ Programming Languages and Approach Used
 </ul>
  
 ## Resources:
-  [Figma Design Desktop Screenshot](https://github.com/famanakis/Scrimba/blob/main/m6-solo-learning-journal/assets/figma-design-desktop.png)<br>
-  [Figma Design Mobile Screenshot](https://github.com/famanakis/Scrimba/blob/main/m6-solo-learning-journal/assets/figma-design-mobile.png)<br>
+  [Figma Design Desktop Screenshot](https://github.com/famanakis/Scrimba/blob/main/m06-solo-learning-journal/assets/figma-design-desktop.png)<br>
+  [Figma Design Mobile Screenshot](https://github.com/famanakis/Scrimba/blob/main/m06-solo-learning-journal/assets/figma-design-mobile.png)<br>
  [Scrimba](https://scrimba.com/)

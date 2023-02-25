@@ -1,4 +1,4 @@
-# Password Generator - Solo Project
+# Password Generator
 
 ## A Scrimba FrontEnd Developer Path Solo Project
 Programming Languages Used

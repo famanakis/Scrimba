@@ -1,6 +1,6 @@
 # Digital Business Card
 
-## A Scrimba Solo Project
+## A Scrimba FrontEnd Developer Path Solo Project
 Languages, Frameworks and Approach Used
 <ul>
 <li>React Framework</li>

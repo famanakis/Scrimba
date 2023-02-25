@@ -1,4 +1,4 @@
-# Salesboard - Solo Project 
+# Salesboard
 
 ## A Scrimba Bootcamp Solo Project
 Programming Languages Used

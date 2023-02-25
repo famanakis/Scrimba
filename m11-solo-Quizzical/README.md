@@ -1,13 +1,13 @@
-Quizzical - React Solo Project
+Quizzical
 
 ## A Scrimba Solo Project
 Languages, Frameworks and Approach Used
 <ul>
+<li>React Framework</li>
+<li>JavaScript</li>
+<li>CSS-Flexbox</li>
 <li>HTML</li>
 <li>CSS</li>
-<li>CSS-Flexbox</li>
-<li>JavaScript</li>
-<li>React Framework</li>
 </ul>
 
 ## Screenshot
@@ -24,7 +24,7 @@ Languages, Frameworks and Approach Used
  </ul>
  
 ## Resources:
-  [Figma Design Screenshot]()<br>
+  [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m11-solo-Quizzical/images/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
 
 

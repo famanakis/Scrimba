@@ -35,7 +35,7 @@ My project includes the following 'stretch goals':
 </ul>
 
  ## Resources:
- [Figma Design Screenshot](https://github.com/famanakis/m3-solo-salesboard/blob/main/figma-design.png)<br>
+ [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m03-solo-salesboard/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
 
 

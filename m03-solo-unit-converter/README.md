@@ -34,7 +34,7 @@ Programming Languages and Approach Used
  </ul>
  
  ## Resources:
- [Figma Design Screenshot](https://github.com/famanakis/m3-solo-unit-convertor/blob/main/figma-design.png)<br>
+ [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m03-solo-unit-converter/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
  
  

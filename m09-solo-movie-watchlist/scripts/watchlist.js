@@ -29,7 +29,7 @@ function renderWatchlist() {
   if(watchArr.length === 0) {
     mainPage.innerHTML = `<div class="flex-list-empty">
       <p class="p-bold">Your watchlist is looking a little empty...</p>
-      <a href="../index.html"><img src="images/plus-icon.png" class="plus" alt="plus icon" style="margin: -8px">Watchlist</a>  
+      <a href="./index.html"><img src="images/plus-icon.png" class="plus" alt="plus icon" style="margin: -8px">Watchlist</a>  
     </div>`       
   } else {
     mainPage.innerHTML = ''

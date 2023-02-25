@@ -27,13 +27,13 @@ html, body {
 h1, p, a, input, button {
     font-family: 'Inter', sans-serif;
     font-stretch: normal;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: .875rem;
+    line-height: 1.25em;
 }
 
 h1  {
     font-weight: 800; 
-    font-size: 43px;   
+    font-size: 2.6875rem;   
 }
 
 a {
@@ -49,9 +49,9 @@ a {
 ================*/
 .p-bold {
     font-weight: 700;
-    font-size: 18px;    
-    margin-top: 8px;
-    line-height: 29px;
+    font-size: 1.125rem;    
+    margin-top: .5em;
+    line-height: 2.3125em;
     color: var(--gray);
 }
 
@@ -74,10 +74,10 @@ input:hover, input:focus {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 200px;
+    height: 12.5em;
     background-image: url("../images/background-img.png");
     background-size: cover;
-    padding: 0 50px;
+    padding: 0 3.125em;
 }
 
 .flex-search {
@@ -94,15 +94,16 @@ input:hover, input:focus {
     border-radius: 6px 0px 0px 6px;
     border: none;
     width: 500px;
-    height: 38px;
-    margin-left: 50px;
-    padding-left: 40px;
+    height: 2.376em; /*38px*/
+    margin-left: 3.125em;
+    padding-left: 2.5em;
+    cursor: pointer;
 }
 
 #inputEl {
     background-image: url("../images/magnifier-icon.png");
     background-repeat: no-repeat;
-    background-position: 10px;
+    background-position: .625em;
     color: var(--magnifier);
 }
 
@@ -110,11 +111,14 @@ input:hover, input:focus {
     background: var(--slate);
     color: var(--white);
     border: none;
-    padding: 9px 11px 9px 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 120px;
-    height: 40px;
+    height: 2.46em; /*40px*/
     border-radius: 0px 6px 6px 0px;
-    margin-right: 50px;
+    margin-right: 3.125em;
+    cursor: pointer;
 }
 
 .btn-search:active,
@@ -128,7 +132,7 @@ input:hover, input:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 150px;
+    padding-top: 9.375em;
 }
 
 .main-content-hidden > p {
@@ -151,7 +155,7 @@ input:hover, input:focus {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 0px 45px;
+    margin: 0px 2.8125em;
     border-bottom: 1.5px solid var(--smoke);
 }
 
@@ -159,45 +163,47 @@ input:hover, input:focus {
     height: 150px;
     width: 100px;
     border-radius: 2.5px;
-    margin: 35px 21px 33.5px 0;
+    margin: 2.1875em 1.3125em 2.094em 0;
 }
 
 .film-data {
-    font-size: 12px;
+    font-size: .75rem;
     font-weight: 400;
 }
 
 .film-title {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
 }
 
 .star {
-    margin: auto 7px;
+    margin: auto .4375em;
 }
 
 .runtime {
-    padding-right: 5px;
+    padding-right: .3125em;
 }
 
 .plus {
-    padding-right: 7px;
+    padding-right: .4375em;
     margin-bottom: -3px; 
-    background-image: url(../images/plus-icon.png);
+    background-image: url("../images/plus-icon.png");
     background-repeat: no-repeat;
     padding-right: 1.5rem;
-    padding-bottom: 5px;
+    padding-bottom: .3125em;
     margin-left: .75rem; 
+    cursor: pointer;
 }
 
 .minus {
-    padding-right: 7px;
+    padding-right: .4375em;
     margin-bottom: -3px; 
-    background-image: url(../images/minus-icon.png);
+    background-image: url("../images/minus-icon.png");
     background-repeat: no-repeat;
     padding-right: 1.5rem;
-    padding-bottom: 5px;
+    padding-bottom: .3125em;
     margin-left: .75rem; 
+    cursor: pointer;
 }
 
 .btn-watchlist {
@@ -207,18 +213,18 @@ input:hover, input:focus {
 }
 
 .grow:hover, .grow:active {
-    background-size: 1.25rem;
-    background-position: 0rem .7rem;
-    padding: .75rem;
+    background-size: 20px;
+    background-position: 0px 11.5px;
+    padding: 12px;
 }
 
 .plot {
     color: var(--lt-gray);
-    font-size: 14px;
+    font-size: .875rem;
 }
 
 div.flex-row > p {
-    margin: 5.5px 0;
+    margin: .3438em 0;
 }
 
 
@@ -231,7 +237,7 @@ div.flex-row > p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 150px;
+    padding-top: 9.375em;
     color: var(--gray);
     
 }
@@ -240,8 +246,8 @@ div.flex-row > p {
     color: var(--white);
     width: 15px;
     height: 15px;
-    padding-top: 17px;
-    padding-right: 8px;
+    padding-top: 1.063em;
+    padding-right: .5em;
 }
 
 .plus-idiv {
@@ -253,5 +259,44 @@ div.flex-row > p {
 
 div.plus-idiv > p {
     color: var(--white);
-    font-size: 14px;
+    font-size: .875rem;
+}
+
+@media (min-width: 760px) {
+    html {
+        font-size: 1.25rem;
+    }
+    #main-content {
+        margin: 0 2.5em;
+    }
+    .grow:hover, .grow:active {
+        background-size: 20px;
+        background-position: 0px 11.5px;
+        padding: 12px;
+    }
+    .grow:hover, .grow:active {
+        padding-right: 18px;
+    }
+    .star {
+        width: 18px;
+    }
+}
+
+@media (min-width: 1020px) {
+    html {
+        font-size: 1.5rem;
+    }
+    #main-content {
+        margin: 0 5em;
+    }
+    .flex-find {
+        padding: 0 7em;
+    }
+    .grow:hover, .grow:active {
+        padding-right: 24px;
+    }
+    .star {
+        width: 20px;
+        margin-bottom: .5px;
+    }
 }

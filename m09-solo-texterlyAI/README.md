@@ -1,4 +1,4 @@
-#  Texterly AI - Solo Project
+#  Texterly AI
 
 ## A Scrimba Bootcamp Solo Project
 Programming Languages and Approach Used
@@ -31,7 +31,7 @@ Programming Languages and Approach Used
 </ul>
  
 ## Resources:
-[Figma Design](https://github.com/famanakis/Scrimba/blob/main/m9-solo-texterlyAI/assets/figma-design.png)<br>
+[Figma Design](https://github.com/famanakis/Scrimba/blob/main/m09-solo-texterlyAI/assets/figma-design.png)<br>
 [OpenAI Documentation](https://platform.openai.com/overview)<br>
 [Scrimba](https://scrimba.com/) 
 

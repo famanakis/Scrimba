@@ -1,4 +1,4 @@
-# Tindog Website - Solo Project
+# Tindog Website
 
 ## A Scrimba FrontEnd Developer Path Solo Project
 Programming Languages and Approach Used
@@ -12,11 +12,11 @@ Programming Languages and Approach Used
 
 ## Screenshot
 ### Dog Profile
-<img src="https://github.com/famanakis/Scrimba/blob/main/m7-solo-tindog/assets/screenshot.png" width=50% height=50%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m07-solo-tindog/assets/screenshot.png" width=50% height=50%><br>
 ### Dog Liked
-<img src="https://github.com/famanakis/Scrimba/blob/main/m7-solo-tindog/assets/screenshot-like.png" width=50% height=50%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m07-solo-tindog/assets/screenshot-like.png" width=50% height=50%><br>
 ### Dog Rejected
-<img src="https://github.com/famanakis/Scrimba/blob/main/m7-solo-tindog/assets/screenshot-reject.png" width=50% height=50%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m07-solo-tindog/assets/screenshot-reject.png" width=50% height=50%><br>
 [Live Demo](https://9tfdev-m7-solo-tindog.netlify.app/)
  
 ## Project Requirements
@@ -33,6 +33,6 @@ Programming Languages and Approach Used
 </ul>
  
 ## Resources:
-[Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m7-solo-tindog/assets/figma-design.png)<br>
+[Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m07-solo-tindog/assets/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
 

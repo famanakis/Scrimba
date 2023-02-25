@@ -29,6 +29,6 @@ Programming Languages Used
  </ul>
  
 ## Resources:
- [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m9-solo-color-scheme-generator/assets/figma-design.png)<br>
+ [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m09-solo-color-scheme-generator/assets/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
 

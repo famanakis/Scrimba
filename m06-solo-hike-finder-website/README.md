@@ -1,4 +1,4 @@
-# HikeFinder Website - Solo Project
+# HikeFinder Website
 
 ## A Scrimba Bootcamp Solo Project
 Programming Languages and Approach Used

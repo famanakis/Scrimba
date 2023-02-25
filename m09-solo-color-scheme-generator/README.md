@@ -12,7 +12,7 @@ Programming Languages Used
 
 ## Screenshot
  <img src="https://github.com/famanakis/Scrimba/blob/main/m09-solo-color-scheme-generator/assets/project-screenshot.png" width=50% height=50%><br>
- [Live Demo - Coming Soon]()
+ [Live Demo](https://9tfdev-solo-color-scheme-generator.netlify.app/)
  
 ## Project Requirements
  The Color Scheme Generator solo project meets the following requirements:

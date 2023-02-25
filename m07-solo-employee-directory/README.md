@@ -1,4 +1,4 @@
-# Employee Directory  - Solo Project
+# Employee Directory
 
 ## A Scrimba Bootcamp Solo Project
 Programming Languages Used
@@ -11,12 +11,12 @@ Programming Languages Used
 </ul>
 
 ## Screenshot
-### Screenshot
-<img src="https://github.com/famanakis/Scrimba/blob/main/m7-solo-employee-directory/images/assets/Project%20Screenshot.png" width=50% height=50%><br>
+### Project Screenshot
+<img src="https://github.com/famanakis/Scrimba/blob/main/m07-solo-employee-directory/images/assets/Project%20Screenshot.png" width=50% height=50%><br>
 ### Display by Team
-<img src="https://github.com/famanakis/Scrimba/blob/main/m7-solo-employee-directory/images/assets/Search%20by%20Team.png" width=50% height=50%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m07-solo-employee-directory/images/assets/Search%20by%20Team.png" width=50% height=50%><br>
 ### Search by Name
-<img src="https://github.com/famanakis/Scrimba/blob/main/m7-solo-employee-directory/images/assets/Search%20by%20Name.png" width=50% height=50%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m07-solo-employee-directory/images/assets/Search%20by%20Name.png" width=50% height=50%><br>
 [Live Demo](https://9tfdev-m7-solo-employee-directory.netlify.app/)
  
 ## Project Requirements
@@ -37,5 +37,5 @@ Programming Languages Used
 </ul>
  
 ## Resources:
-[Figma Design](https://github.com/famanakis/Scrimba/blob/main/m7-solo-employee-directory/figma-design.png)<br>
+[Figma Design](https://github.com/famanakis/Scrimba/blob/main/m07-solo-employee-directory/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)

@@ -1,4 +1,4 @@
-# Basketball Scoreboard - Solo Project
+# Basketball Scoreboard
 
 ## A Scrimba FrontEnd Developer Path Solo Project
 Programming Languages Used

@@ -1,4 +1,4 @@
-# Invoice Creator - Solo Project
+# Invoice Creator
 
 ## A Scrimba Bootcamp Solo Project
 Programming Languages Used
@@ -10,7 +10,7 @@ Programming Languages Used
 </ul>
 
 ## Screenshot
-<img src="https://github.com/famanakis/Scrimba/blob/main/m5-solo-invoice-creator/project-screenshot.png" width=50% height=50%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m05-solo-invoice-creator/project-screenshot.png" width=50% height=50%><br>
  [Live Demo](https://9tfdev-m5-solo-invoice-creator.netlify.app/)
  
 ## Project Requirements
@@ -36,6 +36,6 @@ Programming Languages Used
 </ul>
  
 ## Resources:
- [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m5-solo-invoice-creator/figma-design.png)<br>
+ [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m05-solo-invoice-creator/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
 

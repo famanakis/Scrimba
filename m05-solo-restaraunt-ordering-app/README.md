@@ -1,4 +1,4 @@
-# Restaurant Ordering App - Solo Project
+# Restaurant Ordering App
 
 ## A Scrimba FrontEnd Developer Path Solo Project
 Programming Languages Used
@@ -11,11 +11,11 @@ Programming Languages Used
 
 ## Screenshots
 ### Main Menu
-<img src="https://github.com/famanakis/Scrimba/blob/main/m5-solo-restaraunt-ordering-app/assets/screenshot-main.png" width=50% height=50%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m05-solo-restaraunt-ordering-app/assets/screenshot-main.png" width=50% height=50%><br>
 ### Order Totals
-<img src="https://github.com/famanakis/Scrimba/blob/main/m5-solo-restaraunt-ordering-app/assets/Screenshot-totals.png" width=50% height=50%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m05-solo-restaraunt-ordering-app/assets/Screenshot-totals.png" width=50% height=50%><br>
 ### Checkout
-<img src="https://github.com/famanakis/Scrimba/blob/main/m5-solo-restaraunt-ordering-app/assets/screenshot-checkout.png" width=50% height=50%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m05-solo-restaraunt-ordering-app/assets/screenshot-checkout.png" width=50% height=50%><br>
 [Live Demo](https://9tfdev-m5-solo-restaurant-order-app.netlify.app/)
  
 ## Project Requirements
@@ -35,6 +35,6 @@ Programming Languages Used
 </ul>
  
 ## Resources:
-  [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m5-solo-restaraunt-ordering-app/assets/figma-design.png)<br>
+  [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m05-solo-restaraunt-ordering-app/assets/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
 

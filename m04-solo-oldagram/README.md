@@ -1,4 +1,4 @@
-# Oldagram - Solo Project
+# Oldagram
 
 ## A Scrimba FrontEnd Developer Path Solo Project
 Programming Languages Used
@@ -11,9 +11,9 @@ Programming Languages Used
 
 ## Screenshot
 ### Single Post
-<img src="https://github.com/famanakis/Scrimba/blob/main/m4-solo-oldagram/project-screenshot-1.png" width=50% height=50%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m04-solo-oldagram/project-screenshot-1.png" width=50% height=50%><br>
 ### Multiple Posts
-<img src="https://github.com/famanakis/Scrimba/blob/main/m4-solo-oldagram/project-screenshot-2.png" width=50% height=50%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m04-solo-oldagram/project-screenshot-2.png" width=50% height=50%><br>
  [Live Demo](https://9tfdev-m4-solo-oldagram.netlify.app/)
  
 ## Project Requirements
@@ -31,7 +31,7 @@ Programming Languages Used
 </ul>
  
 ## Resources:
- [Figma Design Screenshot - Single Post](https://github.com/famanakis/Scrimba/blob/main/m4-solo-oldagram/figma-design-1.png)<br>
- [Figma Design Screenshot - Multiple Posts](https://github.com/famanakis/Scrimba/blob/main/m4-solo-oldagram/figma-design-2.png)<br>
+ [Figma Design Screenshot - Single Post](https://github.com/famanakis/Scrimba/blob/main/m04-solo-oldagram/figma-design-1.png)<br>
+ [Figma Design Screenshot - Multiple Posts](https://github.com/famanakis/Scrimba/blob/main/m04-solo-oldagram/figma-design-2.png)<br>
  [Scrimba](https://scrimba.com/)
 

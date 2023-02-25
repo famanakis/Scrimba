@@ -15,7 +15,7 @@ Programming Languages and Approach Used
 <img src="" width=50% height=50%><br>
 ### My Watchlist
 <img src="" width=50% height=50%><br>
-[Live Demo]()
+[Live Demo](https://9tfdev-m09-solo-movie-watchlist.netlify.app/)
  
 ## Project Requirements
  The Movie Watchlist solo project meets the following requirements:

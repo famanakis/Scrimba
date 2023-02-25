@@ -66,14 +66,14 @@ function deprecatedCopyToClipboard(hexColor) {
 
 //Event Listeners
 btnGetColor.addEventListener('click', (e)=> {
-    e.preventDefault
+    e.preventDefault()
     schemeType.textContent = scheme.value.charAt(0).toUpperCase() + scheme.value.slice(1)  
     colorSection.innerHTML = ""
     hexValues.innerHTML = ""
     renderColors()
     })
 
-color.addEventListener('click', () => {
+color.addEventListener('click', (e) => {
     colorSection.innerHTML = ""
     hexValues.innerHTML = ""
     schemeType.textContent = ""  

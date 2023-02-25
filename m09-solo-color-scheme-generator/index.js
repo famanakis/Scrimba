@@ -61,7 +61,6 @@ function deprecatedCopyToClipboard(hexColor) {
     area.select()
     document.execCommand('copy')
     document.body.removeChild(area)
-    alert("Copied " + hexColor + " to Clipboard")
 }
 
 //Event Listeners

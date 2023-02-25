@@ -1,4 +1,4 @@
-# Choreslist - Solo Project
+# Choreslist
 
 ## A Scrimba Bootcamp Solo Project
 Programming Languages Used

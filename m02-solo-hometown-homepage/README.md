@@ -37,7 +37,7 @@ Programming Languages and Approach
  
  ##  Resources:
  
- [Figma Design Screenshot](https://github.com/famanakis/m02-solo-hometown-homepage/blob/main/figma-design.png)<br>
+ [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m02-solo-hometown-homepage/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)
  
 

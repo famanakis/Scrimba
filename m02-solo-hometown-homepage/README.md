@@ -1,4 +1,4 @@
-# Hometown Homepage - Solo Project
+# Hometown Homepage
 
  ## A Scrimba FrontEnd Developer Path Solo Project
 Programming Languages and Approach

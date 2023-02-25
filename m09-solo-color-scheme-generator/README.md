@@ -1,13 +1,13 @@
 # Color Scheme Generator
 
 ## A Scrimba FrontEnd Developer Path Solo Project
-Programming Languages Used
+Frameworks, Languages and Approach Used
 <ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>CSS-Flexbox</li>
-<li>JavaScript</li>
 <li>Web API Integration</li>
+<li>JavaScript</li>
+<li>CSS-Flexbox</li>
+<li>CSS</li>
+<li>HTML</li>
 </ul>
 
 ## Screenshot

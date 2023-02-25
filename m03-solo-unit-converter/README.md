@@ -1,6 +1,4 @@
 # Unit Converter - Solo Project
-
- ## A Scrimba FrontEnd Developer Path Solo Project completed using HTML, CSS, Flexbox and Responsive Design.
 ## A Scrimba FrontEnd Developer Path Solo Project
 Programming Languages and Approach Used
 <ul>

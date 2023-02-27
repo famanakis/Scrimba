@@ -37,21 +37,30 @@ function wordCount(text) {
     wordEl.textContent = words
 }
 
+function newText() {
+    textInput.value = '',
+    textInput.placeholder = 'Paste your text here.',
+    charEl.textContent = 0,
+    wordEl.textContent = 0
+}
+
 function copyAndClear() {
     if(textInput.value.length > 0) {
         SelfCopy(textInput.value)
         setTimeout(()=>(textInput.value = '', 
-        textInput.placeholder = 'Paste your text here.'), 3000)
+        textInput.placeholder = 'Paste your text here.',
+        charEl.textContent = 0,
+        wordEl.textContent = 0), 3000)
     }
 }
 
 async function SelfCopy(text) {
-    copied.classList.remove('hide')
+    copied.style.visibility = 'visible'
     if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
         try {
             await navigator.clipboard.writeText(text)
             copied.classList.remove('hide')
-            setTimeout (()=>(copied.classList.add('hide')), 2500)
+            setTimeout (()=>(copied.style.visibility = 'hidden'), 2500)
         } catch (error) {
             deprecatedCopyToClipboard(text)
         }
@@ -71,6 +80,7 @@ function deprecatedCopyToClipboard(text) {
 
 //Event Listeners
 btnProcess.addEventListener('click', beginProcess)
+textInput.addEventListener('dblclick', newText)
 textInput.addEventListener('click', copyAndClear)
 
 //Example of grammar correct

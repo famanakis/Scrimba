@@ -79,7 +79,7 @@ body {
 header {
     width: 100%;
     text-align: center;
-    margin: 3.25em auto 2.375em auto;
+    margin: 3.25em auto 2.237em auto;
 }
 
 .text-section {
@@ -136,11 +136,9 @@ header {
 }
 
 .copied {
-    position: fixed;
-    top: 24.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.5rem;
+    height: 1rem;
+    font-weight: 700;
+    visibility: hidden;
 }
 
 .spinner {

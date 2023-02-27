@@ -37,16 +37,16 @@ function wordCount(text) {
     wordEl.textContent = words
 }
 
-function newText() {
-    textInput.value = '',
-    textInput.placeholder = 'Paste your text here.',
-    charEl.textContent = 0,
-    wordEl.textContent = 0
-}
+// function newText() {
+//     textInput.value = '',
+//     textInput.placeholder = 'Paste your text here.',
+//     charEl.textContent = 0,
+//     wordEl.textContent = 0
+// }
 
 function copyAndClear() {
     if(textInput.value.length > 0) {
-        SelfCopy(textInput.value)
+        selfCopy(textInput.value)
         setTimeout(()=>(textInput.value = '', 
         textInput.placeholder = 'Paste your text here.',
         charEl.textContent = 0,
@@ -54,7 +54,7 @@ function copyAndClear() {
     }
 }
 
-async function SelfCopy(text) {
+async function selfCopy(text) {
     copied.style.visibility = 'visible'
     if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
         try {
@@ -80,8 +80,8 @@ function deprecatedCopyToClipboard(text) {
 
 //Event Listeners
 btnProcess.addEventListener('click', beginProcess)
-textInput.addEventListener('dblclick', newText)
-textInput.addEventListener('click', copyAndClear)
+// textInput.addEventListener('dblclick', newText)
+textInput.addEventListener('dblclick', copyAndClear)
 
 //Example of grammar correct
 // my API key is in my email

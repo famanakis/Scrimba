@@ -13,19 +13,34 @@ wordEl.textContent = 0
 
 //Functions
 function beginProcess() {  
+    //begin processing text if text input length is greater than one
     if(textInput.value.length > 0){
         spinner.classList.remove("hide")
-        setTimeout(processText, 2500)
+        processText()
     }
 }
 
 function processText() {
-    const input = textInput.value
-    spinner.classList.add("hide")
-    // getOpenAI(input)
-    charCount(input)
-    wordCount(input)
-}
+    //create promise - run getOpenAI and when response generates -add it to the page
+    return new Promise((resolve, reject) => {
+        const input = textInput.value
+        getOpenAI(input)
+            .then(responseAI => {
+                spinner.classList.add("hide")
+                textInput.value = responseAI
+                charCount(input)
+                wordCount(input)
+                resolve()
+            })
+            .catch(error => {
+                console.error(error)
+                spinner.classList.add("hide")
+                textInput.value = 'Bugs somewhere in the machine - please try again.'
+                textInput.addEventListener('click', clearTextField)
+                reject(error)
+            })
+    })
+} 
 
 function charCount(text) {
     const regex = /\S/g
@@ -41,29 +56,35 @@ function wordCount(text) {
 function copyAndClear() {
     if(textInput.value.length > 0) {
         selfCopy(textInput.value)
-        setTimeout(()=>(textInput.value = '', 
-        textInput.placeholder = 'Paste your text here.',
-        charEl.textContent = 0,
-        wordEl.textContent = 0), 3000)
+        setTimeout(()=> clearTextField(), 3000)
     }
 }
 
+function clearTextField() {
+    textInput.value = '', 
+    textInput.placeholder = 'Paste your text here.',
+    charEl.textContent = 0,
+    wordEl.textContent = 0
+}
+
 async function selfCopy(text) {
-    copied.style.visibility = 'visible'
     if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
         try {
             await navigator.clipboard.writeText(text)
-            copied.classList.remove('hide')
+            copied.style.visibility = 'visible'
             setTimeout (()=>(copied.style.visibility = 'hidden'), 2500)
-        } catch (error) {
-            deprecatedCopyToClipboard(text)
+        } catch (error) { //if error then use deprecated CopyToClipboard
+            copyToClipboard(text)
         }
-        } else { //if clipboard API not supported use deprecated CopyToClipboard
-        deprecatedCopyToClipboard(text)
+    } else { //if clipboard API not supported use deprecated CopyToClipboard
+            copyToClipboard(text)
     }
 }
-//deprecated version to work on Scrimba
-function deprecatedCopyToClipboard(text) {
+
+//deprecated copy to clipboard
+function copyToClipboard(text) {
+    copied.style.visibility = 'visible'
+    setTimeout (()=>(copied.style.visibility = 'hidden'), 2500)
     const area = document.createElement('textarea')
     document.body.appendChild(area)
     area.value = text
@@ -72,40 +93,46 @@ function deprecatedCopyToClipboard(text) {
     document.body.removeChild(area)
 }
 
+//post and fetch from openAI
+//user will need to put their own API key in the const API_KEY below
+function getOpenAI(userInput) {
+    const API_ENDPOINT = 'https://api.openai.com/v1/edits'
+    const API_KEY = 'your key here'
+
+    const data = {
+    model: 'text-davinci-edit-001',
+    input: userInput,
+    instruction: 'Fix the spelling mistakes',
+    temperature: .5,
+    }
+
+    const options = {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${API_KEY}`,
+    },
+    body: JSON.stringify(data),
+    }
+
+    return fetch(API_ENDPOINT, options)
+        .then(response => response.json())
+        .then(data => {
+            const responseAI = data.choices[0].text.trim()
+            console.log(responseAI)
+            return responseAI
+        })
+    .catch(error => {
+        console.error(error)
+        throw error
+    })
+}
+
 //Event Listeners
 btnProcess.addEventListener('click', beginProcess)
 btnCopy.addEventListener('click', copyAndClear)
-
-
-//Example of grammar correct
-// my API key is in my email
-// function getOpenAI(userInput) {
-//     const API_ENDPOINT = 'https://api.openai.com/v1/edits'
-//     const API_KEY = //my api key goes here 
-    
-//     const data = {
-//     model: 'text-davinci-edit-001',
-//     input: userInput,
-//     instruction: 'Fix the spelling mistakes',
-//     temperature: .2,
-//     };
-
-//     const options = {
-//     method: 'POST',
-//     headers: {
-//         'Content-Type': 'application/json',
-//         'Authorization': `Bearer ${API_KEY}`,
-//     },
-//     body: JSON.stringify(data),
-//     };
-
-//     fetch(API_ENDPOINT, options)
-//     .then(response => response.json())
-//     .then(data => {
-//         const responseAI = data.choices[0].text.trim()
-//         console.log(responseAI)
-//         textInput.value = responseAI
-//     })
-//     .catch(error => console.error(error))
-// }
+textInput.addEventListener('dblclick', ()=> {
+    clearTextField()
+    textInput.placeholder = ''
+    })
 

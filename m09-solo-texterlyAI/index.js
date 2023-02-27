@@ -29,12 +29,13 @@ function wordCount(text) {
 
 //Event Listeners
 btnProcess.addEventListener('click', processText)
+textInput.addEventListener('click', ()=> textInput.value = '')
 
 //Example of grammar correct
-// my API key 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
+// my API key is in my gmail
 function getOpenAI(userInput) {
     const API_ENDPOINT = 'https://api.openai.com/v1/edits';
-    const API_KEY = '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'; 
+    const API_KEY = //my API key goes here//; 
     
     const data = {
     model: 'text-davinci-edit-001',
@@ -56,8 +57,8 @@ function getOpenAI(userInput) {
     .then(response => response.json())
     .then(data => {
         const responseAI = data.choices[0].text.trim()
-        textInput.value = responseAI   
-        // getOpenAIGrammar(responseAI) 
+        console.log(responseAI)
+        textInput.value = textInput.value + '\n' + responseAI
     })
     .catch(error => console.error(error));
 }

@@ -5,6 +5,7 @@ const charEl = document.getElementById('char-text')
 const wordEl = document.getElementById('words-text')
 const spinner = document.getElementById('spinner')
 const copied = document.getElementById('copied')
+const btnCopy = document.getElementById('btn-copy')
 
 //Variables
 charEl.textContent = 0
@@ -36,13 +37,6 @@ function wordCount(text) {
     const words = text.split(' ').length
     wordEl.textContent = words
 }
-
-// function newText() {
-//     textInput.value = '',
-//     textInput.placeholder = 'Paste your text here.',
-//     charEl.textContent = 0,
-//     wordEl.textContent = 0
-// }
 
 function copyAndClear() {
     if(textInput.value.length > 0) {
@@ -80,8 +74,8 @@ function deprecatedCopyToClipboard(text) {
 
 //Event Listeners
 btnProcess.addEventListener('click', beginProcess)
-// textInput.addEventListener('dblclick', newText)
-textInput.addEventListener('dblclick', copyAndClear)
+btnCopy.addEventListener('click', copyAndClear)
+
 
 //Example of grammar correct
 // my API key is in my email

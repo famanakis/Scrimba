@@ -26,8 +26,8 @@ function processText() {
             .then(responseAI => {
                 spinner.classList.add("hide")
                 textInput.value = responseAI
-                charCount(input)
-                wordCount(input)
+                charCount(textInput.value)
+                wordCount(textInput.value)
                 resolve()
             })
             .catch(error => {

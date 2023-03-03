@@ -14,11 +14,19 @@
     padding: 0;
 }
 
-/*Typography*/
-h1, .btn-process, div {
+body {
     font-family: 'Noto Serif Gujarati', serif;
     color: var(--black);
     font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Typography*/
+h1, .btn-process, div {
+    font-family: inherit;
 }
 
 .text-section {
@@ -63,17 +71,10 @@ h1 {
 }
 
 /*Styling*/
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 9.5625em;
-    min-width: 500px;
-}
-
 .page-container {
     position: relative;
+    padding: 0 9.5625em;
+    min-width: 500px;
 }
 
 header {
@@ -94,10 +95,10 @@ header {
 
 .btn-copy {
     border: none;
-    background-color: none;
+    background-color: transparent;
     position: absolute;
-    top: 17em;
-    right: 2em;
+    top: 16em;
+    right: 12.5em;
     cursor: pointer;
     z-index: 1000;
 }
@@ -284,7 +285,7 @@ header {
         width: 500px;
     }
     .btn-copy {
-        top: 14.5em;
-        right: 1.5em;
+        top: 14em;
+        right: 10em;
     }
 }

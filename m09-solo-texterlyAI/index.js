@@ -25,6 +25,7 @@ function processText() {
         getOpenAI(input)
             .then(responseAI => {
                 spinner.classList.add("hide")
+                btnCopy.classList.remove("hide")
                 textInput.value = responseAI
                 charCount(textInput.value)
                 wordCount(textInput.value)
@@ -62,7 +63,8 @@ function clearTextField() {
     textInput.value = '', 
     textInput.placeholder = 'Paste your text here.',
     charEl.textContent = 0,
-    wordEl.textContent = 0
+    wordEl.textContent = 0,
+    btnCopy.classList.add("hide")
 }
 
 //Event Listeners

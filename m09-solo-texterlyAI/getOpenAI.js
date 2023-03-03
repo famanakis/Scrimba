@@ -2,7 +2,7 @@
 //user will need to put their own API key in the const API_KEY below
 export async function getOpenAI(userInput) {
     const API_ENDPOINT = 'https://api.openai.com/v1/edits'
-    const API_KEY = 'your API_KEY goes here'
+    const API_KEY = 'your API key here'
 
     const data = {
     model: 'text-davinci-edit-001',

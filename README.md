@@ -2,12 +2,16 @@
 
 ## Scrimba Solo Projects
 
-Programming Languages Used
+Languages, Frameworks and Approaches Used
 <ul>
 <li>HTML</li>
 <li>CSS</li>
-<li>CSS - Flexbox/Grid
+<li>CSS - Flexbox/Grid</li>
 <li>JavaScript</li>
+ <li>JS Constructor and Class Functions</li>
+<li>React</li>
+<li>API Integration with POST and FETCH</li>
+<li>Mobile First Design</li>
 </ul>
  
 ## Projects
@@ -25,8 +29,13 @@ Programming Languages Used
 <li>Invoice Creator</li>
 <li>Restaurant Ordering App</li>
 <li>Learning Journal</li>
+<li>Employee Directory</li>
 <li>Tindog</li>
+<li>Color Scheme Generator - API</li>
+<li>Movie Watchlist - API</li>
+<li>TexterlyAI - API</li>
 <li>Digital Business Card - React</li>
+<li>Travel Journal - React</li>
 </ul>
 
 ## Resources:

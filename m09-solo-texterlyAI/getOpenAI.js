@@ -4,7 +4,8 @@
 
 export async function getOpenAI(userInput) {
     const API_ENDPOINT = 'https://api.openai.com/v1/edits'
-    const API_KEY = 'api key found in .env file'
+    // const API_KEY = 'api key found in .env file'
+    const API_KEY = process.env.API_KEY
 
     const data = {
     model: 'text-davinci-edit-001',

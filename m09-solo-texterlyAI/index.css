@@ -94,18 +94,19 @@ header {
 }
 
 .btn-copy {
+    transform: scale(1.8);
     border: none;
     background-color: transparent;
     position: absolute;
-    top: 16em;
-    right: 12.5em;
+    top: 16.5em;
+    right: 13em;
     cursor: pointer;
     z-index: 1000;
 }
 
 .btn-copy:hover,
 .btn-copy:focus {
-    transform: scale(1.1);
+    transform: scale(2);
 }
 
 .results {
@@ -285,7 +286,7 @@ header {
         width: 500px;
     }
     .btn-copy {
-        top: 14em;
-        right: 10em;
+        top: 14.25em;
+        right: 9.75em;
     }
 }

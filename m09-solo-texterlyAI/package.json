@@ -1,0 +1,23 @@
+{
+  "name": "m09-solo-texterlyai",
+  "version": "1.0.0",
+  "description": "Frameworks, Languages and Approach Used\r <ul>\r <li>Web API Integration</li>\r <li>JavaScript</li>\r <li>CSS-Flexbox</li>\r <li>CSS</li>\r <li>HTML</li>\r </ul>",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon getOpenAI.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}

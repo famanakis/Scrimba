@@ -11,7 +11,10 @@ Frameworks, Languages and Approach Used
 </ul>
 
 ## Screenshot
-<img src="" width=50% height=50%><br>
+### Before Processing Text
+<img src="https://github.com/famanakis/Scrimba/blob/main/m09-solo-texterlyAI/assets/texterly-before.png" width=50% height=50%><br>
+### After Processing Text
+<img src="https://github.com/famanakis/Scrimba/blob/main/m09-solo-texterlyAI/assets/texterly-after.png" width=50% height=50%><br>
 [Live Demo - Coming Soon]()
  
 ## Project Requirements

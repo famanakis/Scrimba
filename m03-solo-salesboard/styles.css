@@ -48,8 +48,9 @@ h1 {
 .live {
     font-size: 32px;
     width: 800px;
-    height: auto;
     min-height: 48px;
+    height: auto;
+    word-wrap: break-word;
     padding: 5px 20px;
     margin: 7px 0 40px;
 }

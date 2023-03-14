@@ -1,6 +1,7 @@
 :root {
     --white: #ffffff;
-    --black: #262626;
+    --black: #000000;
+    --lt-black: #262626;
     --yellow: #ECE480;
     --green: #62895B;
     --green-btn: #638a5c;
@@ -29,6 +30,7 @@ body {
 a, button {
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .connect a {
@@ -44,7 +46,7 @@ button {
 h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--black);
+    color: var(--lt-black);
 }
 
 header a, 
@@ -136,12 +138,51 @@ footer button {
 }
 
 /*Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 6.625em;
+    padding: 28px 23px 29px;
+}
 
+.logo-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-div div {
+    transform: translateX(15%);
+}
+
+.logo-div img {
+    height: 40.22px;
+    width: 45.35px;
+}
+
+.logo-div img:nth-child(2) {
+    transform: translateX(-75%);
+    z-index: 2;
+}
+
+.nav-mobile-img {
+    display: inline-block;
+}
+
+.nav-desktop {
+    display: none;
+}
 
 /*Hero Section*/
+.hero {
+
+}
 
 
 /*Main Content - Cards*/
+.main-content {
+
+}
+
 .learn-more {
     background-color: var(--green-btn);
 }
@@ -149,6 +190,11 @@ footer button {
 
 
 /*Connect with Us*/
+.connect {
 
+}
 
 /*Footer*/
+footer {
+    background-color: var(--black);
+}

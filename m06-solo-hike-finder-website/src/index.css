@@ -64,14 +64,15 @@ h2 {
 
 .hero h2 {
     font-size: 2.75rem;
-    font-weight: 700;
-    color: var(--text-subtitle);
+    font-weight: 400;
+    color: var(--white);
 }
 
-.hero > p {
+.hero p {
     font-size: 1.625rem;
     font-weight: 600;
     letter-spacing: .01em;
+    color: var(--white);
 }
 
 .card h3 {
@@ -174,9 +175,52 @@ header {
 
 /*Hero Section*/
 .hero {
-
+    position: relative;
+    background: var(--lt-black);
+    background-image: url("./assets/images/hero-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 37.5em;
+    display: grid;
+    padding: 72px 47px 0 47px;
 }
 
+.hero h2 {
+    width: 50%;
+    margin-bottom: 37px;
+}
+
+.hero p {
+    width: 60%;
+}
+
+.input-search {
+    position: relative;
+    display: inline-block;
+    height: 69px;
+    width: 90%;
+    padding-left: 2em;
+    font-size: 32px;
+    color: #c3c3c3;
+    border-radius: 6px;
+}
+
+.magnifier {
+    position: absolute;
+    left: 55px;
+    top: 440px;
+}
+
+.btn-search {
+    position: absolute;
+    color: var(--white);
+    background-color: var(--green-btn);
+    border-radius: 0px 4px 4px 0px;
+    height: 62px;
+    width: 183px;
+    transform: translate(-187px, 4px);
+    font-size: 32px;
+}
 
 /*Main Content - Cards*/
 .main-content {

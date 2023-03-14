@@ -1,5 +1,14 @@
 :root {
     --white: #ffffff;
+    --black: #262626;
+    --yellow: #ECE480;
+    --green: #62895B;
+    --green-btn: #638a5c;
+    --text-subtitle: #565656;
+    --text-p: #6f6f6f;
+    --text-black: #1f1f1f;
+    --text-gray: #4E4E4E;
+    --copyright: #a5a5a5;
 }
 
 * {
@@ -8,12 +17,138 @@
     padding: 0;
 }
 
-html {
+*, a, button, input {
     font-family: 'Inter', sans-serif;
 }
 
-/*test*/
-p {
-    color: red;
-    font-size: 100px;
+body {
+    background-color: var(--white);
+    min-width: 350px;
 }
+
+a, button, input {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.connect a {
+    text-transform: none;
+}
+
+button {
+    border: none;
+    background-color: inherit;
+}
+
+/*Typography*/
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--black);
+}
+
+header a, 
+header button {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--black);    
+}
+
+h2 {
+    font-size: 4.25rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.hero h2 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: var(--text-subtitle);
+}
+
+.hero > p {
+    font-size: 1.625rem;
+    font-weight: 600;
+    letter-spacing: .01em;
+}
+
+.card h3 {
+    font-size: 2.875rem;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.card p:first-of-type {
+    font-size: 1.5625rem;
+    font-weight: 600;
+    color: var(--black);
+}
+
+p {
+    font-weight: 400;
+    color: var(--text-p);
+}
+
+.learn-more {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+
+.connect a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-gray);
+}
+
+.connect p {
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: var(--text-black);
+}
+
+footer h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--copyright);
+}
+
+footer a,
+footer button {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.yellow {
+    color: var(--yellow);
+}
+
+.green {
+    color: var(--green);
+}
+
+/*Header*/
+
+
+/*Hero Section*/
+
+
+/*Main Content - Cards*/
+.learn-more {
+    background-color: var(--green-btn);
+}
+
+
+
+/*Connect with Us*/
+
+
+/*Footer*/

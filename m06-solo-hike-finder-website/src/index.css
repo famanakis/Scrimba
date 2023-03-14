@@ -26,7 +26,7 @@ body {
     min-width: 350px;
 }
 
-a, button, input {
+a, button {
     text-decoration: none;
     text-transform: uppercase;
 }

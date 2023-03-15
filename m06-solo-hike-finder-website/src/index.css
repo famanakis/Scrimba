@@ -286,6 +286,9 @@ header {
 }
 
 /*Explore Content*/
+.explore-content {
+    margin: 0 23px;
+}
 
 .hike-stats {
     display: flex;

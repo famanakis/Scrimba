@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hike Finder Homepage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -39,13 +40,14 @@
                 <p>Your next hiking adventure awaits. Get on the trail with detailed maps and updates shared by hikers like you.</p>
             </div>
             <div class="hero-col2">
-                <input type="text" id="input-search" class="input-search" value="" placeholder="Search by city"><img src="src/assets/magnifier.png" alt="magnifier" class="magnifier">
+                <img class="magnifier" src="./src/assets/magnifier.png">
+                <input type="text" id="input-search" class="input-search" value="" placeholder="Search by city">
                 <button type="submit" id="btn-search" class="btn-search">Search</button>
             </div>
         </section>
         <section class="main-content">
             <h2>Hikes near Bergen</h2>
-            <div id="search-grid" class="search grid">
+            <div id="search-grid" class="search-grid">
                 <div class="card">
                     <img src="./src/assets/images/floyen-background.jpg" alt="floyen hike image">
                     <h3>Fløyen</h3>
@@ -92,20 +94,20 @@
     </main>
 
     <footer>
-            <nav id="nav-desktop" class="nav-desktop">
-                <a href="" aria-label="to home page">Home</a>
-                <a href="" aria-label="to explore page" target="_blank">Explore</a>
-                <button type="button" id="btn-login-ft" class="btn-login">Log in</button>
-                <button type="button" id="btn-signup-ft" class="btn-signup">Sign up</button>
-            </nav>
-        <div>
+        <nav id="nav-desktop" class="nav-footer">
+            <a href="" aria-label="to home page">Home</a>
+            <a href="" aria-label="to explore page" target="_blank">Explore</a>
+            <button type="button" id="btn-login-ft" class="btn-login">Log in</button>
+            <button type="button" id="btn-signup-ft" class="btn-signup">Sign up</button>
+        </nav>
+        <div class="footer-logo-div">
             <div>
-                <h2>HikeFinder</h2>
                 <img src="./src/assets/poly-gray.png" alt="logo">
                 <img src="./src/assets/poly-white.png" alt="logo">
             </div>
-            <p>Copyright 2022. HikeFinder</p>
+            <h2>HikeFinder</h2>
         </div>
+        <p>Copyright 2022. HikeFinder</p>
     </footer>
 
     <script src="index.js"></script>  

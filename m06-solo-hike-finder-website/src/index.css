@@ -80,7 +80,8 @@ h2 {
     color: var(--white);
 }
 
-.main-content>h2 {
+.main-content > h2,
+.explore-content > h2 {
     font-size: 2.75rem;
     font-weight: 700;
     color: var(--text-subtitle);
@@ -250,7 +251,8 @@ header {
     margin: 0 23px;
 }
 
-.main-content h2 {
+.main-content h2,
+.explore-content h2 {
     margin-bottom: 22px;
 }
 
@@ -281,6 +283,35 @@ header {
     border: 2px solid var(--green-btn);
     border-radius: 4px;
     background-color: var(--green-btn);
+}
+
+/*Explore Content*/
+
+.hike-stats {
+    display: flex;
+    align-items: baseline;
+    gap: .5rem;
+}
+
+.explore-grid .hike-stats p {
+    font-size: 1.875rem;
+    font-weight: 400;
+    color: var(--black);
+    margin-top: .5rem;
+}
+
+.rating-star {
+    display: flex;
+    justify-content: baseline;
+    height: 28px;
+    width: 34px !important;
+    margin-left: .5rem;
+}
+
+.explore-grid .card .hike-info {
+    font-size: 1.625rem;
+    font-weight: 400;
+    color: var(--text-p);
 }
 
 /*Connect with Us*/

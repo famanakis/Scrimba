@@ -109,7 +109,6 @@ p {
     color: var(--white);
 }
 
-
 .connect a {
     font-size: 1.5rem;
     font-weight: 700;
@@ -326,6 +325,7 @@ footer {
 }
 
 .footer-logo-div div {
+    display: flex;
     transform: translateX(15%);
 }
 
@@ -340,6 +340,140 @@ footer {
 }
 
 footer p {
-    margin-top: 8px;
+    margin: 8px 0 0 25px;
+}
+
+
+@media (min-width: 1220px) {
+    header {
+        align-items: center;
+    }
+
+    .nav-mobile-img {
+        display: none;
+    }
+
+    .nav-desktop {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .nav-desktop a {
+        margin-left: 41px;
+    }
+
+    .btn-signup {
+        display: inline;
+        background: var(--green-btn);
+        color: var(--white);
+        padding: .5em 1.5em;
+        margin-left: 42px;
+    }
+
+    .btn-login {
+        display: inline;
+        border: 2px solid var(--black);
+        padding: .5em 1.5em;
+        margin-left: 18px;
+    }
+
+    .hero {
+        grid-template-columns: 50% 50%;
+    }
+
+    .hero h2 {
+        font-size: 4.5rem;
+        width: 70%;
+    }
+
+    .hero p {
+        font-size: 2rem;
+        width: 75%;
+    }
+
+    .hero-col1 {
+        align-self: start;
+    }
+
+    .hero-col2 {
+        align-self: flex-end;
+        margin-bottom: 10%;
+    }
+
+    .hero-col2 input,
+    .magnifier {
+        margin-left: 10%;
+    }
+
+    .main-content {
+        font-size: 1.5rem;
+        max-width: 1800px;
+        padding: 0 32px;
+        margin: 0 auto;
+    }
+
+    .main-content p {
+        line-height: 1.5;
+    }
+
+    .card-odd {
+        grid-template-columns: auto auto;
+        gap: 10%;
+
+    }
+
+    .card-even {
+        grid-template-columns: auto auto;   
+        gap: 10%;
+    }
+
+    .card-even .card-img {
+        order: 2;
+    }
+
+    .card-even .card-text {
+        order: 1;
+    }
+
+    .card-img{
+        height: 480px;
+        width: 740px;
+    }
+
+    .card-text {
+        width: 70%;
+        align-self: center;
+    }
+
+    .connect {
+        grid-template-columns: auto auto auto;
+        grid-gap: 1.5em;
+
+    }
+
+    .connect div {
+        margin-top: 4em;
+        max-width: 450px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 74px 31px;
+    }
+
+    .nav-footer {
+        order: 2;
+        align-items: center;
+    }
+
+    .nav-footer .btn-signup,
+    .nav-footer .btn-login {
+        margin-left: 0;
+        padding: 0;
+        background-color: inherit;
+    }
+
+
 }
 

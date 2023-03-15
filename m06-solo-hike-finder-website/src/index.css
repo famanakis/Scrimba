@@ -315,6 +315,7 @@ header {
     font-size: 1.625rem;
     font-weight: 400;
     color: var(--text-p);
+    line-height: 39px;
 }
 
 /*Connect with Us*/
@@ -477,6 +478,63 @@ footer p {
     .card-text {
         width: 70%;
         align-self: center;
+    }
+
+    .explore-content {
+        font-size: 1.5rem;
+        max-width: 1800px;
+        padding: 0 32px;
+        margin: 0 auto;
+    }
+
+    .explore-grid {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 2.3125em;
+        min-width: 1630px;
+    }
+
+    .explore-cards {
+        display: grid;
+        grid-template-rows: auto auto auto;
+    }
+
+    .explore-cards .card {
+        position: relative;
+        width: 100%;
+        grid-template-columns: auto;
+        min-width: 700px;
+    }
+
+    .explore-cards .card-text {
+        width: auto;
+    }
+
+    .explore-cards .card-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 144px;
+        height: 111px;
+    }
+
+    .explore-cards .card:not(:last-child) {
+        border-bottom: 1px solid #a8a8a8;
+    }
+
+    .explore-content h2 {
+        margin-bottom: 77px;
+    }
+
+    .explore-cards .card p {
+        margin-bottom: 45px;
+    }
+
+    .map-image {
+        width: auto;
+        height: 795px;
+        border: 1px solid #cecece;
+        border-radius: 7px;
     }
 
     .connect {

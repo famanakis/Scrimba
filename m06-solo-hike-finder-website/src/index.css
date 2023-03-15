@@ -276,7 +276,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: fit-content;
+    width: moz-fit-content;
     padding: .5em 1em;
     border: 2px solid var(--green-btn);
     border-radius: 4px;

@@ -1,16 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hike Finder Explore</title>
-        <link rel="stylesheet" href="./index.css">
-    </head>
-    <body>
 
-        <p>working</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hike Finder Homepage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
 
-    <script src="./index.js"></script>   
-    </body>
+<body>
+    <header>
+        <div class="logo-div">
+            <div>
+                <img src="../src/assets/poly-black.png" alt="logo">
+                <img src="../src/assets/poly-green.png" alt="logo">
+            </div>
+            <h1>HikeFinder</h1>
+        </div>
+        <div>
+            <button type="button" id="btn-nav-mobile" class="btn-nav-mobile"><img class="nav-mobile-img" src="../src/assets/hamburger.png" alt="mobile nav menu"></button>
+            <nav id="nav-desktop" class="nav-desktop">
+                <a href="../index.html" aria-label="to home page" target="_blank">Home</a>
+                <a href="" aria-label="to explore page">Explore</a>
+                <button type="button" id="btn-signup" class="btn-signup">Sign up</button>
+                <button type="button" id="btn-login" class="btn-login">Log in</button>
+            </nav>
+        </div>
+    </header>
+ 
+    <main>
+        <section class="hero">
+            <div class="hero-col1">
+                <h2>Find Your Next <span class="yellow">Adventure</span></h2>
+                <p>Your next hiking adventure awaits. Get on the trail with detailed maps and updates shared by hikers like you.</p>
+            </div>
+            <div class="hero-col2">
+            </div>
+        </section>
+        <section class="main-content">
+            <h2>Explore Curated Trails Near You</h2>
+            <div id="search-grid" class="search-grid">
+                <div class="card card-odd">
+                    <div class="card-img">
+                        <img src="../src/assets/images/tryon-background.png" alt="tryon creek state area hike image">
+                    </div>
+                    <div class="card-text">
+                        <h3>Tryon Creek State Area</h3>
+                    <p>Moderate <span></span> 4.5 (428)</p>
+                    <p>670-acre forested area along a ravine with well-maintained trails for hikers, horses & leashed dogs.
+                    </p>
+                    </div>
+                </div>
+                <div class="card card-even">
+                    <div class="card-img">
+                        <img src="../src/assets/images/marquam-background.png" alt="marquam nature park hike image">
+                    </div>
+                    <div class="card-text">
+                        <h3>Marquam Nature Park</h3>
+                        <p>Easy <span></span> 4.3 (432)</p>
+                        <p>193 acres of undeveloped land & over 5 miles of hiking trails with forested scenic views.</p>
+                    </div>
+                </div>
+                <div class="card card-odd">
+                    <div class="card-img">
+                        <img src="../src/assets/images/wildwood-background.png" alt="wildwood trail area hike image">
+                    </div>
+                    <div class="card-text">
+                        <h3>Wildwood Trail Area</h3>
+                        <p>Easy <span></span> 4.0 (207)</p>
+                        <p>The Wildwood Trail starts at the Vietnam Memorial adjacent to the Oregon Zoo and World Forestry Center and circles uphill.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="connect">
+            <div>
+                <img src="../src/assets/bell.png" alt="bell">
+                <a href="" aria-label="sign up">Sign up for Notifications</a>
+                <p><span class="green">Sign up</span> to get conditions alerts, information on pop-up events and interesting stories.</p>
+            </div>
+            <div>
+                <img src="../src/assets/location.png" alt="location icon">
+                <a href="" aria-label="get the hikefinder app">Get the HikeFinder App</a>
+                <p><span class="green">Download the app</span> to get the most out of every minute outdoors with offline maps and more!</p>
+            </div>
+            <div>
+                <img src="../src/assets/arrow.png" alt="arrow">
+                <a href="" aria-label="share trails">Share Trails</a>
+                <p><span class="green">Share your hiking adventures</span> with the community and keep a record of your travels.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="nav-footer">
+            <a href="" aria-label="to home page">Home</a>
+            <a href="" aria-label="to explore page" target="_blank">Explore</a>
+            <button type="button" id="btn-login-ft" class="btn-login">Log in</button>
+            <button type="button" id="btn-signup-ft" class="btn-signup">Sign up</button>
+        </nav>
+        <div>
+            <div class="footer-logo-div">
+                <div>
+                    <img src="../src/assets/poly-gray.png" alt="logo">
+                    <img src="../src/assets/poly-white.png" alt="logo">
+                </div>
+                <h2>HikeFinder</h2>
+            </div>
+            <p>Copyright 2022. HikeFinder</p>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>  
+</body>
+ 
 </html>

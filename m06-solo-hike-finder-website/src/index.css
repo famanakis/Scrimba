@@ -29,6 +29,7 @@ input {
 body {
     background-color: var(--white);
     min-width: 780px;
+    overflow-x: hidden;
 }
 
 a,
@@ -68,14 +69,14 @@ h2 {
 }
 
 .hero h2 {
-    font-size: 2.75rem;
+    font-size: 4.25rem;
     font-weight: 400;
     color: var(--white);
 }
 
 .hero p {
     font-size: 1.625rem;
-    font-weight: 600;
+    font-weight: 00;
     letter-spacing: .01em;
     color: var(--white);
 }
@@ -110,7 +111,7 @@ p {
     color: var(--white);
 }
 
-.connect a {
+.connect h2 {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--text-gray);
@@ -201,6 +202,7 @@ header {
     background-size: cover;
     height: 37.5em;
     display: grid;
+    margin-bottom: 56px;
 }
 
 .overlay {
@@ -209,27 +211,33 @@ header {
     height: 70%;
     display: grid;
     padding: 72px 47px 0 47px;
-    margin-bottom: 56px;
-}
-
-.hero h2 {
-    /* margin-bottom: 37px; */
-    width: 48%;
-}
-
-.hero p {
-    width: 60%;
 }
 
 .hero-col2 {
-    position: relative;
-    margin-top: 55%;
+    position: absolute;
+    bottom: 57px;
+    left: 50px;
+    right: 50px;
+    
+}
+
+.hero h2,
+.hero p {
+   width: 70%;
+}
+
+.hero h2 {
+    align-self: center;
+}
+
+.hero p {
+    align-self: start;
 }
 
 .input-search {
     display: inline;
     height: 69px;
-    width: 90%;
+    width: 100%;
     padding-left: 2em;
     font-size: 32px;
     color: #c3c3c3;
@@ -252,6 +260,19 @@ header {
     transform: translate(-187px, 4px);
     font-size: 32px;
 }
+
+.hero-explore {
+    height: 26.375em;
+}
+
+.overlay-explore {
+    height: 100%;
+}
+
+.hero-explore .hero-col1 h2 {
+    width: 100%;
+}
+
 
 /*Main Content - Cards*/
 .main-content {
@@ -285,7 +306,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: moz-fit-content;
+    width:fit-content;
     padding: .5em 1em;
     border: 2px solid var(--green-btn);
     border-radius: 4px;
@@ -335,13 +356,25 @@ header {
     padding: 48px 0 90px;
 }
 
-.connect div {
+.connect div img {
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
+    margin: 0 auto;
+}
+
+.connect-text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 26px;
-    width: 72.5%;
-    margin: 0 auto;
+}
+
+.connect-text h2 {
+    margin: 26px auto;
+}
+
+.connect-text p {
+    width: 60%;
 }
 
 /*Footer*/
@@ -420,31 +453,42 @@ footer p {
     }
 
     .hero {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: auto auto;
     }
 
-    .hero h2 {
-        font-size: 4.5rem;
-        width: 70%;
+    .overlay {
+        width: 40%;
+        height: 100%;
     }
 
+    .hero h2,
     .hero p {
-        font-size: 2rem;
-        width: 75%;
+        width: 80%;
     }
 
     .hero-col1 {
-        align-self: start;
+        justify-content: center;
     }
 
     .hero-col2 {
-        align-self: flex-end;
-        margin-bottom: 10%;
+        max-width: 50%;
+        left: 45%;
     }
 
-    .hero-col2 input,
-    .magnifier {
-        margin-left: 10%;
+    .hero-explore {
+        height: 600px;
+    }
+
+    .hero-explore .hero-col1 {
+        width: 47%;
+    }
+
+    .hero-explore .hero-col1 h2 {
+        width: 70%;
+    }
+
+    .hero-explore .hero-col1 p {
+        width: 100%;
     }
 
     .main-content {
@@ -546,15 +590,17 @@ footer p {
 
     .connect {
         grid-template-columns: auto auto auto;
-        grid-gap: 1.5em;
-
+        padding: 80px 0 0 ;
     }
 
-    .connect div {
-        margin-top: 4em;
+    .connect div:last-child img {
+        margin-bottom: 8px;
+    }
+
+    .connect-text p {
         max-width: 450px;
     }
-
+    
     footer {
         flex-direction: row;
         justify-content: space-between;

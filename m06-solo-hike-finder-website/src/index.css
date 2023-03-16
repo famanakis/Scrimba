@@ -29,6 +29,7 @@ input {
 body {
     background-color: var(--white);
     min-width: 780px;
+    overflow-x: hidden;
 }
 
 a,

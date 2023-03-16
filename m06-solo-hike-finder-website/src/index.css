@@ -201,22 +201,29 @@ header {
     background-size: cover;
     height: 37.5em;
     display: grid;
+}
+
+.overlay {
+    position: absolute;
+    background:rgba(0, 0, 0, 0.5);
+    height: 70%;
+    display: grid;
     padding: 72px 47px 0 47px;
     margin-bottom: 56px;
 }
 
 .hero h2 {
-    margin-bottom: 37px;
-    width: 70%;
+    /* margin-bottom: 37px; */
+    width: 48%;
 }
 
 .hero p {
-    width: 85%;
+    width: 60%;
 }
 
 .hero-col2 {
     position: relative;
-    margin-top: 15%;
+    margin-top: 55%;
 }
 
 .input-search {

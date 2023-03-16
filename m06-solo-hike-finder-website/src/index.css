@@ -425,7 +425,6 @@ footer p {
 .signup-container {
   background: hsl(86, 85%, 95%);
   padding: 10em 0;
-  /* position: relative; */
 }
 
 .btn {
@@ -436,19 +435,15 @@ footer p {
   margin: 20px 0;
   padding: 15px 15px;
   border-radius: 5px;
-  /* position: relative; */
 }
 
 .btn::after {
     content: '';
-    /* position: absolute; */
     z-index: 1;
-    /* top: 0; */
-    /* left: 0; */
     width: 100%;
     height: 100%;
     transition: all .2s ease-in-out;
-    box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0), 0 3px 3px hsla(0, 0, 0, .2);
+    box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0), 0 3px 3px rgba(0, 0, 0, .2);
     border-radius: 5px;
 }
   
@@ -522,9 +517,6 @@ input {
   
 .signup {
   position: relative;
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
   display: flex;
   flex-direction: column;
   align-items: center;

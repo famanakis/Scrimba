@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/184e8d27a0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./index.css">
 </head>
 
@@ -34,28 +35,30 @@
  
     <main>
         <div class="signup-container">
-            <div id="login-box">
-                <div class="left">
-                  <h1>Sign up</h1>
-            
-                  <input type="text" name="username" placeholder="Username" />
-                  <input type="text" name="email" placeholder="E-mail" />
-                  <input type="password" name="password" placeholder="Password" />
-                  <input type="password" name="password2" placeholder="Retype password" />
-                  
-                  <input type="submit" name="signup_submit" value="Sign me up" />
+            <div class="signup">
+                <div class="signup-classic">
+                  <h2>Create your account</h2>
+                  <form class="form">
+                    <fieldset class="username">
+                      <input type="text" placeholder="username" />
+                    </fieldset>
+                    <fieldset class="password">
+                      <input type="password" placeholder="password" />
+                    </fieldset>
+                    <fieldset class="email">
+                        <input type="email" placeholder="email" />
+                      </fieldset>
+                    <button type="submit" class="btn btn-form-signup">sign up</button>
+                  </form>
                 </div>
-                
-                <div class="right">
-                  <span class="loginwith">Sign in with<br />social network</span>
-                  
-                  <button class="social-signin facebook">Log in with facebook</button>
-                  <button class="social-signin twitter">Log in with Twitter</button>
-                  <button class="social-signin google">Log in with Google+</button>
-                </div>
-                <div class="or">OR</div>
-              </div>
-        </div>
+                <div class="signup-connect">
+                    <a href="#" class="btn btn-social btn-facebook"><i class="fa fa-facebook"></i> Sign in with Facebook</a>
+                    <a href="#" class="btn btn-social btn-twitter"><i class="fa fa-twitter"></i> Sign in with Twitter</a>
+                    <a href="#" class="btn btn-social btn-google"><i class="fa fa-google"></i> Sign in with Google</a>
+                    <a href="#" class="btn btn-social btn-linkedin"><i class="fa fa-linkedin"></i> Sign in with Linkedin</a>
+                  </div>
+                <h2 class="signup-or">Or</h2>
+            </div>
     </main>
 
     <footer>

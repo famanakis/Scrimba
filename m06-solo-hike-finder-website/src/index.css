@@ -596,6 +596,120 @@ input {
     font-weight: 900;
 }
 
+/*** LOG-IN PAGE ***/
+.login-container {
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    padding: 5em;
+    min-width: 750px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	overflow: hidden;
+	min-height: 600px;
+    min-width: 600px;
+    padding: 5em 2em;
+	z-index: 2;
+	transition: all 0.6s ease-in-out;
+}
+
+.login-container h2 {
+    color: var(--text-black);
+}
+
+.login-container a {
+    font-family: inherit;
+	color: var(--text-black);
+	margin: 15px 0;
+}
+
+.social-container {
+	margin: 20px 0;
+}
+
+.social-container a {
+	border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 75px;
+	width: 75px;
+}
+
+.social-container i {
+    transform: scale(1.75);
+}
+
+.login-form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    gap: 1.25em;
+    width: 75%;
+}
+
+.login-form input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.login-container button {
+	border-radius: 25px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 1em 3em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+.login-container button:active {
+	transform: scale(0.95);
+}
+
+.login-container button:focus,
+.login-container button:hover  {
+	outline: none;
+    opacity: .75;
+}
+
+.login-container button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+
+
 /*Media Queries */
 @media (min-width: 1220px) {
     header {

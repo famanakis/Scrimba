@@ -597,11 +597,23 @@ input {
 }
 
 /*** LOG-IN PAGE ***/
+.background {
+    background: var(--copyright) url("./assets/images/hikers-background-img.jpg") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    filter: blur(5px);
+    height: 90vh;
+}
+
 .login-container {
-    background-color: purple;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     padding: 5em;
+    margin-top: 3.5em;
     min-width: 750px;
 }
 
@@ -650,6 +662,22 @@ input {
     transform: scale(1.75);
 }
 
+.fa-facebook-f {
+    color: #4267B2;
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+.fa-google-plus-g {
+    color:  #db4a39;
+}
+
+.fa-linkedin-in {
+    color: #0072b1;
+}
+
 .login-form {
 	background-color: #FFFFFF;
 	display: flex;
@@ -662,6 +690,8 @@ input {
 
 .login-form input {
 	background-color: #eee;
+    font-family: inherit;
+    font-size: 1.5rem;
 	border: none;
 	padding: 12px 15px;
 	margin: 8px 0;
@@ -670,8 +700,8 @@ input {
 
 .login-container button {
 	border-radius: 25px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
+	border: 1px solid var(--green-btn);
+	background-color: var(--green-btn);
 	color: #FFFFFF;
 	font-size: 1rem;
 	font-weight: bold;
@@ -690,24 +720,6 @@ input {
 	outline: none;
     opacity: .75;
 }
-
-.login-container button.ghost {
-	background-color: transparent;
-	border-color: #FFFFFF;
-}
-
-@keyframes show {
-	0%, 49.99% {
-		opacity: 0;
-		z-index: 1;
-	}
-	
-	50%, 100% {
-		opacity: 1;
-		z-index: 5;
-	}
-}
-
 
 
 /*Media Queries */

@@ -13,7 +13,7 @@ Programming Languages and Approach Used
 ## Screenshot
 <img src="" width=50% height=50%><br>
 <a href="https://9tfdev-m06-solo-hikefinder.netlify.app/" target="_blank">Live Demo</a>
-[Live Demo](https://9tfdev-m06-solo-hikefinder.netlify.app/)
+
  
 ## Project Requirements
  The HikeFinder solo project meets the following requirements:

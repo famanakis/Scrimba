@@ -22,10 +22,26 @@
             <h1>HikeFinder</h1>
         </div>
         <div>
+            <div id="mobile-nav-menu" class="mobile-nav-menu">
+                <button id="mobile-nav-close" class="btn-mobile-nav-close">x</button>
+                <div class="mobile-nav-text">
+                    <h2>Home</h2>
+                    <h2>Hikes</h2>
+                    <h2>Journal</h2>
+                    <h2>Signup</h2>
+                    <h2>Login</h2>
+                </div>
+            </div>
             <button type="button" id="btn-nav-mobile" class="btn-nav-mobile"><img class="nav-mobile-img" src="./src/assets/hamburger.png" alt="mobile nave menu"></button>
             <nav id="nav-desktop" class="nav-desktop">
-                <a href="" aria-label="to home page">Home</a>
-                <a href="./src/explore.html" aria-label="to explore page" target="_blank">Explore</a>
+                <a class="a-home" href="" aria-label="to home page">Home</a>
+                <div class="dropdown" >
+                    <button type="button" class="btn-dropdown">Explore</button>
+                    <div class="dropdown-content">
+                        <a href="./src/explore.html" aria-label="to explore page" target="_blank">Hikes</a>
+                        <a href="./src/hiking-journal.html" aria-label="to journal page" target="_blank">Journal</a>
+                    </div>
+                </div>
                 <a class="btn-signup" href="./src/signup.html" aria-label="to signup" target="_blank">Sign up</a>
                 <a class="btn-login" href="./src/login.html" aria-label="to login page" target="_blank">Log in</a>
             </nav>

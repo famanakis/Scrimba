@@ -10,7 +10,17 @@
     --text-black: #1f1f1f;
     --text-gray: #4E4E4E;
     --copyright: #a5a5a5;
+    --input-bckgrnd: #c3c3c3;
+    --input-text: #333333;
     --connect-bkgrnd: #fafafa;
+    --or-btn: #7fa579;
+    --facebook: #3b5897;
+    --twitter: #53abee;
+    --google: #de4e3b;
+    --linkedin: #00a1db;
+    --login-input-bkgrnd: #eeeeee;
+    --green-btn-light: #7fa579;
+    --journal-bkgrnd: #ebf5ff;
 }
 
 *,
@@ -36,6 +46,7 @@ body {
 
 a,
 button {
+    font-family: inherit;
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
@@ -80,6 +91,16 @@ h2 {
     font-size: 1.625rem;
     font-weight: 00;
     letter-spacing: .01em;
+    color: var(--white);
+}
+
+.input-search {
+    font-size: 2rem;
+    color: var(--input-bckgrnd);
+}
+
+.btn-search {
+    font-size: 2rem;
     color: var(--white);
 }
 
@@ -152,7 +173,101 @@ footer button {
     color: var(--green);
 }
 
-/*Header*/
+.explore-grid .hike-stats p {
+    font-size: 1.875rem;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.explore-grid .card .hike-info {
+    font-size: 1.625rem;
+    font-weight: 400;
+    color: var(--text-p);
+    line-height: 39px;
+}
+
+.signup-classic h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: var(--black);
+}
+
+.signup-form input {
+    font-size: 1.25rem;
+    color: var(--input-text);
+}
+
+.signup-classic fieldset::after,
+.signup-classic fieldset.email::after,
+.signup-classic fieldset.password::after {
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin-top: .5625em;
+}
+
+.signup-or {
+    font-size: 1.875em;
+    font-weight: 800;
+    text-shadow: 0 a 1px var(--black);
+}
+
+.btn {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--white);
+    text-shadow: 0 0 1px var(--black);
+}
+
+.login-container h2,
+.login-container a {
+    color: var(--text-black);
+}
+
+.login-form input {
+    font-size: 1.5rem;
+}
+
+.login-container button {
+    font-size: 1rem;
+	font-weight: 800;
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+.hero-journal h2 {
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: var(--white);
+    text-shadow:            
+    0.02em 0 black,
+    0 0.02em black,
+    -0.02em 0 black,
+    0 -0.02em black,
+    -0.02em -0.02em black,
+    -0.02em 0.02em black,
+    0.02em -0.02em black,
+    0.02em 0.02em black;
+}
+
+.journal h2 {
+    color: var(--lt-black);
+}
+
+.journal-card h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+.journal-hike-date p {
+    color: var(--white);
+    font-weight: 600;
+    text-shadow: 0 0 1px var(--black);
+    font-size: 1.25rem;
+}
+
+/*** HEADER ***/
 header {
     display: flex;
     justify-content: space-between;
@@ -190,11 +305,118 @@ header {
     margin-top: 7px;
 }
 
+.mobile-nav-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--green);
+    z-index: 2;
+    padding-top: 8em;
+}
+
+.btn-mobile-nav-close {
+    position: fixed;
+    top: .15em;
+    right: .15em;
+    color: var(--white);
+    font-size: 2rem;
+    padding: 1em;
+    transition: all ease-in-out .5s;
+}
+
+.btn-mobile-nav-close:hover,
+.btn-mobile-nav-close:focus {
+    transform: scale(1.3);
+}
+
+.mobile-nav-text h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    letter-spacing: .25em;
+    color: var(--white);
+    height: 2.25em;
+    width: 100vw;
+    transition: all ease-in-out .2s;
+    cursor: pointer;
+}
+
+.mobile-nav-text h2:hover,
+.mobile-nav-text h2:focus {
+    background-color: var(--green-btn-light);
+    font-weight: 600;
+}
+
 .nav-desktop {
     display: none;
 }
 
-/*Hero Section*/
+.a-home:hover,
+.a-home:focus,
+.btn-dropdown:hover,
+.btn-cropdown:focus{
+    text-decoration: underline;
+}
+
+.a-home {
+    padding-right: 2em;
+}
+
+.btn-dropdown {
+    margin: 0;
+    padding: 0 .5em .6em .15em;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown {
+    transition: ease-out 1s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 428px;
+    background-color: var(--white);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.btn-signup:hover,
+.btn-signup:focus,
+.btn-search:hover,
+.btn-search:focus,
+.learn-more:hover,
+.learn-more:focus {
+    background-color: var(--green-btn-light);
+}
+
+.btn-login:hover,
+.btn-focus {
+    background-color: var(--journal-bkgrnd);
+}
+
+/*** HERO ***/
 .hero {
     position: relative;
     background: var(--lt-black);
@@ -204,7 +426,7 @@ header {
     background-size: cover;
     height: 37.5em;
     display: grid;
-    margin-bottom: 56px;
+    margin-bottom: 3.5em;
 }
 
 .overlay {
@@ -212,14 +434,14 @@ header {
     background:rgba(0, 0, 0, 0.5);
     height: 70%;
     display: grid;
-    padding: 72px 47px 0 47px;
+    padding: 4.5em 2.9375em 0;
 }
 
 .hero-col2 {
     position: absolute;
-    bottom: 57px;
-    left: 50px;
-    right: 50px;
+    bottom: 3.5625em;
+    left: 3.125em;
+    right: 3.125em;
     
 }
 
@@ -241,8 +463,6 @@ header {
     height: 69px;
     width: 100%;
     padding-left: 2em;
-    font-size: 32px;
-    color: #c3c3c3;
     border-radius: 6px;
 }
 
@@ -254,13 +474,11 @@ header {
 
 .btn-search {
     position: absolute;
-    color: var(--white);
     background-color: var(--green-btn);
     border-radius: 0px 4px 4px 0px;
     height: 62px;
     width: 183px;
     transform: translate(-187px, 4px);
-    font-size: 32px;
 }
 
 .hero-explore {
@@ -275,33 +493,32 @@ header {
     width: 100%;
 }
 
-
-/*Main Content - Cards*/
+/*** MAIN CONTENT - Cards ***/
 .main-content {
-    margin: 0 23px;
+    margin: 0 1.4375em;
 }
 
 .main-content h2,
 .explore-content h2 {
-    margin-bottom: 22px;
+    margin-bottom: 1.375em;
 }
 
 .card {
     display: grid;
-    margin-bottom: 58px;
+    margin-bottom: 3.625em;
 }
 
 .card img {
     width: 100%;
-    margin-bottom: 45px;
+    margin-bottom: 2.8125em;
 }
 
 .card h3 {
-    margin-bottom: 8px;
+    margin-bottom: .5em;
 }
 
 .card p {
-    margin-bottom: 21px;
+    margin-bottom: 1.3125em;
 }
 
 .learn-more {
@@ -316,20 +533,19 @@ header {
     background-color: var(--green-btn);
 }
 
-/*Connect with Us*/
+/*** CONNECT WITH US ***/
 .connect {
     display: grid;
     grid-template-rows: auto auto auto;
     grid-gap: 50px;
     text-align: center;
     background-color: var(--connect-bkgrnd);
-    padding: 48px 0 90px;
+    padding: 4.3em 0 5.625em;
 }
 
 .connect div img {
     display: flex;
     flex-direction: column;
-    align-items: last baseline;
     margin: 0 auto;
 }
 
@@ -340,25 +556,25 @@ header {
 }
 
 .connect-text h2 {
-    margin: 26px auto;
+    margin: 1.625em auto;
 }
 
 .connect-text p {
     width: 60%;
 }
 
-/*Footer*/
+/*** FOOTER ***/
 footer {
     background-color: var(--black);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 55px 0;
+    padding: 3.4375em 0;
 }
 
 .nav-footer {
-    margin-bottom: 33px;
+    margin-bottom: 2.0625em;
     display: flex;
     gap: 1.5em;
 }
@@ -385,12 +601,12 @@ footer {
 }
 
 footer p {
-    margin: 8px 0 0 25px;
+    margin: .5em 0 0 1.5625em;
 }
 
 /*EXPLORE PAGE*/
 .explore-content {
-    margin: 0 23px;
+    margin: 0 1.4375em;
 }
 
 .hike-stats {
@@ -400,9 +616,6 @@ footer p {
 }
 
 .explore-grid .hike-stats p {
-    font-size: 1.875rem;
-    font-weight: 400;
-    color: var(--black);
     margin-top: .5rem;
 }
 
@@ -414,17 +627,10 @@ footer p {
     margin-left: .5rem;
 }
 
-.explore-grid .card .hike-info {
-    font-size: 1.625rem;
-    font-weight: 400;
-    color: var(--text-p);
-    line-height: 39px;
-}
-
 .map {
     display: none;
-    height: 795px;
-    width: 839px;
+    height: 49.6875em;
+    width: 52.4375em;
 }
 
 /*** SIGN-UP PAGE ***/
@@ -440,6 +646,7 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 0 auto;
     z-index: 1;
     max-width: 600px;
@@ -449,17 +656,13 @@ footer p {
     overflow: hidden;
   }
   
-  .signup-classic {
+.signup-classic {
     width: 100%;
-    padding: 30px 50px 60px;
+    padding: 1.875em 3.125em 3.75em;
   }
 
 .signup-classic h2 {
-    font-size: 2.5rem;
-    font-weight: normal;
-    color: var(--black);
-    margin-top: 23px;
-    margin-bottom: 43px;
+    margin: 2.5rem 0  3.5rem;
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
@@ -467,65 +670,48 @@ footer p {
 fieldset {
     border: none;
     padding: 0;
-    margin: 20px 0;
+    margin: 1.25em 0;
     position: relative;
 } 
 
 .signup-form input {
     width: 100%;
-    color: #333333;
-    padding: 15px 40px 15px 15px;
+    padding: .9375em 2.5em .9375em .9375em;
     border-radius: 5px;
-    font-size: 1.25rem;
     outline: none!important;
     border: 1px solid rgba(0, 0, 0, 0.3);
     box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
     vertical-align: top;
-    margin: 8px auto;
+    margin: .5em auto;
 }
   
 .signup-classic fieldset::after {
-    font-family: 'Font Awesome\ 5 Free';
     content: '\f007';
-    font-weight: 900;
     position: absolute;
-    right: 15px;
-    top: 17px;
+    right: .9375em;
+    top: .75em;
     z-index: 2;
     width: 20px;
     color: rgba(0, 0, 0, .2);
     text-align: center;
-    font-size: 1.4rem;
-    margin-top: 9px;
   }
   
 .signup-classic fieldset.email::after {
-    font-family: 'Font Awesome\ 5 Free';
     content: '\f0e0';
-    font-weight: 900;
-    font-size: 1.4rem;
-    margin-top: 9px;
 }
   
 .signup-classic fieldset.password::after {
-    font-family: 'Font Awesome\ 5 Free';
     content: '\f023';
-    font-weight: 900;
-    font-size: 1.4rem;
-    margin-top: 9px;
 }
 
 .signup-or {
-    font-size: 30px;
-    font-weight: 800;
-    text-shadow: 0 a 1px var(--black);
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #7fa579;
-    box-shadow: 0 0 1px 5px #7fa579;
+    background-color: var(--or-btn);
+    box-shadow: 0 0 1px 5px var(--or-btn);
     border-radius: 50%;
     padding: .5em;
     width: 2.25em;
@@ -535,83 +721,70 @@ fieldset {
     background: linear-gradient(0deg, var(--green), #F4FDE7);
     color: var(--white);
     position: relative;
-    padding: 70px 50px 80px;
+    padding: 4.375em 3.125em 5em;
     width: 100%;
-  }
+}
 
 .btn {
     display: block;
-    background: #BDED7D;
-    color: var(--white);
-    text-decoration: none;
-    padding: 15px 15px;
+    width: 100%;
+    padding: 1em;
+    border: none;
     border-radius: 5px;
     transition: all ease-in-out .55s;
-  }
+}
+
+.btn:hover,
+.btn:focus {
+    box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.btn-form-signup {
+    width: 100%;
+    outline: none!important;
+    background: linear-gradient(-5deg, var(--green), var(--green-btn));
+    box-shadow: 0 3px 0px rgba(86, 21%, 44%, 0.2);
+    margin: 3.75em auto 2.5em auto;
+}
   
-  .btn-social {
-      content: '';
-      z-index: 1;
-      width: 100%;
-      height: 100%;
-      transition: all .2s ease-in-out;
-      box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0), 0 3px 3px rgba(0, 0, 0, .2);
-      border-radius: 5px;
-      transition: all ease-in-out .55s;
-      margin: 50px auto;
-      font-size: 1.25rem;
-  }
-    
-  .btn:hover {
-      box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.2);
-      transform: scale(1.05);
-  }
-  
-  .btn-form-signup {
-      width: 100%;
-      outline: none!important;
-      background: linear-gradient(-5deg, var(--green), var(--green-btn));
-      border: none;
-      text-transform: uppercase;
-      text-shadow: 0 0 1px var(--black);
-      font-size: 1.25rem;
-      font-weight: bold;
-      box-shadow: 0 3px 0px rgba(86, 21%, 44%, 0.2);
-      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-      margin: 60px auto 40px auto;
-  }
-  
-  .btn-social {
-    padding-left: 64px;
+.btn-social {
     position: relative;
+    content: '';
     z-index: 1;
-  }
-  
-  .btn-social .fa {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-      width: 50px;
-      height: 100%;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.1);
-      line-height: 2.8;
-      border-radius: 5px 0 0 5px;
-  }
-    
-  .btn-facebook {
-    background-color: #3B5897;
-  }
-  .btn-twitter {
-    background-color: #53ABEE;
-  }
-  .btn-google {
-    background-color: #DE4E3B; 
-  }
-  .btn-linkedin {
-    background-color: #00A1DB;
-  }
+    box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0), 0 3px 3px rgba(0, 0, 0, .2);
+    margin: 3.125em auto;
+    padding-left: 4em;
+}
+
+.btn-social .fa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.1);
+    line-height: 2.8;
+    border-radius: 5px 0 0 5px;
+}
+
+.btn-facebook {
+    background-color: var(--facebook);
+}
+
+.btn-twitter {
+    background-color: var(--twitter);
+}
+
+.btn-google {
+    background-color: var(--google); 
+}
+
+.btn-linkedin {
+    background-color: var(--linkedin);
+}
 
 /*** LOG-IN PAGE ***/
 .background {
@@ -652,18 +825,12 @@ fieldset {
 	transition: all 0.6s ease-in-out;
 }
 
-.login-container h2 {
-    color: var(--text-black);
-}
-
 .login-container a {
-    font-family: inherit;
-	color: var(--text-black);
-	margin: 15px 0;
+	margin: .9375em 0;
 }
 
 .social-container {
-	margin: 20px 0;
+	margin: 1.25em 0;
 }
 
 .social-container a {
@@ -672,9 +839,9 @@ fieldset {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0 5px;
-	height: 75px;
-	width: 75px;
+	margin: 0 .3125em;
+	width: 4.6875em;
+    height: 4.6875em;
 }
 
 .social-container a:hover,
@@ -687,23 +854,23 @@ fieldset {
 }
 
 .social-container .fa-facebook-f {
-    color: #4267B2;
+    color: var(--facebook);
 }
 
 .social-container .fa-twitter {
-    color: #1DA1F2;
+    color: var(--twitter);
 }
 
 .social-container .fa-google-plus-g {
-    color:  #db4a39;
+    color:  var(--google);
 }
 
 .social-container .fa-linkedin-in {
-    color: #0072b1;
+    color: var(--linkedin);
 }
 
 .login-form {
-	background-color: #FFFFFF;
+	background-color: var(--white);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -713,12 +880,10 @@ fieldset {
 }
 
 .login-form input {
-	background-color: #eee;
-    font-family: inherit;
-    font-size: 1.5rem;
+	background-color: var(--login-input-bkgrnd);
 	border: none;
-	padding: 12px 15px;
-	margin: 8px 0;
+	padding: .75em .9375em;
+	margin: .5em 0;
 	width: 100%;
 }
 
@@ -730,13 +895,7 @@ fieldset {
 	border-radius: 25px;
 	border: 1px solid var(--green-btn);
 	background-color: var(--green-btn);
-	color: #FFFFFF;
-    text-shadow: 0 0 1px var(--black);
-	font-size: 1rem;
-	font-weight: bold;
 	padding: 1em 3em;
-	letter-spacing: 1px;
-	text-transform: uppercase;
 	transition: transform 80ms ease-in;
 }
 
@@ -747,10 +906,10 @@ fieldset {
 .login-container button:focus,
 .login-container button:hover  {
 	outline: none;
-    background-color: #7fa579;
+    background-color: var(--green-btn-light);
 }
 
-/* JOURNAL PAGE */
+/*** JOURNAL PAGE ***/
 .hero-journal {
     position: relative;
     box-shadow: 0 0 5px 2px var(--text-gray);
@@ -758,26 +917,12 @@ fieldset {
 
 .hero-journal h2 {
     min-width: 700px;
-    color: var(--white);
-    font-weight: 700;
-    letter-spacing: 5px;
-    text-shadow:            
-    0.02em 0 black,
-    0 0.02em black,
-    -0.02em 0 black,
-    0 -0.02em black,
-    -0.02em -0.02em black,
-    -0.02em 0.02em black,
-    0.02em -0.02em black,
-    0.02em 0.02em black;
-
 }
 
 .hero-journal-background {
     background: var(--text-subtitle) url("./assets/images/journal-background.jpg") no-repeat;
     background-size: cover;
     background-position: top;
-    /* filter: blur(2px); */
     filter: sepia(80%);
     height: 26.375em;
     width: 100%;
@@ -796,11 +941,10 @@ fieldset {
     display: grid;
     justify-content: center;
     padding: 1em 1em 7em;
-    background-color: #ebf5ff;
+    background-color: var(--journal-bkgrnd);
 }
 
 .journal h2 {
-    color: var(--lt-black);
     margin-bottom: .25em;
 }
 
@@ -825,9 +969,6 @@ fieldset {
 .journal-card h3 {
     width: 100%;
     padding: .25em 0;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
 }
 
 .journal-card .journal-hike-date {
@@ -836,13 +977,6 @@ fieldset {
     padding: .5em 1em;
     background-color: var(--green);
 
-}
-
-.journal-hike-date p {
-    color: var(--white);
-    font-weight: 600;
-    text-shadow: 0 0 1px var(--black);
-    font-size: 1.25rem;
 }
 
 .journal-hike-info {
@@ -870,7 +1004,7 @@ fieldset {
     float: right;
     margin: .5em;
     font-size: 1rem;
-    background-color: var(--lt-black);
+    background-color: var(--text-subtitle);
     color: var(--white);
     padding: .5em 1em;
     box-shadow: 2px 2px 0 0 var(--green);
@@ -880,11 +1014,10 @@ fieldset {
 .journal-card button:hover,
 .journal-card button:active {
     transform: scale(1.05);
-    background-color: var(--text-subtitle);
+    background-color: var(--lt-black);
 }
 
-
-/*Media Queries */
+/*** MEDIA QUERIES ***/
 @media (min-width: 1220px) {
     header {
         align-items: center;
@@ -899,23 +1032,18 @@ fieldset {
         align-items: baseline;
     }
 
-    .nav-desktop a {
-        margin-left: 41px;
-    }
-
     .btn-signup {
         display: inline;
         background: var(--green-btn);
         color: var(--white);
         padding: .5em 1.5em;
-        margin-left: 42px;
+        margin: 0 2em;
     }
 
     .btn-login {
         display: inline;
         border: 2px solid var(--black);
-        padding: .5em 1.5em;
-        margin-left: 18px;
+        padding: .425em 1.425em;
     }
 
     .hero {
@@ -960,7 +1088,7 @@ fieldset {
     .main-content {
         font-size: 1.5rem;
         max-width: 1800px;
-        padding: 0 32px;
+        padding: 0 2em;
         margin: 0 auto;
     }
 
@@ -999,7 +1127,7 @@ fieldset {
 
     .explore-content {
         max-width: 1800px;
-        padding: 0 32px;
+        padding: 0 2em;
         margin: 0 auto;
     }
 
@@ -1044,7 +1172,7 @@ fieldset {
     }
 
     .explore-content h2 {
-        margin-bottom: 77px;
+        margin-bottom: 1.8125em;
     }
 
     .explore-cards .card h3 {
@@ -1052,7 +1180,7 @@ fieldset {
     }
 
     .explore-cards .card p {
-        margin-bottom: 45px;
+        margin-bottom: 2.8125em;
     }
 
     .map-image {
@@ -1074,11 +1202,11 @@ fieldset {
 
     .connect {
         grid-template-columns: auto auto auto;
-        padding: 80px 0 0 ;
+        padding: 5em 0 0 ;
     }
 
     .connect div:last-child img {
-        margin-bottom: 8px;
+        margin-bottom: .5em;
     }
 
     .connect-text p {
@@ -1088,7 +1216,7 @@ fieldset {
     footer {
         flex-direction: row;
         justify-content: space-between;
-        padding: 74px 31px;
+        padding: 4.625em 1.9375em;
     }
 
     .nav-footer {
@@ -1110,21 +1238,7 @@ fieldset {
     }
 
     .signup-classic {
-        padding: 50px 75px;
+        padding: 0 3.125em;
     }
-
-    .signup-connect {
-        padding: 135px 75px 75px;
-    }
-
-    fieldset {
-        margin: 35px 0;
-    }
-
-    .btn-social {
-        margin-bottom: 35px;
-    }
-
-
 }
 

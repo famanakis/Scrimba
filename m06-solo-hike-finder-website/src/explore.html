@@ -24,8 +24,14 @@
         <div>
             <button type="button" id="btn-nav-mobile" class="btn-nav-mobile"><img class="nav-mobile-img" src="../src/assets/hamburger.png" alt="mobile nav menu"></button>
             <nav id="nav-desktop" class="nav-desktop">
-                <a href="../index.html" aria-label="to home page" target="_blank">Home</a>
-                <a href="./explore.html" aria-label="to explore page" >Explore</a>
+                <a class="a-home" href="../index.html" aria-label="to home page" target="_blank">Home</a>
+                <div class="dropdown" >
+                    <button type="button" class="btn-dropdown">Explore</button>
+                    <div class="dropdown-content">
+                        <a href="" aria-label="to explore page">Hikes</a>
+                        <a href="../src/hiking-journal.html" aria-label="to journal page" target="_blank">Journal</a>
+                    </div>
+                </div>
                 <a class="btn-signup" href="./signup.html" aria-label="to signup" target="_blank">Sign up</a>
                 <a class="btn-login" href="./login.html" aria-label="to login page" target="_blank">Log in</a>
             </nav>

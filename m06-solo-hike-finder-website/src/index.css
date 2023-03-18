@@ -316,39 +316,6 @@ header {
     background-color: var(--green-btn);
 }
 
-/*Explore Content*/
-.explore-content {
-    margin: 0 23px;
-}
-
-.hike-stats {
-    display: flex;
-    align-items: baseline;
-    gap: .5rem;
-}
-
-.explore-grid .hike-stats p {
-    font-size: 1.875rem;
-    font-weight: 400;
-    color: var(--black);
-    margin-top: .5rem;
-}
-
-.rating-star {
-    display: flex;
-    justify-content: baseline;
-    height: 28px;
-    width: 34px !important;
-    margin-left: .5rem;
-}
-
-.explore-grid .card .hike-info {
-    font-size: 1.625rem;
-    font-weight: 400;
-    color: var(--text-p);
-    line-height: 39px;
-}
-
 /*Connect with Us*/
 .connect {
     display: grid;
@@ -419,6 +386,45 @@ footer {
 
 footer p {
     margin: 8px 0 0 25px;
+}
+
+/*EXPLORE PAGE*/
+.explore-content {
+    margin: 0 23px;
+}
+
+.hike-stats {
+    display: flex;
+    align-items: baseline;
+    gap: .5rem;
+}
+
+.explore-grid .hike-stats p {
+    font-size: 1.875rem;
+    font-weight: 400;
+    color: var(--black);
+    margin-top: .5rem;
+}
+
+.rating-star {
+    display: flex;
+    justify-content: baseline;
+    height: 28px;
+    width: 34px !important;
+    margin-left: .5rem;
+}
+
+.explore-grid .card .hike-info {
+    font-size: 1.625rem;
+    font-weight: 400;
+    color: var(--text-p);
+    line-height: 39px;
+}
+
+.map {
+    display: none;
+    height: 795px;
+    width: 839px;
 }
 
 /*** SIGN-UP PAGE ***/
@@ -859,7 +865,7 @@ fieldset {
     }
 
     .explore-content {
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
         max-width: 1800px;
         padding: 0 32px;
         margin: 0 auto;
@@ -868,8 +874,9 @@ fieldset {
     .explore-grid {
         display: grid;
         grid-template-columns: 40% 60%;
-        gap: 2.3125em;
-        min-width: 1630px;
+        margin: 0 auto;
+        gap: 1.5em;
+        width: 1440px;
     }
 
     .explore-cards {
@@ -879,9 +886,9 @@ fieldset {
 
     .explore-cards .card {
         position: relative;
-        width: 100%;
         grid-template-columns: auto;
-        min-width: 700px;
+        width: 564px;
+
     }
 
     .explore-cards .card-text {
@@ -890,10 +897,16 @@ fieldset {
 
     .explore-cards .card-img {
         position: absolute;
-        top: 0;
+        /* top: 0; */
         right: 0;
+    }
+    
+    .explore-cards .card-img img {
         width: 144px;
         height: 111px;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 
     .explore-cards .card:not(:last-child) {
@@ -902,6 +915,10 @@ fieldset {
 
     .explore-content h2 {
         margin-bottom: 77px;
+    }
+
+    .explore-cards .card h3 {
+        font-size: 2rem;
     }
 
     .explore-cards .card p {
@@ -913,6 +930,16 @@ fieldset {
         height: 795px;
         border: 1px solid #cecece;
         border-radius: 7px;
+    }
+
+    .map {
+        display: block;
+        width: 839px;
+    }
+
+    .map .embeded-image {
+        width: 100%;
+        height: 100%;
     }
 
     .connect {

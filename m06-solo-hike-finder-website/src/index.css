@@ -888,7 +888,6 @@ fieldset {
         position: relative;
         grid-template-columns: auto;
         width: 564px;
-
     }
 
     .explore-cards .card-text {
@@ -897,7 +896,6 @@ fieldset {
 
     .explore-cards .card-img {
         position: absolute;
-        /* top: 0; */
         right: 0;
     }
     

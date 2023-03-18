@@ -1,0 +1,15 @@
+{
+  "name": "m09-solo-youtube-channel-search",
+  "version": "1.0.0",
+  "description": "Frameworks, Languages and Approach Used\r <ul>\r <li>Web API Integration</li>\r <li>JavaScript</li>\r <li>CSS-Flexbox</li>\r <li>CSS</li>\r <li>HTML</li>\r <li>Moblie First Design</li>\r </ul>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}

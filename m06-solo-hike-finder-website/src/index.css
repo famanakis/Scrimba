@@ -750,6 +750,139 @@ fieldset {
     background-color: #7fa579;
 }
 
+/* JOURNAL PAGE */
+.hero-journal {
+    position: relative;
+    box-shadow: 0 0 5px 2px var(--text-gray);
+}
+
+.hero-journal h2 {
+    min-width: 700px;
+    color: var(--white);
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-shadow:            
+    0.02em 0 black,
+    0 0.02em black,
+    -0.02em 0 black,
+    0 -0.02em black,
+    -0.02em -0.02em black,
+    -0.02em 0.02em black,
+    0.02em -0.02em black,
+    0.02em 0.02em black;
+
+}
+
+.hero-journal-background {
+    background: var(--text-subtitle) url("./assets/images/journal-background.jpg") no-repeat;
+    background-size: cover;
+    background-position: top;
+    /* filter: blur(2px); */
+    filter: sepia(80%);
+    height: 26.375em;
+    width: 100%;
+}
+
+.hero-journal-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    gap: 2em;
+}
+
+.journal {
+    display: grid;
+    justify-content: center;
+    padding: 1em 1em 7em;
+    background-color: #ebf5ff;
+}
+
+.journal h2 {
+    color: var(--lt-black);
+    margin-bottom: .25em;
+}
+
+.journal hr {
+    border: 1px solid var(--text-p);
+    width: 50%;
+    margin-bottom: 1.5em;
+}
+
+.journal-grid {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1450px;
+}
+
+.journal-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.journal-card h3 {
+    width: 100%;
+    padding: .25em 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+.journal-card .journal-hike-date {
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 1em;
+    background-color: var(--green);
+
+}
+
+.journal-hike-date p {
+    color: var(--white);
+    font-weight: 600;
+    text-shadow: 0 0 1px var(--black);
+    font-size: 1.25rem;
+}
+
+.journal-hike-info {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 1.5em;
+    padding: 1em;
+}
+
+.journal-hike-info img {
+    width: 100%;
+    box-shadow: 0 0 0 5px var(--lt-black),
+                inset 0 0 0 1px var(--lt-black);
+    
+}
+
+.journal-hike-info p {
+    line-height: 1.5;
+    width: 95%;
+    margin-bottom: .5em;
+}
+
+.journal-card button {
+    display: block;
+    float: right;
+    margin: .5em;
+    font-size: 1rem;
+    background-color: var(--lt-black);
+    color: var(--white);
+    padding: .5em 1em;
+    box-shadow: 2px 2px 0 0 var(--green);
+    transition: all ease-in-out .5s;
+}
+
+.journal-card button:hover,
+.journal-card button:active {
+    transform: scale(1.05);
+    background-color: var(--text-subtitle);
+}
+
 
 /*Media Queries */
 @media (min-width: 1220px) {

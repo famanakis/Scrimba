@@ -11,7 +11,21 @@ Programming Languages and Approach Used
 </ul>
 
 ## Screenshot
-<img src="" width=50% height=50%><br>
+### Homepage
+<img src="https://github.com/famanakis/Scrimba/blob/main/m06-solo-hike-finder-website/src/assets/screenshots/home.png" width=50% height=50%><br>
+
+### Explore Hikes
+<img src="https://github.com/famanakis/Scrimba/blob/main/m06-solo-hike-finder-website/src/assets/screenshots/explore.png" width=50% height=50%><br>
+
+### Signup Page
+<img src="https://github.com/famanakis/Scrimba/blob/main/m06-solo-hike-finder-website/src/assets/screenshots/signup.png" width=50% height=50%><br>
+
+### Login Page
+<img src="https://github.com/famanakis/Scrimba/blob/main/m06-solo-hike-finder-website/src/assets/screenshots/login.png" width=50% height=50%><br>
+
+### Hiking Journal
+<img src="https://github.com/famanakis/Scrimba/blob/main/m06-solo-hike-finder-website/src/assets/screenshots/journal.png" width=50% height=50%><br>
+
 [Live Demo](https://9tfdev-m06-solo-hikefinder.netlify.app/)
 
  
@@ -38,5 +52,5 @@ Programming Languages and Approach Used
 ## Resources:
   [Figma Design Home Screenshot](https://github.com/famanakis/Scrimba/blob/main/m06-solo-hike-finder-website/assets/figma-design%20home.png)<br>
   [Figma Design Explore Screenshot](https://github.com/famanakis/Scrimba/blob/main/m06-solo-hike-finder-website/assets/figma-design%20explore.png)<br>
- [Scrimba](https://scrimba.com/)
+ [Scrimba](https://scrimba.com/) 
 

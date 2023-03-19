@@ -28,6 +28,7 @@ Languages, Frameworks and Approaches Used
 <li>Oldagram</li>
 <li>Invoice Creator</li>
 <li>Restaurant Ordering App</li>
+<li>Hike Finder Website</li>
 <li>Learning Journal</li>
 <li>Employee Directory</li>
 <li>Tindog</li>

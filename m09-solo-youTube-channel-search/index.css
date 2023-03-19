@@ -54,7 +54,7 @@ body {
 }
 
 .container {
-    margin: 30px 20px;
+    margin: 1.875em 1.25em;
 }
 
 /*Header*/
@@ -63,12 +63,12 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 27px;
+    gap: 1.6875em;
 }
 
 .page-title {
     display: flex;
-    gap: 6px;
+    gap: 0.375em;
     align-items: baseline;
 }
 
@@ -79,14 +79,14 @@ header {
 
 .enter-search {
     display: flex;
-    gap: 3px;
+    gap: 0.1875em;
     margin-bottom: 34px;
 }
 
 .enter-search input {
     height: 57px;
     width: 100%;
-    padding-left: 15px;
+    padding-left: .9375em;
 }
 
 .enter-search button {
@@ -110,7 +110,7 @@ header {
 
 .main-content h2 {
     text-align: center;
-    margin-bottom: 13px;
+    margin-bottom: 0.8125em;
 }
 
 .cards-grid {
@@ -128,16 +128,25 @@ header {
     width: 353px;
     height: 178px;
     border-radius: 8px;
-    margin-bottom: 14px;
+    margin-bottom: .875em;
 }
 
 .card p {
     width: 353px;
-    margin-bottom: 26px;
+    margin-bottom: 1.625em;
 }
 
 
 @media (min-width: 920px) {
+    .container {
+        margin: 5em 13.75em;
+        min-width: 920px;
+    }
+
+    .main-content h2 {
+        margin-bottom: 1.3125em;
+    }
+
     .cards-grid {
         grid-template-columns:auto auto auto ;
         column-gap: 1.125em;

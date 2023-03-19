@@ -42,6 +42,7 @@ body {
     background-color: var(--white);
     min-width: 780px;
     overflow-x: hidden;
+    position: relative;
 }
 
 a,
@@ -803,7 +804,7 @@ fieldset {
 
 .login-container {
     position: absolute;
-    top: 50%;
+    top: 41%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;

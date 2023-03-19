@@ -13,6 +13,7 @@
 
 
 //Access the DOM
+const selectEl = document.getElementById('select-channel')
 const searchEl = document.getElementById('input-search')
 const btnSearch = document.getElementById('btn-search')
 const cardsGrid = document.getElementById('cards-grid')
@@ -20,6 +21,37 @@ const cardsGrid = document.getElementById('cards-grid')
 
 
 //Functions
+async function searchMovies() {
+    const userChannel = selectEl.value  
+        console.log(userChannel)
+    const userSearch = searchEl.value
+        console.log(userSearch)
+
+    const res = await fetch("")
+
+    if(!res) {
+        const message = 'No matching results'
+        cardsGrid.innerHTML = `
+            <div class="error-message">
+                <p>No matching results... <br><br> Please search again.</p>
+            </div>`
+        throw new Error(message)
+    }
+
+    const movies = await res.json()
+    renderCards(movies)
+    // return movies
+    
+}
+
+// searchMovies().then(() => {
+
+// })
+
+
+
+renderCards()
+
 function renderCards() {
     cardsGrid.innerHTML = `
         <div class="card">
@@ -49,7 +81,5 @@ function renderCards() {
     `
 }
 
-renderCards()
-
 //Event Listeners
-btnSearch.addEventListener('click', () => console.log('button clicked'))
+btnSearch.addEventListener('click', searchMovies)

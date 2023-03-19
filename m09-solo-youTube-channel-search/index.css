@@ -157,6 +157,12 @@ header {
     margin-bottom: 1.625em;
 }
 
+.cards-grid .error-message p {
+    margin: 4em auto;
+    color: var(--navy);
+    text-align: center;
+}
+
 
 @media (min-width: 920px) {
     .container {

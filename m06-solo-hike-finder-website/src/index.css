@@ -273,7 +273,7 @@ header {
     display: flex;
     justify-content: space-between;
     height: 6.625em;
-    padding: 28px 23px 29px;
+    padding: 1.75em 1.4375em 1.8125em;
     width: 100%;
 }
 
@@ -426,7 +426,7 @@ header {
     position: relative;
     background: var(--lt-black);
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.29), rgba(0, 0, 0, 0.29));
-    background-image: url("./assets/images/hero-background.jpg");
+    background-image: url("../src/assets/images/hero-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 37.5em;

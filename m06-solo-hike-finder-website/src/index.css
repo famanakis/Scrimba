@@ -10,7 +10,7 @@
     --text-black: #1f1f1f;
     --text-gray: #4E4E4E;
     --copyright: #a5a5a5;
-    --input-bckgrnd: #c3c3c3;
+    --input-bkgrnd: #c3c3c3;
     --input-text: #333333;
     --connect-bkgrnd: #fafafa;
     --or-btn: #7fa579;
@@ -97,7 +97,7 @@ h2 {
 
 .input-search {
     font-size: 2rem;
-    color: var(--input-bckgrnd);
+    color: var(--input-bkgrnd);
 }
 
 .btn-search {

@@ -796,19 +796,18 @@ fieldset {
     background-size: cover;
     background-position: bottom;
     filter: blur(5px);
-    height: 90vh;
+    height: 1000px;
     box-shadow: 0 14px 28px var(--lt-black), 
 			0 10px 10px var(--lt-black);
 }
 
 .login-container {
     position: absolute;
-    top: 50%;
+    top: 62.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
-    padding: 5em;
     margin-top: 3.5em;
     min-width: 750px;
 }

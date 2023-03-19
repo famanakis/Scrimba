@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "loading-attribute-polyfill": "^2.1.1"
+  }
+}

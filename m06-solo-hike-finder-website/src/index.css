@@ -363,7 +363,7 @@ header {
 .a-home:hover,
 .a-home:focus,
 .btn-dropdown:hover,
-.btn-cropdown:focus{
+.btn-dropdown:focus{
     text-decoration: underline;
 }
 

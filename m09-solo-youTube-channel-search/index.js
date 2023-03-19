@@ -1,24 +1,11 @@
-// require('dotenv').config()
-
-
-// const apiKey = "Your API key"
-// const endpoint = "https://www.googleapis.com/youtube/v3/search"
-// const channelId = "Replace with channel ID"
-
-// const myApiKey = process.env.API_KEY
-
-// console.log(myApiKey)
-
-// console.log(process.env.MESSAGE)
-
-
 //Access the DOM
 const selectEl = document.getElementById('select-channel')
 const searchEl = document.getElementById('input-search')
 const btnSearch = document.getElementById('btn-search')
 const cardsGrid = document.getElementById('cards-grid')
-
-
+const myApiKey = 'see .env file'
+const endpoint = "https://www.googleapis.com/youtube/v3/search"
+const channelId = "Replace with channel ID"
 
 //Functions
 async function searchMovies() {

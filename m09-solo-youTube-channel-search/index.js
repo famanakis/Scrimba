@@ -3,18 +3,14 @@ const selectEl = document.getElementById('select-channel')
 const searchEl = document.getElementById('input-search')
 const btnSearch = document.getElementById('btn-search')
 const cardsGrid = document.getElementById('cards-grid')
-const myApiKey = "see .env file"
+const myApiKey = "your API KEY Here"
 
 //Functions
 async function testSearch() {
 
     const userChannel = selectEl.value
     const userSearch = searchEl.value
-
     const endpoint = `https://youtube.googleapis.com/youtube/v3/search?key=${myApiKey}&q=${userSearch}&channelId=${userChannel}&maxResults=6&part=snippet`
-
-    //try this endpoint to see if only movies come up
-    // const endpoint = `https://youtube.googleapis.com/youtube/v3/search?key=${myApiKey}&part=snippet&channelId=${userChannel}&maxResults=6&q=${userSearch}&type=video&videoType=movie`
 
     const res = await fetch(endpoint)
     const data = await res.json()

@@ -14,37 +14,37 @@ if (!watchArr) {watchArr = []}
 // Fetch Search Data by Input.value and put data into the movieArray function
 async function getMovies() {
     let value = inputEl.value
-    try {
-        const res = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${value}`)
-        const data = await res.json()
-        movieArray(data)
-    } catch (error) { 
-    mainContentEl.innerHTML = `
-        <div class="flex-list-empty">
-            <p class="p-bold">Unable to find what you’re looking<br>
-            &nbsp&nbsp&nbsp&nbsp for. &nbsp Please try another search.</p>
-        </div>
-        `
-    }
+    const res = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${value}`)
+    const data = await res.json()
+    movieArray(data)
 }
 
 async function movieArray(data) {
     const movieArr = data.Search
-    for (let movie of movieArr) {
-        const res = await fetch(`https://www.omdbapi.com/?apikey=aec85da8&i=${movie.imdbID}`)
+    try{    
+        for (let movie of movieArr) {
+        const res = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&i=${movie.imdbID}`)
         const data = await res.json()
         renderSearch(data)
-    }
+        }
+    } catch (error) {
+        mainContentEl.innerHTML = `
+            <div class="flex-list-empty">
+                <p class="p-bold">Unable to find what you’re looking<br>
+                &nbsp&nbsp&nbsp&nbsp for. &nbsp Please try another search.</p>
+            </div>
+            `
+    } 
 }
 
 //Event Listeners
 //Input Press Enter Button to submit Search
-// inputEl.addEventListener("keyup", (e) => {
-//     if (e.key === 'Enter') {
-//         e.preventDefault();
-//         searchBtn.click();
-//     }
-// })  
+document.addEventListener("keyup", (e) => {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        searchBtn.click();
+    }
+})  
 
 
 //Search Button Click to submit search

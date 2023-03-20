@@ -4,7 +4,8 @@ import {renderSearch} from "./renderSearchHtml.js"
 const inputEl = document.getElementById("inputEl")
 const searchBtn = document.getElementById("searchBtn")
 const mainContentEl = document.getElementById("main-content")
-export {mainContentEl, watchArr}
+const API_KEY = 'aec85da8'
+export {mainContentEl, watchArr, API_KEY}
 
 //Variables
 let watchArr = JSON.parse(localStorage.getItem("movieID"))
@@ -14,7 +15,7 @@ if (!watchArr) {watchArr = []}
 async function getMovies() {
     let value = inputEl.value
     try {
-        const res = await fetch(`https://www.omdbapi.com/?apikey=aec85da8&s=${value}`)
+        const res = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${value}`)
         const data = await res.json()
         movieArray(data)
     } catch (error) { 
@@ -38,12 +39,13 @@ async function movieArray(data) {
 
 //Event Listeners
 //Input Press Enter Button to submit Search
-inputEl.addEventListener("keyup", (e) => {
-    if (e.key === 'Enter') {
-        e.preventDefault();
-        searchBtn.click();
-    }
-})  
+// inputEl.addEventListener("keyup", (e) => {
+//     if (e.key === 'Enter') {
+//         e.preventDefault();
+//         searchBtn.click();
+//     }
+// })  
+
 
 //Search Button Click to submit search
 searchBtn.addEventListener("click", (e) => {  

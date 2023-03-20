@@ -140,13 +140,14 @@ header {
 }
 
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .card img {
-    width: 100%;
+    width: 320px;
     height: 178px;
     border-radius: 8px;
     margin-bottom: .875em;
@@ -154,6 +155,30 @@ header {
 
 .card p {
     width: 100%;
+    margin-bottom: .5em;
+}
+
+.year {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--white);
+    text-shadow:            
+    0.02em 0 black,
+    0 0.02em black,
+    -0.02em 0 black,
+    0 -0.02em black,
+    -0.02em -0.02em black,
+    -0.02em 0.02em black,
+    0.02em -0.02em black,
+    0.02em 0.02em black;
+}
+
+.main-content .card .description {
+    font-size: 1rem;
+    font-weight: 400;
     margin-bottom: 1.625em;
 }
 

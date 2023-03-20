@@ -34,10 +34,12 @@ function renderWatchlist() {
 //Event Listeners
 //Remove Target from Local Storage and Render Page
 document.addEventListener('click', (e)=> {   
-  e.preventDefault
   let item = e.target.dataset.imdbid
-  const index = myMovies.indexOf(item)
-  const newMyMoviesArr = myMovies.splice(index, 1)
-  localStorage.setItem("movieID", JSON.stringify(newMyMoviesArr))
-  renderWatchlist()  
+  if(item !== undefined) {
+    const index = myMovies.indexOf(item)
+    const newMyMoviesArr = myMovies.splice(index, 1)
+    localStorage.setItem("movieID", JSON.stringify(newMyMoviesArr))
+    renderWatchlist() 
+  }
 })
+

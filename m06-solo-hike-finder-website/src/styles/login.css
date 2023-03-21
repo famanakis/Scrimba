@@ -28,7 +28,8 @@
 
 .login-container {
     position: absolute;
-    top: 41%;
+    /* top: 41%; */
+	top: 27%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -141,5 +142,9 @@
 @media (min-width: 1220px) {
 	.login-form {
 		width: 75%;
+	}
+
+	.login-container {
+		top: 41%;
 	}
 }

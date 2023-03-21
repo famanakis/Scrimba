@@ -1,5 +1,3 @@
-// import 'loading-attribute-polyfill';
-
 //Access the DOM
 const mobileNavMenu = document.getElementById("mobile-nav-menu")
 const mobileNavClose = document.getElementById("mobile-nav-close")

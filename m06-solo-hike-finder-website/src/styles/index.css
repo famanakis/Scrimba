@@ -426,7 +426,7 @@ header {
     position: relative;
     background: var(--lt-black);
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.29), rgba(0, 0, 0, 0.29));
-    background-image: url("../src/assets/images/hero-background.jpg");
+    background-image: url("../assets/images/hero-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 37.5em;
@@ -640,7 +640,7 @@ footer p {
 
 /*** SIGN-UP PAGE ***/
 .signup-container {
-  background: #F4FDE7 url("./assets/images/signup-background.jpg") no-repeat;
+  background: #F4FDE7 url("../assets/images/signup-background.jpg") no-repeat;
   background-size: cover;
   padding: 10em 0;
   min-width: 400px;
@@ -793,7 +793,7 @@ fieldset {
 
 /*** LOG-IN PAGE ***/
 .background {
-    background: var(--copyright) url("./assets/images/hikers-background-img.jpg") no-repeat;
+    background: var(--copyright) url("../assets/images/hikers-background-img.jpg") no-repeat;
     background-size: cover;
     background-position: bottom;
     filter: blur(5px);
@@ -924,7 +924,7 @@ fieldset {
 }
 
 .hero-journal-background {
-    background: var(--text-subtitle) url("./assets/images/journal-background.jpg") no-repeat;
+    background: var(--text-subtitle) url("../assets/images/journal-background.jpg") no-repeat;
     background-size: cover;
     background-position: top;
     filter: sepia(80%);

@@ -4,21 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hike Finder Login Page</title>
+    <title>Hike Finder Signup Page</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./index.css">
     <script src="https://kit.fontawesome.com/184e8d27a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/index.css">
 </head>
 
 <body>
     <header>
         <div class="logo-div">
             <div>
-                <img src="../src/assets/poly-black.png" alt="logo">
-                <img src="../src/assets/poly-green.png" alt="logo">
+                <img src="../assets/poly-black.png" alt="logo">
+                <img src="../assets/poly-green.png" alt="logo">
             </div>
             <h1>HikeFinder</h1>
         </div>
@@ -26,7 +26,7 @@
             <div id="mobile-nav-menu" class="mobile-nav-menu">
                 <button type="button" id="mobile-nav-close" class="btn-mobile-nav-close">x</button>
                 <div class="mobile-nav-text">
-                    <a class="mobile-nav-link" href="../index.html" aria-label="to home page">Home</a>
+                    <a class="mobile-nav-link" href="../../index.html" aria-label="to home page">Home</a>
                     <a class="mobile-nav-link" href="./explore.html" aria-label="explore hikes">Hikes</a>
                     <a class="mobile-nav-link" href="./hiking-journal.html" aria-label="to hiking journal">Journal</a>
                     <a class="mobile-nav-link" href="./signup.html" aria-label="to signup page">Signup</a>
@@ -35,7 +35,7 @@
             </div>
             <button type="button" id="btn-nav-mobile" class="btn-nav-mobile"><img class="nav-mobile-img" src="../src/assets/hamburger.png" alt="mobile nav menu"></button>
             <nav id="nav-desktop" class="nav-desktop">
-                <a class="a-home" href="../index.html" aria-label="to home page">Home</a>
+                <a class="a-home" href="../../index.html" aria-label="to home page">Home</a>
                 <div class="dropdown" >
                     <button type="button" class="btn-dropdown">Explore</button>
                     <div class="dropdown-content">
@@ -43,46 +43,52 @@
                         <a href="./hiking-journal.html" aria-label="to journal page">Journal</a>
                     </div>
                 </div>
-                <a class="btn-signup" href="./signup.html" aria-label="to signup">Sign up</a>
-                <a class="btn-login" href="./login.html" aria-label="to login page" >Log in</a>
+                <a class="btn-signup" href="./signup.html" aria-label="to signup" >Sign up</a>
+                <a class="btn-login" href="./login.html" aria-label="to login page">Log in</a>
             </nav>
         </div>
     </header>
  
     <main>
-        <div class="background"></div>
-        <div class="login-container">
-            <div class="form-container">
-                <form class="login-form" action="#">
-                    <h2>Log In</h2>
-                    <div class="social-container">
-                        <a href="#" class="social" aria-label="login with facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social" aria-label="login with twitter"><i class="fa fa-twitter"></i></i></a>
-                        <a href="#" class="social" aria-label="login with google"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social" aria-label="login with linkedin"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <span>or use your account</span>
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
-                    <a class="forgot-password" href="#">Forgot your password?</a>
-                    <button type="submit">Log In</button>
-                </form>
+        <div class="signup-container">
+            <div class="signup">
+                <div class="signup-classic">
+                    <h2>Create your account</h2>
+                    <form class="signup-form">
+                        <fieldset class="username">
+                            <input type="text" placeholder="username" />
+                        </fieldset>
+                        <fieldset class="password">
+                            <input type="password" placeholder="password" />
+                        </fieldset>
+                        <fieldset class="email">
+                            <input type="email" placeholder="email" />
+                        </fieldset>
+                        <button type="submit" class="btn btn-form-signup">sign up</button>
+                  </form>
+                </div>
+                <div class="signup-connect">
+                    <a href="#" class="btn btn-social btn-facebook"><i class="fa fa-facebook"></i> Sign in with Facebook</a>
+                    <a href="#" class="btn btn-social btn-twitter"><i class="fa fa-twitter"></i> Sign in with Twitter</a>
+                    <a href="#" class="btn btn-social btn-google"><i class="fa fa-google"></i> Sign in with Google</a>
+                    <a href="#" class="btn btn-social btn-linkedin"><i class="fa fa-linkedin"></i> Sign in with Linkedin</a>
+                </div>
+                <h2 class="signup-or">Or</h2>
             </div>
-        </div>
     </main>
 
     <footer>
         <nav class="nav-footer">
-            <a href="../index.html" aria-label="to home page">Home</a>
+            <a href="../../index.html" aria-label="to home page">Home</a>
             <a href="./explore.html" aria-label="to explore page">Explore</a>
-            <a href="./signup.html" aria-label="to signup">Sign up</a>
-            <a href="./login.html" aria-label="to login page" >Log in</a>
+            <a href="./signup.html" aria-label="to signup" >Sign up</a>
+            <a href="./login.html" aria-label="to login page">Log in</a>
         </nav>
         <div>
             <div class="footer-logo-div">
                 <div>
-                    <img src="../src/assets/poly-gray.png" alt="logo">
-                    <img src="../src/assets/poly-white.png" alt="logo">
+                    <img src="../assets/poly-gray.png" alt="logo">
+                    <img src="../assets/poly-white.png" alt="logo">
                 </div>
                 <h2>HikeFinder</h2>
             </div>
@@ -90,7 +96,7 @@
         </div>
     </footer>
 
-    <script src="./index.js" type="module"></script>  
+    <script src="../index.js" type="module"></script>  
 </body>
  
 </html>

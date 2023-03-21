@@ -100,7 +100,7 @@ h2 {
 
 .input-search {
     font-size: 2rem;
-    color: var(--input-bkgrnd);
+    color: var(--input-text);
     padding-right: 5em;
     text-overflow: ellipsis;
 }
@@ -570,6 +570,7 @@ footer p {
 
     .input-search {
         height: 69px;
+        padding-right: 6em;
     }
 
     .magnifier {

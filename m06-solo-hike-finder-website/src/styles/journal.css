@@ -43,7 +43,7 @@
 .hero-journal-background {
     background: var(--text-subtitle) url("../assets/images/journal-background.jpg") no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position-y: center;
     filter: sepia(80%);
     height: 26.375em;
     width: 100%;

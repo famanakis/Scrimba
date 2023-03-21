@@ -1,11 +1,43 @@
 /*** JOURNAL PAGE ***/
+
+/*Typography*/
+.hero-journal h2 {
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: var(--white);
+    text-shadow:            
+    0.02em 0 black,
+    0 0.02em black,
+    -0.02em 0 black,
+    0 -0.02em black,
+    -0.02em -0.02em black,
+    -0.02em 0.02em black,
+    0.02em -0.02em black,
+    0.02em 0.02em black;
+}
+
+.journal h2 {
+    color: var(--lt-black);
+    font-size: 3.5rem;
+}
+
+.journal-card h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+.journal-hike-date p {
+    color: var(--white);
+    font-weight: 600;
+    text-shadow: 0 0 1px var(--black);
+}
+
+
+/*Styles*/
 .hero-journal {
     position: relative;
     box-shadow: 0 0 5px 2px var(--text-gray);
-}
-
-.hero-journal h2 {
-    min-width: 700px;
 }
 
 .hero-journal-background {
@@ -70,7 +102,6 @@
 
 .journal-hike-info {
     display: grid;
-    grid-template-columns: 40% 60%;
     gap: 1.5em;
     padding: 1em;
 }
@@ -86,6 +117,7 @@
     line-height: 1.5;
     width: 95%;
     margin-bottom: .5em;
+    font-size: 1.35rem;
 }
 
 .journal-card button {
@@ -104,4 +136,27 @@
 .journal-card button:active {
     transform: scale(1.05);
     background-color: var(--lt-black);
+}
+
+/*** MEDIA QUERIES ***/
+@media (min-width: 1220px) {
+    .journal h2 {
+        font-size: 4.25rem;
+    }
+
+    .hero-journal h2 {
+        min-width: 700px;
+    }   
+
+    .journal-hike-date p {
+        font-size: 1.25rem;
+    }
+    
+    .journal-hike-info {
+        grid-template-columns: 40% 60%;
+    }
+
+    .journal-hike-info p {
+        font-size: 1rem;
+    }
 }

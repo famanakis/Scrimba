@@ -1,0 +1,152 @@
+/*Typography*/
+.explore-grid .hike-stats p {
+    font-size: 1.875rem;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.explore-grid .card .hike-info {
+    font-size: 1.625rem;
+    font-weight: 400;
+    color: var(--text-p);
+    line-height: 2.5rem;;
+}
+
+/*** EXPLORE HIKES PAGE ***/
+.hero-explore {
+    height: 26.375em;
+}
+
+.overlay-explore {
+    height: 100%;
+}
+
+.hero-explore .hero-col1 h2 {
+    width: 100%;
+}
+
+.explore-content {
+    margin: 0 1.4375em;
+}
+
+.hike-stats {
+    display: flex;
+    align-items: baseline;
+    gap: .5rem;
+}
+
+.explore-grid .hike-stats p {
+    margin-top: .5rem;
+}
+
+.rating-star {
+    display: flex;
+    justify-content: baseline;
+    height: 28px;
+    width: 34px !important;
+    margin-left: .5rem;
+}
+
+.map {
+    display: none;
+    height: 49.6875em;
+    width: 52.4375em;
+}
+
+/*** MEDIA QUERIES ***/
+@media (min-width: 1220px) {
+    .hero-explore {
+        height: 600px;
+    }
+
+    .hero-explore .hero-col1 {
+        width: 47%;
+    }
+
+    .hero-explore .hero-col1 h2 {
+        width: 70%;
+    }
+
+    .hero-explore .hero-col1 p {
+        width: 100%;
+    }
+
+    .explore-content {
+        max-width: 1800px;
+        padding: 0 2em;
+        margin: 0 auto;
+    }
+
+    .explore-grid {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin: 0 auto;
+        gap: 1.5em;
+        width: 1440px;
+    }
+
+    .explore-cards {
+        display: grid;
+        grid-template-rows: auto auto auto;
+    }
+
+    .explore-cards .card {
+        position: relative;
+        grid-template-columns: auto;
+        width: 564px;
+    }
+
+    .explore-cards .card-text {
+        width: auto;
+    }
+
+    .explore-cards .card-img {
+        position: absolute;
+        right: 0;
+    }
+    
+    .explore-cards .card-img img {
+        width: 144px;
+        height: 111px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .explore-grid .card .hike-info {
+        line-height: 39px;
+    }
+
+    .explore-cards .card:not(:last-child) {
+        border-bottom: 1px solid #a8a8a8;
+    }
+
+    .explore-content h2 {
+        margin-bottom: 1.8125em;
+    }
+
+    .explore-cards .card h3 {
+        font-size: 2rem;
+    }
+
+    .explore-cards .card p {
+        margin-bottom: 2.8125em;
+    }
+
+    .map-image {
+        width: auto;
+        height: 795px;
+        border: 1px solid #cecece;
+        border-radius: 7px;
+    }
+
+    .map {
+        display: block;
+        width: 839px;
+    }
+
+    .map .embeded-image {
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,3 +1,20 @@
+/*Typography*/
+.login-container h2,
+.login-container a {
+    color: var(--text-black);
+}
+
+.login-form input {
+    font-size: 1.5rem;
+}
+
+.login-container button {
+    font-size: 1rem;
+	font-weight: 800;
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
 /*** LOG-IN PAGE ***/
 .background {
     background: var(--copyright) url("../assets/images/hikers-background-img.jpg") no-repeat;
@@ -87,7 +104,7 @@
 	justify-content: center;
 	flex-direction: column;
     gap: 1.25em;
-    width: 75%;
+	width: 55%;
 }
 
 .login-form input {
@@ -118,4 +135,11 @@
 .login-container button:hover  {
 	outline: none;
     background-color: var(--green-btn-light);
+}
+
+/*** MEDIA QUERIES ***/
+@media (min-width: 1220px) {
+	.login-form {
+		width: 75%;
+	}
 }

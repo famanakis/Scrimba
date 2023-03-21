@@ -1,9 +1,43 @@
+/*Typography*/
+.signup-classic h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: var(--black);
+}
+
+.signup-form input {
+    font-size: 1.25rem;
+    color: var(--input-text);
+}
+
+.signup-classic fieldset::after,
+.signup-classic fieldset.email::after,
+.signup-classic fieldset.password::after {
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin-top: .5625em;
+}
+
+.signup-or {
+    font-size: 1.875em;
+    font-weight: 800;
+    text-shadow: 0 a 1px var(--black);
+}
+
+.btn {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--white);
+    text-shadow: 0 0 1px var(--black);
+}
+
+
 /*** SIGN-UP PAGE ***/
 .signup-container {
     background: #F4FDE7 url("../assets/images/signup-background.jpg") no-repeat;
     background-size: cover;
     padding: 10em 0;
-    min-width: 400px;
   }
   
 .signup {
@@ -149,4 +183,21 @@ fieldset {
 
 .btn-linkedin {
     background-color: var(--linkedin);
+}
+
+/*** MEDIA QUERIES ***/
+@media (min-width: 1220px) {
+    .signup-container {
+        min-width: 400px;
+      }
+
+      .signup {
+        flex-direction: row;
+        gap: 0;
+        max-width: 1200px;
+    }
+
+    .signup-classic {
+        padding: 0 3.125em;
+    }
 }

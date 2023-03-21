@@ -40,7 +40,6 @@ input {
 
 body {
     background-color: var(--white);
-    min-width: 780px;
     overflow-x: hidden;
     position: relative;
 }
@@ -335,8 +334,8 @@ header {
 .mobile-nav-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 7em auto 0;
+    padding-top: 12em;
+    margin: 0 auto;
     gap: 3em;
 }
 
@@ -348,11 +347,12 @@ header {
     text-align: center;
     transition: all ease-in-out .2s;
     cursor: pointer;
+    margin: .5em auto;
 }
 
 .mobile-nav-text a:hover,
 .mobile-nav-text a:focus {
-   transform: scale(1.1);;
+    text-decoration: underline;
     font-weight: 600;
 }
 

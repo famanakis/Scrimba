@@ -1,0 +1,121 @@
+/*** LOG-IN PAGE ***/
+.background {
+    background: var(--copyright) url("../assets/images/hikers-background-img.jpg") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    filter: blur(5px);
+    height: 1000px;
+    box-shadow: 0 14px 28px var(--lt-black), 
+			0 10px 10px var(--lt-black);
+}
+
+.login-container {
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5em;
+    min-width: 750px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	overflow: hidden;
+	min-height: 600px;
+    min-width: 600px;
+    padding: 5em 2em;
+	z-index: 2;
+	transition: all 0.6s ease-in-out;
+}
+
+.login-container a {
+	margin: .9375em 0;
+}
+
+.social-container {
+	margin: 1.25em 0;
+}
+
+.social-container a {
+	border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 .3125em;
+	width: 4.6875em;
+    height: 4.6875em;
+}
+
+.social-container a:hover,
+.social-container a:active {
+    border: 3px solid var(--green);
+}
+
+.social-container i {
+    transform: scale(1.75);
+}
+
+.social-container .fa-facebook-f {
+    color: var(--facebook);
+}
+
+.social-container .fa-twitter {
+    color: var(--twitter);
+}
+
+.social-container .fa-google-plus-g {
+    color:  var(--google);
+}
+
+.social-container .fa-linkedin-in {
+    color: var(--linkedin);
+}
+
+.login-form {
+	background-color: var(--white);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    gap: 1.25em;
+    width: 75%;
+}
+
+.login-form input {
+	background-color: var(--login-input-bkgrnd);
+	border: none;
+	padding: .75em .9375em;
+	margin: .5em 0;
+	width: 100%;
+}
+
+.login-form .forgot-password:hover {
+    color: red;
+}
+
+.login-container button {
+	border-radius: 25px;
+	border: 1px solid var(--green-btn);
+	background-color: var(--green-btn);
+	padding: 1em 3em;
+	transition: transform 80ms ease-in;
+}
+
+.login-container button:active {
+	transform: scale(0.95);
+}
+
+.login-container button:focus,
+.login-container button:hover  {
+	outline: none;
+    background-color: var(--green-btn-light);
+}

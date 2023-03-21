@@ -1,4 +1,4 @@
-import 'loading-attribute-polyfill';
+// import 'loading-attribute-polyfill';
 
 //Access the DOM
 const mobileNavMenu = document.getElementById("mobile-nav-menu")

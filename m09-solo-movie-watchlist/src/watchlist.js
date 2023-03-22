@@ -42,6 +42,3 @@ document.addEventListener('click', (e)=> {
     renderWatchlist() 
   }
 })
-
-
-test('should first', () => { second })

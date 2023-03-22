@@ -1,9 +1,13 @@
+import API_KEY from "./apikey.js"
+
 //Access the DOM
 const selectEl = document.getElementById('select-channel')
 const searchEl = document.getElementById('input-search')
 const btnSearch = document.getElementById('btn-search')
 const cardsGrid = document.getElementById('cards-grid')
-const myApiKey = "process.env.API_KEY"
+const myApiKey = API_KEY
+
+console.log("test")
 
 //Functions
 async function testSearch() {

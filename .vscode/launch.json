@@ -16,6 +16,12 @@
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:5500",
             "webRoot": "${workspaceFolder}"
+        },
+        {
+            "program": "${workspaceFolder}\\index.js ",
+            "env": {
+                "myApiYouTube": "AIzaSyCEx-nS1eITKyINkKcI6IYgjftv74Gqnkg",
+            }
         }
     ]
 }

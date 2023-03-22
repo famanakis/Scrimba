@@ -2,3 +2,4 @@
 .env
 
 apikey.js
+node_modules

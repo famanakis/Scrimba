@@ -1,4 +1,3 @@
-import API_KEY from "./apikey.js"
 
 //Access the DOM
 const selectEl = document.getElementById('select-channel')

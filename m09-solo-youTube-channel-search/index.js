@@ -3,7 +3,7 @@ const selectEl = document.getElementById('select-channel')
 const searchEl = document.getElementById('input-search')
 const btnSearch = document.getElementById('btn-search')
 const cardsGrid = document.getElementById('cards-grid')
-const myApiKey = ""
+const myApiKey = "API_KEY"
 
 //Functions
 async function testSearch() {

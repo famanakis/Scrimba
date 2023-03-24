@@ -75,7 +75,7 @@ input:hover, input:focus {
     justify-content: space-between;
     align-items: center;
     height: 12.5em;
-    background-image: url("./assets/images/background-img.png");
+    background-image: url("../assets/images/background-img.png");
     background-size: cover;
     padding: 0 3.125em;
 }
@@ -101,7 +101,7 @@ input:hover, input:focus {
 }
 
 #inputEl {
-    background-image: url("./assets/magnifier-icon.png");
+    background-image: url("../assets/magnifier-icon.png");
     background-repeat: no-repeat;
     background-position: .625em;
     color: var(--magnifier);
@@ -187,7 +187,7 @@ input:hover, input:focus {
 .plus {
     padding-right: .4375em;
     margin-bottom: -3px; 
-    background-image: url("./assets/plus-icon.png");
+    background-image: url("../assets/plus-icon.png");
     background-repeat: no-repeat;
     padding-right: 1.5rem;
     padding-bottom: .3125em;
@@ -198,7 +198,7 @@ input:hover, input:focus {
 .minus {
     padding-right: .4375em;
     margin-bottom: -3px; 
-    background-image: url("./assets/minus-icon.png");
+    background-image: url("../assets/minus-icon.png");
     background-repeat: no-repeat;
     padding-right: 1.5rem;
     padding-bottom: .3125em;

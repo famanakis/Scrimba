@@ -1,12 +1,10 @@
-import {mainContentEl, watchArr} from './index.js'
-
-export function renderSearch(data) {
+export function movieCard(data, element, myStorage) {
     const { imdbID, Title, imdbRating, Runtime, Genre, Plot } = data
-    if (data.Poster.length < 4) {data.Poster = './src/assets/images/default-poster.jpg'} 
-    let addRemoveClass = 'plus'   
-    if (watchArr.includes(imdbID)) {addRemoveClass = 'minus'}
+    if (data.Poster.length < 4) {data.Poster = './assets/images/default-poster.jpg'}  
+    let addRemoveClass = 'minus' 
+    myStorage.includes(imdbID) ? addRemoveClass = 'minus' : addRemoveClass = 'plus'
      
-    mainContentEl.innerHTML += `
+    element.innerHTML += `
         <div class="flex-list">
             <div class="flex-row">
                 <img src="${data.Poster}" id="filmPoster" class="film-poster" alt="movie poster image"
@@ -14,7 +12,7 @@ export function renderSearch(data) {
             <div>
                 <p class="filmData">
                     <span class="film-title">${Title}</span>
-                    <img src="./src/assets/star-icon.png" class="star" alt="star icon for ratings">${imdbRating}
+                    <img src="./assets/star-icon.png" class="star" alt="star icon for ratings">${imdbRating}
                 </p>       
                 <p>
                     <span class="runtime">${Runtime}</span>

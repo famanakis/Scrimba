@@ -9,8 +9,9 @@
     --magnifier: #9CA3AF;
 }
 
-*{
-    box-sizing: 0;
+* {
+    box-sizing: border-box;
+    margin: 0;
 }
 
 html, body {
@@ -69,10 +70,14 @@ input:hover, input:focus {
    index.html 
    Main-Content
 ==================*/
+.page-container {
+    margin: 0 auto;
+}
+
 .flex-find {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: 12.5em;
     background-image: url("../assets/images/background-img.png");
@@ -94,7 +99,7 @@ input:hover, input:focus {
     border-radius: 6px 0px 0px 6px;
     border: none;
     width: 500px;
-    height: 2.376em; /*38px*/
+    height: 2.376em;
     margin-left: 3.125em;
     padding-left: 2.5em;
     cursor: pointer;
@@ -115,7 +120,7 @@ input:hover, input:focus {
     justify-content: center;
     align-items: center;
     width: 120px;
-    height: 2.46em; /*40px*/
+    height: 2.376em;
     border-radius: 0px 6px 6px 0px;
     margin-right: 3.125em;
     cursor: pointer;
@@ -125,6 +130,11 @@ input:hover, input:focus {
 .btn-search:focus,
 .btn-search:hover {
     outline: none;
+}
+
+.main-content {
+    width: 95%;
+    margin: 0 auto;
 }
 
 .main-content-hidden {
@@ -144,19 +154,24 @@ input:hover, input:focus {
     JavaScript 
     Main-Content
 ==================*/
-.flex-row {
+.movie-card {
+    display: flex;
+    flex-direction: row;
+    padding: .5em;
+    border-bottom: 1.5px solid var(--smoke);
+}
+
+.poster-content {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
 
-.flex-list {
+.card-main-content {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 0px 2.8125em;
-    border-bottom: 1.5px solid var(--smoke);
+    flex-direction: column;
+    gap: .5em;
 }
 
 .film-poster {
@@ -167,6 +182,8 @@ input:hover, input:focus {
 }
 
 .film-data {
+    display: flex;
+    align-items: baseline;
     font-size: .75rem;
     font-weight: 400;
 }
@@ -180,42 +197,45 @@ input:hover, input:focus {
     margin: auto .4375em;
 }
 
-.runtime {
-    padding-right: .3125em;
+.film-stats {
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+}
+
+.watchlist-and-btn {
+    display: flex;
 }
 
 .plus {
-    padding-right: .4375em;
-    margin-bottom: -3px; 
-    background-image: url("../assets/plus-icon.png");
-    background-repeat: no-repeat;
-    padding-right: 1.5rem;
-    padding-bottom: .3125em;
-    margin-left: .75rem; 
-    cursor: pointer;
+    content: url("../assets/plus-icon.png");
 }
 
 .minus {
-    padding-right: .4375em;
-    margin-bottom: -3px; 
-    background-image: url("../assets/minus-icon.png");
-    background-repeat: no-repeat;
-    padding-right: 1.5rem;
-    padding-bottom: .3125em;
-    margin-left: .75rem; 
-    cursor: pointer;
+    content: url("../assets/minus-icon.png");
 }
 
-.btn-watchlist {
+.btn-add-remove {
+    width: 1.1em;
+    height: 1.1em;
+    margin: 0 .25em 0 .75em; 
+    cursor: pointer;
+    transform: scale(1);
+    order: 2;
+}
+
+.btn-add-remove:hover,
+.htn-add-remove:focus {
+    transform: scale(1.1);
+}
+
+.btn-add-remove:active {
+    transform: scale(.8);
+}
+
+.text-watchlist {
     color: var(--white);
     background: var(--background); 
-    padding-left: .35rem;
-}
-
-.grow:hover, .grow:active {
-    background-size: 20px;
-    background-position: 0px 11.5px;
-    padding: 12px;
 }
 
 .plot {
@@ -236,10 +256,10 @@ div.flex-row > p {
 .flex-list-empty {
     display: flex;
     flex-direction: column;
+    justify-content: baseline;
     align-items: center;
     padding-top: 9.375em;
-    color: var(--gray);
-    
+    color: var(--gray);  
 }
 
 .plus-icon {
@@ -253,8 +273,7 @@ div.flex-row > p {
 .plus-idiv {
     display: flex;
     flex-direction: row;
-    margin: -17px;
-    
+    margin: -17px; 
 }
 
 div.plus-idiv > p {
@@ -266,17 +285,37 @@ div.plus-idiv > p {
     html {
         font-size: 1.25rem;
     }
-    #main-content {
-        margin: 0 2.5em;
+
+    .main-content {
+        width: 85%;
     }
-    .grow:hover, .grow:active {
-        background-size: 20px;
-        background-position: 0px 11.5px;
-        padding: 12px;
+
+    .flex-find {
+        flex-direction: row;
+        justify-content: space-between;
     }
-    .grow:hover, .grow:active {
-        padding-right: 18px;
+
+    .card-main-content {
+        gap: .5em;
     }
+
+    .film-stats {
+        flex-direction: row;
+    }
+
+    .runtime {
+        padding-right: .75em;
+    }
+
+    .btn-add-remove {
+        order: 0;
+        margin-right: .65em;
+    }
+
+    .text-watchlist {
+        padding-left: .35rem;
+    }
+
     .star {
         width: 18px;
     }
@@ -286,17 +325,13 @@ div.plus-idiv > p {
     html {
         font-size: 1.5rem;
     }
-    #main-content {
-        margin: 0 5em;
-    }
+
     .flex-find {
         padding: 0 7em;
     }
-    .grow:hover, .grow:active {
-        padding-right: 24px;
-    }
+
     .star {
         width: 20px;
-        margin-bottom: .5px;
+        margin: 0 .75em;
     }
 }

@@ -5,23 +5,26 @@ export function movieCard(data, element, myStorage) {
     myStorage.includes(imdbID) ? addRemoveClass = 'minus' : addRemoveClass = 'plus'
      
     element.innerHTML += `
-        <div class="flex-list">
-            <div class="flex-row">
+        <div class="movie-card">
+            <div class="poster-content">
                 <img src="${data.Poster}" id="filmPoster" class="film-poster" alt="movie poster image"
             </div>
-            <div>
-                <p class="filmData">
-                    <span class="film-title">${Title}</span>
-                    <img src="./assets/star-icon.png" class="star" alt="star icon for ratings">${imdbRating}
-                </p>       
-                <p>
-                    <span class="runtime">${Runtime}</span>
-                    <span>${Genre}</span>
-                    <span id="${imdbID}" 
-                        class="${addRemoveClass} grow" 
+            <div class="card-main-content">
+                <div class="film-data">
+                    <p class="film-title">${Title}</p>
+                    <img src="./assets/star-icon.png" class="star" alt="star icon for ratings">
+                    <p>${imdbRating}</p>
+                </div>       
+                <div class="film-stats">
+                    <p class="runtime">${Runtime}</p>
+                    <p>${Genre}</p>
+                    <div class="watchlist-and-btn">
+                        <span id="${imdbID}" 
+                        class="${addRemoveClass} btn-add-remove" 
                         data-imdbid="${imdbID}"></span>
-                    <span class="btn-watchlist">Watchlist</span>
-                </p>
+                        <span class="text-watchlist">Watchlist</span>
+                    </div>
+                </div>
                 <div class="flex-row">
                     <p class="plot">${Plot}
                     </p>

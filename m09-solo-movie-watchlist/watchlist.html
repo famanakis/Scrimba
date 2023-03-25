@@ -12,16 +12,18 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     </head>
     <body>
-        <section id="header" class="header">
-            <button type="button" id="searchBtn" class="btn-search" style="display:none;">Search</button>
-            <div class="flex-find">
-                <h1>My Watchlist</h1>
-                <a href="./index.html" id="myWatchlist" class="a-watchlist grow">Search for movies</a>
-            </div>
-        </section>
-        <section id="main-content-watchlist" class="list-main-content">
-            <!-- rendered from watchlist.js -->
-        </section>
+        <div class="page-container">
+            <section id="header" class="header">
+                <button type="button" id="searchBtn" class="btn-search" style="display:none;">Search</button>
+                <div class="flex-find">
+                    <h1>My Watchlist</h1>
+                    <a href="./index.html" id="myWatchlist" class="a-watchlist grow">Search for movies</a>
+                </div>
+            </section>
+            <section id="main-content-watchlist" class="main-content">
+                <!-- rendered from watchlist.js -->
+            </section>
+        </div>
         <script type="module" src="./scripts/watchlist.js"></script>
     </body>
 </html>

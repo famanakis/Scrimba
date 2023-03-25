@@ -149,6 +149,11 @@ input:hover, input:focus {
     color: var(--dk-gray);
 }
 
+.a-watchlist:hover,
+.a-watchlist:focus {
+    border-bottom: 1px solid var(--smoke);
+}
+
 /*=================
     index.html
     JavaScript 
@@ -166,6 +171,7 @@ input:hover, input:focus {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    gap: 1.3125em;
 }
 
 .card-main-content {
@@ -175,10 +181,13 @@ input:hover, input:focus {
 }
 
 .film-poster {
+    background-image: url("../assets/images/default-poster.jpg");
+    background-size: cover;
     height: 150px;
-    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
     border-radius: 2.5px;
-    margin: 2.1875em 1.3125em 2.094em 0;
+    margin: 2.1em auto;
 }
 
 .film-data {
@@ -186,6 +195,7 @@ input:hover, input:focus {
     align-items: baseline;
     font-size: .75rem;
     font-weight: 400;
+    flex-wrap: wrap;
 }
 
 .film-title {
@@ -262,23 +272,15 @@ div.flex-row > p {
     color: var(--gray);  
 }
 
-.plus-icon {
-    color: var(--white);
-    width: 15px;
-    height: 15px;
-    padding-top: 1.063em;
-    padding-right: .5em;
-}
-
-.plus-idiv {
+.flex-list-empty a {
     display: flex;
-    flex-direction: row;
-    margin: -17px; 
+    gap: .5em;
+    transition: all ease-in-out .5s;
 }
 
-div.plus-idiv > p {
-    color: var(--white);
-    font-size: .875rem;
+.flex-list-empty a:hover,
+.flex-list-empty a:focus {
+    transform: scale(1.1);
 }
 
 @media (min-width: 760px) {

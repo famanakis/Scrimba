@@ -1,6 +1,6 @@
 export function movieCard(data, element, myStorage) {
     const { imdbID, Title, imdbRating, Runtime, Genre, Plot } = data
-    if (data.Poster.length < 4) {data.Poster = './assets/images/default-poster.jpg'}  
+    if (data.Poster.length < 4 || !data.Poster) {data.Poster = './assets/images/default-poster.jpg'}  
     let addRemoveClass = 'minus' 
     myStorage.includes(imdbID) ? addRemoveClass = 'minus' : addRemoveClass = 'plus'
      

@@ -38,14 +38,14 @@ async function movieArray(data) {
 document.addEventListener("keyup", (e) => (e.key === 'Enter') && searchBtn.click(e))  
 
 //Search Button Click to submit search
-searchBtn.addEventListener("click", (e) => {  
+searchBtn.addEventListener("click", () => {  
     mainContentEl.innerHTML = ""
     getMovies()
 }) 
 
 //Add or Remove Target to Local Storage and flip plus/minus
-document.addEventListener('click', (e)=> {
-    addRemoveMovie(e, movieStorage)
+document.addEventListener('click', (target)=> {
+    addRemoveMovie(target, movieStorage)
 })
 
 

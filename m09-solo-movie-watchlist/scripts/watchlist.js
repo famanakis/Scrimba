@@ -3,13 +3,11 @@ import { movieCard } from './movieCard.js'
 import { addRemoveMovie } from './addRemoveMovie.js'
 import { movieStorage } from './movieStorage.js'
 
-//Access the DOM
-const mainPage = document.getElementById('main-content-watchlist')
-
 //Functions
 renderWatchlist()
 
 function renderWatchlist() {
+  const mainPage = document.getElementById('main-content-watchlist')
   !movieStorage && (movieStorage = [])
   if(movieStorage.length === 0) {
     mainPage.innerHTML = `<div class="flex-list-empty">
@@ -28,7 +26,8 @@ function renderWatchlist() {
   }
 }
 
-document.addEventListener('click', (e)=> {
-  addRemoveMovie(e, movieStorage)
+//Event Listeners
+document.addEventListener('click', (target)=> {
+  addRemoveMovie(target, movieStorage)
   renderWatchlist()
 })

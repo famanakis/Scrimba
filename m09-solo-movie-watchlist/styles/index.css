@@ -272,6 +272,11 @@ div.flex-row > p {
     color: var(--gray);  
 }
 
+.flex-list-empty img {
+    width: 1.1em;
+    height: 1.1em;
+}
+
 .flex-list-empty a {
     display: flex;
     gap: .5em;

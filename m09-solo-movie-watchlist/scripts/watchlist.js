@@ -8,7 +8,6 @@ renderWatchlist()
 
 function renderWatchlist() {
   const mainPage = document.getElementById('main-content-watchlist')
-  !movieStorage && (movieStorage = [])
   if(movieStorage.length === 0) {
     mainPage.innerHTML = `<div class="flex-list-empty">
       <p class="p-bold">Your watchlist is looking a little empty...</p>

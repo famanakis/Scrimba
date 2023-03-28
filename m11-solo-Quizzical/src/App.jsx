@@ -1,6 +1,7 @@
 import React from 'react'
-import Intro from './components/intro'
-import Questions from './components/questions'
+import Intro from './components/Intro'
+import Questions from './components/Questions'
+import Footer from './components/Footer'
 // import { useState } from 'react'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           opt3="Au Revoir"
           opt4="Salir"
           />
+        <Footer />
     </main>
   )
 }

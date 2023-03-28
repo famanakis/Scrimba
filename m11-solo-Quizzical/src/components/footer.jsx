@@ -2,7 +2,8 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div>
+        <div className="footer">
+            <button className="btn-check">Check answers</button>
         </div>
     )
 }

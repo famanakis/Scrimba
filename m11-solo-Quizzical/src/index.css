@@ -49,10 +49,16 @@ h1 {
 }
 
 .questions button {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 0.625rem;
   font-weight: 500;
   line-height: .75rem; 
+}
+
+.btn-check {
+  font-family: 'Inter', sans-serif;
+  font-size: .625rem;
+  font-weight: 600;
 }
 
 /*Styles*/
@@ -132,6 +138,7 @@ h1 {
 
 /*Questions*/
 .questions {
+  /* display: none; */
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -174,3 +181,18 @@ h1 {
   margin-bottom: .9375em;
 }
 
+
+
+/*Footer*/
+.footer {
+  position: absolute;
+  bottom: 35px;
+}
+
+.btn-check {
+  background-color: var(--btn);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  padding: 1em 2em 1.15em;
+}

@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Answers() {
+function Solution() {
     return (
         <div>
         </div>
     )
 }
 
-export default Answers
+export default Solution

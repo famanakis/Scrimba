@@ -159,6 +159,10 @@ h1 {
   padding: 4px;
 }
 
+.questions button:hover {
+  box-shadow: 0 0 0 .55px var(--btn);
+}
+
 .questions button:focus {
   background-color: var(--answer);
 }

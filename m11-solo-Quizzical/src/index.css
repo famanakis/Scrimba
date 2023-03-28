@@ -17,8 +17,31 @@
   margin: 0;
 }
 
+/*Typography*/
+h1 {
+  font-family: 'Karla', sans-serif;
+  font-size: 1.9375rem;
+  font-weight: 700;
+  line-height: 2.3125rem;
+}
+
+.intro p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+}
+
+main button {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/*Styles*/
 body {
-  background-color: var(--text);
+  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +54,9 @@ main {
   height: 550px;
   width: 550px;
   background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .blob-yellow {
@@ -51,4 +77,26 @@ main {
   height: 235px;
   left: 0;
   bottom: -117px;
+}
+
+/*Intro*/
+h1 {
+  text-align: center;
+  color: var(--text);
+  margin-bottom: .4375em;
+}
+
+.intro p {
+  text-align: center;
+  color: var(--text);
+  margin-bottom: 1.8125em;
+}
+
+main button {
+  background-color: var(--btn);
+  color: var(--white);
+  width: 193px;
+  height: 52px;
+  border: none;
+  border-radius: 15px;
 }

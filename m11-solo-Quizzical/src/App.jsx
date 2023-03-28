@@ -1,4 +1,5 @@
 import React from 'react'
+import Intro from './components/intro'
 // import { useState } from 'react'
 
 function App() {
@@ -6,9 +7,9 @@ function App() {
 
   return (
     <main>
-        <h1>hello</h1>
         <div className="blob-yellow"></div>
         <div className="blob-blue"></div>
+        <Intro />
     </main>
   )
 }

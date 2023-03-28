@@ -27,7 +27,7 @@ h1 {
   line-height: 2.3125rem;
 }
 
-.intro p {
+.start p {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -35,7 +35,7 @@ h1 {
   letter-spacing: 0em;
 }
 
-.btn-intro {
+.btn-start {
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 500;
@@ -102,7 +102,7 @@ main {
 }
 
 /*Intro*/
-.intro {
+.start {
   /* display: block; */
   display: none;
 }
@@ -113,13 +113,13 @@ h1 {
   margin-bottom: .4375em;
 }
 
-.intro p {
+.start p {
   text-align: center;
   color: var(--text);
   margin-bottom: 1.8125em;
 }
 
-.btn-intro {
+.btn-start {
   background-color: var(--btn);
   color: var(--white);
   width: 193px;
@@ -130,8 +130,8 @@ h1 {
   cursor: pointer;
 }
 
-.btn-intro:hover,
-.btn-intro:focus {
+.btn-start:hover,
+.btn-start:focus {
   background-color: var(--correct);
   color: var(--text);
 }

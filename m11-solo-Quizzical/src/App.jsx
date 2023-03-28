@@ -1,5 +1,5 @@
 import React from 'react'
-import Intro from './components/Intro'
+import Start from './components/Start'
 import Questions from './components/Questions'
 import Footer from './components/Footer'
 // import { useState } from 'react'
@@ -11,7 +11,7 @@ function App() {
     <main>
         <div className="blob-yellow"></div>
         <div className="blob-blue"></div>
-        <Intro />
+        <Start />
         <Questions 
           question="How would one say goodbye in Spanish?"
           opt1="Adios"

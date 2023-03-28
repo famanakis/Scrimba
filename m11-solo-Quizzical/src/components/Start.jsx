@@ -1,13 +1,13 @@
 import React from 'react'
 
-function Intro() {
+function Start() {
     return (
-        <div className="intro">
+        <div className="start">
             <h1>Quizzical</h1>
             <p>Let's have some fun!</p>
-            <button className="btn-intro">Start quiz</button>
+            <button className="btn-start">Start quiz</button>
         </div>
     )
 }
 
-export default Intro
+export default Start

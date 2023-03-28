@@ -5,7 +5,7 @@ function Intro() {
         <div className="intro">
             <h1>Quizzical</h1>
             <p>Let's have some fun!</p>
-            <button>Start quiz</button>
+            <button className="btn-intro">Start quiz</button>
         </div>
     )
 }

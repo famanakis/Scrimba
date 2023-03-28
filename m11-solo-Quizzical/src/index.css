@@ -10,6 +10,7 @@
   --correct: #9fd7a2;
   --wrong: #f8bcbc;
   --black: #000000;
+  --hr: #dbdef0;
 
 }
 
@@ -34,10 +35,24 @@ h1 {
   letter-spacing: 0em;
 }
 
-main button {
+.btn-intro {
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 500;
+}
+
+.questions h2 {
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.1875rem;
+}
+
+.questions button {
+  font-family: Inter;
+  font-size: 0.625rem;
+  font-weight: 500;
+  line-height: .75rem; 
 }
 
 /*Styles*/
@@ -81,6 +96,11 @@ main {
 }
 
 /*Intro*/
+.intro {
+  /* display: block; */
+  display: none;
+}
+
 h1 {
   text-align: center;
   color: var(--text);
@@ -93,7 +113,7 @@ h1 {
   margin-bottom: 1.8125em;
 }
 
-main button {
+.btn-intro {
   background-color: var(--btn);
   color: var(--white);
   width: 193px;
@@ -104,9 +124,49 @@ main button {
   cursor: pointer;
 }
 
-main button:hover,
-main button:focus {
+.btn-intro:hover,
+.btn-intro:focus {
   background-color: var(--correct);
   color: var(--text);
+}
+
+/*Questions*/
+.questions {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.questions h2 {
+  text-align: left;
+  color: var(--text);
+  margin-bottom: .75em;
+}
+
+.answers {
+  display: flex;
+  flex-direction: row;
+  gap: .79em;
+  margin-bottom: .9375em;
+}
+
+.questions button {
+  text-align: center;
+  color: var(--text);
+  border: .77px solid var(--btn);
+  border-radius: 7.71px;
+  min-width: 66px;
+  padding: 4px;
+}
+
+.questions button:focus {
+  background-color: var(--answer);
+}
+
+.questions p {
+  width: 100%;
+  height: 1px;
+  background-color: var(--hr);
+  margin-bottom: .9375em;
 }
 

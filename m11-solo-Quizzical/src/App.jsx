@@ -5,9 +5,11 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-        <h1>hello testing</h1>
-    </div>
+    <main>
+        <h1>hello</h1>
+        <div className="blob-yellow"></div>
+        <div className="blob-blue"></div>
+    </main>
   )
 }
 

@@ -1,15 +1,54 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Karla', sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
+  --text: #293264;
+  --white: #f5f7fb;
+  --btn: #4d5b9e;
+  --answer: #d6dbf5;
+  --correct: #9fd7a2;
+  --wrong: #f8bcbc;
 
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
+}
+
+body {
+  background-color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-width: 100vw;
+}
+
+main {
+  position: relative;
+  height: 550px;
+  width: 550px;
+  background-color: var(--white);
+}
+
+.blob-yellow {
+  background-image: url("./assets/images/blob-yellow.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 297px;
+  height: 235px;
+  top: 0;
+  right: -139px;
+}
+
+.blob-blue {
+  background-image: url("./assets/images/blob-blue.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 297px;
+  height: 235px;
+  left: 0;
+  bottom: -117px;
 }

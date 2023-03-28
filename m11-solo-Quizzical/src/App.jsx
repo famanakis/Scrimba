@@ -7,6 +7,8 @@ import Footer from './components/Footer'
 function App() {
   // const [count, setCount] = useState(0)
 
+  // https://opentdb.com/api.php?amount=5&type=multiple
+
   return (
     <main>
         <div className="blob-yellow"></div>

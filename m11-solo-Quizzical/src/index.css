@@ -9,6 +9,7 @@
   --answer: #d6dbf5;
   --correct: #9fd7a2;
   --wrong: #f8bcbc;
+  --black: #000000;
 
 }
 
@@ -41,7 +42,7 @@ main button {
 
 /*Styles*/
 body {
-  background-color: #000000;
+  background-color: var(--black);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,4 +100,13 @@ main button {
   height: 52px;
   border: none;
   border-radius: 15px;
+  transition: all ease-in-out .4s;
+  cursor: pointer;
 }
+
+main button:hover,
+main button:focus {
+  background-color: var(--correct);
+  color: var(--text);
+}
+

@@ -103,8 +103,8 @@ main {
 
 /*Intro*/
 .start {
-  /* display: block; */
-  display: none;
+  display: block;
+  /* display: none; */
 }
 
 h1 {
@@ -138,8 +138,8 @@ h1 {
 
 /*Questions*/
 .questions {
-  /* display: none; */
-  display: flex;
+  display: none;
+  /* display: flex; */
   flex-direction: column;
   width: 80%;
 }

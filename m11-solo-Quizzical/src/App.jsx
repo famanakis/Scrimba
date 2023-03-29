@@ -19,7 +19,7 @@ function App() {
     <main>
         <div className="blob-yellow"></div>
         <div className="blob-blue"></div>
-        {/**pass handleStartGame as a prop to the Start componenet */}
+        {/**pass handleStartGame as a prop to the Start component */}
         <Start onStartGame={handleStartGame} startGame = {startGame}/>
         {/*pass the startGame state as a prop called startGame to the questions component */}
         <Questions 
@@ -30,6 +30,7 @@ function App() {
           opt3="Au Revoir"
           opt4="Salir"
           />
+          {/**pass handleStartGame as a prop to the Start component */}
         <Footer startGame = {startGame} />
     </main>
   )

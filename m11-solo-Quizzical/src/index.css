@@ -110,11 +110,6 @@ main {
 }
 
 /*Intro*/
-.start {
-  /* display: block; */
-  /* display: none; */
-}
-
 h1 {
   text-align: center;
   color: var(--text);
@@ -146,8 +141,6 @@ h1 {
 
 /*Questions*/
 .questions {
-  /* display: none; */
-  /* display: flex; */
   flex-direction: column;
   width: 80%;
 }
@@ -191,8 +184,6 @@ h1 {
 
 /*Footer*/
 .footer {
-  /* display: flex; */
-  /* display: none; */
   position: absolute;
   bottom: 35px;
 }

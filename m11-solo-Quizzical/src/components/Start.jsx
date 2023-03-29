@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Start({startGame}) {
+function Start() {
     return (
         <div className="start">
             <h1>Quizzical</h1>
             <p>Let's have some fun!</p>
-            <button className="btn-start" onClick={startGame}>Start quiz</button>
+            <button className="btn-start">Start quiz</button>
         </div>
     )
 }

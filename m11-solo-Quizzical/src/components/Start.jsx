@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Start() {
+function Start({startGame}) {
     return (
         <div className="start">
             <h1>Quizzical</h1>

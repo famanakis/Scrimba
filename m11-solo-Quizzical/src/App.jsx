@@ -2,10 +2,9 @@ import React from 'react'
 import Start from './components/Start'
 import Questions from './components/Questions'
 import Footer from './components/Footer'
-// import { useState } from 'react'
+import { useState } from 'react'
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   // https://opentdb.com/api.php?amount=5&type=multiple
 

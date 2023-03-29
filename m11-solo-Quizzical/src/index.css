@@ -48,7 +48,7 @@ h1 {
   line-height: 1.1875rem;
 }
 
-.btn-answer {
+.questions button {
   font-family: 'Inter', sans-serif;
   font-size: 0.625rem;
   font-weight: 500;
@@ -165,7 +165,7 @@ h1 {
   margin-bottom: .9375em;
 }
 
-.btn-answer {
+.questions button {
   text-align: center;
   color: var(--text);
   border: .77px solid var(--btn);
@@ -174,11 +174,11 @@ h1 {
   padding: 4px;
 }
 
-.btn-answer:hover {
+.questions button:hover {
   box-shadow: 0 0 0 .55px var(--btn);
 }
 
-.btn-answer:focus {
+.questions button:focus {
   background-color: var(--answer);
 }
 

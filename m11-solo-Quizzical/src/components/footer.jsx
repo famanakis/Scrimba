@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Footer() {
+function Footer( {startGame} ) {
     return (
-        <div className="footer">
+        <div className={`footer ${startGame ? 'flex' : 'none'}`}>
             <button className="btn-check">Check answers</button>
         </div>
     )

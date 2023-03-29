@@ -48,7 +48,7 @@ h1 {
   line-height: 1.1875rem;
 }
 
-.questions button {
+.btn-answer {
   font-family: 'Inter', sans-serif;
   font-size: 0.625rem;
   font-weight: 500;
@@ -101,9 +101,17 @@ main {
   bottom: -117px;
 }
 
+.flex {
+  display: flex;
+}
+
+.none {
+  display: none;
+}
+
 /*Intro*/
 .start {
-  display: block;
+  /* display: block; */
   /* display: none; */
 }
 
@@ -138,7 +146,7 @@ h1 {
 
 /*Questions*/
 .questions {
-  display: none;
+  /* display: none; */
   /* display: flex; */
   flex-direction: column;
   width: 80%;
@@ -157,7 +165,7 @@ h1 {
   margin-bottom: .9375em;
 }
 
-.questions button {
+.btn-answer {
   text-align: center;
   color: var(--text);
   border: .77px solid var(--btn);
@@ -166,11 +174,11 @@ h1 {
   padding: 4px;
 }
 
-.questions button:hover {
+.btn-answer:hover {
   box-shadow: 0 0 0 .55px var(--btn);
 }
 
-.questions button:focus {
+.btn-answer:focus {
   background-color: var(--answer);
 }
 
@@ -183,6 +191,8 @@ h1 {
 
 /*Footer*/
 .footer {
+  /* display: flex; */
+  /* display: none; */
   position: absolute;
   bottom: 35px;
 }

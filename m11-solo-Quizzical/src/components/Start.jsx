@@ -1,11 +1,13 @@
 import React from 'react'
 
-function Start() {
+//onStartGame is the prop passed from App to the Start component
+function Start({onStartGame, startGame}) {
     return (
-        <div className="start">
+        <div className={`start ${startGame ? 'none' : 'block'}`}>
             <h1>Quizzical</h1>
             <p>Let's have some fun!</p>
-            <button className="btn-start">Start quiz</button>
+            {/* onStartGame is passed through props to the onClick callback in the button below*/}
+            <button className="btn-start" onClick={onStartGame}>Start quiz</button>
         </div>
     )
 }

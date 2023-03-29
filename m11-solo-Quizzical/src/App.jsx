@@ -8,7 +8,7 @@ function App() {
 
   //use state to set startGame state to false
   const [startGame, setStartGame] = useState(false)
-  //function handle place on button, so when clicked the state of startGame becomes true
+  //function handleStartGames changes the state of startGame to true
   function handleStartGame() {
     setStartGame(true)
   }

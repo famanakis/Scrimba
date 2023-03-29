@@ -1,6 +1,6 @@
 import React from 'react'
 
-//onStartGame is the prop passed from App to the Start component
+//onStartGame and StartGame are props passed from App to the Start component
 function Start({onStartGame, startGame}) {
     return (
         <div className={`start ${startGame ? 'none' : 'block'}`}>

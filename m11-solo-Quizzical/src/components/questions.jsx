@@ -1,4 +1,5 @@
 import React from 'react'
+import triviaData from '../triviaData.js'
 
 function Questions(props) {
     return (
@@ -14,7 +15,5 @@ function Questions(props) {
         </div>
     )
 }
-
-
 
 export default Questions

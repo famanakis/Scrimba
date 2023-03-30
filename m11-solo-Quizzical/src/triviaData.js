@@ -1,6 +1,4 @@
-export default {
-    "response_code": 0,
-    "results": [
+export default [
         {
             "category": "Entertainment: Video Games",
             "type": "multiple",
@@ -62,6 +60,6 @@ export default {
             ]
         }
     ]
-}
 
-console.log(results.question)
+    // console.log(results)
+

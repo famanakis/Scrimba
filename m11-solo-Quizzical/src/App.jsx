@@ -4,10 +4,13 @@ import Questions from './components/Questions'
 import Footer from './components/Footer'
 import { useState } from 'react'
 
+import data from './triviaData.js'
+
 function App() {
 
   //use state to set startGame state to false
   const [startGame, setStartGame] = useState(false)
+
   //function handleStartGames changes the state of startGame to true
   function handleStartGame() {
     setStartGame(true)
@@ -30,6 +33,7 @@ function App() {
           opt3="Au Revoir"
           opt4="Salir"
           />
+
           {/**pass handleStartGame as a prop to the Start component */}
         <Footer startGame = {startGame} />
     </main>

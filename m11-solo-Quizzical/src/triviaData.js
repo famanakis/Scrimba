@@ -63,3 +63,5 @@ export default {
         }
     ]
 }
+
+console.log(results.question)

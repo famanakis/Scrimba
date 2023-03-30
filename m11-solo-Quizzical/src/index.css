@@ -73,8 +73,9 @@ body {
 
 main {
   position: relative;
-  height: 550px;
+  min-height: 550px;
   width: 550px;
+  padding: 2em 0;
   background-color: var(--white);
   display: flex;
   justify-content: center;

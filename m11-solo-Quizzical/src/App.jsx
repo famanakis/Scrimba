@@ -1,7 +1,6 @@
 import React from 'react'
 import Start from './components/Start'
 import Questions from './components/Questions'
-import Footer from './components/Footer'
 import { useState } from 'react'
 
 function App() {
@@ -24,9 +23,6 @@ function App() {
         
         {/*pass the startGame state as a prop called startGame to the questions component */}
         <Questions startGame = {startGame}/>
-
-          {/**pass handleStartGame as a prop to the Start component */}
-        <Footer startGame = {startGame} />
 
     </main>
   )

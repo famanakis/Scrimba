@@ -2,7 +2,7 @@ import React from 'react'
 
 import data from '../triviaData.js'
 
-function Questions(props, chooseAnswer) {
+function Questions(props) {
     //Fisher-Yates shuffle
     function shuffle(arr) {
         var i = arr.length, j, temp;
@@ -16,15 +16,16 @@ function Questions(props, chooseAnswer) {
         }
 
         const triviaCards = data.map(i => {
-            const correctBtn = <button key={i.correct_answer} className="correct">{i.correct_answer}</button>
-            const incorrectBtns = i.incorrect_answers.map(item => <button key={item} className="wrong">{item}</button>)
-            const answers = [correctBtn, ...incorrectBtns]
+            const correctAnswer = <button key={i.correct_answer} className="correct btn-answer">{i.correct_answer}</button>
+            const incorrectAnswers = i.incorrect_answers.map(item => <button key={item} className="wrong btn-answer">{item}</button>)
+            const answers = [correctAnswer, ...incorrectAnswers]
             const shuffledAnswers = shuffle(answers)
 
             return (
-                <div>
-                     <h2 key={i.question}>{i.question}</h2>
+                <div className="trivia-cards">
+                    <h2 key={i.question}>{i.question}</h2>
                     <div className="answers">{shuffledAnswers}</div>
+                    <p></p>
                 </div> 
             )
         })                 
@@ -32,7 +33,7 @@ function Questions(props, chooseAnswer) {
     return (
         <div className={`questions ${props.startGame ? 'flex' : 'none'}`}>
             {triviaCards}
-            <p></p>
+            <button className="btn-check">Check answers</button>
         </div>
     )
 }

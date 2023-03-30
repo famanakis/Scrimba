@@ -4,17 +4,6 @@ import { shuffle } from '../shuffle.js';
 import data from '../triviaData.js'
 
 function Questions(props) {
-    //Fisher-Yates shuffle
-    // function shuffle(arr) {
-    //     var i = arr.length, j, temp;
-    //     while(--i > 0){
-    //         j = Math.floor(Math.random()*(i+1));
-    //         temp = arr[j];
-    //         arr[j] = arr[i];
-    //         arr[i] = temp;
-    //     }
-    //     return arr
-    //     }
 
         const triviaCards = data.map(i => {
             const correctAnswer = {value: i.correct_answer, isSelected: false}

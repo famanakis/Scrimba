@@ -2,7 +2,7 @@ import React from 'react'
 
 import data from '../triviaData.js'
 
-function Questions(props) {
+function Questions(props, chooseAnswer) {
     //Fisher-Yates shuffle
     function shuffle(arr) {
         var i = arr.length, j, temp;
@@ -16,14 +16,15 @@ function Questions(props) {
         }
 
         const triviaCards = data.map(i => {
-            const correctBtn = <button className="correct">{i.correct_answer}</button>
-            const incorrectBtns = i.incorrect_answers.map(item => <button className="wrong">{item}</button>)
+            const correctBtn = <button key={i.correct_answer} className="correct">{{value: i.correct_answer, isSelected: false}}</button>
+            const incorrectBtns = i.incorrect_answers.map(item => <button key={item} className="wrong">{{value: item, isSelected: false}}</button>)
             const answers = [correctBtn, ...incorrectBtns]
             const shuffledAnswers = shuffle(answers)
+
             return (
-                <div key={i.question}>
-                     <h2>{i.question}</h2>
-                    <div className="answers">{shuffledAnswers}</div>
+                <div>
+                     <h2 key={i.question}>{i.question}</h2>
+                    <div className="answers" onClick={chooseAnswer}>{shuffledAnswers}</div>
                 </div> 
             )
         })                 

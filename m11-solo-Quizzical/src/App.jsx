@@ -8,13 +8,17 @@ function App() {
 
   //use state to set startGame state to false
   const [startGame, setStartGame] = useState(false)
+  const [isSelected, setIsSelected] = useState(false)
 
   //function handleStartGames changes the state of startGame to true
   function handleStartGame() {
     setStartGame(true)
   }
 
-  // https://opentdb.com/api.php?amount=5&type=multiple
+  function handleSelectedAnswer() {
+      setIsSelected(true)
+      console.log('clicked')
+  }
 
   return (
     <main>
@@ -28,10 +32,12 @@ function App() {
         <Questions startGame = {startGame}/>
 
           {/**pass handleStartGame as a prop to the Start component */}
-        <Footer startGame = {startGame} />
-        
+        <Footer startGame = {startGame} chooseAnswer = {handleSelectedAnswer}/>
+
     </main>
   )
 }
 
 export default App
+
+  // https://opentdb.com/api.php?amount=5&type=multiple

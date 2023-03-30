@@ -16,15 +16,15 @@ function Questions(props, chooseAnswer) {
         }
 
         const triviaCards = data.map(i => {
-            const correctBtn = <button key={i.correct_answer} className="correct">{{value: i.correct_answer, isSelected: false}}</button>
-            const incorrectBtns = i.incorrect_answers.map(item => <button key={item} className="wrong">{{value: item, isSelected: false}}</button>)
+            const correctBtn = <button key={i.correct_answer} className="correct">{i.correct_answer}</button>
+            const incorrectBtns = i.incorrect_answers.map(item => <button key={item} className="wrong">{item}</button>)
             const answers = [correctBtn, ...incorrectBtns]
             const shuffledAnswers = shuffle(answers)
 
             return (
                 <div>
                      <h2 key={i.question}>{i.question}</h2>
-                    <div className="answers" onClick={chooseAnswer}>{shuffledAnswers}</div>
+                    <div className="answers">{shuffledAnswers}</div>
                 </div> 
             )
         })                 

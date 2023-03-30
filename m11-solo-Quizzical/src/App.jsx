@@ -8,16 +8,10 @@ function App() {
 
   //use state to set startGame state to false
   const [startGame, setStartGame] = useState(false)
-  const [isSelected, setIsSelected] = useState(false)
 
   //function handleStartGames changes the state of startGame to true
   function handleStartGame() {
     setStartGame(true)
-  }
-
-  function handleSelectedAnswer() {
-      setIsSelected(true)
-      console.log('clicked')
   }
 
   return (
@@ -32,7 +26,7 @@ function App() {
         <Questions startGame = {startGame}/>
 
           {/**pass handleStartGame as a prop to the Start component */}
-        <Footer startGame = {startGame} chooseAnswer = {handleSelectedAnswer}/>
+        <Footer startGame = {startGame} />
 
     </main>
   )

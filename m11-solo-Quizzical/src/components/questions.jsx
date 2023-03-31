@@ -4,34 +4,25 @@ import { nanoid } from 'nanoid'
 
 // import data from '../triviaData.js'
 
-function Question(props) {
-
-        // const triviaCards = data.map(i => {
-        //     const correctAnswer = {value: i.correct_answer, isSelected: false}
-        //     const incorrectAnswers = i.incorrect_answers.map(item => {return {value: item, isSelected: false}})
-        //     const shuffledAnswers = shuffle([correctAnswer, ...incorrectAnswers])
-
-        //     return (
-        //         <div className="trivia-cards">
-        //             <h2 key={i.question}>{i.question}</h2>
-        //             <div className="answers">
-        //                 {shuffledAnswers.map(answer => {
-        //                     return <input value={answer.value} className="btn-answer" />
-        //                 })}
-        //             </div>
-        //             <p></p>
-        //         </div> 
-        //     )
-        // })             
+function Question(props) {  
+    
+    let answers = props.content.answers
+    console.log(answers)
+    const answerBtns = answers.map(answer => {
+        return (
+            <button key={nanoid()} className="btn-answer">{answer}</button>
+        )  
+    })
 
     return (
         <div className={`questions ${props.startGame ? 'flex' : 'none'}`}>
-            {/* {triviaCards} */}
             <div className="trivia-cards">
-                {/* <h2 key={props.key}>{content.question}</h2> */}
-                {/* <div className="answers">
-                    {content.answers}
-                </div> */}
+                <h2 key={props.id}>{props.content.question}</h2>
+                <div className="answers">
+                    {answerBtns}
+                    {/* {props.content.answers} */}
+                    {/* {props.content.answers.map(i => {<input value={i} className="btn-answer" />})} */}
+                </div>
                 <p></p>
             </div> 
         </div>
@@ -39,3 +30,5 @@ function Question(props) {
 }
 
 export default Question
+
+{/* <input value={props.content.answers} className="btn-answer" /> */}

@@ -2,8 +2,8 @@ import React from 'react'
 import Start from './components/Start'
 import Question from './components/Questions'
 import { nanoid } from 'nanoid'
+import he from 'he'
 import { shuffle } from './shuffle.js'
-// model.id = nanoid()
 import { useState, useEffect } from 'react'
 import Footer from './components/Footer'
 
@@ -22,7 +22,16 @@ function App() {
       const data = await res.json()
       let triviaArr = []
       data.results.forEach(item => {
-        triviaArr.push({id:nanoid(), question:item.question, answers:shuffle([item.correct_answer, ...item.incorrect_answers]), correct:item.correct_answer, selected:null, checked:false})
+        const decodedQuestion = he.decode(item.question)
+        const decodedCorrectAnswer = he.decode(item.correct_answer)
+        const decodedIncorrectAnswers = item.incorrect_answers.map(answer => he.decode(answer))
+        triviaArr.push({
+          id:nanoid(), 
+          question:decodedQuestion, 
+          answers:shuffle([decodedCorrectAnswer, ...decodedIncorrectAnswers]), correct:decodedCorrectAnswer, 
+          selected:null, 
+          checked:false
+        })
       })
       setQuestions(triviaArr)
     }
@@ -52,8 +61,8 @@ function App() {
         <div className="blob-blue"></div>
 
         <Start onStartGame={handleStartGame} startGame = {startGame}/>
+        
         {triviaElement}
-        {/* <Questions startGame = {startGame}/> */}
 
         <Footer startGame = {startGame} />
 

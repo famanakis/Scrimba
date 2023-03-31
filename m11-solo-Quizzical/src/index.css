@@ -78,6 +78,7 @@ main {
   padding: 2em 0;
   background-color: var(--white);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -190,9 +191,7 @@ h1 {
 
 /*Footer*/
 .footer {
-  position: absolute;
-  bottom: 1.5em;
-  margin: 0 auto;
+  margin:  1em auto 0;
 }
 
 .btn-check {

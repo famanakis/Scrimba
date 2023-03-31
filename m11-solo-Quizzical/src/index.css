@@ -188,6 +188,13 @@ h1 {
   margin-bottom: .9375em;
 }
 
+/*Footer*/
+.footer {
+  position: absolute;
+  bottom: 1.5em;
+  margin: 0 auto;
+}
+
 .btn-check {
   display: flex;
   justify-content: center;
@@ -198,4 +205,5 @@ h1 {
   border-radius: 10px;
   padding: 1em 2em 1.15em;
 }
+
 

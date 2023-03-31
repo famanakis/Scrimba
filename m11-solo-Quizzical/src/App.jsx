@@ -1,10 +1,11 @@
 import React from 'react'
 import Start from './components/Start'
-import Questions from './components/Questions'
+import Question from './components/Questions'
 import { nanoid } from 'nanoid'
 import { shuffle } from './shuffle.js'
 // model.id = nanoid()
 import { useState, useEffect } from 'react'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
       const data = await res.json()
       let triviaArr = []
       data.results.forEach(item => {
-        triviaArr.push({id:nanoid(), question:item.question, answers:shuffle([item.correctAnswer, ...item.incorrectAnswers]), correct:item.correct_answer, selected:null, checked:false})
+        triviaArr.push({id:nanoid(), question:item.question, answers:shuffle([item.correct_answer, ...item.incorrect_answers]), correct:item.correct_answer, selected:null, checked:false})
       })
       setQuestions(triviaArr)
     }
@@ -29,11 +30,14 @@ function App() {
   }, [count])
 
   const triviaElement = questions ? questions.map(item => {
-    return (<Question 
-              key={item.id}
-              id={item.id}
-              content={item}
-              />)
+    return (
+      <Question 
+      key={item.id}
+      id={item.id}
+      content={item}
+      startGame = {startGame}
+      />
+      )
     }) : []
 
 
@@ -48,8 +52,10 @@ function App() {
         <div className="blob-blue"></div>
 
         <Start onStartGame={handleStartGame} startGame = {startGame}/>
-       
-        <Questions startGame = {startGame}/>
+        {triviaElement}
+        {/* <Questions startGame = {startGame}/> */}
+
+        <Footer startGame = {startGame} />
 
     </main>
   )
@@ -57,4 +63,3 @@ function App() {
 
 export default App
 
-  // https://opentdb.com/api.php?amount=5&type=multiple

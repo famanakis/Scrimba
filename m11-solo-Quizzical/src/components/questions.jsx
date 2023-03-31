@@ -7,7 +7,6 @@ import { nanoid } from 'nanoid'
 function Question(props) {  
     
     let answers = props.content.answers
-    console.log(answers)
     const answerBtns = answers.map(answer => {
         return (
             <button key={nanoid()} className="btn-answer">{answer}</button>

@@ -1,8 +1,6 @@
 import React from 'react'
 import { nanoid } from 'nanoid'
-// import { shuffle } from '../shuffle.js'
 
-// import data from '../triviaData.js'
 
 function Question(props) {  
     
@@ -19,8 +17,6 @@ function Question(props) {
                 <h2 key={props.id}>{props.content.question}</h2>
                 <div className="answers">
                     {answerBtns}
-                    {/* {props.content.answers} */}
-                    {/* {props.content.answers.map(i => {<input value={i} className="btn-answer" />})} */}
                 </div>
                 <p></p>
             </div> 
@@ -30,4 +26,3 @@ function Question(props) {
 
 export default Question
 
-{/* <input value={props.content.answers} className="btn-answer" /> */}

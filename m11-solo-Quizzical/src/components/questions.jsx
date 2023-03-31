@@ -1,4 +1,5 @@
 import React from 'react'
+import { nanoid } from 'nanoid'
 import { shuffle } from '../shuffle.js';
 
 import data from '../triviaData.js'

@@ -5,11 +5,7 @@ import { nanoid } from 'nanoid'
 function Question(props) {  
     
     let answers = props.content.answers
-    const answerBtns = answers.map(answer => {
-        return (
-            <button key={nanoid()} className="btn-answer">{answer}</button>
-        )  
-    })
+    const answerBtns = answers.map(answer => <button key={nanoid()} className="btn-answer">{answer}</button>)
 
     return (
         <div className={`questions ${props.startGame ? 'flex' : 'none'}`}>

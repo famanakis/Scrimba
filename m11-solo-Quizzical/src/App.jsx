@@ -1,6 +1,8 @@
 import React from 'react'
 import Start from './components/Start'
 import Questions from './components/Questions'
+import { nanoid } from 'nanoid'
+// model.id = nanoid()
 import { useState, useEffect } from 'react'
 
 function App() {
@@ -9,7 +11,7 @@ function App() {
   const [startGame, setStartGame] = useState(false)
   const [isSelected, setIsSelected] = useState(false)
   const [isCorrect, setIsCorrect] = useState(false)
-  
+
 
   //function handleStartGames changes the state of startGame to true
   function handleStartGame() {
@@ -21,10 +23,8 @@ function App() {
         <div className="blob-yellow"></div>
         <div className="blob-blue"></div>
 
-        {/**pass handleStartGame as a prop to the Start component */}
         <Start onStartGame={handleStartGame} startGame = {startGame}/>
         
-        {/*pass the startGame state as a prop called startGame to the questions component */}
         <Questions startGame = {startGame}/>
 
     </main>

@@ -9,7 +9,6 @@ function Questions(props) {
         const triviaCards = data.map(i => {
             const correctAnswer = {value: i.correct_answer, isSelected: false}
             const incorrectAnswers = i.incorrect_answers.map(item => {return {value: item, isSelected: false}})
-            // const answers = [correctAnswer, ...incorrectAnswers]
             const shuffledAnswers = shuffle([correctAnswer, ...incorrectAnswers])
 
             return (

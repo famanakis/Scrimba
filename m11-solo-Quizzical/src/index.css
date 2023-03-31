@@ -102,6 +102,11 @@ main {
   bottom: -117px;
 }
 
+button,
+input {
+  cursor: pointer;
+}
+
 .flex {
   display: flex;
 }
@@ -131,7 +136,6 @@ h1 {
   border: none;
   border-radius: 15px;
   transition: all ease-in-out .4s;
-  cursor: pointer;
 }
 
 .btn-start:hover,

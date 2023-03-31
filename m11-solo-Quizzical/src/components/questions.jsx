@@ -16,7 +16,7 @@ function Questions(props) {
                     <h2 key={i.question}>{i.question}</h2>
                     <div className="answers">
                         {shuffledAnswers.map(answer => {
-                            return <button key={answer.value} className="btn-answer">{answer.value}</button>
+                            return <input value={answer.value} className="btn-answer" />
                         })}
                     </div>
                     <p></p>

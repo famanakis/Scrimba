@@ -172,6 +172,8 @@ h1 {
   border-radius: 7.71px;
   min-width: 66px;
   padding: 4px;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-answer:hover {
@@ -183,6 +185,14 @@ h1 {
   height: 1px;
   background-color: var(--hr);
   margin-bottom: .9375em;
+}
+
+.answers .selected {
+  background-color: var(--answer);
+}
+
+.answers .not-selected {
+  background-color: inherit;
 }
 
 /*Footer*/
@@ -206,5 +216,6 @@ h1 {
   background-color: var(--correct);
   color: var(--text);
 }
+
 
 

@@ -11,10 +11,10 @@ function App() {
 
   //use state to set startGame state to false
   const [startGame, setStartGame] = useState(false)
-  const [isSelected, setIsSelected] = useState(false)
   const [isCorrect, setIsCorrect] = useState(false)
   const [count, setCount] = useState(0)
   const [questions, setQuestions] = useState([])
+
 
 //useEffect makes call to outside source OpenTriviaDB API
   useEffect(()=> {
@@ -32,8 +32,7 @@ function App() {
           id:nanoid(), 
           question:decodedQuestion, 
           answers:shuffle([decodedCorrectAnswer, ...decodedIncorrectAnswers]), correct:decodedCorrectAnswer, 
-          selected:null, 
-          checked:false
+          isCorrect:false
         })
       })
       //setQuestions value becomes triviaArr

@@ -1,24 +1,35 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { nanoid } from 'nanoid'
 
 
 function Question(props) {  
+    const [selectedAnswer, setSelectedAnswer] = useState(null)
     
-    let answers = props.content.answers
-    const answerBtns = answers.map(answer => <button key={nanoid()} className="btn-answer">{answer}</button>)
-
+    const handleSelected = (answer) => {
+      setSelectedAnswer(answer)
+    }
+    
+    const answers = props.content.answers
+    const answerBtns = answers.map((answer) => (
+      <button
+        key={nanoid()}
+        onClick={() => handleSelected(answer)}
+        className={`btn-answer ${selectedAnswer === answer ? 'selected' : 'not-selected'}`}
+      >
+        {answer}
+      </button>
+    ))
+  
     return (
-        <div className={`questions ${props.startGame ? 'flex' : 'none'}`}>
-            <div className="trivia-cards">
-                <h2 key={props.id}>{props.content.question}</h2>
-                <div className="answers">
-                    {answerBtns}
-                </div>
-                <p></p>
-            </div> 
-        </div>
+      <div className={`questions ${props.startGame ? 'flex' : 'none'}`}>
+        <div className="trivia-cards">
+          <h2 key={props.id}>{props.content.question}</h2>
+          <div className="answers">{answerBtns}</div>
+          <p></p>
+        </div> 
+      </div>
     )
-}
+  }
 
 export default Question
 

@@ -4,16 +4,15 @@ import { nanoid } from 'nanoid'
 function Question(props) {     
     const answers = props.content.answers
     const answerBtns = answers.map((answer) =>  {
-        // let id=""
-        // if(props.selectedAnswer === answer) {
-        //     id = props.correctAnswer === answer ? "correct" : "wrong"
-        // } else {"neutral"}
+        console.log(props.selectedAnswer)
+        console.log(props.correct)
+
     return (
         <button
             key={nanoid()}
             onClick={() => props.handleSelected(answer)}
-            className={`btn-answer ${props.selectedAnswer === answer ? 'selected' : 'not-selected'}`}
-            // id={id}
+            className={`btn-answer ${props.selectedAnswer === answer ? 'selected' : 'not-selected'} ${props.checkAnswers ? 'answered' : ''}`}
+            id={props.checkAnswers && (props.selectedAnswer === answer ? (props.selectedAnswer === props.correct ? 'correct' : 'wrong') : 'neutral')}        
         >
             {answer}
         </button>

@@ -11,7 +11,7 @@ function App() {
   //use state to set startGame state to false
   const [startGame, setStartGame] = useState(false)
   const [selectedAnswer, setSelectedAnswer] = useState({})
-  const [checkedAnswers, setCheckedAnswers] = useState(false)
+  const [checkAnswers, setCheckAnswers] = useState(false)
   const [count, setCount] = useState(0)
   const [questions, setQuestions] = useState([])
 
@@ -30,8 +30,9 @@ function App() {
         triviaArr.push({
           id:nanoid(), 
           question:decodedQuestion, 
-          answers:shuffle([decodedCorrectAnswer, ...decodedIncorrectAnswers]), correct:decodedCorrectAnswer
-        })
+          answers:shuffle([decodedCorrectAnswer, ...decodedIncorrectAnswers]), 
+          correct:decodedCorrectAnswer
+         })
       })
       //setQuestions value becomes triviaArr
       setQuestions(triviaArr)
@@ -47,11 +48,12 @@ function App() {
       key={item.id}
       id={item.id}
       content={item}
+      correct={item.correct}
       startGame = {startGame}
       handleSelected = {(answer) => handleSelected(item.id, answer)}
       selectedAnswer = {selectedAnswer[item.id]}
-      handleCheckedAnswers = {handleCheckedAnswers}
-      checkedAnswers = {checkedAnswers}
+      handleCheckAnswers = {handleCheckAnswers}
+      checkAnswers = {checkAnswers}
       />
       )
     }) : []
@@ -71,8 +73,9 @@ function App() {
   }
 
   //function to show correct answers when scores are checked
-  function handleCheckedAnswers() {
-    setCheckedAnswers()
+  function handleCheckAnswers() {
+    setCheckAnswers(true)
+    return <button>Play Again</button>
   }
 
   //function to handle Score/Count when scores are checked
@@ -89,7 +92,7 @@ function App() {
         
         {triviaElement}
 
-        <Footer startGame = {startGame} handleCount={handleCount} handleCheckedAnswers = {handleCheckedAnswers}/>
+        <Footer startGame = {startGame} handleCount={handleCount} handleCheckAnswers = {handleCheckAnswers} checkAnswers={checkAnswers}/>
 
     </main>
   )

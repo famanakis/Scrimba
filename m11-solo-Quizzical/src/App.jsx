@@ -75,7 +75,7 @@ function App() {
   //function to show correct answers when scores are checked
   function handleCheckAnswers() {
     setCheckAnswers(true)
-    return <button>Play Again</button>
+    
   }
 
   //function to handle Score/Count when scores are checked

@@ -8,13 +8,12 @@ import { useState, useEffect } from 'react'
 import Footer from './components/Footer'
 
 function App() {
-
   //use state to set startGame state to false
   const [startGame, setStartGame] = useState(false)
+  const [selectedAnswer, setSelectedAnswer] = useState({})
   const [isCorrect, setIsCorrect] = useState(false)
   const [count, setCount] = useState(0)
   const [questions, setQuestions] = useState([])
-
 
 //useEffect makes call to outside source OpenTriviaDB API
   useEffect(()=> {
@@ -31,8 +30,7 @@ function App() {
         triviaArr.push({
           id:nanoid(), 
           question:decodedQuestion, 
-          answers:shuffle([decodedCorrectAnswer, ...decodedIncorrectAnswers]), correct:decodedCorrectAnswer, 
-          isCorrect:false
+          answers:shuffle([decodedCorrectAnswer, ...decodedIncorrectAnswers]), correct:decodedCorrectAnswer
         })
       })
       //setQuestions value becomes triviaArr
@@ -50,6 +48,8 @@ function App() {
       id={item.id}
       content={item}
       startGame = {startGame}
+      handleSelected = {(answer) => handleSelected(item.id, answer)}
+      selectedAnswer = {selectedAnswer[item.id]}
       />
       )
     }) : []
@@ -58,6 +58,24 @@ function App() {
   //function handleStartGames changes the state of startGame to true
   function handleStartGame() {
     setStartGame(true)
+  }
+
+  //callback function to handle state of buttons (selected/not-selected) by each question grouping
+  const handleSelected = (questionId, answer) => {
+    setSelectedAnswer(prevState => ({
+      ...prevState,
+      [questionId]: answer,
+    }))
+  }
+
+  //function to show correct answers when scores are checked
+  function handleCorrectAnswer() {
+    setIsCorrect()
+  }
+
+  //function to handle Score/Count when scores are checked
+  function handleCount() {
+    setCount()
   }
 
   return (
@@ -69,7 +87,7 @@ function App() {
         
         {triviaElement}
 
-        <Footer startGame = {startGame} />
+        <Footer startGame = {startGame} handleCount={handleCount}/>
 
     </main>
   )

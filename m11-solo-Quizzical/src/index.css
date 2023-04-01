@@ -195,6 +195,14 @@ h1 {
   background-color: inherit;
 }
 
+.wrong {
+  background-color: var(--wrong);
+}
+
+.correct {
+  background-color: var(--correct);
+}
+
 /*Footer*/
 .footer {
   margin:  1em auto 0;
@@ -213,9 +221,13 @@ h1 {
 }
 
 .btn-check:hover {
-  background-color: var(--correct);
-  color: var(--text);
+  box-shadow: 0 0 0 1px var(--black);
 }
+
+.btn-check:active {
+  transform: scale(.85);
+}
+
 
 
 

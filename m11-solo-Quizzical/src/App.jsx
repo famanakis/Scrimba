@@ -11,7 +11,7 @@ function App() {
   //use state to set startGame state to false
   const [startGame, setStartGame] = useState(false)
   const [selectedAnswer, setSelectedAnswer] = useState({})
-  const [isCorrect, setIsCorrect] = useState(false)
+  const [checkedAnswers, setCheckedAnswers] = useState(false)
   const [count, setCount] = useState(0)
   const [questions, setQuestions] = useState([])
 
@@ -50,6 +50,8 @@ function App() {
       startGame = {startGame}
       handleSelected = {(answer) => handleSelected(item.id, answer)}
       selectedAnswer = {selectedAnswer[item.id]}
+      handleCheckedAnswers = {handleCheckedAnswers}
+      checkedAnswers = {checkedAnswers}
       />
       )
     }) : []
@@ -69,8 +71,8 @@ function App() {
   }
 
   //function to show correct answers when scores are checked
-  function handleCorrectAnswer() {
-    setIsCorrect()
+  function handleCheckedAnswers() {
+    setCheckedAnswers()
   }
 
   //function to handle Score/Count when scores are checked
@@ -87,7 +89,7 @@ function App() {
         
         {triviaElement}
 
-        <Footer startGame = {startGame} handleCount={handleCount}/>
+        <Footer startGame = {startGame} handleCount={handleCount} handleCheckedAnswers = {handleCheckedAnswers}/>
 
     </main>
   )

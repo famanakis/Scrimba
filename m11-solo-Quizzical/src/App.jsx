@@ -92,7 +92,7 @@ function App() {
         
         {triviaElement}
 
-        <Footer startGame = {startGame} handleCount={handleCount} handleCheckAnswers = {handleCheckAnswers} checkAnswers={checkAnswers}/>
+        <Footer startGame = {startGame} handleCount={handleCount} handleCheckAnswers = {handleCheckAnswers} checkAnswers={checkAnswers} count={count}/>
 
     </main>
   )

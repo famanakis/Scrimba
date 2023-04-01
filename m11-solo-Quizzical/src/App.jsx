@@ -75,7 +75,6 @@ function App() {
   //function to show correct answers when scores are checked
   function handleCheckAnswers() {
     setCheckAnswers(true)
-    
   }
 
   //function to handle Score/Count when scores are checked
@@ -99,4 +98,9 @@ function App() {
 }
 
 export default App
+
+
+//to do
+//when play again is clicked, call to API and getQuestions(), set count back to zero??
+//function to change count based on correct answers (maybe tied to id is correct?)
 

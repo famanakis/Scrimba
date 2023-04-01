@@ -29,7 +29,7 @@ h1 {
 
 .start p {
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0em;
@@ -46,6 +46,12 @@ h1 {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.1875rem;
+}
+
+.footer h2 {
+  font-family: inherit;
+  font-size: .8rem;
+  font-weight: 700;
 }
 
 .btn-answer {
@@ -81,7 +87,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: none;
 }
 
 .blob-yellow {
@@ -91,7 +96,7 @@ main {
   width: 297px;
   height: 235px;
   top: 0;
-  right: -139px;
+  right: -138px;
 }
 
 .blob-blue {
@@ -100,8 +105,28 @@ main {
   position: absolute;
   width: 297px;
   height: 235px;
-  left: 0;
-  bottom: -117px;
+  left: 0; /*0*/
+  bottom: -116px; /*-116*/
+}
+
+.blob-yellow-small{
+  background-image: url("./assets/images/blob-yellow-small.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 297px;
+  height: 235px;
+  top: 0;
+  right: -170px;
+}
+
+.blob-blue-small {
+  background-image: url("./assets/images/blob-blue-small.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 297px;
+  height: 235px;
+  left: 0px;
+  bottom: -172px;
 }
 
 button,
@@ -149,7 +174,7 @@ h1 {
 /*Questions*/
 .questions {
   flex-direction: column;
-  width: 90%;
+  width: 80%;
   z-index: 2;
 }
 
@@ -199,10 +224,12 @@ h1 {
 #wrong {
   opacity: .5;
   background-color: var(--wrong);
+  border: .77px solid var(--wrong);
 }
 
 #correct {
   background-color: var(--correct);
+  border: .77px solid var(--correct);
 }
 
 #neutral {
@@ -218,6 +245,7 @@ h1 {
 .btn-check {
   display: flex;
   justify-content: center;
+  min-width: 104px;
   margin: 0 auto;
   background-color: var(--btn);
   color: var(--white);
@@ -235,7 +263,7 @@ h1 {
   transform: scale(.85);
 }
 
-.footer p {
+.footer h2 {
   color: var(--text);
   margin: .4em 1.5em 0 0;
   z-index: 2;

@@ -4,7 +4,7 @@ function Footer(props) {
 
     return (
         <div className={`footer ${props.startGame ? 'flex' : 'none'}`}>
-            <p className={`${props.checkAnswers ? 'flex' : 'none'}`}>You scored 3/5 answers</p>
+            <h2 className={`${props.checkAnswers ? 'flex' : 'none'}`}>You scored 3/5 correct answers</h2>
             <button onClick={props.checkAnswers ? props.handleCheckAnswers : props.handleCheckAnswers} className="btn-check">{props.checkAnswers ? 'Play Again' : 'Check Answers'}</button>
         </div>
     )

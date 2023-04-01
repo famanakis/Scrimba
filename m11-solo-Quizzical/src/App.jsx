@@ -85,8 +85,8 @@ function App() {
 
   return (
     <main>
-        <div className="blob-yellow"></div>
-        <div className="blob-blue"></div>
+        <div className={startGame ? 'blob-yellow-small' : 'blob-yellow'}></div>
+        <div className={startGame ? 'blob-blue-small' : 'blob-blue'}></div>
 
         <Start onStartGame={handleStartGame} startGame = {startGame}/>
         

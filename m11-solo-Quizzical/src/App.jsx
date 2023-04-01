@@ -9,11 +9,12 @@ import Footer from './components/Footer'
 
 function App() {
   //use state to set startGame state to false
-  const [startGame, setStartGame] = useState(false)
-  const [selectedAnswer, setSelectedAnswer] = useState({})
-  const [checkAnswers, setCheckAnswers] = useState(false)
-  const [count, setCount] = useState(0)
-  const [questions, setQuestions] = useState([])
+  const [startGame, setStartGame] = useState(false) //game state is either not started or started
+  const [selectedAnswer, setSelectedAnswer] = useState({}) //state of questions to determine if they have been selected or not
+  const [checkAnswers, setCheckAnswers] = useState(false) //answers have either been checked (true) or are not yet checked(false)
+  const [apiCallCount, setApiCallCount] = useState(0) //apiCallCount is at zero until setApiCallCount is called and count++
+  const [count, setCount] = useState(0) //count state keeps track of selected answers that are correct
+  const [questions, setQuestions] = useState([]) //manages state of questions on page
 
 //useEffect makes call to outside source OpenTriviaDB API
   useEffect(()=> {
@@ -39,7 +40,7 @@ function App() {
     }
       //call function getQuestions()
       getQuestions()
-  }, [count])
+  }, [apiCallCount])
 
   //create triviaElement which is a Question component with props to pass API data from App to the component
   const triviaElement = questions ? questions.map(item => {
@@ -54,6 +55,7 @@ function App() {
       selectedAnswer = {selectedAnswer[item.id]}
       handleCheckAnswers = {handleCheckAnswers}
       checkAnswers = {checkAnswers}
+      handleCount = {handleCount}
       />
       )
     }) : []
@@ -79,7 +81,15 @@ function App() {
 
   //function to handle Score/Count when scores are checked
   function handleCount() {
-    setCount()
+    setCount(prevCount => prevCount + 1)
+  }
+
+  //function to handle page refresh
+  function handleRefresh() {
+    console.log('refresh the page')
+    setApiCallCount(prevCount => prevCount + 1)
+    setCheckAnswers(false)
+    setCount(0)
   }
 
   return (
@@ -91,7 +101,11 @@ function App() {
         
         {triviaElement}
 
-        <Footer startGame = {startGame} handleCount={handleCount} handleCheckAnswers = {handleCheckAnswers} checkAnswers={checkAnswers} count={count}/>
+        <Footer startGame = {startGame} 
+                handleCheckAnswers = {handleCheckAnswers} 
+                checkAnswers={checkAnswers} 
+                count={count}
+                handleRefresh = {handleRefresh}/>
 
     </main>
   )
@@ -101,6 +115,5 @@ export default App
 
 
 //to do
-//when play again is clicked, call to API and getQuestions(), set count back to zero??
 //function to change count based on correct answers (maybe tied to id is correct?)
 

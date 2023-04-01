@@ -18,7 +18,6 @@ function Question(props) {
         </button>
     )
 })
-console.log(answerBtns)
 
     return (
         <>

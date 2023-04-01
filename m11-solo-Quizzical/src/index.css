@@ -195,12 +195,18 @@ h1 {
   background-color: inherit;
 }
 
-.wrong {
+#wrong {
+  opacity: .5;
   background-color: var(--wrong);
 }
 
-.correct {
+#correct {
   background-color: var(--correct);
+}
+
+#neutral {
+  opacity: .5;
+  background-color: transparent;
 }
 
 /*Footer*/

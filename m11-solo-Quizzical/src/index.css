@@ -225,16 +225,25 @@ h1 {
   opacity: .5;
   background-color: var(--wrong);
   border: .77px solid var(--wrong);
+  cursor: default;
 }
 
 #correct {
   background-color: var(--correct);
   border: .77px solid var(--correct);
+  cursor: default;
 }
 
 #neutral {
   opacity: .5;
   background-color: transparent;
+  cursor: default;
+}
+
+#wrong:hover,
+#correct:hover,
+#neutral:hover {
+  box-shadow: none;
 }
 
 /*Footer*/

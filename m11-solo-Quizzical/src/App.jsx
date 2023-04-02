@@ -14,7 +14,7 @@ function App() {
   const [count, setCount] = useState(0) //count state keeps track of selected answers that are correct
   const [questions, setQuestions] = useState([]) //manages state of questions on page
 
-//useEffect makes call to outside source OpenTriviaDB API
+//useEffect to make call to outside source OpenTriviaDB API
   useEffect(()=> {
     async function getQuestions() {
       const res = await fetch("https://opentdb.com/api.php?amount=5&type=multiple")
@@ -40,7 +40,7 @@ function App() {
 
   //create triviaElement which is a Question component with props to pass API data from App to the component
   const triviaElement = questions.map(item => (
-      <Question 
+    <Question 
       key={item.id}
       id={item.id}
       content={item}
@@ -51,9 +51,8 @@ function App() {
       handleCheckAnswers={() => setCheckAnswers(true)}
       checkAnswers={checkAnswers}
       handleCount={handleCount}
-      />
-      ))
-
+    />
+  ))
 
   //callback function handleStartGames changes the state of startGame to true
   const handleStartGame = () => {
@@ -70,22 +69,19 @@ function App() {
 
   return (
     <main>
-        <div className={startGame ? 'blob-yellow-small' : 'blob-yellow'}></div>
-        <div className={startGame ? 'blob-blue-small' : 'blob-blue'}></div>
+      <div className={startGame ? 'blob-yellow-small' : 'blob-yellow'}></div>
+      <div className={startGame ? 'blob-blue-small' : 'blob-blue'}></div>
 
-        <Start onStartGame={handleStartGame} startGame={startGame}/>
-        
-        {triviaElement}
+      <Start onStartGame={handleStartGame} startGame={startGame}/>
+      
+      {triviaElement}
 
-        <Footer startGame = {startGame}
-                onStartGame={handleStartGame} 
-                handleCheckAnswers={() => {
-                  setCheckAnswers(true)
-                  handleCount()
-                }} 
-                checkAnswers={checkAnswers} 
-                count={count}
-        />
+      <Footer startGame = {startGame}
+        onStartGame={handleStartGame} 
+        handleCheckAnswers={() => {setCheckAnswers(true), handleCount()}} 
+        checkAnswers={checkAnswers} 
+        count={count}
+      />
     </main>
   )
 }

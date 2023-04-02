@@ -81,12 +81,11 @@ function App() {
 
   //function to handle Score/Count when scores are checked
   function handleCount() {
-    setCount(prevCount => prevCount + 1)
-  }
+      setCount(prevCount => prevCount + 1)
+  } 
 
-  //function to handle page refresh
+    //function to handle page refresh
   function handleRefresh() {
-    console.log('refresh the page')
     setApiCallCount(prevCount => prevCount + 1)
     setCheckAnswers(false)
     setCount(0)

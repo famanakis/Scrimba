@@ -81,7 +81,7 @@ function App() {
 
   //function to handle Score/Count when scores are checked
   function handleCount() {
-      setCount(prevCount => prevCount + 1)
+        setCount(prevCount => prevCount + 1)
   } 
 
     //function to handle page refresh
@@ -115,4 +115,4 @@ export default App
 
 //to do
 //function to change count based on correct answers (maybe tied to id is correct?)
-
+//disable answerBtns if setCheckAnswers is true, and enable if false

@@ -9,7 +9,7 @@ function Question(props) {
         const btnClass = `btn-answer ${selectedAnswer === answer ? 'selected' : 'not-selected'} ${checkAnswers ? 'answered' : ''}`
         const btnId = checkAnswers ? 
                         (selectedAnswer === answer ? (selectedAnswer === correct ? 'correct' : 'wrong') : 'neutral') :
-                        ''
+                        undefined
         return (
             <button
                 key={nanoid()}

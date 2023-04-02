@@ -18,10 +18,6 @@ function Question(props) {
         )
     })
 
-    // const checkCorrect = (props.checkAnswers && props.selectedAnswer === props.correct && props.handleCount())
-
-// console.log(props.selectedAnswer)
-// console.log(props.correct)
     return (
         <>
             <div className={`questions ${props.startGame ? 'flex' : 'none'}`}>

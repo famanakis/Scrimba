@@ -6,7 +6,6 @@ import { nanoid } from 'nanoid'
 import he from 'he'
 import { shuffle } from './shuffle.js'
 
-
 function App() {
   const [startGame, setStartGame] = useState(false) //game state is either not started or started
   const [selectedAnswer, setSelectedAnswer] = useState({}) //state of questions to determine if they have been selected or not
@@ -46,11 +45,13 @@ function App() {
       id={item.id}
       content={item}
       correct={item.correct}
-      startGame = {startGame}
+      startGame={startGame}
       handleSelected={(answer) => setSelectedAnswer({ ...selectedAnswer, [item.id]: answer })}
       selectedAnswer={selectedAnswer[item.id]}
       handleCheckAnswers={() => setCheckAnswers(true)}
       checkAnswers={checkAnswers}
+      // handleCount={handleCount}
+      count={count}
       />
       ))
 
@@ -61,9 +62,13 @@ function App() {
   }
 
   //function to handle Score/Count when scores are checked
-  // function handleCount() {
-  //   setCount(prevCount => prevCount + 1)
-  // } 
+//  function handleCount() {
+//     setCount(prevCount => prevCount + 1)
+//   }
+
+  // useEffect(()=> {
+  //   console.log('count:', count)
+  // }, [0])
 
   //callback function to handle page refresh
   const handleRefresh = () => {

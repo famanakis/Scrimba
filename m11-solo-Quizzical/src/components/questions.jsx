@@ -10,6 +10,12 @@ function Question(props) {
         const btnId = checkAnswers ? 
                         (selectedAnswer === answer ? (selectedAnswer === correct ? 'correct' : 'wrong') : 'neutral') :
                         undefined
+
+        // if checkAnswers is true then --- if selectedAnswer is correct then add to count else nothing
+        // if(checkAnswers && selectedAnswer === correct) {
+        //     props.handleCount()
+        // }
+
         return (
             <button
                 key={nanoid()}

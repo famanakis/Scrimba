@@ -78,7 +78,7 @@ function App() {
 
       <Footer startGame = {startGame}
         onStartGame={handleStartGame} 
-        handleCheckAnswers={() => {setCheckAnswers(true), handleCount()}} 
+        handleCheckAnswers={() => {handleCount(count), setCheckAnswers(true)}} 
         checkAnswers={checkAnswers} 
         count={count}
       />

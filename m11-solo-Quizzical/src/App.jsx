@@ -50,31 +50,22 @@ function App() {
       selectedAnswer={selectedAnswer[item.id]}
       handleCheckAnswers={() => setCheckAnswers(true)}
       checkAnswers={checkAnswers}
-      // handleCount={handleCount}
-      count={count}
+      handleCount={handleCount}
       />
       ))
 
 
   //callback function handleStartGames changes the state of startGame to true
   const handleStartGame = () => {
+    setApiCallCount(prevCount => prevCount + 1)
+    setCheckAnswers(false)
+    setCount(0)
     setStartGame(true)
   }
 
   //function to handle Score/Count when scores are checked
-//  function handleCount() {
-//     setCount(prevCount => prevCount + 1)
-//   }
-
-  // useEffect(()=> {
-  //   console.log('count:', count)
-  // }, [0])
-
-  //callback function to handle page refresh
-  const handleRefresh = () => {
-    setApiCallCount(prevCount => prevCount + 1)
-    setCheckAnswers(false)
-    setCount(0)
+ function handleCount(numCorrect) {
+    setCount(prevCount => prevCount + numCorrect)
   }
 
   return (
@@ -86,18 +77,17 @@ function App() {
         
         {triviaElement}
 
-        <Footer startGame = {startGame} 
-                handleCheckAnswers={() => setCheckAnswers(true)} 
+        <Footer startGame = {startGame}
+                onStartGame={handleStartGame} 
+                handleCheckAnswers={() => {
+                  setCheckAnswers(true)
+                  handleCount()
+                }} 
                 checkAnswers={checkAnswers} 
                 count={count}
-                handleRefresh={() => handleRefresh()}/>
-
+        />
     </main>
   )
 }
 
 export default App
-
-
-//to do
-//function to change count based on correct answers (maybe tied to id is correct?)

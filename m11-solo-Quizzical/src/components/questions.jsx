@@ -1,17 +1,21 @@
 import React from 'react'
 import { nanoid } from 'nanoid'
 
-function Question(props) {     
-    const answers = props.content.answers
+function Question(props) { 
+    const { content, selectedAnswer, checkAnswers, correct, handleSelected, handleSelectedCount, startGame } = props    
+    const { answers, question } = content
+    
     const answerBtns = answers.map((answer) =>  {
+        const btnClass = `btn-answer ${selectedAnswer === answer ? 'selected' : 'not-selected'} ${checkAnswers ? 'answered' : ''}`
+        const btnId = checkAnswers ? 
+                        (selectedAnswer === answer ? (selectedAnswer === correct ? 'correct' : 'wrong') : 'neutral') :
+                        undefined
         return (
             <button
                 key={nanoid()}
-                onClick={() => props.handleSelected(answer)}
-                className={`btn-answer ${props.selectedAnswer === answer ? 'selected' : 'not-selected'} ${props.checkAnswers ? 'answered' : ''}`}
-                id={props.checkAnswers ? 
-                    (props.selectedAnswer === answer ? (props.selectedAnswer === props.correct ? 'correct' : 'wrong') : 'neutral') :
-                    undefined}        
+                onClick={() => handleSelected(answer)}
+                className={btnClass}
+                id={btnId}        
             >
                 {answer}
             </button>
@@ -19,15 +23,13 @@ function Question(props) {
     })
 
     return (
-        <>
-            <div className={`questions ${props.startGame ? 'flex' : 'none'}`}>
-                <div className="trivia-cards">
-                    <h2 key={props.id}>{props.content.question}</h2>
-                    <div className="answers">{answerBtns}</div>
-                    <p></p>
-                </div> 
-            </div>
-        </>
+        <div className={`questions ${startGame ? 'flex' : 'none'}`}>
+            <div className="trivia-cards">
+                <h2 key={props.id}>{question}</h2>
+                <div className="answers">{answerBtns}</div>
+                <p></p>
+            </div> 
+        </div>
     )
 }
 

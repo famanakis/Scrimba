@@ -1,10 +1,9 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Start from './components/Start'
 import Question from './components/Questions'
 import { nanoid } from 'nanoid'
 import he from 'he'
 import { shuffle } from './shuffle.js'
-import { useState, useEffect } from 'react'
 import Footer from './components/Footer'
 
 function App() {
@@ -21,19 +20,18 @@ function App() {
     async function getQuestions() {
       const res = await fetch("https://opentdb.com/api.php?amount=5&type=multiple")
       const data = await res.json()
-      let triviaArr = []
-      data.results.forEach(item => {
+      const triviaArr = data.results.map(item => {
         //use he to decode the data to avoid HTML entities in the text
         const decodedQuestion = he.decode(item.question)
         const decodedCorrectAnswer = he.decode(item.correct_answer)
         const decodedIncorrectAnswers = item.incorrect_answers.map(answer => he.decode(answer))
         //push the following object with data into triviaArr
-        triviaArr.push({
+        return {
           id:nanoid(), 
           question:decodedQuestion, 
           answers:shuffle([decodedCorrectAnswer, ...decodedIncorrectAnswers]), 
           correct:decodedCorrectAnswer
-         })
+         }
       })
       //setQuestions value becomes triviaArr
       setQuestions(triviaArr)
@@ -43,49 +41,47 @@ function App() {
   }, [apiCallCount])
 
   //create triviaElement which is a Question component with props to pass API data from App to the component
-  const triviaElement = questions ? questions.map(item => {
-    return (
+  const triviaElement = questions.map(item => (
       <Question 
       key={item.id}
       id={item.id}
       content={item}
       correct={item.correct}
       startGame = {startGame}
-      handleSelected = {(answer) => handleSelected(item.id, answer)}
-      selectedAnswer = {selectedAnswer[item.id]}
-      handleCheckAnswers = {handleCheckAnswers}
-      checkAnswers = {checkAnswers}
-      handleCount = {handleCount}
+      handleSelected={(answer) => setSelectedAnswer({ ...selectedAnswer, [item.id]: answer })}
+      selectedAnswer={selectedAnswer[item.id]}
+      handleCheckAnswers={() => setCheckAnswers(true)}
+      checkAnswers={checkAnswers}
+      handleCount={() => setCount(count + 1)}
       />
-      )
-    }) : []
+      ))
 
 
   //function handleStartGames changes the state of startGame to true
-  function handleStartGame() {
+  const handleStartGame = () => {
     setStartGame(true)
   }
 
   //callback function to handle state of buttons (selected/not-selected) by each question grouping
-  const handleSelected = (questionId, answer) => {
-    setSelectedAnswer(prevState => ({
-      ...prevState,
-      [questionId]: answer,
-    }))
-  }
+  // const handleSelected = (questionId, answer) => {
+  //   setSelectedAnswer(prevState => ({
+  //     ...prevState,
+  //     [questionId]: answer,
+  //   }))
+  // }
 
   //function to show correct answers when scores are checked
-  function handleCheckAnswers() {
-    setCheckAnswers(true)
-  }
+  // function handleCheckAnswers() {
+  //   setCheckAnswers(true)
+  // }
 
   //function to handle Score/Count when scores are checked
-  function handleCount() {
-        setCount(prevCount => prevCount + 1)
-  } 
+  // function handleCount() {
+  //   setCount(prevCount => prevCount + 1)
+  // } 
 
     //function to handle page refresh
-  function handleRefresh() {
+  const handleRefresh = () => {
     setApiCallCount(prevCount => prevCount + 1)
     setCheckAnswers(false)
     setCount(0)
@@ -96,15 +92,15 @@ function App() {
         <div className={startGame ? 'blob-yellow-small' : 'blob-yellow'}></div>
         <div className={startGame ? 'blob-blue-small' : 'blob-blue'}></div>
 
-        <Start onStartGame={handleStartGame} startGame = {startGame}/>
+        <Start onStartGame={handleStartGame} startGame={startGame}/>
         
         {triviaElement}
 
         <Footer startGame = {startGame} 
-                handleCheckAnswers = {handleCheckAnswers} 
+                handleCheckAnswers={() => setCheckAnswers(true)} 
                 checkAnswers={checkAnswers} 
                 count={count}
-                handleRefresh = {handleRefresh}/>
+                handleRefresh={() => handleRefresh()}/>
 
     </main>
   )

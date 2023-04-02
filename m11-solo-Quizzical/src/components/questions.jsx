@@ -16,7 +16,7 @@ function Question(props) {
                 onClick={() => handleSelected(answer)}
                 className={btnClass}
                 id={btnId}   
-                disabled={checkAnswers ? true : false}   
+                disabled={checkAnswers}   
             >
                 {answer}
             </button>

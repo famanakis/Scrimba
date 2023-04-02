@@ -2,7 +2,7 @@ import React from 'react'
 import { nanoid } from 'nanoid'
 
 function Question(props) { 
-    const { content, selectedAnswer, checkAnswers, correct, handleSelected, handleSelectedCount, startGame } = props    
+    const { content, selectedAnswer, checkAnswers, correct, handleSelected, id, startGame } = props    
     const { answers, question } = content
     
     const answerBtns = answers.map((answer) =>  {
@@ -15,7 +15,8 @@ function Question(props) {
                 key={nanoid()}
                 onClick={() => handleSelected(answer)}
                 className={btnClass}
-                id={btnId}        
+                id={btnId}   
+                disabled={checkAnswers ? true : false}     
             >
                 {answer}
             </button>
@@ -25,7 +26,7 @@ function Question(props) {
     return (
         <div className={`questions ${startGame ? 'flex' : 'none'}`}>
             <div className="trivia-cards">
-                <h2 key={props.id}>{question}</h2>
+                <h2 key={id}>{question}</h2>
                 <div className="answers">{answerBtns}</div>
                 <p></p>
             </div> 

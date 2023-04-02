@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import Start from './components/Start'
 import Question from './components/Questions'
+import Footer from './components/Footer'
 import { nanoid } from 'nanoid'
 import he from 'he'
 import { shuffle } from './shuffle.js'
-import Footer from './components/Footer'
+
 
 function App() {
-  //use state to set startGame state to false
   const [startGame, setStartGame] = useState(false) //game state is either not started or started
   const [selectedAnswer, setSelectedAnswer] = useState({}) //state of questions to determine if they have been selected or not
   const [checkAnswers, setCheckAnswers] = useState(false) //answers have either been checked (true) or are not yet checked(false)
@@ -25,7 +25,6 @@ function App() {
         const decodedQuestion = he.decode(item.question)
         const decodedCorrectAnswer = he.decode(item.correct_answer)
         const decodedIncorrectAnswers = item.incorrect_answers.map(answer => he.decode(answer))
-        //push the following object with data into triviaArr
         return {
           id:nanoid(), 
           question:decodedQuestion, 
@@ -52,35 +51,21 @@ function App() {
       selectedAnswer={selectedAnswer[item.id]}
       handleCheckAnswers={() => setCheckAnswers(true)}
       checkAnswers={checkAnswers}
-      handleCount={() => setCount(count + 1)}
       />
       ))
 
 
-  //function handleStartGames changes the state of startGame to true
+  //callback function handleStartGames changes the state of startGame to true
   const handleStartGame = () => {
     setStartGame(true)
   }
-
-  //callback function to handle state of buttons (selected/not-selected) by each question grouping
-  // const handleSelected = (questionId, answer) => {
-  //   setSelectedAnswer(prevState => ({
-  //     ...prevState,
-  //     [questionId]: answer,
-  //   }))
-  // }
-
-  //function to show correct answers when scores are checked
-  // function handleCheckAnswers() {
-  //   setCheckAnswers(true)
-  // }
 
   //function to handle Score/Count when scores are checked
   // function handleCount() {
   //   setCount(prevCount => prevCount + 1)
   // } 
 
-    //function to handle page refresh
+  //callback function to handle page refresh
   const handleRefresh = () => {
     setApiCallCount(prevCount => prevCount + 1)
     setCheckAnswers(false)
@@ -111,4 +96,3 @@ export default App
 
 //to do
 //function to change count based on correct answers (maybe tied to id is correct?)
-//disable answerBtns if setCheckAnswers is true, and enable if false

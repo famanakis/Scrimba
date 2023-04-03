@@ -72,6 +72,12 @@ body {
   background-color: var(--black);
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 main {
   position: relative;
   min-height: 100vh;
@@ -281,6 +287,10 @@ h1 {
 }
 
 @media (min-width: 520px) {
+  .container {
+    margin-top: 10em;
+    margin-left: 170px;
+  }
   main {
     min-width: 550px;
     margin-left: 138px;

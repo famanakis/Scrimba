@@ -62,7 +62,7 @@ function App() {
     setStartGame(true)
   }
 
-  //function to handle Score/Count when scores are checked
+  // function to handle Score/Count when scores are checked
  function handleCount(numCorrect) {
     setCount(prevCount => prevCount + numCorrect)
   }

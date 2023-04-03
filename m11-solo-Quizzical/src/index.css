@@ -4,7 +4,7 @@
   line-height: 1.2;
   font-weight: 700;
   --text: #293264;
-  --white: #f5f7fb;
+  --white: #ffffff;
   --btn: #4d5b9e;
   --answer: #d6dbf5;
   --correct: #9fd7a2;
@@ -69,64 +69,72 @@ h1 {
 
 /*Styles*/
 body {
-  background-color: var(--black);
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: linear-gradient(
+    135deg,
+    hsl(240deg 80% 98%) 0%,
+    hsl(302deg 58% 98%) 29%,
+    hsl(341deg 100% 98%) 43%,
+    hsl(14deg 100% 98%) 57%,
+    hsl(34deg 100% 98%) 71%,
+    hsl(53deg 82% 98%) 100%
+  );
 }
 
 main {
   position: relative;
-  min-height: 100vh;
-  padding: 2em 0;
-  background-color: var(--white);
+}
+
+.main-content {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--white);
+  padding: 4em 0;
+  min-width: 350px;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .blob-yellow {
   background-image: url("./assets/images/blob-yellow.png");
   background-repeat: no-repeat;
   position: absolute;
-  width: 297px;
+  width: 158px;
   height: 235px;
   top: 0;
-  right: -138px;
+  right: 0;
 }
 
 .blob-blue {
   background-image: url("./assets/images/blob-blue.png");
   background-repeat: no-repeat;
   position: absolute;
-  width: 297px;
-  height: 235px;
+  width: 153px;
+  height: 118px;
   left: 0;
-  bottom: -116px;
+  bottom: 0;
 }
 
 .blob-yellow-small{
   background-image: url("./assets/images/blob-yellow-small.png");
   background-repeat: no-repeat;
   position: absolute;
-  width: 297px;
-  height: 235px;
+  width: 127px;
+  height: 135px;
   top: 0;
-  right: -170px;
+  right: 0px;
 }
 
 .blob-blue-small {
   background-image: url("./assets/images/blob-blue-small.png");
   background-repeat: no-repeat;
   position: absolute;
-  width: 297px;
-  height: 235px;
+  width: 75px;
+  height: 62px;
   left: 0px;
-  bottom: -172px;
+  bottom: 0px;
 }
 
 button,
@@ -143,6 +151,12 @@ input {
 }
 
 /*Intro*/
+.start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 h1 {
   text-align: center;
   color: var(--text);
@@ -287,22 +301,34 @@ h1 {
 }
 
 @media (min-width: 520px) {
-  .container {
-    margin-top: 10em;
-    margin-left: 170px;
+  html {
+    font-size: 20px;
   }
-  main {
-    min-width: 550px;
-    margin-left: 138px;
+  .main-content {
+    max-width: 720px;
   }
   .footer {
     flex-direction: row;
   }
   .questions h2 {
     text-align: left;
+    margin-top: .5em;
+  }
+  .trivia-cards p {
+    margin-top: 2em;
   }
   .answers {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 720px) {
+  html {
+    font-size: 24px;
+  }
+  .main-content {
+    min-height: 80vh;
+    margin: 5em auto;
   }
 }
 

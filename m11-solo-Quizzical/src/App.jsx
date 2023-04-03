@@ -69,19 +69,22 @@ function App() {
 
   return (
       <main>
-        <div className={startGame ? 'blob-yellow-small' : 'blob-yellow'}></div>
-        <div className={startGame ? 'blob-blue-small' : 'blob-blue'}></div>
+        <div className="main-content">
+          <div className={startGame ? 'blob-yellow-small' : 'blob-yellow'}></div>
+          <div className={startGame ? 'blob-blue-small' : 'blob-blue'}></div>
 
-        <Start onStartGame={handleStartGame} startGame={startGame}/>
+          <Start onStartGame={handleStartGame} startGame={startGame}/>
+          
+          {triviaElement}
+
+          <Footer startGame = {startGame}
+            onStartGame={handleStartGame} 
+            handleCheckAnswers={() => {handleCount(count), setCheckAnswers(true)}} 
+            checkAnswers={checkAnswers} 
+            count={count}
+          />
+        </div>
         
-        {triviaElement}
-
-        <Footer startGame = {startGame}
-          onStartGame={handleStartGame} 
-          handleCheckAnswers={() => {handleCount(count), setCheckAnswers(true)}} 
-          checkAnswers={checkAnswers} 
-          count={count}
-        />
       </main>
   )
 }

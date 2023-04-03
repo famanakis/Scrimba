@@ -12,11 +12,11 @@ Languages, Frameworks and Approach Used
 
 ## Screenshot
 ### Quizzical Start
-<img src="" width=30% height=30%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m11-solo-Quizzical/src/assets/images/quizzical-start.png" width=30% height=30%><br>
 ### Quizzical Questions
-<img src="" width=30% height=30%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m11-solo-Quizzical/src/assets/images/quizzical-questions.png" width=30% height=30%><br>
 ### Quizzical Answers
-<img src="" width=30% height=30%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m11-solo-Quizzical/src/assets/images/quizzical-answers.png" width=30% height=30%><br>
 [Live Demo - Coming Soon]()
  
 ## Project Requirements

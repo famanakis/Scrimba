@@ -13,11 +13,13 @@ function App() {
   const [apiCallCount, setApiCallCount] = useState(0) //apiCallCount is at zero until setApiCallCount is called and count++
   const [count, setCount] = useState(0) //count state keeps track of selected answers that are correct
   const [questions, setQuestions] = useState([]) //manages state of questions on page
+  const [selectLevel, setSelectLevel] = useState('')
+  const [selectTopic, setSelectTopic] = useState('')
 
 //useEffect to make call to outside source OpenTriviaDB API
   useEffect(()=> {
     async function getQuestions() {
-      const res = await fetch("https://opentdb.com/api.php?amount=5&type=multiple")
+      const res = await fetch(`https://opentdb.com/api.php?amount=5&type=multiple&category=${selectTopic}&difficulty=${selectLevel}`)
       const data = await res.json()
       const triviaArr = data.results.map(item => {
         //use he to decode the data to avoid HTML entities in the text
@@ -36,7 +38,7 @@ function App() {
     }
       //call function getQuestions()
       getQuestions()
-  }, [apiCallCount])
+  }, [apiCallCount, selectLevel, selectTopic])
 
   //create triviaElement which is a Question component with props to pass API data from App to the component
   const triviaElement = questions.map(item => (
@@ -54,12 +56,27 @@ function App() {
     />
   ))
 
+  //handle the level and topic selections by the user
+  const handleSelectLevel = (event) => {
+    setSelectLevel(event.target.value)
+  }
+
+  const handleSelectTopic = (event) => {
+    setSelectTopic(event.target.value)
+  }
+
   //callback function handleStartGames changes the state of startGame to true
   const handleStartGame = () => {
     setApiCallCount(prevCount => prevCount + 1)
     setCheckAnswers(false)
     setCount(0)
     setStartGame(true)
+  }
+
+  const handleHome = () => {
+    setCheckAnswers(false)
+    setCount(0)
+    setStartGame(false)
   }
 
   // function to handle Score/Count when scores are checked
@@ -73,7 +90,15 @@ function App() {
           <div className={startGame ? 'blob-yellow-small' : 'blob-yellow'}></div>
           <div className={startGame ? 'blob-blue-small' : 'blob-blue'}></div>
 
-          <Start onStartGame={handleStartGame} startGame={startGame}/>
+          <Start onStartGame={handleStartGame} 
+            startGame={startGame}
+            selectLevel = {selectLevel}
+            setSelectLevel = {setSelectLevel}
+            handleSelectLevel = {handleSelectLevel}
+            selectTopic = {selectTopic}
+            setSelectTopic = {setSelectTopic}
+            handleSelectTopic = {handleSelectTopic}
+          />
           
           {triviaElement}
 
@@ -82,6 +107,7 @@ function App() {
             handleCheckAnswers={() => {handleCount(count), setCheckAnswers(true)}} 
             checkAnswers={checkAnswers} 
             count={count}
+            handleHome = {handleHome}
           />
         </div>
         

@@ -75,7 +75,7 @@ body {
 
 main {
   position: relative;
-  height: 100wh;
+  min-height: 100vh;
   padding: 2em 0;
   background-color: var(--white);
   display: flex;

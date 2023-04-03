@@ -70,17 +70,12 @@ h1 {
 /*Styles*/
 body {
   background-color: var(--black);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  min-width: 100vw;
+  /* overflow: hidden;   */
 }
 
 main {
   position: relative;
-  min-height: 550px;
-  width: 550px;
+  height: 100wh;
   padding: 2em 0;
   background-color: var(--white);
   display: flex;
@@ -105,8 +100,8 @@ main {
   position: absolute;
   width: 297px;
   height: 235px;
-  left: 0; /*0*/
-  bottom: -116px; /*-116*/
+  left: 0;
+  bottom: -116px;
 }
 
 .blob-yellow-small{
@@ -179,14 +174,15 @@ h1 {
 }
 
 .questions h2 {
-  text-align: left;
+  text-align: center;
   color: var(--text);
   margin-bottom: .75em;
 }
 
 .answers {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   gap: .79em;
   margin-bottom: .9375em;
 }
@@ -197,9 +193,11 @@ h1 {
   border: .77px solid var(--btn);
   border-radius: 7.71px;
   min-width: 66px;
-  padding: 4px;
+  padding: .5em 1em;
   display: flex;
   justify-content: center;
+  align-items: center;
+  
 }
 
 .btn-answer:hover {
@@ -249,6 +247,10 @@ h1 {
 /*Footer*/
 .footer {
   margin:  1em auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  
 }
 
 .btn-check {
@@ -277,6 +279,22 @@ h1 {
   color: var(--text);
   margin: .4em 1.5em 0 0;
   z-index: 2;
+}
+
+@media (min-width: 520px) {
+  main {
+    min-width: 550px;
+    margin-left: 138px;
+  }
+  .footer {
+    flex-direction: row;
+  }
+  .questions h2 {
+    text-align: left;
+  }
+  .answers {
+    flex-direction: row;
+  }
 }
 
 

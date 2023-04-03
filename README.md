@@ -37,6 +37,7 @@ Languages, Frameworks and Approaches Used
 <li>TexterlyAI - API</li>
 <li>Digital Business Card - React</li>
 <li>Travel Journal - React</li>
+<li>Quizzical - React</li>
 </ul>
 
 ## Resources:

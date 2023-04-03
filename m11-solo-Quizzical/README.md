@@ -13,6 +13,10 @@ Languages, Frameworks and Approach Used
 ## Screenshot
 ### Quizzical Start
 <img src="" width=30% height=30%><br>
+### Quizzical Questions
+<img src="" width=30% height=30%><br>
+### Quizzical Answers
+<img src="" width=30% height=30%><br>
 [Live Demo - Coming Soon]()
  
 ## Project Requirements

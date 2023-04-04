@@ -20,12 +20,19 @@ Languages, Frameworks and Approach Used
 [Live Demo - Coming Soon]()
  
 ## Project Requirements
- The Quizzical solo project meets the following requirements:
+ The Quizzical solo project met the following requirements:
  <ul>
  <li>Two screens (start & questions)</li>
  <li>Pull 5 questions from the OTDB API</li>
  <li>Tally correct answers after "Check answers" is clicked</li>
 <li>Styled & polished</li>
+ </ul>
+ 
+ The Quizzical solo project completed the following stretch goals:
+ <ul>
+ <li>Make it responsive, using a mobile first design approach</li>
+ <li>Let the user choose the topic for the questions</li>
+ <li>Let the user choose the level of difficulty</li>
  </ul>
  
 ## Resources:

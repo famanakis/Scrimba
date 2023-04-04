@@ -10,7 +10,7 @@ function App() {
   const [startGame, setStartGame] = useState(false) //game state is either not started or started
   const [selectedAnswer, setSelectedAnswer] = useState({}) //state of questions to determine if they have been selected or not
   const [checkAnswers, setCheckAnswers] = useState(false) //answers have either been checked (true) or are not yet checked(false)
-  const [apiCallCount, setApiCallCount] = useState(0) //apiCallCount is at zero until setApiCallCount is called and count++
+  const [apiCallCount, setApiCallCount] = useState(1) //apiCallCount is at one 
   const [count, setCount] = useState(0) //count state keeps track of selected answers that are correct
   const [questions, setQuestions] = useState([]) //manages state of questions on page
   const [selectLevel, setSelectLevel] = useState('')
@@ -67,16 +67,27 @@ function App() {
 
   //callback function handleStartGames changes the state of startGame to true
   const handleStartGame = () => {
-    setApiCallCount(prevCount => prevCount + 1)
-    setCheckAnswers(false)
-    setCount(0)
     setStartGame(true)
   }
 
+  //to handle single ApiCall
+  const handleApiCall = () => {
+    setApiCallCount(prevCount => prevCount + 1)
+  }
+
+  //to start another round with the same selected topic and level
+  const handlePlayAgain = () => {
+    handleApiCall()
+    setCheckAnswers(false)
+    setCount(0)
+  }
+
+  //to go to home screen, select new topic and level, make api call
   const handleHome = () => {
     setCheckAnswers(false)
     setCount(0)
     setStartGame(false)
+    handleApiCall()
   }
 
   // function to handle Score/Count when scores are checked
@@ -87,7 +98,7 @@ function App() {
   return (
       <main>
         <div className="main-content">
-          <button className={`btn-home ${startGame ? 'block' : 'none'}`} onClick={handleHome}><i className="fa-solid fa-house"></i></button>
+          <button className={`btn-home ${startGame ? 'flex' : 'none'}`} onClick={handleHome}><i className="fa-solid fa-house"></i></button>
           <div className={startGame ? 'blob-yellow-small' : 'blob-yellow'}></div>
           <div className={startGame ? 'blob-blue-small' : 'blob-blue'}></div>
 
@@ -104,10 +115,10 @@ function App() {
           {triviaElement}
 
           <Footer startGame = {startGame}
-            onStartGame={handleStartGame} 
             handleCheckAnswers={() => {handleCount(count), setCheckAnswers(true)}} 
             checkAnswers={checkAnswers} 
             count={count}
+            handlePlayAgain={handlePlayAgain}
           />
         </div>
         

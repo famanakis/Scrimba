@@ -27,7 +27,9 @@ questions h2 {
 
 .start p,
 label,
-button,
+.btn-answer,
+.btn-start,
+.btn-check,
 .input-select {
   font-family: 'Inter', sans-serif;
 }
@@ -155,6 +157,10 @@ button,
 
 .flex {
   display: flex;
+}
+
+.block {
+  display: block;
 }
 
 .none {
@@ -325,13 +331,11 @@ label {
   z-index: 2;
 }
 
-/* .fa-solid
-.fa-house */
-
+/*Home Button*/
 .btn-home {
   position: absolute;
-  top: 2%;
-  right: 2%;
+  top: 1.5%;
+  right: 5%;
   background-color: transparent;
   border: 1px solid var(--btn);
   border-radius: 50%;
@@ -345,10 +349,6 @@ label {
 .btn-home:focus {
   color: var(--black);
   border: 1px solid var(--black);
-}
-
-.btn-home:active {
-  transform: scale(.1);
 }
 
 @media (min-width: 520px) {
@@ -370,6 +370,10 @@ label {
   }
   .answers {
     flex-direction: row;
+  }
+  .btn-home {
+    top: 2%;
+    right: 4%;
   }
 }
 

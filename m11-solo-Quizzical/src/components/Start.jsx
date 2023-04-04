@@ -16,15 +16,15 @@ function Start(props) {
             <p>Let's have some fun!</p>
             <label htmlFor="topic-select">Pick your Topic</label>
             <select id="topic-select" className="input-select" value={props.selectTopic} onChange={props.handleSelectTopic}>
-                <option value="">--Please choose an option--</option>
+                <option value="">All Topics</option>
                 <option value="9">General Knowledge</option>
-                <option value="10">Entertainment: Books</option>
-                <option value="11">Entertainment: Film</option>
-                <option value="12">Entertainment: Music</option>
-                <option value="13">Entertainment: Musicals & Theatres</option>
-                <option value="14">Entertainment: Television</option>
-                <option value="15">Entertainment: Video Games</option>
-                <option value="16">Entertainment: Board Games</option>
+                <option value="10">Books</option>
+                <option value="11">Film</option>
+                <option value="12">Music</option>
+                <option value="13">Musicals & Theatres</option>
+                <option value="14">Television</option>
+                <option value="15">Video Games</option>
+                <option value="16">Board Games</option>
                 <option value="17">Science & Nature</option>
                 <option value="18">Science: Computers</option>
                 <option value="19">Science: Mathematics</option>
@@ -37,14 +37,14 @@ function Start(props) {
                 <option value="26">Celebrities</option>
                 <option value="27">Animals</option>
                 <option value="28">Vehicles</option>
-                <option value="29">Entertainment: Comics</option>
+                <option value="29">Comics</option>
                 <option value="30">Science: Gadgets</option>
-                <option value="31">Entertainment: Japanese Anime & Manga</option>
-                <option value="32">Entertainment: Cartoon & Animations</option>
+                <option value="31">Japanese Anime & Manga</option>
+                <option value="32">Cartoon & Animations</option>
             </select>
             <label htmlFor="level-select">Pick your Challenge Level</label>
             <select id="level-select" className="input-select" value={props.selectLevel} onChange={props.handleSelectLevel}>
-                <option value="">--Please choose an option--</option>
+                <option value="">All Levels</option>
                 <option value="easy">Easy</option>
                 <option value="medium">Medium</option>
                 <option value="hard">Hard</option>

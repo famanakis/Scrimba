@@ -20,15 +20,26 @@
 }
 
 /*Typography*/
-h1 {
+h1,
+questions h2 {
   font-family: 'Karla', sans-serif;
-  font-size: 1.9375rem;
+}
+
+.start p,
+label,
+button,
+.input-select {
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;;
   font-weight: 700;
   line-height: 2.3125rem;
 }
 
-.start p {
-  font-family: 'Inter', sans-serif;
+.start p, 
+label {
   font-size: 1rem;
   font-weight: 400;
   line-height: 19px;
@@ -36,35 +47,35 @@ h1 {
 }
 
 .btn-start {
-  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 500;
 }
 
 .questions h2 {
-  font-family: 'Karla', sans-serif;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.1875rem;
 }
 
 .footer h2 {
-  font-family: inherit;
   font-size: .8rem;
   font-weight: 700;
 }
 
 .btn-answer {
-  font-family: 'Inter', sans-serif;
   font-size: 0.625rem;
   font-weight: 500;
   line-height: .75rem; 
 }
 
 .btn-check {
-  font-family: 'Inter', sans-serif;
   font-size: .625rem;
   font-weight: 600;
+}
+
+.input-select {
+  font-size: .825rem;
+  font-weight: 400;
 }
 
 /*Styles*/
@@ -138,7 +149,7 @@ main {
 }
 
 button,
-input {
+.input-select {
   cursor: pointer;
 }
 
@@ -166,7 +177,7 @@ h1 {
 .start p {
   text-align: center;
   color: var(--text);
-  margin-bottom: 1.8125em;
+  margin-bottom: 1.25em;
 }
 
 .btn-start {
@@ -176,6 +187,7 @@ h1 {
   height: 52px;
   border: none;
   border-radius: 15px;
+  margin-top: 1em;
   transition: all ease-in-out .4s;
 }
 
@@ -183,6 +195,19 @@ h1 {
 .btn-start:focus {
   background-color: var(--correct);
   color: var(--text);
+}
+
+label {
+  color: var(--text);
+  margin: .5em auto
+}
+
+.input-select {
+  color: var(--text);
+  margin-bottom: 1em;
+  padding: .4em;
+  border-radius: 8px;
+  text-align: center;
 }
 
 /*Questions*/
@@ -298,6 +323,32 @@ h1 {
   color: var(--text);
   margin: .4em 1.5em 0 0;
   z-index: 2;
+}
+
+/* .fa-solid
+.fa-house */
+
+.btn-home {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  background-color: transparent;
+  border: 1px solid var(--btn);
+  border-radius: 50%;
+  height: 2em;
+  transform: scale(1.5);
+  color: var(--btn);
+  z-index: 5;
+}
+
+.btn-home:hover,
+.btn-home:focus {
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.btn-home:active {
+  transform: scale(.1);
 }
 
 @media (min-width: 520px) {

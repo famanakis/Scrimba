@@ -87,6 +87,7 @@ function App() {
   return (
       <main>
         <div className="main-content">
+          <button className={`btn-home ${startGame ? 'block' : 'none'}`} onClick={handleHome}><i className="fa-solid fa-house"></i></button>
           <div className={startGame ? 'blob-yellow-small' : 'blob-yellow'}></div>
           <div className={startGame ? 'blob-blue-small' : 'blob-blue'}></div>
 
@@ -107,7 +108,6 @@ function App() {
             handleCheckAnswers={() => {handleCount(count), setCheckAnswers(true)}} 
             checkAnswers={checkAnswers} 
             count={count}
-            handleHome = {handleHome}
           />
         </div>
         

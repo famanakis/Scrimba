@@ -6,12 +6,12 @@
   --text: #293264;
   --white: #ffffff;
   --btn: #4d5b9e;
+  --dk-btn: #3a4476;
   --answer: #d6dbf5;
   --correct: #9fd7a2;
   --wrong: #f8bcbc;
   --black: #000000;
   --hr: #dbdef0;
-
 }
 
 * {
@@ -111,7 +111,7 @@ main {
 }
 
 .blob-yellow {
-  background-image: url("./assets/images/blob-yellow.png");
+  background-image: url("./src/assets/images/blob-yellow.png");
   background-repeat: no-repeat;
   position: absolute;
   width: 158px;
@@ -121,7 +121,7 @@ main {
 }
 
 .blob-blue {
-  background-image: url("./assets/images/blob-blue.png");
+  background-image: url("./src/assets/images/blob-blue.png");
   background-repeat: no-repeat;
   position: absolute;
   width: 153px;
@@ -131,7 +131,7 @@ main {
 }
 
 .blob-yellow-small{
-  background-image: url("./assets/images/blob-yellow-small.png");
+  background-image: url("./src/assets/images/blob-yellow-small.png");
   background-repeat: no-repeat;
   position: absolute;
   width: 127px;
@@ -141,7 +141,7 @@ main {
 }
 
 .blob-blue-small {
-  background-image: url("./assets/images/blob-blue-small.png");
+  background-image: url("./src/assets/images/blob-blue-small.png");
   background-repeat: no-repeat;
   position: absolute;
   width: 75px;
@@ -339,16 +339,19 @@ label {
   background-color: transparent;
   border: 1px solid var(--btn);
   border-radius: 50%;
-  height: 2em;
-  transform: scale(1.5);
+  height: 25px;
+  width: 25px;
+  justify-content: center;
+  align-items: center;
+  padding: .85em;
   color: var(--btn);
   z-index: 5;
 }
 
 .btn-home:hover,
 .btn-home:focus {
-  color: var(--black);
-  border: 1px solid var(--black);
+  color: var(--dk-btn);
+  box-shadow: 0 0 0 1px var(--dk-btn);
 }
 
 @media (min-width: 520px) {

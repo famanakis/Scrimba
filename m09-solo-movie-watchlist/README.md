@@ -12,9 +12,9 @@ Frameworks, Languages and Approach Used
 
 ## Screenshot
 ### Movie Search
-<img src="https://github.com/famanakis/Scrimba/blob/main/m09-solo-movie-watchlist/assets/project-find%20your%20film.png" width=50% height=50%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m09-solo-movie-watchlist/assets/images/project-find%20your%20film.png" width=50% height=50%><br>
 ### My Watchlist
-<img src="https://github.com/famanakis/Scrimba/blob/main/m09-solo-movie-watchlist/assets/project-%20my%20watchlist.png" width=50% height=50%><br>
+<img src="https://github.com/famanakis/Scrimba/blob/main/m09-solo-movie-watchlist/assets/images/project-%20my%20watchlist.png" width=50% height=50%><br>
 [Live Demo](https://9tfdev-m09-solo-movie-watchlist.netlify.app/)
  
 ## Project Requirements

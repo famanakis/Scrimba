@@ -28,6 +28,13 @@ Languages, Frameworks and Approach Used
 <li>Styled & polished</li>
  </ul>
  
+ My project includes the following stretch goals:
+ <ul>
+ <li>Make it responsive, using a mobile first design approach</li>
+ <li>Let the user choose the topic for the questions</li>
+ <li>Let the user choose the level of difficulty</li>
+ </ul>
+ 
 ## Resources:
   [Figma Design Screenshot](https://github.com/famanakis/Scrimba/blob/main/m11-solo-Quizzical/src/assets/images/figma-design.png)<br>
  [Scrimba](https://scrimba.com/)

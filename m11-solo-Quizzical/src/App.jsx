@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import Start from './components/Start'
 import Question from './components/Questions'
 import Footer from './components/Footer'
-import { nanoid } from 'nanoid'
-import he from 'he'
+import { nanoid } from 'nanoid' //unique string ID generator
+import he from 'he' //formats html entities from API
 import { shuffle } from './shuffle.js'
 
 function App() {

@@ -37,8 +37,8 @@ function App() {
       setQuestions(triviaArr)
     }
       //call function getQuestions()
-      getQuestions()
-  }, [apiCallCount, selectLevel, selectTopic])
+      startGame && getQuestions()
+  }, [apiCallCount,startGame])
 
   //create triviaElement which is a Question component with props to pass API data from App to the component
   const triviaElement = questions.map(item => (

@@ -6,16 +6,17 @@ function Question(props) {
     const { answers, question } = content
     
     const answerBtns = answers.map((answer) =>  {
-        const btnClass = `btn-answer ${selectedAnswer === answer ? 'selected' : 'not-selected'} ${checkAnswers ? 'answered' : ''}`
-        const btnId = checkAnswers ? 
-                        (selectedAnswer === answer ? (selectedAnswer === correct ? 'correct' : 'wrong') : 'neutral') :
-                        undefined
+
+        const btnState = checkAnswers && 
+                        (selectedAnswer === answer ? (selectedAnswer === correct ? 'correct' : 'wrong') : 
+                                                     (answer === correct ? 'showCorrect' : 'neutral'))
+        const btnClass = `btn-answer ${btnState} ${selectedAnswer === answer ? 'selected' : 'not-selected'}`     
+        
         return (
             <button
                 key={nanoid()}
                 onClick={() => handleSelected(answer)}
-                className={btnClass}
-                id={btnId}   
+                className={btnClass} 
                 disabled={checkAnswers}   
             >
                 {answer}

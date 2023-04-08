@@ -246,8 +246,7 @@ label {
   padding: .5em 1em;
   display: flex;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center; 
 }
 
 .btn-answer:hover {
@@ -269,28 +268,35 @@ label {
   background-color: inherit;
 }
 
-#wrong {
-  opacity: .5;
+.answers .wrong {
   background-color: var(--wrong);
   border: .77px solid var(--wrong);
   cursor: default;
 }
 
-#correct {
+.answers .correct {
   background-color: var(--correct);
   border: .77px solid var(--correct);
   cursor: default;
 }
 
-#neutral {
+.answers .neutral {
   opacity: .5;
   background-color: transparent;
   cursor: default;
 }
 
-#wrong:hover,
-#correct:hover,
-#neutral:hover {
+.answers .showCorrect {
+  opacity: .5;
+  background-color: #cfebd0;
+  border: 2px solid #cfebd0;
+  cursor: default;
+}
+
+.answers .correct:hover,
+.answers .wrong:hover,
+.answers .neutral:hover,
+.answers .showCorrect:hover {
   box-shadow: none;
 }
 

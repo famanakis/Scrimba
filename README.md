@@ -41,6 +41,7 @@ Languages, Frameworks and Approaches Used
 </ul>
 
 test
+update 
 
 ## Resources:
  [Scrimba](https://scrimba.com/)

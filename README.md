@@ -40,12 +40,5 @@ Languages, Frameworks and Approaches Used
 <li>Quizzical - React</li>
 </ul>
 
-test
-update 
-update
-update
-update
-update
-
 ## Resources:
  [Scrimba](https://scrimba.com/)
